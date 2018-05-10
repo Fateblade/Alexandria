@@ -2,11 +2,14 @@
 using Prism.Logging;
 using Microsoft.Practices.Unity;
 using Prism.Unity;
+using Alexandrian.Base.Logging;
 
 namespace Alexandria
 {
     internal class Bootstrapper : UnityBootstrapper
     {
+        private ILoggerFacade _loggerFacade;
+
         protected override DependencyObject CreateShell()
         {
             return Container.Resolve<Shell>();
@@ -19,7 +22,10 @@ namespace Alexandria
 
         protected override ILoggerFacade CreateLogger()
         {
-            return base.CreateLogger();
+            _loggerFacade = new MultiLogger();
+            ((MultiLogger)_loggerFacade).AddLogger(new DebugConsoleLogger());
+
+            return _loggerFacade;
         }
     }
 }

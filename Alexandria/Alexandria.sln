@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alexandria", "Alexandria.csproj", "{C494EB43-6F09-4A7B-9503-4BF38FDFD16C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alexandrian.Base", "..\Alexandrian.Base\Alexandrian.Base.csproj", "{056530EB-C480-4599-BA94-8288605BC668}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C494EB43-6F09-4A7B-9503-4BF38FDFD16C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C494EB43-6F09-4A7B-9503-4BF38FDFD16C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C494EB43-6F09-4A7B-9503-4BF38FDFD16C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{056530EB-C480-4599-BA94-8288605BC668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{056530EB-C480-4599-BA94-8288605BC668}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{056530EB-C480-4599-BA94-8288605BC668}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{056530EB-C480-4599-BA94-8288605BC668}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
