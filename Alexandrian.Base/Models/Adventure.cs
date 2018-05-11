@@ -1,10 +1,11 @@
 ﻿using Alexandrian.Base.Extensions;
+using Alexandrian.Base.Interfaces;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
 namespace Alexandrian.Base.Models
 {
-    public class Adventure : BaseObject
+    public class Adventure : BaseObject, ISummarizable
     {
         private string _Name;
         public string Name
@@ -18,6 +19,13 @@ namespace Alexandrian.Base.Models
         {
             get { return _Description; }
             set { SetProperty(ref _Description, value); }
+        }
+
+        private string _Summary;
+        public string Summary
+        {
+            get { return _Summary; }
+            set { SetProperty(ref _Summary, value); }
         }
 
         private string _AdditionalReward;

@@ -12,13 +12,16 @@ namespace Alexandrian.Base.Models
         protected List<Tag> _tags;
         protected List<Link> _links;
 
-        public BaseObject(): base()
+        public Guid ID { get; }
+
+        public BaseObject(Guid guid) : base()
         {
             _notes = new List<Note>();
             _tags = new List<Tag>();
             _links = new List<Link>();
-            _ID = Guid.NewGuid();
+            _ID = guid;
         }
+        public BaseObject() : this(Guid.NewGuid()) { }
 
         void IAttachable<Note>.Add(Note note)
         {

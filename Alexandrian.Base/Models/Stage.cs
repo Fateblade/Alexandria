@@ -1,9 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using Alexandrian.Base.Interfaces;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
 namespace Alexandrian.Base.Models
 {
-    public class Stage : BaseObject
+    public class Stage : BaseObject, ISummarizable
     {
         private string _Summary;
         public string Summary

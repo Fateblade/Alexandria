@@ -1,11 +1,12 @@
-﻿using System.Collections.ObjectModel;
+﻿using Alexandrian.Base.Interfaces;
+using System.Collections.ObjectModel;
 
 namespace Alexandrian.Base.Models
 {
-    public enum EncounterType { Fight, Social, Exploration}
-    public enum EncounterState { Success, Failure, Unexplored, Neutral }
+    public enum EncounterType { Fight, Social, Exploration, Other}
+    public enum EncounterState { Success, Failure, Unexplored, NeutralOutcome }
 
-    public class Encounter : BaseObject
+    public class Encounter : BaseObject, ISummarizable
     {
         private EncounterType _Type;
         public EncounterType Type
@@ -21,11 +22,25 @@ namespace Alexandrian.Base.Models
             set { SetProperty(ref _ParticipatingMonsters, value); }
         }
 
-        private ObservableCollection<Npc> _ParticipatingNpcs;
-        public ObservableCollection<Npc> ParticipatingNpcs
+        private ObservableCollection<NonPlayerCharacter> _ParticipatingNpcs;
+        public ObservableCollection<NonPlayerCharacter> ParticipatingNpcs
         {
             get { return _ParticipatingNpcs; }
             set { SetProperty(ref _ParticipatingNpcs, value); }
+        }
+
+        private string _Description;
+        public string Description
+        {
+            get { return _Description; }
+            set { SetProperty(ref _Description, value); }
+        }
+
+        private string _Summary;
+        public string Summary
+        {
+            get { return _Summary; }
+            set { SetProperty(ref _Summary, value); }
         }
 
         private string _Reward;

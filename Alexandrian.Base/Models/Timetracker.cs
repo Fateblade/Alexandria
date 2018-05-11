@@ -4,6 +4,8 @@ namespace Alexandrian.Base.Models
 {
     public class Timetracker : BaseObject
     {
+        private ulong _currentTime;
+
         private TimeDefinition _Definition;
         public TimeDefinition Definition
         {
@@ -11,11 +13,9 @@ namespace Alexandrian.Base.Models
             set { SetProperty(ref _Definition, value); }
         }
 
-        private TrackableDate _CurrentTime;
-        public TrackableDate CurrentTime
+        public TrackableDate CurrentDate
         {
-            get { return _CurrentTime; }
-            set { SetProperty(ref _CurrentTime, value); }
+            get { return new TrackableDate(_currentTime); }
         }
 
         private ObservableCollection<TimetrackEntry> _Entries;

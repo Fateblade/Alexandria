@@ -6,7 +6,7 @@ using Alexandrian.Base.Interfaces;
 
 namespace Alexandrian.Base.Models
 {
-    public class Character : BaseObject
+    public abstract class Character : BaseObject, ISummarizable, IRelatable
     {
         private string _System;
         public string System
@@ -21,6 +21,7 @@ namespace Alexandrian.Base.Models
             get { return _Name; }
             set { SetProperty(ref _Name, value); }
         }
+
         private string _PowerLevel;
         public string PowerLevel
         {
@@ -40,6 +41,13 @@ namespace Alexandrian.Base.Models
         {
             get { return _Summary; }
             set { SetProperty(ref _Summary, value); }
+        }
+
+        private string _Description;
+        public string Description
+        {
+            get { return _Description; }
+            set { SetProperty(ref _Description, value); }
         }
 
         private string _Backstory;
@@ -84,21 +92,17 @@ namespace Alexandrian.Base.Models
             set { SetProperty(ref _Moral, value); }
         }
 
-        public void Add(Link element)
+        protected RelationCategory _RelationCategory;
+        public RelationCategory RelationCategory
         {
-            if (element == null) { throw new ArgumentNullException(); }
-            _links.Add(element);
+            get { return _RelationCategory; }
         }
 
-        public void Remove(Link element)
+        private ObservableCollection<Item> _Items;
+        public ObservableCollection<Item> Items
         {
-            if (element == null) { throw new ArgumentNullException(); }
-            _links.Remove(element);
-        }
-
-        public IEnumerable<Link> GetObservableCollection()
-        {
-            return _links.ToObservableCollection();
+            get { return _Items; }
+            set { SetProperty(ref _Items, value); }
         }
     }
 }
