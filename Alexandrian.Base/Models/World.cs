@@ -34,15 +34,15 @@ namespace Alexandrian.Base.Models
             set { SetProperty(ref _Tracker, value, onTrackerChanged); }
         }
 
-        private ObservableCollection<Plane> _Planes;
-        public ObservableCollection<Plane> Planes
+        private ObservableCollection<Location> _Planes;
+        public ObservableCollection<Location> Planes
         {
             get { return _Planes; }
             set { SetProperty(ref _Planes, value); }
         }
 
-        private ObservableCollection<Pantheon> _Pantheons;
-        public ObservableCollection<Pantheon> Pantheons
+        private ObservableCollection<Group> _Pantheons;
+        public ObservableCollection<Group> Pantheons
         {
             get { return _Pantheons; }
             set { SetProperty(ref _Pantheons, value); }
@@ -60,6 +60,13 @@ namespace Alexandrian.Base.Models
         {
             get { return _Monsters; }
             set { SetProperty(ref _Monsters, value); }
+        }
+
+        private ObservableCollection<Faction> _Factions;
+        public ObservableCollection<Faction> Factions
+        {
+            get { return _Factions; }
+            set { SetProperty(ref _Factions, value); }
         }
 
         private void onTrackerChanged()

@@ -7,5 +7,6 @@ namespace Alexandrian.Base.Models
         public TrackableDate Date { get; set; }
         public string Summary { get; set; }
         public Guid AssociatedID { get; set; }
+        public string Description { get; set; }
     }
 }

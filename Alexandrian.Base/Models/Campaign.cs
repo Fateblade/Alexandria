@@ -32,6 +32,13 @@ namespace Alexandrian.Base.Models
             set { SetProperty(ref _Theme, value); }
         }
 
+        private World _WorldPlayedIn;
+        public World WorldPlayedIn
+        {
+            get { return _WorldPlayedIn; }
+            set { SetProperty(ref _WorldPlayedIn, value); }
+        }
+
         private ObservableCollection<Session> _Sessions;
         public ObservableCollection<Session> Sessions
         {
@@ -51,13 +58,6 @@ namespace Alexandrian.Base.Models
         {
             get { return _PlayingCharacters; }
             set { SetProperty(ref _PlayingCharacters, value); }
-        }
-
-        private World _WorldPlayedIn;
-        public World WorldPlayedIn
-        {
-            get { return _WorldPlayedIn; }
-            set { SetProperty(ref _WorldPlayedIn, value); }
         }
     }
 }
