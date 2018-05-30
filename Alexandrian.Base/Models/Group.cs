@@ -1,6 +1,8 @@
-﻿namespace Alexandrian.Base.Models
+﻿using Alexandrian.Base.Interfaces;
+
+namespace Alexandrian.Base.Models
 {
-    public class Group : BaseObject
+    public class Group : BaseObject, IRelatable
     {
         private string _Name;
         public string Name
@@ -29,5 +31,7 @@
             get { return _Description; }
             set { SetProperty(ref _Description, value); }
         }
+
+        public RelationCategory RelationCategory => RelationCategory.Group;
     }
 }

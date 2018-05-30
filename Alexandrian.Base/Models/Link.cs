@@ -1,6 +1,6 @@
 ﻿namespace Alexandrian.Base.Models
 {
-    public enum LinkType { Website, Document }
+    public enum LinkType { Undefined, Website, Document }
 
     public class Link
     {

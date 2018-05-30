@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="Extensions\ObservableCollectionExtensions.cs" />
     <Compile Include="Interfaces\IAttachable.cs" />
+    <Compile Include="Interfaces\IConnectable.cs" />
     <Compile Include="Interfaces\IRelatable.cs" />
     <Compile Include="Interfaces\ISummarizable.cs" />
     <Compile Include="Logging\DebugConsoleLogger.cs" />
@@ -57,9 +58,13 @@
     <Compile Include="Logging\ILogger.cs" />
     <Compile Include="Models\Adventure.cs" />
     <Compile Include="Models\Campaign.cs" />
+    <Compile Include="Models\Connections.cs" />
     <Compile Include="Models\Deity.cs" />
     <Compile Include="Models\Faction.cs" />
+    <Compile Include="Models\Group.cs" />
+    <Compile Include="Models\Influence.cs" />
     <Compile Include="Models\Item.cs" />
+    <Compile Include="Models\Location.cs" />
     <Compile Include="Models\Pantheon.cs" />
     <Compile Include="Models\Plane.cs" />
     <Compile Include="Models\PlayerCharacter.cs" />

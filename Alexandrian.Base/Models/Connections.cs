@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Alexandrian.Base.Interfaces;
 
 namespace Alexandrian.Base.Models
 {
     public enum ConnectionStatus { Undefined, Active, Inactive, Destroyed };
     public enum ConnectionType { Undefined, OneWayToSource, OneWayToTarget, TwoWay };
 
-    public class Connections : BaseObject
+    public class Connection : BaseObject
     {
         private ConnectionStatus _Status;
         public ConnectionStatus Status
@@ -31,7 +27,6 @@ namespace Alexandrian.Base.Models
             get { return _Source; }
             set { SetProperty(ref _Source, value); }
         }
-
 
         private IConnectable _Target;
         public IConnectable Target

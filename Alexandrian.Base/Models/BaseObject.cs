@@ -5,13 +5,13 @@ using System.Linq;
 
 namespace Alexandrian.Base.Models
 {
-    public abstract class BaseObject : Prism.Mvvm.BindableBase, IAttachable<Note>, IAttachable<Tag>, IAttachable<Link>
+    public abstract class BaseObject : Prism.Mvvm.BindableBase, IAttachable<Note>, IAttachable<Tag>, IAttachable<Link>, IAttachable<Influence>
     {
         protected Guid _ID;
         protected List<Note> _notes;
         protected List<Tag> _tags;
         protected List<Link> _links;
-
+        protected List<Influence> _influences;
         public Guid ID { get; }
 
         public BaseObject(Guid guid) : base()
@@ -72,6 +72,23 @@ namespace Alexandrian.Base.Models
         {
             if (element == null) { throw new ArgumentNullException(); }
             _links.Remove(element);
+        }
+
+        void IAttachable<Influence>.Add(Influence element)
+        {
+            if (element == null) { throw new ArgumentNullException(); }
+            _influences.Remove(element);
+        }
+
+        void IAttachable<Influence>.Remove(Influence element)
+        {
+            if (element == null) { throw new ArgumentNullException(); }
+            _influences.Remove(element);
+        }
+
+        IEnumerable<Influence> IAttachable<Influence>.GetList()
+        {
+            return _influences.ToList();
         }
     }
 }

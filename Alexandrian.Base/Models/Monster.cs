@@ -3,7 +3,7 @@ using System.Collections.ObjectModel;
 
 namespace Alexandrian.Base.Models
 {
-    public class Monster : BaseObject, IRelatable
+    public class Monster : BaseObject, IRelatable, ISummarizable
     {
         private string _Name;
         public string Name
@@ -33,6 +33,13 @@ namespace Alexandrian.Base.Models
         {
             get { return _Type; }
             set { SetProperty(ref _Type, value); }
+        }
+
+        private string _Summary;
+        public string Summary
+        {
+            get { return _Summary; }
+            set { SetProperty(ref _Summary, value); }
         }
 
         private ObservableCollection<Item> _Items;

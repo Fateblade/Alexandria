@@ -85,6 +85,13 @@ namespace Alexandrian.Base.Models
             set { SetProperty(ref _Fears, value); }
         }
 
+        private ObservableCollection<TextInfo> _Goals;
+        public ObservableCollection<TextInfo> Goals
+        {
+            get { return _Goals; }
+            set { SetProperty(ref _Goals, value); }
+        }
+
         private string _Moral;
         public string Moral
         {

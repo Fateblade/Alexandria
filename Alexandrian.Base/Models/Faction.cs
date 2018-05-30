@@ -1,4 +1,6 @@
-﻿namespace Alexandrian.Base.Models
+﻿using Alexandrian.Base.Interfaces;
+
+namespace Alexandrian.Base.Models
 {
     public class Faction : Group
     {
@@ -22,5 +24,7 @@
             get { return _Beliefs; }
             set { SetProperty(ref _Beliefs, value); }
         }
+
+        public new RelationCategory RelationCategory => RelationCategory.Faction;
     }
 }
