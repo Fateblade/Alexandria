@@ -58,7 +58,7 @@
     <Compile Include="Logging\ILogger.cs" />
     <Compile Include="Models\Adventure.cs" />
     <Compile Include="Models\Campaign.cs" />
-    <Compile Include="Models\Connections.cs" />
+    <Compile Include="Models\Connection.cs" />
     <Compile Include="Models\Deity.cs" />
     <Compile Include="Models\Faction.cs" />
     <Compile Include="Models\Group.cs" />
@@ -84,6 +84,8 @@
     <Compile Include="Models\TimeDefinition.cs" />
     <Compile Include="Models\TimetrackEntry.cs" />
     <Compile Include="Models\Timetracker.cs" />
+    <Compile Include="Models\TimeUnit.cs" />
+    <Compile Include="Models\ToDo.cs" />
     <Compile Include="Models\TrackableDate.cs" />
     <Compile Include="Models\World.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -42,6 +42,13 @@ namespace Alexandrian.Base.Models
             set { SetProperty(ref _Description, value); }
         }
 
+        private Location _SubLocationOf;
+        public Location SubLocationOf
+        {
+            get { return _SubLocationOf; }
+            set { SetProperty(ref _SubLocationOf, value); }
+        }
+
         public Location()
         {
             _ConnectedPlaces = new ObservableCollection<Connection>();
