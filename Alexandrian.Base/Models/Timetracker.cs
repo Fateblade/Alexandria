@@ -23,5 +23,10 @@ namespace Alexandrian.Base.Models
             get { return _Entries; }
             set { SetProperty(ref _Entries, value); }
         }
+
+        public string GetDescription(TrackableDate date, bool forceIncludeAll)
+        {
+            
+        }
     }
 }
