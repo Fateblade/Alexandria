@@ -1,8 +1,13 @@
+D:\NextcloudShare\ProjectSpace\GitHub\Alexandria\Alexandrian.Base\obj\Debug\Alexandrian.Base.csproj.CoreCompileInputs.cache
 D:\NextcloudShare\ProjectSpace\GitHub\Alexandria\Alexandrian.Base\bin\Debug\Alexandrian.Base.dll
 D:\NextcloudShare\ProjectSpace\GitHub\Alexandria\Alexandrian.Base\bin\Debug\Alexandrian.Base.pdb
 D:\NextcloudShare\ProjectSpace\GitHub\Alexandria\Alexandrian.Base\bin\Debug\Prism.dll
 D:\NextcloudShare\ProjectSpace\GitHub\Alexandria\Alexandrian.Base\bin\Debug\Prism.xml
-D:\NextcloudShare\ProjectSpace\GitHub\Alexandria\Alexandrian.Base\obj\Debug\Alexandrian.Base.csproj.CoreCompileInputs.cache
 D:\NextcloudShare\ProjectSpace\GitHub\Alexandria\Alexandrian.Base\obj\Debug\Alexandrian.Base.csproj.CopyComplete
 D:\NextcloudShare\ProjectSpace\GitHub\Alexandria\Alexandrian.Base\obj\Debug\Alexandrian.Base.dll
 D:\NextcloudShare\ProjectSpace\GitHub\Alexandria\Alexandrian.Base\obj\Debug\Alexandrian.Base.pdb
+D:\NextcloudShare\ProjectSpace\GitHub\Alexandria\Alexandrian.Base\bin\Debug\Prism.pdb
+D:\NextcloudShare\ProjectSpace\GitHub\Alexandria\Alexandrian.Base\bin\Debug\ACI.Base.DB.SQLite.dll
+D:\NextcloudShare\ProjectSpace\GitHub\Alexandria\Alexandrian.Base\bin\Debug\ACI.Base.dll
+D:\NextcloudShare\ProjectSpace\GitHub\Alexandria\Alexandrian.Base\bin\Debug\ACI.Base.pdb
+D:\NextcloudShare\ProjectSpace\GitHub\Alexandria\Alexandrian.Base\bin\Debug\ACI.Base.DB.SQLite.pdb

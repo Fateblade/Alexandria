@@ -1,7 +1,8 @@
-﻿using System;
+﻿using Alexandrian.Base.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using Alexandrian.Base.Interfaces;
+using System.Linq;
 
 namespace Alexandrian.Base.Models
 {
@@ -49,6 +50,9 @@ namespace Alexandrian.Base.Models
             set { SetProperty(ref _SubLocationOf, value); }
         }
 
+        public List<Connection> Attached { get { return GetList().ToList(); } }
+
+
         public Location()
         {
             _ConnectedPlaces = new ObservableCollection<Connection>();
@@ -73,4 +77,3 @@ namespace Alexandrian.Base.Models
         }
     }
 }
--

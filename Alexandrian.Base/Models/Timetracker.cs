@@ -1,4 +1,5 @@
 ﻿using System.Collections.ObjectModel;
+using System.Linq;
 
 namespace Alexandrian.Base.Models
 {
@@ -24,9 +25,20 @@ namespace Alexandrian.Base.Models
             set { SetProperty(ref _Entries, value); }
         }
 
-        public string GetDescription(TrackableDate date, bool forceIncludeAll)
+        public string GetDescription(TrackableDate date, TimeFormat format=null)
         {
+            string retVal = string.Empty;
+
+            if(format == null) { format = Definition.DefaultFormat; }
+
+            var rootElement = Definition.Units.First(t => t.RelationTarget == null);
             
+            //build tree 
+            
+
+            return retVal;
         }
+
+        
     }
 }

@@ -78,37 +78,37 @@ namespace Alexandrian.Base.Models
         {
             StringBuilder sb = new StringBuilder();
             sb.Append("[");
-            sb.Append(TrackableDate.DayName);
-            sb.Append(".");
-            sb.Append(TrackableDate.MonthName);
-            sb.Append(".");
-            sb.Append(TrackableDate.YearName);
-            sb.Append(" ");
-            sb.Append(TrackableDate.HourName);
-            sb.Append(":");
-            sb.Append(TrackableDate.MinuteName);
-            sb.Append(":");
-            sb.Append(TrackableDate.SecondName);
-            sb.Append("]");
-            sb.AppendLine(" Summary");
+            //sb.Append(TrackableDate.DayName);
+            //sb.Append(".");
+            //sb.Append(TrackableDate.MonthName);
+            //sb.Append(".");
+            //sb.Append(TrackableDate.YearName);
+            //sb.Append(" ");
+            //sb.Append(TrackableDate.HourName);
+            //sb.Append(":");
+            //sb.Append(TrackableDate.MinuteName);
+            //sb.Append(":");
+            //sb.Append(TrackableDate.SecondName);
+            //sb.Append("]");
+            //sb.AppendLine(" Summary");
 
-            foreach (var entry in _Tracker.Entries.OrderBy(t=>t.Date.DatePart))
-            {
-                sb.Append("[");
-                sb.Append(entry.Date.Day);
-                sb.Append(".");
-                sb.Append(entry.Date.Month);
-                sb.Append(".");
-                sb.Append(entry.Date.Year);
-                sb.Append(" ");
-                sb.Append(entry.Date.Hour);
-                sb.Append(":");
-                sb.Append(entry.Date.Minute);
-                sb.Append(":");
-                sb.Append(entry.Date.Second);
-                sb.Append("]");
-                sb.AppendLine(entry.Summary);
-            }
+            //foreach (var entry in _Tracker.Entries.OrderBy(t=>t.Date.DatePart))
+            //{
+            //    sb.Append("[");
+            //    sb.Append(entry.Date.Day);
+            //    sb.Append(".");
+            //    sb.Append(entry.Date.Month);
+            //    sb.Append(".");
+            //    sb.Append(entry.Date.Year);
+            //    sb.Append(" ");
+            //    sb.Append(entry.Date.Hour);
+            //    sb.Append(":");
+            //    sb.Append(entry.Date.Minute);
+            //    sb.Append(":");
+            //    sb.Append(entry.Date.Second);
+            //    sb.Append("]");
+            //    sb.AppendLine(entry.Summary);
+            //}
             Timeline = sb.ToString();
         }
 

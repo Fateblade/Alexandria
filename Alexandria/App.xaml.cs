@@ -1,27 +1,34 @@
-﻿using System.Windows;
+﻿using ACI.Base.Logging;
+using Alexandrian.Base.Logging;
+using Prism.Ioc;
+using Prism.Logging;
+using Prism.Unity;
+using System.Windows;
 
 namespace Alexandria
 {
     /// <summary>
     /// Interaction logic for App.xaml
     /// </summary>
-    public partial class App : Application
+    public partial class App : PrismApplication
     {
-        private Bootstrapper _bootstrapper;
+        //private Bootstrapper _bootstrapper;
 
-        protected override void OnStartup(StartupEventArgs e)
+        public App()
         {
-            base.OnStartup(e);
-
-            _bootstrapper = new Bootstrapper();
-            _bootstrapper.Run();
+            
+        }
+        protected override Window CreateShell()
+        {
+            return Container.Resolve<Shell>();
         }
 
-        protected override void OnExit(ExitEventArgs e)
+        protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            base.OnExit(e);
+            var logger = new MultiLogger();
+            logger.AddLogger(new DebugConsoleLogger());
 
-            _bootstrapper.Container.Dispose();
+            containerRegistry.RegisterInstance<ILoggerFacade>(logger);
         }
     }
 }

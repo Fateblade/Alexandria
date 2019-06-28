@@ -1,11 +1,12 @@
-﻿using Alexandrian.Base.Interfaces;
+﻿using ACI.Base.DB;
+using Alexandrian.Base.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace Alexandrian.Base.Models
 {
-    public abstract class BaseObject : Prism.Mvvm.BindableBase, IAttachable<Note>, IAttachable<Tag>, IAttachable<Link>, IAttachable<Influence>, IAttachable<ToDo>
+    public abstract class BaseObject : Prism.Mvvm.BindableBase, IAttachable<Note>, IAttachable<Tag>, IAttachable<Link>, IAttachable<Influence>, IAttachable<ToDo>, IDataEntity
     {
         protected Guid _ID;
         protected List<Note> _notes;
@@ -14,7 +15,20 @@ namespace Alexandrian.Base.Models
         protected List<Influence> _influences;
         protected List<ToDo> _todos;
 
-        public Guid ID { get; }
+
+        [DB("ID", "@ID")]
+        public Guid ID { get { return _ID; } }
+
+        List<Note> IAttachable<Note>.Attached { get { return ((IAttachable<Note>)this).GetList().ToList(); } }
+
+        List<Tag> IAttachable<Tag>.Attached { get { return ((IAttachable<Tag>)this).GetList().ToList(); } }
+
+        List<Influence> IAttachable<Influence>.Attached { get { return ((IAttachable<Influence>)this).GetList().ToList(); } }
+
+        List<ToDo> IAttachable<ToDo>.Attached { get { return ((IAttachable<ToDo>)this).GetList().ToList(); } }
+
+        List<Link> IAttachable<Link>.Attached { get { return ((IAttachable<Link>)this).GetList().ToList(); } }
+
 
         public BaseObject(Guid guid) : base()
         {
@@ -24,6 +38,7 @@ namespace Alexandrian.Base.Models
             _ID = guid;
         }
         public BaseObject() : this(Guid.NewGuid()) { }
+
 
         void IAttachable<Note>.Add(Note note)
         {
@@ -43,6 +58,19 @@ namespace Alexandrian.Base.Models
             _links.Add(element);
         }
 
+        void IAttachable<Influence>.Add(Influence element)
+        {
+            if (element == null) { throw new ArgumentNullException(); }
+            _influences.Remove(element);
+        }
+
+        void IAttachable<ToDo>.Add(ToDo element)
+        {
+            if (element == null) { throw new ArgumentNullException(); }
+            _todos.Add(element);
+        }
+
+
         IEnumerable<Note> IAttachable<Note>.GetList()
         {
             return _notes.ToList();
@@ -57,6 +85,17 @@ namespace Alexandrian.Base.Models
         {
             return _links.ToList();
         }
+
+        IEnumerable<Influence> IAttachable<Influence>.GetList()
+        {
+            return _influences.ToList();
+        }
+
+        IEnumerable<ToDo> IAttachable<ToDo>.GetList()
+        {
+            return _todos.ToList();
+        }
+
 
         void IAttachable<Note>.Remove(Note note)
         {
@@ -76,38 +115,16 @@ namespace Alexandrian.Base.Models
             _links.Remove(element);
         }
 
-        void IAttachable<Influence>.Add(Influence element)
-        {
-            if (element == null) { throw new ArgumentNullException(); }
-            _influences.Remove(element);
-        }
-
         void IAttachable<Influence>.Remove(Influence element)
         {
             if (element == null) { throw new ArgumentNullException(); }
             _influences.Remove(element);
         }
-
-        IEnumerable<Influence> IAttachable<Influence>.GetList()
-        {
-            return _influences.ToList();
-        }
-
-        void IAttachable<ToDo>.Add(ToDo element)
-        {
-            if (element == null) { throw new ArgumentNullException(); }
-            _todos.Add(element);
-        }
-
+        
         void IAttachable<ToDo>.Remove(ToDo element)
         {
             if (element == null) { throw new ArgumentNullException(); }
             _todos.Remove(element);
-        }
-
-        IEnumerable<ToDo> IAttachable<ToDo>.GetList()
-        {
-            return _todos.ToList();
         }
     }
 }

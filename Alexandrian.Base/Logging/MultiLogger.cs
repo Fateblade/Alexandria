@@ -1,4 +1,5 @@
-﻿using Prism.Logging;
+﻿using ACI.Base.Logging;
+using Prism.Logging;
 using System;
 using System.Collections.Generic;
 
@@ -30,20 +31,20 @@ namespace Alexandrian.Base.Logging
             _loggerList.Remove(logger);
         }
 
-        private Category transform(Prism.Logging.Category category)
+        private ACI.Base.Logging.Category transform(Prism.Logging.Category category)
         {
-            return category == Prism.Logging.Category.Info ? Category.Message :
-                category == Prism.Logging.Category.Debug ? Category.Debug :
-                category == Prism.Logging.Category.Warn ? Category.Warn :
-                Category.Exception;
+            return category == Prism.Logging.Category.Info ? ACI.Base.Logging.Category.Message :
+                category == Prism.Logging.Category.Debug ? ACI.Base.Logging.Category.Debug :
+                category == Prism.Logging.Category.Warn ? ACI.Base.Logging.Category.Warn :
+                ACI.Base.Logging.Category.Exception;
         }
 
-        private Priority transform(Prism.Logging.Priority priority)
+        private ACI.Base.Logging.Priority transform(Prism.Logging.Priority priority)
         {
-            return priority == Prism.Logging.Priority.None ? Priority.None :
-                priority == Prism.Logging.Priority.Low ? Priority.Low :
-                priority == Prism.Logging.Priority.Medium ? Priority.Medium :
-                Priority.High;
+            return priority == Prism.Logging.Priority.None ? ACI.Base.Logging.Priority.None :
+                priority == Prism.Logging.Priority.Low ? ACI.Base.Logging.Priority.Low :
+                priority == Prism.Logging.Priority.Medium ? ACI.Base.Logging.Priority.Medium :
+                ACI.Base.Logging.Priority.High;
         }
     }
 }
