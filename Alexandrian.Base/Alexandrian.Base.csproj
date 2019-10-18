@@ -56,43 +56,11 @@
   <ItemGroup>
     <Compile Include="Interfaces\IAttachable.cs" />
     <Compile Include="Interfaces\IConnectable.cs" />
-    <Compile Include="Interfaces\IRelatable.cs" />
     <Compile Include="Interfaces\ISummarizable.cs" />
     <Compile Include="Interfaces\ITrackable.cs" />
     <Compile Include="Logging\MultiLogger.cs" />
-    <Compile Include="Models\Adventure.cs" />
-    <Compile Include="Models\Campaign.cs" />
-    <Compile Include="Models\Connection.cs" />
-    <Compile Include="Models\Deity.cs" />
-    <Compile Include="Models\Faction.cs" />
-    <Compile Include="Models\Group.cs" />
     <Compile Include="Models\Influence.cs" />
-    <Compile Include="Models\Item.cs" />
-    <Compile Include="Models\Location.cs" />
-    <Compile Include="Models\Pantheon.cs" />
-    <Compile Include="Models\Plane.cs" />
-    <Compile Include="Models\PlayerCharacter.cs" />
-    <Compile Include="Models\Relation.cs" />
-    <Compile Include="Models\Session.cs" />
-    <Compile Include="Models\Stage.cs" />
-    <Compile Include="Models\Character.cs" />
-    <Compile Include="Models\Encounter.cs" />
-    <Compile Include="Models\Link.cs" />
-    <Compile Include="Models\Monster.cs" />
-    <Compile Include="Models\NonPlayerCharacter.cs" />
-    <Compile Include="Models\TextInfo.cs" />
-    <Compile Include="Models\Note.cs" />
     <Compile Include="Models\BaseObject.cs" />
-    <Compile Include="Models\Player.cs" />
-    <Compile Include="Models\Tag.cs" />
-    <Compile Include="Models\TimeDefinition.cs" />
-    <Compile Include="Models\TimeFormat.cs" />
-    <Compile Include="Models\TimetrackEntry.cs" />
-    <Compile Include="Models\Timetracker.cs" />
-    <Compile Include="Models\TimeUnit.cs" />
-    <Compile Include="Models\ToDo.cs" />
-    <Compile Include="Models\TrackableDate.cs" />
-    <Compile Include="Models\World.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

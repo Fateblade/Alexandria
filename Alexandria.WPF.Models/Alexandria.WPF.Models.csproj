@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Fateblade.Alexandria.UI.WPF.Models</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Entities\" />
+    <Folder Include="Environment\" />
+    <Folder Include="Gear\" />
+    <Folder Include="Meta\" />
+  </ItemGroup>
+
+</Project>

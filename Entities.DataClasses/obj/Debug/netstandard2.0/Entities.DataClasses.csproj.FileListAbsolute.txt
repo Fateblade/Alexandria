@@ -1,0 +1,12 @@
+C:\NextcloudStorage\ProjectSpace\GitHub\Alexandria\Entities.DataClasses\obj\Debug\netstandard2.0\Entities.DataClasses.csprojAssemblyReference.cache
+C:\NextcloudStorage\ProjectSpace\GitHub\Alexandria\Entities.DataClasses\obj\Debug\netstandard2.0\Entities.DataClasses.csproj.CoreCompileInputs.cache
+C:\NextcloudStorage\ProjectSpace\GitHub\Alexandria\Entities.DataClasses\obj\Debug\netstandard2.0\Entities.DataClasses.AssemblyInfoInputs.cache
+C:\NextcloudStorage\ProjectSpace\GitHub\Alexandria\Entities.DataClasses\obj\Debug\netstandard2.0\Entities.DataClasses.AssemblyInfo.cs
+D:\NextcloudShare\ProjectSpace\GitHub\Alexandria\Entities.DataClasses\bin\Debug\netstandard2.0\Alexandria.Entities.DataClasses.deps.json
+D:\NextcloudShare\ProjectSpace\GitHub\Alexandria\Entities.DataClasses\bin\Debug\netstandard2.0\Alexandria.Entities.DataClasses.dll
+D:\NextcloudShare\ProjectSpace\GitHub\Alexandria\Entities.DataClasses\bin\Debug\netstandard2.0\Alexandria.Entities.DataClasses.pdb
+D:\NextcloudShare\ProjectSpace\GitHub\Alexandria\Entities.DataClasses\obj\Debug\netstandard2.0\Entities.DataClasses.csproj.CoreCompileInputs.cache
+D:\NextcloudShare\ProjectSpace\GitHub\Alexandria\Entities.DataClasses\obj\Debug\netstandard2.0\Entities.DataClasses.AssemblyInfoInputs.cache
+D:\NextcloudShare\ProjectSpace\GitHub\Alexandria\Entities.DataClasses\obj\Debug\netstandard2.0\Entities.DataClasses.AssemblyInfo.cs
+D:\NextcloudShare\ProjectSpace\GitHub\Alexandria\Entities.DataClasses\obj\Debug\netstandard2.0\Alexandria.Entities.DataClasses.dll
+D:\NextcloudShare\ProjectSpace\GitHub\Alexandria\Entities.DataClasses\obj\Debug\netstandard2.0\Alexandria.Entities.DataClasses.pdb

@@ -11,3 +11,7 @@ D:\NextcloudShare\ProjectSpace\GitHub\Alexandria\Alexandrian.Base\bin\Debug\ACI.
 D:\NextcloudShare\ProjectSpace\GitHub\Alexandria\Alexandrian.Base\bin\Debug\ACI.Base.dll
 D:\NextcloudShare\ProjectSpace\GitHub\Alexandria\Alexandrian.Base\bin\Debug\ACI.Base.pdb
 D:\NextcloudShare\ProjectSpace\GitHub\Alexandria\Alexandrian.Base\bin\Debug\ACI.Base.DB.SQLite.pdb
+C:\NextcloudStorage\ProjectSpace\GitHub\Alexandria\Alexandrian.Base\obj\Debug\Alexandrian.Base.csprojAssemblyReference.cache
+C:\NextcloudStorage\ProjectSpace\GitHub\Alexandria\Alexandrian.Base\obj\Debug\Alexandrian.Base.csproj.CoreCompileInputs.cache
+C:\NextcloudStorage\ProjectSpace\GitHub\Alexandria\Alexandrian.Base\obj\Debug\Alexandrian.Base.dll
+C:\NextcloudStorage\ProjectSpace\GitHub\Alexandria\Alexandrian.Base\obj\Debug\Alexandrian.Base.pdb

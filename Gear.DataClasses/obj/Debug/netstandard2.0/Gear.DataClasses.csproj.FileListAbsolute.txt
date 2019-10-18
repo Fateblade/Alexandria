@@ -1,0 +1,4 @@
+C:\NextcloudStorage\ProjectSpace\GitHub\Alexandria\Gear.DataClasses\obj\Debug\netstandard2.0\Gear.DataClasses.csprojAssemblyReference.cache
+C:\NextcloudStorage\ProjectSpace\GitHub\Alexandria\Gear.DataClasses\obj\Debug\netstandard2.0\Gear.DataClasses.csproj.CoreCompileInputs.cache
+C:\NextcloudStorage\ProjectSpace\GitHub\Alexandria\Gear.DataClasses\obj\Debug\netstandard2.0\Gear.DataClasses.AssemblyInfoInputs.cache
+C:\NextcloudStorage\ProjectSpace\GitHub\Alexandria\Gear.DataClasses\obj\Debug\netstandard2.0\Gear.DataClasses.AssemblyInfo.cs
