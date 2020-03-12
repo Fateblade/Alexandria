@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\NextcloudShare\\ProjectSpace\\GitHub\\Alexandria\\Entities.DataClasses\\Entities.DataClasses.csproj",
+      "projectUniqueName": "D:\\Github\\Alexandria\\Entities.DataClasses\\Entities.DataClasses.csproj",
       "projectName": "Alexandria.Entities.DataClasses",
-      "projectPath": "D:\\NextcloudShare\\ProjectSpace\\GitHub\\Alexandria\\Entities.DataClasses\\Entities.DataClasses.csproj",
+      "projectPath": "D:\\Github\\Alexandria\\Entities.DataClasses\\Entities.DataClasses.csproj",
       "packagesPath": "C:\\Users\\Seth\\.nuget\\packages\\",
-      "outputPath": "D:\\NextcloudShare\\ProjectSpace\\GitHub\\Alexandria\\Entities.DataClasses\\obj\\",
+      "outputPath": "D:\\Github\\Alexandria\\Entities.DataClasses\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -203,6 +203,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "D:\\NextcloudShare\\ProjectSpace\\NugetRepository": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -235,7 +236,8 @@
           "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
