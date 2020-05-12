@@ -1,4 +1,0 @@
-C:\NextcloudStorage\ProjectSpace\GitHub\Alexandria\Environment.DataClasses\obj\Debug\netstandard2.0\Environment.DataClasses.csprojAssemblyReference.cache
-C:\NextcloudStorage\ProjectSpace\GitHub\Alexandria\Environment.DataClasses\obj\Debug\netstandard2.0\Environment.DataClasses.csproj.CoreCompileInputs.cache
-C:\NextcloudStorage\ProjectSpace\GitHub\Alexandria\Environment.DataClasses\obj\Debug\netstandard2.0\Environment.DataClasses.AssemblyInfoInputs.cache
-C:\NextcloudStorage\ProjectSpace\GitHub\Alexandria\Environment.DataClasses\obj\Debug\netstandard2.0\Environment.DataClasses.AssemblyInfo.cs
