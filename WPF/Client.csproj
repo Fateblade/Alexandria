@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>Fateblade.Alexandria.UI.WPF.Client</RootNamespace>
+    <AssemblyName>Alexandria.UI.WPF.Client</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Alexandria.WPF.Models\Models.csproj" />
+    <ProjectReference Include="..\WPF.Controls\Controls.csproj" />
+  </ItemGroup>
+
+</Project>

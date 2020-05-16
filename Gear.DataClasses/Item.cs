@@ -1,4 +1,4 @@
-﻿namespace Alexandria.WPF.Models.Gear
+﻿namespace Fateblade.Alexandria.CrossCutting.Gear.DataClasses
 {
     public class Item
     {

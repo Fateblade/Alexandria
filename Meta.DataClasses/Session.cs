@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 
-namespace Alexandria.WPF.Models.Meta
+namespace Fateblade.Alexandria.CrossCutting.Meta.DataClasses
 {
     public class Session : BaseObject
     {

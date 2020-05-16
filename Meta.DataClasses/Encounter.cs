@@ -1,6 +1,6 @@
 ﻿using System.Collections.ObjectModel;
 
-namespace Alexandria.WPF.Models.Meta
+namespace Fateblade.Alexandria.CrossCutting.Meta.DataClasses
 {
     public enum EncounterType { Fight, Social, Exploration, Other}
     public enum EncounterState { Success, Failure, Unexplored, NeutralOutcome }

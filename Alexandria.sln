@@ -3,12 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29025.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alexandria.Controls", "Alexandria.Controls\Alexandria.Controls.csproj", "{0A05A7DA-283C-4672-9395-C6EE99B17A54}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alexandria", "Alexandria\Alexandria.csproj", "{C494EB43-6F09-4A7B-9503-4BF38FDFD16C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alexandrian.Base", "Alexandrian.Base\Alexandrian.Base.csproj", "{056530EB-C480-4599-BA94-8288605BC668}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCutting", "{2B9AD400-FD6A-4280-815B-33D72D5D6BF8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities.DataClasses", "Entities.DataClasses\Entities.DataClasses.csproj", "{DE731667-B436-45F6-A54B-D1B5437F0A23}"
@@ -25,9 +19,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logic", "Logic", "{D2FE1D30
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{60E6F5A3-7D32-4E90-AAEF-5AC51E1C1718}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ToIntegrate", "ToIntegrate", "{45C0E0A9-E308-4482-8E4B-D6C42E47F2BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Alexandria.WPF.Models\Models.csproj", "{91F5B21D-8172-4D35-9B7A-93C2D5C3F149}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alexandria.WPF.Models", "Alexandria.WPF.Models\Alexandria.WPF.Models.csproj", "{91F5B21D-8172-4D35-9B7A-93C2D5C3F149}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "WPF\Client.csproj", "{57212585-1250-4B63-B256-D1228047CDEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controls", "WPF.Controls\Controls.csproj", "{72288FB2-FD03-4080-9DBC-B0A5337DD2C1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WPF", "WPF", "{A7C16453-A782-4204-B3F1-FB91C826B508}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Base", "WPF.Base\Base.csproj", "{7D8A500A-9691-49AF-B485-593BD8938922}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_ExternalLibraries", "_ExternalLibraries", "{86504E24-8C9F-4ABE-841C-C06FA95B1491}"
+	ProjectSection(SolutionItems) = preProject
+		_ExternalLibraries\CoCo.Core.Contract.dll = _ExternalLibraries\CoCo.Core.Contract.dll
+		_ExternalLibraries\CommonMessages.Contract.dll = _ExternalLibraries\CommonMessages.Contract.dll
+		_ExternalLibraries\Components.CrossCutting.Base.Identifiable.DataClasses.dll = _ExternalLibraries\Components.CrossCutting.Base.Identifiable.DataClasses.dll
+		_ExternalLibraries\Components.CrossCutting.Logging.Contract.dll = _ExternalLibraries\Components.CrossCutting.Logging.Contract.dll
+		_ExternalLibraries\Components.CrossCutting.Logging.Csv.dll = _ExternalLibraries\Components.CrossCutting.Logging.Csv.dll
+		_ExternalLibraries\Components.CrossCutting.Logging.PrismWrapper.dll = _ExternalLibraries\Components.CrossCutting.Logging.PrismWrapper.dll
+		_ExternalLibraries\Components.Data.GenericDataStoring.Contract.dll = _ExternalLibraries\Components.Data.GenericDataStoring.Contract.dll
+		_ExternalLibraries\Components.Data.GenericDataStoring.NewtonsoftJson.dll = _ExternalLibraries\Components.Data.GenericDataStoring.NewtonsoftJson.dll
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,18 +47,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0A05A7DA-283C-4672-9395-C6EE99B17A54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0A05A7DA-283C-4672-9395-C6EE99B17A54}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0A05A7DA-283C-4672-9395-C6EE99B17A54}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0A05A7DA-283C-4672-9395-C6EE99B17A54}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C494EB43-6F09-4A7B-9503-4BF38FDFD16C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C494EB43-6F09-4A7B-9503-4BF38FDFD16C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C494EB43-6F09-4A7B-9503-4BF38FDFD16C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C494EB43-6F09-4A7B-9503-4BF38FDFD16C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{056530EB-C480-4599-BA94-8288605BC668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{056530EB-C480-4599-BA94-8288605BC668}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{056530EB-C480-4599-BA94-8288605BC668}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{056530EB-C480-4599-BA94-8288605BC668}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DE731667-B436-45F6-A54B-D1B5437F0A23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DE731667-B436-45F6-A54B-D1B5437F0A23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE731667-B436-45F6-A54B-D1B5437F0A23}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -67,19 +67,32 @@ Global
 		{91F5B21D-8172-4D35-9B7A-93C2D5C3F149}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91F5B21D-8172-4D35-9B7A-93C2D5C3F149}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91F5B21D-8172-4D35-9B7A-93C2D5C3F149}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57212585-1250-4B63-B256-D1228047CDEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57212585-1250-4B63-B256-D1228047CDEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57212585-1250-4B63-B256-D1228047CDEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57212585-1250-4B63-B256-D1228047CDEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72288FB2-FD03-4080-9DBC-B0A5337DD2C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72288FB2-FD03-4080-9DBC-B0A5337DD2C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72288FB2-FD03-4080-9DBC-B0A5337DD2C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72288FB2-FD03-4080-9DBC-B0A5337DD2C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D8A500A-9691-49AF-B485-593BD8938922}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D8A500A-9691-49AF-B485-593BD8938922}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D8A500A-9691-49AF-B485-593BD8938922}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D8A500A-9691-49AF-B485-593BD8938922}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{0A05A7DA-283C-4672-9395-C6EE99B17A54} = {45C0E0A9-E308-4482-8E4B-D6C42E47F2BD}
-		{C494EB43-6F09-4A7B-9503-4BF38FDFD16C} = {45C0E0A9-E308-4482-8E4B-D6C42E47F2BD}
-		{056530EB-C480-4599-BA94-8288605BC668} = {45C0E0A9-E308-4482-8E4B-D6C42E47F2BD}
 		{DE731667-B436-45F6-A54B-D1B5437F0A23} = {2B9AD400-FD6A-4280-815B-33D72D5D6BF8}
 		{FEE63EAF-1758-46B7-ACA7-13974BA2C5F3} = {2B9AD400-FD6A-4280-815B-33D72D5D6BF8}
 		{7C39E1A3-53A3-43C8-9053-0E404FA157A6} = {2B9AD400-FD6A-4280-815B-33D72D5D6BF8}
 		{61D37C8B-9D30-4E56-998B-BBFCC3F5DD5F} = {2B9AD400-FD6A-4280-815B-33D72D5D6BF8}
-		{91F5B21D-8172-4D35-9B7A-93C2D5C3F149} = {60E6F5A3-7D32-4E90-AAEF-5AC51E1C1718}
+		{91F5B21D-8172-4D35-9B7A-93C2D5C3F149} = {A7C16453-A782-4204-B3F1-FB91C826B508}
+		{57212585-1250-4B63-B256-D1228047CDEE} = {A7C16453-A782-4204-B3F1-FB91C826B508}
+		{72288FB2-FD03-4080-9DBC-B0A5337DD2C1} = {A7C16453-A782-4204-B3F1-FB91C826B508}
+		{A7C16453-A782-4204-B3F1-FB91C826B508} = {60E6F5A3-7D32-4E90-AAEF-5AC51E1C1718}
+		{7D8A500A-9691-49AF-B485-593BD8938922} = {A7C16453-A782-4204-B3F1-FB91C826B508}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DB427DFF-78EE-4F04-A938-5D6762870AAD}

@@ -54,13 +54,6 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interfaces\IAttachable.cs" />
-    <Compile Include="Interfaces\IConnectable.cs" />
-    <Compile Include="Interfaces\ISummarizable.cs" />
-    <Compile Include="Interfaces\ITrackable.cs" />
-    <Compile Include="Logging\MultiLogger.cs" />
-    <Compile Include="Models\Influence.cs" />
-    <Compile Include="Models\BaseObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -68,6 +61,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Extensions\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Logging\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

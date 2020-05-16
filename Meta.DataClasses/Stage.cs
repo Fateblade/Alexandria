@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
-namespace Alexandria.WPF.Models.Meta
+namespace Fateblade.Alexandria.CrossCutting.Meta.DataClasses
 {
     public class Stage : BaseObject, ISummarizable
     {
