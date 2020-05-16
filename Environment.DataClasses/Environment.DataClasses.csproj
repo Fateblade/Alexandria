@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Fateblade.Alexandria.CrossCutting.Environment.DataClasses</RootNamespace>
+    <AssemblyName>Alexandria.Environment.DataClasses</AssemblyName>
+  </PropertyGroup>
+
+</Project>

@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Fateblade.Alexandria.UI.WPF.Base</RootNamespace>
+    <AssemblyName>Alexandria.UI.WPF.Base</AssemblyName>
+  </PropertyGroup>
+
+</Project>
