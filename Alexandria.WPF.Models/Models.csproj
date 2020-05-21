@@ -10,7 +10,6 @@
     <Folder Include="Entities\" />
     <Folder Include="Environment\" />
     <Folder Include="Gear\" />
-    <Folder Include="Meta\" />
   </ItemGroup>
 
   <ItemGroup>

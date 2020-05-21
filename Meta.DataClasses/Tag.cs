@@ -1,12 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using Fateblade.Components.CrossCutting.Base.Identifiable.DataClasses;
 
 namespace Fateblade.Alexandria.CrossCutting.Meta.DataClasses
 {
-    public class Tag
+    public class Tag : IIdentifiableGuidEntity
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
+        public Guid AssociatedObject { get; set; }
         public string Name { get; set; }
         public string ColorCode { get; set; }
     }

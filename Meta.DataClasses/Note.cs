@@ -1,8 +1,9 @@
-﻿using System;
+﻿using Fateblade.Components.CrossCutting.Base.Identifiable.DataClasses;
+using System;
 
 namespace Fateblade.Alexandria.CrossCutting.Meta.DataClasses
 {
-    public class Note
+    public class Note : IIdentifiableGuidEntity
     {
         public Guid Id { get; set; }
         public Guid AssociatedObject { get; set; }

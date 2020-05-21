@@ -5,4 +5,10 @@
     <RootNamespace>Fateblade.Alexandria.CrossCutting.Meta.DataClasses</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="Components.CrossCutting.Base.Identifiable.DataClasses">
+      <HintPath>..\..\testspace_dsa\_ExternalComponents\Components.CrossCutting.Base.Identifiable.DataClasses.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

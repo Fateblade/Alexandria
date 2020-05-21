@@ -1,7 +1,11 @@
-﻿namespace Fateblade.Alexandria.CrossCutting.Meta.DataClasses
+﻿using System;
+using Fateblade.Components.CrossCutting.Base.Identifiable.DataClasses;
+
+namespace Fateblade.Alexandria.CrossCutting.Meta.DataClasses
 {
-    public class Todo
+    public class Todo : IIdentifiableGuidEntity
     {
+        public Guid Id { get; set; }
         public string Type { get; set; }
         public string Description { get; set; }
         public string Summary { get; set; }

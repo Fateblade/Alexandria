@@ -1,42 +1,16 @@
-﻿using System.Collections.Generic;
+﻿using Fateblade.Components.CrossCutting.Base.Identifiable.DataClasses;
+using System;
+using System.Collections.Generic;
 
 namespace Fateblade.Alexandria.CrossCutting.Meta.DataClasses
 {
-    public class Player : BaseObject
+    public class Player : IIdentifiableGuidEntity
     {
-        private string _Name;
-        public string Name
-        {
-            get { return _Name; }
-            set { SetProperty(ref _Name, value); }
-        }
-
-        private List<TextInfo> _NoGos;
-        public List<TextInfo> NoGos
-        {
-            get { return _NoGos; }
-            set { SetProperty(ref _NoGos, value); }
-        }
-
-        private string _GenderPronoun;
-        public string GenderPronoun
-        {
-            get { return _GenderPronoun; }
-            set { SetProperty(ref _GenderPronoun, value); }
-        }
-
-        private List<TextInfo> _Likes;
-        public List<TextInfo> Likes
-        {
-            get { return _Likes; }
-            set { SetProperty(ref _Likes, value); }
-        }
-
-        private List<TextInfo> _Dislikes;
-        public List<TextInfo> Dislikes
-        {
-            get { return _Dislikes; }
-            set { SetProperty(ref _Dislikes, value); }
-        }
+        public Guid Id { get; set; }
+        public string Name { get; set; }
+        public List<Guid> NoGoIds { get; set; } = new List<Guid>();
+        public string GenderPronoun { get; set; }
+        public List<Guid> LikeIds { get; set; } = new List<Guid>();
+        public List<Guid> DislikeIds { get; set; } = new List<Guid>();
     }
 }
