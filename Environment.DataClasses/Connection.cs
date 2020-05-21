@@ -1,15 +1,17 @@
 ﻿using System;
+using Fateblade.Components.CrossCutting.Base.Identifiable.DataClasses;
 
 namespace Fateblade.Alexandria.CrossCutting.Environment.DataClasses
 {
-    public class Connection
+    public class Connection : IIdentifiableGuidEntity
     {
-        public int ConnectionStatusID { get; set; }
-        public int ConnectionDirectionTypeID { get; set; }
+        public Guid Id { get; set; }
+        public ConnectionStatus ConnectionStatus { get; set; }
+        public ConnectionDirectionType ConnectionDirectionType { get; set; }
         public string ConnenctionType { get; set; }
         public string Description { get; set; }
         public string Summary { get; set; }
-        public Guid SourceID { get; set; }
-        public Guid TargetID { get; set; }
+        public Guid SourceObjectId { get; set; }
+        public Guid TargetObjectId { get; set; }
     }
 }

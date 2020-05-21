@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Fateblade.Alexandria.CrossCutting.Environment.DataClasses.TimeRework;
 
 namespace Fateblade.Alexandria.CrossCutting.Environment.DataClasses
 {
