@@ -5,4 +5,8 @@
     <RootNamespace>Fateblade.Alexandria.CrossCutting.Gear.DataClasses</RootNamespace>
   </PropertyGroup>
 
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy &quot;$(TargetDir)*.*&quot; &quot;D:\Github\testspace_dsa\_ExternalComponents&quot; /F /R /I /E /Y" />
+  </Target>
+
 </Project>
