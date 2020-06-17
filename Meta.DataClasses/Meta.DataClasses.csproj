@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>Fateblade.Alexandria.CrossCutting.Meta.DataClasses</RootNamespace>
+    <AssemblyName>Alexandria.Meta.DataClasses</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
