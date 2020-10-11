@@ -21,13 +21,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{60E6F5A3-7D32-
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Alexandria.WPF.Models\Models.csproj", "{91F5B21D-8172-4D35-9B7A-93C2D5C3F149}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "WPF\Client.csproj", "{57212585-1250-4B63-B256-D1228047CDEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "WPF\Client.csproj", "{57212585-1250-4B63-B256-D1228047CDEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controls", "WPF.Controls\Controls.csproj", "{72288FB2-FD03-4080-9DBC-B0A5337DD2C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Controls", "WPF.Controls\Controls.csproj", "{72288FB2-FD03-4080-9DBC-B0A5337DD2C1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WPF", "WPF", "{A7C16453-A782-4204-B3F1-FB91C826B508}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Base", "WPF.Base\Base.csproj", "{7D8A500A-9691-49AF-B485-593BD8938922}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Base", "WPF.Base\Base.csproj", "{7D8A500A-9691-49AF-B485-593BD8938922}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_ExternalLibraries", "_ExternalLibraries", "{86504E24-8C9F-4ABE-841C-C06FA95B1491}"
 	ProjectSection(SolutionItems) = preProject
@@ -40,6 +40,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_ExternalLibraries", "_Exte
 		_ExternalLibraries\Components.Data.GenericDataStoring.Contract.dll = _ExternalLibraries\Components.Data.GenericDataStoring.Contract.dll
 		_ExternalLibraries\Components.Data.GenericDataStoring.NewtonsoftJson.dll = _ExternalLibraries\Components.Data.GenericDataStoring.NewtonsoftJson.dll
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{8A515BF1-155C-435F-87E6-77823F48B086}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Meta.Dice", "Meta.Dice\Meta.Dice.csproj", "{05430B27-CF22-4957-9DFD-94B2C7C7A570}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Meta.Dice.Contract", "Meta.Dice.Contract\Meta.Dice.Contract.csproj", "{6411AD6E-3860-4E8D-97F6-20E023795367}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -79,6 +85,14 @@ Global
 		{7D8A500A-9691-49AF-B485-593BD8938922}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D8A500A-9691-49AF-B485-593BD8938922}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D8A500A-9691-49AF-B485-593BD8938922}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05430B27-CF22-4957-9DFD-94B2C7C7A570}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05430B27-CF22-4957-9DFD-94B2C7C7A570}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05430B27-CF22-4957-9DFD-94B2C7C7A570}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05430B27-CF22-4957-9DFD-94B2C7C7A570}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6411AD6E-3860-4E8D-97F6-20E023795367}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6411AD6E-3860-4E8D-97F6-20E023795367}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6411AD6E-3860-4E8D-97F6-20E023795367}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6411AD6E-3860-4E8D-97F6-20E023795367}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -93,6 +107,9 @@ Global
 		{72288FB2-FD03-4080-9DBC-B0A5337DD2C1} = {A7C16453-A782-4204-B3F1-FB91C826B508}
 		{A7C16453-A782-4204-B3F1-FB91C826B508} = {60E6F5A3-7D32-4E90-AAEF-5AC51E1C1718}
 		{7D8A500A-9691-49AF-B485-593BD8938922} = {A7C16453-A782-4204-B3F1-FB91C826B508}
+		{8A515BF1-155C-435F-87E6-77823F48B086} = {D2FE1D30-2164-49C7-80BD-07329DF753BE}
+		{05430B27-CF22-4957-9DFD-94B2C7C7A570} = {8A515BF1-155C-435F-87E6-77823F48B086}
+		{6411AD6E-3860-4E8D-97F6-20E023795367} = {8A515BF1-155C-435F-87E6-77823F48B086}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DB427DFF-78EE-4F04-A938-5D6762870AAD}
