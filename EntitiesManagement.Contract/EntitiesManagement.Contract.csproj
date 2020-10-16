@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Alexandria.Logic.Domain.EntitiesManagement.Contract</AssemblyName>
+    <RootNamespace>Fateblade.Alexandria.Logic.Domain.EntitiesManagement.Contract</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Entities.DataClasses\Entities.DataClasses.csproj" />
+  </ItemGroup>
+
+</Project>

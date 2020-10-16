@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Alexandria.Logic.Domain.GearManagement.Contract</AssemblyName>
+    <RootNamespace>Fateblade.Alexandria.Logic.Domain.GearManagement.Contract</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gear.DataClasses\Gear.DataClasses.csproj" />
+  </ItemGroup>
+
+</Project>
