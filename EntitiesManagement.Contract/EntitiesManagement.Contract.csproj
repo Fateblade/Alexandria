@@ -10,4 +10,8 @@
     <ProjectReference Include="..\Entities.DataClasses\Entities.DataClasses.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Messages\" />
+  </ItemGroup>
+
 </Project>
