@@ -3,6 +3,6 @@
     public class Monster : Entity
     {
         public string Type { get; set; }
-        public override int RelationCategoryID => (int)RelationCategory.Monster;
+        public override int RelationCategoryId => (int)RelationCategory.Monster;
     }
 }

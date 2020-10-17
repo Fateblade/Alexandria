@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using Fateblade.Components.CrossCutting.Base.Identifiable.DataClasses;
 
 namespace Fateblade.Alexandria.CrossCutting.Entities.DataClasses
 {
-    public abstract class Entity
+    public abstract class Entity : IIdentifiableGuidEntity
     {
-        public Guid ID { get; set; }
+        public Guid Id { get; set; }
 
         public string Name { get; set; }
         public string Description { get; set; }
@@ -13,12 +14,12 @@ namespace Fateblade.Alexandria.CrossCutting.Entities.DataClasses
         public string Statistics { get; set; }
 
         //properties - cross reference meta
-        public int SystemID { get; set; }
+        public Guid SystemId { get; set; }
 
         //properties - cross reference items
-        public List<int> ItemIDs { get; set; }
+        public List<Guid> ItemIds { get; set; }
         //properties - cross links
-        public abstract int RelationCategoryID { get; }
+        public abstract int RelationCategoryId { get; }
 
     }
 }

@@ -10,4 +10,10 @@
     <Exec Command="xcopy &quot;$(TargetDir)*.*&quot; &quot;D:\Github\testspace_dsa\_ExternalComponents&quot; /F /R /I /E /Y" />
   </Target>
 
+  <ItemGroup>
+    <Reference Include="Components.CrossCutting.Base.Identifiable.DataClasses">
+      <HintPath>..\_ExternalLibraries\Components.CrossCutting.Base.Identifiable.DataClasses.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

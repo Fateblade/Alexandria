@@ -3,6 +3,6 @@
     public class PlayerCharacter : Character
     {
         public int ControllingPlayerID { get; set; }
-        public override int RelationCategoryID => (int)RelationCategory.PC;
+        public override int RelationCategoryId => (int)RelationCategory.PC;
     }
 }

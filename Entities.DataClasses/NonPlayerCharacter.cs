@@ -2,6 +2,6 @@
 {
     public class NonPlayerCharacter : Character
     {
-        public override int RelationCategoryID => (int)RelationCategory.NPC;
+        public override int RelationCategoryId => (int)RelationCategory.NPC;
     }
 }
