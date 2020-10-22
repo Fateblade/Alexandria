@@ -6,6 +6,7 @@ namespace Fateblade.Alexandria.Logic.Domain.EntitiesManagement.Contract
 {
     public interface IPantheonManager
     {
+        IQueryable<Pantheon> GetAllOfWorld(Guid worldId);
         IQueryable<Pantheon> GetPantheonsContainingDeity(Guid deityId);
         Pantheon Get(Guid pantheonId);
 

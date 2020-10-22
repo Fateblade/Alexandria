@@ -11,11 +11,13 @@ namespace Fateblade.Alexandria.CrossCutting.Environment.DataClasses
         public string Summary;
         public string Timeline;
         public Guid TrackerId;
-        public List<Guid> PlaneIds = new List<Guid>();
-        public List<Guid> PantheonIds = new List<Guid>();
-        public List<Guid> NpcIds = new List<Guid>();
-        public List<Guid> MonsterIds = new List<Guid>();
-        public List<Guid> FactionIds = new List<Guid>();
-        public List<Guid> GroupIds = new List<Guid>();
+        public List<Guid> PlaneIds { get; set; } = new List<Guid>();
+        public List<Guid> PantheonIds { get; set; } = new List<Guid>();
+        public List<Guid> NpcIds { get; set; } = new List<Guid>();
+        public List<Guid> MonsterIds { get; set; } = new List<Guid>();
+        public List<Guid> FactionIds { get; set; } = new List<Guid>();
+        public List<Guid> GroupIds { get; set; } = new List<Guid>();
+        public List<Guid> CharacterIds { get; set; } = new List<Guid>();
+        public List<Guid> NonPantheonDeityIds { get; set; } = new List<Guid>();
     }
 }

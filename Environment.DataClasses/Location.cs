@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Fateblade.Components.CrossCutting.Base.Identifiable.DataClasses;
+using System;
 using System.Collections.Generic;
 
 namespace Fateblade.Alexandria.CrossCutting.Environment.DataClasses
 {
-    public class Location
+    public class Location : IIdentifiableGuidEntity
     {
+        public Guid Id { get; set; }
         public List<Guid> ConnectionIds { get; set; } = new List<Guid>();
         public string Summary { get; set; }
         public string Features { get; set; }
