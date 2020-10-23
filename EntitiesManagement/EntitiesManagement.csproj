@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Fateblade.Alexandria.Logic.Domain.EntitiesManagement</RootNamespace>
+    <AssemblyName>Alexandria.Logic.Domain.EntitiesManagement</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Entities.DataClasses\Entities.DataClasses.csproj" />
+    <ProjectReference Include="..\EntitiesManagement.Contract\EntitiesManagement.Contract.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="CoCo.Core.Contract">
+      <HintPath>..\..\CoCo2.0\CoCo.Core.Contract\bin\Debug\netstandard2.0\CoCo.Core.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="Components.Data.GenericDataStoring.Contract">
+      <HintPath>..\_ExternalLibraries\Components.Data.GenericDataStoring.Contract.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
