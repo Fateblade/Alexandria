@@ -6,6 +6,7 @@ namespace Fateblade.Alexandria.Logic.Domain.EntitiesManagement.Contract
 {
     public interface IRelationManager
     {
+        IQueryable<Relation> GetAll(Guid sourceEntityId);
         IQueryable<Relation> GetAllForSourceEntity(Guid sourceEntityId);
         IQueryable<Relation> GetAllForTargetEntity(Guid targetEntityId);
         Relation Get(Guid relationId);

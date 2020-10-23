@@ -8,9 +8,9 @@ namespace Fateblade.Alexandria.CrossCutting.Meta.DataClasses
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
-        public List<Guid> NoGoIds { get; set; } = new List<Guid>();
+        public List<Guid> NoGoTextInfoIds { get; set; } = new List<Guid>();
         public string GenderPronoun { get; set; }
-        public List<Guid> LikeIds { get; set; } = new List<Guid>();
-        public List<Guid> DislikeIds { get; set; } = new List<Guid>();
+        public List<Guid> LikeTextInfoIds { get; set; } = new List<Guid>();
+        public List<Guid> DislikeTextInfoIds { get; set; } = new List<Guid>();
     }
 }

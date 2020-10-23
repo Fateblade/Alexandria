@@ -6,6 +6,7 @@ namespace Fateblade.Alexandria.Logic.Domain.EnvironmentManagement.Contract
 {
     public interface IInfluenceManager
     {
+        IQueryable<Influence> GetAll();
         IQueryable<Influence> GetAllForInfluencedObject(Guid objectId);
         IQueryable<Influence> GetAllInfluencedByObject(Guid objectId);
         IQueryable<Influence> GetAllForObject(Guid objectId);

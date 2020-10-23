@@ -6,6 +6,7 @@ namespace Fateblade.Alexandria.Logic.Domain.EntitiesManagement.Contract
 {
     public interface IFactionManager
     {
+        IQueryable<Faction> GetAll();
         IQueryable<Faction> GetAllOfWorld(Guid worldId);
         Faction Get(Guid factionId);
 

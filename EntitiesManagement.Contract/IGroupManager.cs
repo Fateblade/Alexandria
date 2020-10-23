@@ -6,6 +6,7 @@ namespace Fateblade.Alexandria.Logic.Domain.EntitiesManagement.Contract
 {
     public interface IGroupManager
     {
+        IQueryable<Group> GetAll();
         IQueryable<Group> GetAllOfWorld(Guid worldId);
         Group Get(Guid groupId);
 

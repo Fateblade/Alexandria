@@ -6,6 +6,7 @@ namespace Fateblade.Alexandria.Logic.Domain.EnvironmentManagement.Contract
 {
     public interface IConnectionManager
     {
+        IQueryable<Connection> GetAll();
         IQueryable<Connection> GetAllForSourceObject(Guid sourceObjectId);
         IQueryable<Connection> GetAllForTargetObject(Guid targetObjectId);
         IQueryable<Connection> GetAllForObject(Guid objectId);

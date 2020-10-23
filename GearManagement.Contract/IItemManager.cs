@@ -6,7 +6,8 @@ namespace Fateblade.Alexandria.Logic.Domain.GearManagement.Contract
 {
     public interface IItemManager
     {
-        IQueryable<Item> GetAllOwnedByObject(Guid item);
+        IQueryable<Item> GetAll();
+        IQueryable<Item> GetAllOwnedByObject(Guid objectId);
         Item Get(Guid influenceId);
 
         void Update(Item item);

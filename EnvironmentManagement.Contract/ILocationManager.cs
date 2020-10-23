@@ -6,6 +6,7 @@ namespace Fateblade.Alexandria.Logic.Domain.EnvironmentManagement.Contract
 {
     public interface ILocationManager
     {
+        IQueryable<Location> GetAll();
         IQueryable<Location> GetSubLocationsOf(Guid locationId);
         Location Get(Guid locationId);
 

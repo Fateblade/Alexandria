@@ -6,6 +6,7 @@ namespace Fateblade.Alexandria.Logic.Domain.EnvironmentManagement.Contract
 {
     public interface IPlaneManager
     {
+        IQueryable<Plane> GetAll();
         IQueryable<Plane> GetAllPlanesOfWorld(Guid worldId);
         Plane Get(Guid planeId);
 

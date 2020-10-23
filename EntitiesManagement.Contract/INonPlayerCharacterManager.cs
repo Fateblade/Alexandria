@@ -6,6 +6,7 @@ namespace Fateblade.Alexandria.Logic.Domain.EntitiesManagement.Contract
 {
     public interface INonPlayerCharacterManager
     {
+        IQueryable<NonPlayerCharacter> GetAll(Guid worldId);
         IQueryable<NonPlayerCharacter> GetAllOfWorld(Guid worldId);
         NonPlayerCharacter Get(Guid npcId);
 

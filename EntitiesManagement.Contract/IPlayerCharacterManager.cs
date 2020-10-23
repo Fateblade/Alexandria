@@ -6,7 +6,9 @@ namespace Fateblade.Alexandria.Logic.Domain.EntitiesManagement.Contract
 {
     public interface IPlayerCharacterManager
     {
-        IQueryable<NonPlayerCharacter> GetAllOfWorld(Guid worldId);
+        IQueryable<PlayerCharacter> GetAll();
+        IQueryable<PlayerCharacter> GetParticipatingCharactersOfAdventure(Guid adventureId);
+        IQueryable<PlayerCharacter> GetAllOfWorld(Guid worldId);
         PlayerCharacter Get(Guid characterId);
 
         void Update(PlayerCharacter character);

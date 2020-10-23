@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Fateblade.Alexandria.CrossCutting.Meta.DataClasses
 {
-    public enum EncounterType { Fight, Social, Exploration, Other}
+    public enum EncounterType { Fight, Social, Exploration, Other }
     public enum EncounterState { Success, Failure, Unexplored, NeutralOutcome }
 
     public class Encounter : IIdentifiableGuidEntity
@@ -15,7 +15,7 @@ namespace Fateblade.Alexandria.CrossCutting.Meta.DataClasses
         public List<Guid> ParticipatingNpcIds { get; set; } = new List<Guid>();
         public string Description { get; set; }
         public string Summary { get; set; }
-        public string Reward { get; set; }
+        public Guid RewardId { get; set; }
         public string ConsequenceSuccess { get; set; }
         public string ConsequenceFailure { get; set; }
         public EncounterState State { get; set; }
