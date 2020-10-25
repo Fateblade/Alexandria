@@ -10,7 +10,7 @@ namespace Fateblade.Alexandria.Logic.Domain.MetaManagement.Contract
         Player Get(Guid playerId);
 
         void Update(Player player);
-        void Remove(Player player);
+        void Delete(Player player);
         void Add(Player player);
     }
 }

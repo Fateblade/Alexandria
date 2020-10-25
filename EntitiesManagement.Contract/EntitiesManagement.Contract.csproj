@@ -2,12 +2,18 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>Alexandria.Logic.Domain.EntitiesManagement.Contract</AssemblyName>
-    <RootNamespace>Fateblade.Alexandria.Logic.Domain.EntitiesManagement.Contract</RootNamespace>
+    <AssemblyName>Alexandria.Logic.Domain.Entities.EntitiesManagement.Contract</AssemblyName>
+    <RootNamespace>Fateblade.Alexandria.Logic.Domain.Entities.EntitiesManagement.Contract</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Entities.DataClasses\Entities.DataClasses.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="CoCo.Core.Contract">
+      <HintPath>..\..\CoCo2.0\CoCo.Core.Contract\bin\Debug\netstandard2.0\CoCo.Core.Contract.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

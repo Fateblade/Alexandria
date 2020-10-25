@@ -10,7 +10,7 @@ namespace Fateblade.Alexandria.Logic.Domain.MetaManagement.Contract
         Session Get(Guid sessionId);
 
         void Update(Session session);
-        void Remove(Session session);
+        void Delete(Session session);
         void Add(Session session);
     }
 }

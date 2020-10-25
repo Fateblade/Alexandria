@@ -11,7 +11,7 @@ namespace Fateblade.Alexandria.Logic.Domain.MetaManagement.Contract
         Link Get(Guid linkId);
 
         void Update(Link link);
-        void Remove(Link link);
+        void Delete(Link link);
         void Add(Link link);
     }
 }

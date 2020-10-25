@@ -6,7 +6,7 @@ namespace Fateblade.Alexandria.UI.WPF.Base.Interfaces
     {
         List<T> Attached { get; }
         void Add(T element);
-        void Remove(T element);
+        void Delete(T element);
         IEnumerable<T> GetList();
     }
 }

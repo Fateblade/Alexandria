@@ -1,9 +1,12 @@
 ﻿using Fateblade.Alexandria.CrossCutting.Environment.DataClasses;
 using System;
 using System.Linq;
+using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.Aspects;
+using Fateblade.Alexandria.Logic.Domain.EnvironmentManagement.Contract.Exceptions;
 
 namespace Fateblade.Alexandria.Logic.Domain.EnvironmentManagement.Contract
 {
+    [MapException(typeof(EnvironmentManagementException))]
     public interface IConnectionManager
     {
         IQueryable<Connection> GetAll();
@@ -13,7 +16,7 @@ namespace Fateblade.Alexandria.Logic.Domain.EnvironmentManagement.Contract
         Connection Get(Guid connectionId);
 
         void Update(Connection connection);
-        void Remove(Connection connection);
+        void Delete(Connection connection);
         void Add(Connection connection);
     }
 }

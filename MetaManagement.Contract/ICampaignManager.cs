@@ -10,7 +10,7 @@ namespace Fateblade.Alexandria.Logic.Domain.MetaManagement.Contract
         Campaign Get(Guid campaignId);
 
         void Update(Campaign campaign);
-        void Remove(Campaign campaign);
+        void Delete(Campaign campaign);
         void Add(Campaign campaign);
     }
 }

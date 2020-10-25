@@ -12,7 +12,7 @@ namespace Fateblade.Alexandria.Logic.Domain.MetaManagement.Contract
         Stage Get(Guid stageId);
 
         void Update(Stage stage);
-        void Remove(Stage stage);
+        void Delete(Stage stage);
         void Add(Stage stage);
     }
 }

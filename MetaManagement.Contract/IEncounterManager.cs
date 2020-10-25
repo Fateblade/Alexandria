@@ -12,7 +12,7 @@ namespace Fateblade.Alexandria.Logic.Domain.MetaManagement.Contract
         Encounter Get(Guid encounterId);
 
         void Update(Encounter encounter);
-        void Remove(Encounter encounter);
+        void Delete(Encounter encounter);
         void Add(Encounter encounter);
     }
 }

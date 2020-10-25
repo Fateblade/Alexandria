@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>Fateblade.Alexandria.Logic.Domain.EntitiesManagement</RootNamespace>
-    <AssemblyName>Alexandria.Logic.Domain.EntitiesManagement</AssemblyName>
+    <RootNamespace>Fateblade.Alexandria.Logic.Domain.Entities.EntitiesManagement</RootNamespace>
+    <AssemblyName>Alexandria.Logic.Domain.Entities.EntitiesManagement</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,6 +14,9 @@
   <ItemGroup>
     <Reference Include="CoCo.Core.Contract">
       <HintPath>..\..\CoCo2.0\CoCo.Core.Contract\bin\Debug\netstandard2.0\CoCo.Core.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="Components.CrossCutting.Base.Identifiable.DataClasses">
+      <HintPath>..\_ExternalLibraries\Components.CrossCutting.Base.Identifiable.DataClasses.dll</HintPath>
     </Reference>
     <Reference Include="Components.Data.GenericDataStoring.Contract">
       <HintPath>..\_ExternalLibraries\Components.Data.GenericDataStoring.Contract.dll</HintPath>

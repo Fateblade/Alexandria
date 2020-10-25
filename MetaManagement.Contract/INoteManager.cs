@@ -11,7 +11,7 @@ namespace Fateblade.Alexandria.Logic.Domain.MetaManagement.Contract
         Note Get(Guid noteId);
 
         void Update(Note note);
-        void Remove(Note note);
+        void Delete(Note note);
         void Add(Note note);
     }
 }

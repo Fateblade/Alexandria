@@ -11,7 +11,7 @@ namespace Fateblade.Alexandria.Logic.Domain.MetaManagement.Contract
         Adventure Get(Guid adventureId);
 
         void Update(Adventure adventure);
-        void Remove(Adventure adventure);
+        void Delete(Adventure adventure);
         void Add(Adventure adventure);
     }
 }

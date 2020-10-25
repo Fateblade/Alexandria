@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Fateblade.Alexandria.Logic.Domain.EntitiesManagement.Contract.Exceptions
+namespace Fateblade.Alexandria.Logic.Domain.Entities.EntitiesManagement.Contract.Exceptions
 {
 
     [Serializable]

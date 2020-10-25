@@ -11,7 +11,7 @@ namespace Fateblade.Alexandria.Logic.Domain.MetaManagement.Contract
         TextInfo Get(Guid textInfoId);
 
         void Update(TextInfo textInfo);
-        void Remove(TextInfo textInfo);
+        void Delete(TextInfo textInfo);
         void Add(TextInfo textInfo);
     }
 }

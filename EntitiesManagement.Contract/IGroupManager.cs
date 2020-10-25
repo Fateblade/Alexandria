@@ -1,17 +1,19 @@
-﻿using Fateblade.Alexandria.CrossCutting.Entities.DataClasses;
-using System;
+﻿using System;
 using System.Linq;
+using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.Aspects;
+using Fateblade.Alexandria.CrossCutting.Entities.DataClasses;
+using Fateblade.Alexandria.Logic.Domain.Entities.EntitiesManagement.Contract.Exceptions;
 
-namespace Fateblade.Alexandria.Logic.Domain.EntitiesManagement.Contract
+namespace Fateblade.Alexandria.Logic.Domain.Entities.EntitiesManagement.Contract
 {
+    [MapException(typeof(EntityManagementExceptionException))]
     public interface IGroupManager
     {
         IQueryable<Group> GetAll();
-        IQueryable<Group> GetAllOfWorld(Guid worldId);
         Group Get(Guid groupId);
 
         void Update(Group group);
-        void Remove(Faction group);
+        void Delete(Faction group);
         void Add(Faction group);
     }
 }

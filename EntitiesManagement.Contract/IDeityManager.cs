@@ -1,19 +1,20 @@
-﻿using Fateblade.Alexandria.CrossCutting.Entities.DataClasses;
-using System;
+﻿using System;
 using System.Linq;
+using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.Aspects;
+using Fateblade.Alexandria.CrossCutting.Entities.DataClasses;
+using Fateblade.Alexandria.Logic.Domain.Entities.EntitiesManagement.Contract.Exceptions;
 
-namespace Fateblade.Alexandria.Logic.Domain.EntitiesManagement.Contract
+namespace Fateblade.Alexandria.Logic.Domain.Entities.EntitiesManagement.Contract
 {
+    [MapException(typeof(EntityManagementExceptionException))]
     public interface IDeityManager
     {
         IQueryable<Deity> GetAll();
-        IQueryable<Deity> GetAllNonPantheonDeitiesOfWorld(Guid worldId);
-        IQueryable<Deity> GetAllDeitiesOfPlane(Guid homeplaneId);
-        IQueryable<Deity> GetAllDeitiesOfPantheon(Guid pantheon);
+        IQueryable<Deity> GetAllDeitiesOfPantheon(Guid pantheonId);
         Deity Get(Guid deityId);
 
         void Update(Deity deity);
-        void Remove(Deity deity);
+        void Delete(Deity deity);
         void Add(Deity deity);
     }
 }
