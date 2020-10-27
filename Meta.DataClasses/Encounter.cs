@@ -4,9 +4,6 @@ using System.Collections.Generic;
 
 namespace Fateblade.Alexandria.CrossCutting.Meta.DataClasses
 {
-    public enum EncounterType { Fight, Social, Exploration, Other }
-    public enum EncounterState { Success, Failure, Unexplored, NeutralOutcome }
-
     public class Encounter : IIdentifiableGuidEntity
     {
         public Guid Id { get; set; }

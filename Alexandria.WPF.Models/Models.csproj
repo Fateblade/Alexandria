@@ -7,13 +7,20 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Entities\" />
-    <Folder Include="Environment\" />
-    <Folder Include="Gear\" />
+    <PackageReference Include="Prism.Core" Version="7.2.0.1367" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Prism.Core" Version="7.2.0.1367" />
+    <ProjectReference Include="..\Entities.DataClasses\Entities.DataClasses.csproj" />
+    <ProjectReference Include="..\Environment.DataClasses\Environment.DataClasses.csproj" />
+    <ProjectReference Include="..\Gear.DataClasses\Gear.DataClasses.csproj" />
+    <ProjectReference Include="..\Meta.DataClasses\Meta.DataClasses.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Components.CrossCutting.Base.Identifiable.DataClasses">
+      <HintPath>..\_ExternalLibraries\Components.CrossCutting.Base.Identifiable.DataClasses.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

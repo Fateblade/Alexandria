@@ -8,7 +8,8 @@ namespace Fateblade.Alexandria.CrossCutting.Environment.DataClasses
     {
         public Guid Id { get; set; }
         public Guid InfluencedObjectId { get; set; }
-        public List<Guid> InfluencingObjectIds { get; set; } = new List<Guid>();
+        public string InfluencedObjectType { get; set; }
+        public List<Influencer> InfluencingObjectIds { get; set; } = new List<Influencer>();
         public string Summary { get; set; }
         public string Description { get; set; }
         public TrackableDateStamp TimeOfInfluence { get; set; }

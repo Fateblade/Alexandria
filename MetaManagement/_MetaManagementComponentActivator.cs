@@ -45,6 +45,7 @@ namespace Fateblade.Alexandria.Logic.Domain.MetaManagement
             kernel.Register<IStageManager, StageManager>();
             kernel.Register<ITagManager, TagManager>();
             kernel.Register<ITextInfoManager, TextInfoManager>();
+            kernel.Register<ITodoManager, TodoManager>();
         }
     }
 }

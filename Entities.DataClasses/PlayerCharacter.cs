@@ -1,8 +1,10 @@
-﻿namespace Fateblade.Alexandria.CrossCutting.Entities.DataClasses
+﻿using System;
+
+namespace Fateblade.Alexandria.CrossCutting.Entities.DataClasses
 {
     public class PlayerCharacter : Character
     {
-        public int ControllingPlayerID { get; set; }
+        public Guid ControllingPlayerId { get; set; }
         public override int RelationCategoryId => (int)RelationCategory.PC;
     }
 }

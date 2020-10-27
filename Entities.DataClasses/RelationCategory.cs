@@ -6,7 +6,7 @@
         NPC,
         Monster,
         Deity,
-        Item,
+        Item, //DirectReference#0001
         Group,
         Faction,
         Pantheon,

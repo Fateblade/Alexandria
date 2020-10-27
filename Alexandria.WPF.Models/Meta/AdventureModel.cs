@@ -1,62 +1,22 @@
-﻿namespace Fateblade.Alexandria.UI.WPF.Models.Meta
+﻿using Fateblade.Alexandria.CrossCutting.Meta.DataClasses;
+using Fateblade.Alexandria.UI.WPF.Models.Base;
+using Fateblade.Alexandria.UI.WPF.Models.Entities;
+using System.Collections.Generic;
+
+namespace Fateblade.Alexandria.UI.WPF.Models.Meta
 {
-    class AdventureModel
+    public class AdventureModel : ModifiableDataClassModel<Adventure>
     {
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public string Summary { get; set; }
+        public string AdditionalReward { get; set; }
+        public List<RewardModel> Rewards { get; set; } = new List<RewardModel>();
+        public List<PlayerCharacterModel> ParticipatingCharacters { get; set; } = new List<PlayerCharacterModel>();
+        public List<StageModel> Stages { get; set; } = new List<StageModel>();
 
-        //private void stages_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
-        //{
-        //    if (e.Action == System.Collections.Specialized.NotifyCollectionChangedAction.Reset)
-        //    {
-        //        recreateRewardList();
-        //        RewardSummary.Clear();
-        //    }
-        //    else if (e.Action == System.Collections.Specialized.NotifyCollectionChangedAction.Add)
-        //    {
-        //        foreach (Encounter element in e.NewItems)
-        //        {
-        //            element.PropertyChanged += encounterReward_PropertyChanged;
-        //        }
-        //        recreateRewardList();
-        //    }
-        //    else if (e.Action == System.Collections.Specialized.NotifyCollectionChangedAction.Replace)
-        //    {
-        //        foreach (Encounter element in e.OldItems ?? new List<Stage>())
-        //        {
-        //            element.PropertyChanged -= encounterReward_PropertyChanged;
-        //        }
-        //        foreach (Encounter element in e.NewItems)
-        //        {
-        //            element.PropertyChanged += encounterReward_PropertyChanged;
-        //        }
-        //        recreateRewardList();
-        //    }
-        //    else if (e.Action == System.Collections.Specialized.NotifyCollectionChangedAction.Remove)
-        //    {
-        //        foreach (Encounter element in e.OldItems)
-        //        {
-        //            element.PropertyChanged -= encounterReward_PropertyChanged;
-        //        }
-        //        recreateRewardList();
-        //    }
 
-        //}
 
-        //private void encounterReward_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
-        //{
-        //    if (e.PropertyName == "RewardSummary" || e.PropertyName == "AdditionalReward")
-        //    {
-        //        recreateRewardList();
-        //    }
-        //}
-
-        //private void recreateRewardList()
-        //{
-        //    RewardSummary.Clear();
-        //    foreach (var element in Stages)
-        //    {
-        //        RewardSummary.AddRange(element.RewardSummary);
-        //        RewardSummary.Add(element.AdditionalReward);
-        //    }
-        //}
+        public AdventureModel(Adventure original) : base(original) { }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace Fateblade.Alexandria.UI.WPF.Models
+﻿namespace Fateblade.Alexandria.UI.WPF.Models.Meta
 {
     public enum TodoType
     {

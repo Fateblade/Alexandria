@@ -7,6 +7,7 @@ namespace Fateblade.Alexandria.CrossCutting.Meta.DataClasses
     {
         public Guid Id { get; set; }
         public Guid AssociatedObject { get; set; }
+        public string AssociatedObjectType { get; set; }
         public string Name { get; set; }
         public string ColorCode { get; set; }
     }
