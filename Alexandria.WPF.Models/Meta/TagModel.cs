@@ -1,7 +1,7 @@
-﻿using System.Drawing;
-using Fateblade.Alexandria.CrossCutting.Meta.DataClasses;
-using Fateblade.Alexandria.UI.WPF.Models.Base;
+﻿using Fateblade.Alexandria.CrossCutting.Meta.DataClasses;
+using Fateblade.Alexandria.UI.WPF.Base;
 using Fateblade.Components.CrossCutting.Base.Identifiable.DataClasses;
+using System.Drawing;
 
 namespace Fateblade.Alexandria.UI.WPF.Models.Meta
 {

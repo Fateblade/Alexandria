@@ -1,5 +1,5 @@
 ﻿using Fateblade.Alexandria.CrossCutting.Environment.DataClasses;
-using Fateblade.Alexandria.UI.WPF.Models.Base;
+using Fateblade.Alexandria.UI.WPF.Base;
 using System.Collections.Generic;
 
 namespace Fateblade.Alexandria.UI.WPF.Models.Environment

@@ -1,8 +1,8 @@
 ﻿using Fateblade.Alexandria.CrossCutting.Environment.DataClasses;
-using Fateblade.Alexandria.UI.WPF.Models.Base;
+using Fateblade.Alexandria.UI.WPF.Base;
+using Fateblade.Alexandria.UI.WPF.Models.Entities;
 using System;
 using System.Collections.Generic;
-using Fateblade.Alexandria.UI.WPF.Models.Entities;
 
 namespace Fateblade.Alexandria.UI.WPF.Models.Environment
 {
