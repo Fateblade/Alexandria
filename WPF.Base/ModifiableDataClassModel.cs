@@ -1,13 +1,11 @@
-﻿using System;
-using Fateblade.Components.CrossCutting.Base.Identifiable.DataClasses;
+﻿using Fateblade.Components.CrossCutting.Base.Identifiable.DataClasses;
+using System;
 
-namespace Fateblade.Alexandria.UI.WPF.Models.Base
+namespace Fateblade.Alexandria.UI.WPF.Base
 {
     public abstract class ModifiableDataClassModel<TEntity> : Prism.Mvvm.BindableBase where TEntity : IIdentifiableGuidEntity
     {
         private Guid _id;
-
-
 
         public Guid Id
         {

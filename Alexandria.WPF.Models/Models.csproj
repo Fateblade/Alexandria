@@ -15,12 +15,17 @@
     <ProjectReference Include="..\Environment.DataClasses\Environment.DataClasses.csproj" />
     <ProjectReference Include="..\Gear.DataClasses\Gear.DataClasses.csproj" />
     <ProjectReference Include="..\Meta.DataClasses\Meta.DataClasses.csproj" />
+    <ProjectReference Include="..\WPF.Base\Base.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="Components.CrossCutting.Base.Identifiable.DataClasses">
       <HintPath>..\_ExternalLibraries\Components.CrossCutting.Base.Identifiable.DataClasses.dll</HintPath>
     </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Base\" />
   </ItemGroup>
 
 </Project>
