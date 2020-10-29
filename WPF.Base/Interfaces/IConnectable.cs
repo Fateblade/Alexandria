@@ -2,5 +2,6 @@
 {
     public interface IConnectable
     {
+        Guid Id { get; }
     }
 }
