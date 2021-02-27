@@ -9,7 +9,7 @@
     ".NETStandard,Version=v2.0/": {
       "Components.CrossCutting.Logging.Csv/1.0.0": {
         "dependencies": {
-          "CommonMessages.Contract": "1.0.0",
+          "Components.CrossCutting.CommonMessages.Contract": "1.0.0",
           "Components.CrossCutting.Logging.Contract": "1.0.0",
           "NETStandard.Library": "2.0.3",
           "CoCo.Core.Contract": "1.0.0.0"
@@ -24,9 +24,9 @@
           "Microsoft.NETCore.Platforms": "1.1.0"
         }
       },
-      "CommonMessages.Contract/1.0.0": {
+      "Components.CrossCutting.CommonMessages.Contract/1.0.0": {
         "runtime": {
-          "CommonMessages.Contract.dll": {}
+          "Components.CrossCutting.CommonMessages.Contract.dll": {}
         }
       },
       "Components.CrossCutting.Logging.Contract/1.0.0": {
@@ -64,7 +64,7 @@
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
-    "CommonMessages.Contract/1.0.0": {
+    "Components.CrossCutting.CommonMessages.Contract/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
