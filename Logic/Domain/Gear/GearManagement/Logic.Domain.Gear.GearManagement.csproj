@@ -2,13 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>Alexandria.Logic.Domain.EnvironmentManagement</AssemblyName>
-    <RootNamespace>Fateblade.Alexandria.Logic.Domain.EnvironmentManagement</RootNamespace>
+    <AssemblyName>Alexandria.Logic.Domain.GearManagement</AssemblyName>
+    <RootNamespace>Fateblade.Alexandria.Logic.Domain.GearManagement</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\CrossCutting\Environment.DataClasses\Environment.DataClasses.csproj" />
-    <ProjectReference Include="..\EnvironmentManagement.Contract\EnvironmentManagement.Contract.csproj" />
+    <ProjectReference Include="..\..\..\..\CrossCutting\Gear.DataClasses\CrossCutting.Gear.DataClasses.csproj" />
+    <ProjectReference Include="..\GearManagement.Contract\Logic.Domain.Gear.GearManagement.Contract.csproj" />
   </ItemGroup>
 
   <ItemGroup>

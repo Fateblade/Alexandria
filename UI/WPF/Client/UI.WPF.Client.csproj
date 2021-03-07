@@ -24,10 +24,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Base\Base.csproj" />
-    <ProjectReference Include="..\Controls\Controls.csproj" />
-    <ProjectReference Include="..\Converters\Converters.csproj" />
-    <ProjectReference Include="..\Models\Models.csproj" />
+    <ProjectReference Include="..\Base\UI.WPF.Base.csproj" />
+    <ProjectReference Include="..\Controls\UI.WPF.Controls.csproj" />
+    <ProjectReference Include="..\Converters\UI.WPF.Converters.csproj" />
+    <ProjectReference Include="..\Models\UI.WPF.Models.csproj" />
   </ItemGroup>
 
 </Project>

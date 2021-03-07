@@ -15,11 +15,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\CrossCutting\Entities.DataClasses\Entities.DataClasses.csproj" />
-    <ProjectReference Include="..\..\..\CrossCutting\Environment.DataClasses\Environment.DataClasses.csproj" />
-    <ProjectReference Include="..\..\..\CrossCutting\Gear.DataClasses\Gear.DataClasses.csproj" />
-    <ProjectReference Include="..\..\..\CrossCutting\Meta.DataClasses\Meta.DataClasses.csproj" />
-    <ProjectReference Include="..\Base\Base.csproj" />
+    <ProjectReference Include="..\..\..\CrossCutting\Entities.DataClasses\CrossCutting.Entities.DataClasses.csproj" />
+    <ProjectReference Include="..\..\..\CrossCutting\Environment.DataClasses\CrossCutting.Environment.DataClasses.csproj" />
+    <ProjectReference Include="..\..\..\CrossCutting\Gear.DataClasses\CrossCutting.Gear.DataClasses.csproj" />
+    <ProjectReference Include="..\..\..\CrossCutting\Meta.DataClasses\CrossCutting.Meta.DataClasses.csproj" />
+    <ProjectReference Include="..\Base\UI.WPF.Base.csproj" />
   </ItemGroup>
 
   <ItemGroup>

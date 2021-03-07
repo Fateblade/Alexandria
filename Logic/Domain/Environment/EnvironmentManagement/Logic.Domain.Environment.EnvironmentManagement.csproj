@@ -2,13 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>Fateblade.Alexandria.Logic.Domain.Entities.EntitiesManagement</RootNamespace>
-    <AssemblyName>Alexandria.Logic.Domain.Entities.EntitiesManagement</AssemblyName>
+    <AssemblyName>Alexandria.Logic.Domain.EnvironmentManagement</AssemblyName>
+    <RootNamespace>Fateblade.Alexandria.Logic.Domain.EnvironmentManagement</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\CrossCutting\Entities.DataClasses\Entities.DataClasses.csproj" />
-    <ProjectReference Include="..\EntitiesManagement.Contract\EntitiesManagement.Contract.csproj" />
+    <ProjectReference Include="..\..\..\..\CrossCutting\Environment.DataClasses\CrossCutting.Environment.DataClasses.csproj" />
+    <ProjectReference Include="..\EnvironmentManagement.Contract\Logic.Domain.Environment.EnvironmentManagement.Contract.csproj" />
   </ItemGroup>
 
   <ItemGroup>

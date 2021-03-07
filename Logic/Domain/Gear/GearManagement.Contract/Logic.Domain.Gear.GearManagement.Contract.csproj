@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\CrossCutting\Gear.DataClasses\Gear.DataClasses.csproj" />
+    <ProjectReference Include="..\..\..\..\CrossCutting\Gear.DataClasses\CrossCutting.Gear.DataClasses.csproj" />
   </ItemGroup>
 
 </Project>

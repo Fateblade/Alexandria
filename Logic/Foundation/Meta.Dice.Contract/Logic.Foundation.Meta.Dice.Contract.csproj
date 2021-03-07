@@ -11,7 +11,7 @@
   </Target>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\CrossCutting\Meta.DataClasses\Meta.DataClasses.csproj" />
+    <ProjectReference Include="..\..\..\CrossCutting\Meta.DataClasses\CrossCutting.Meta.DataClasses.csproj" />
   </ItemGroup>
 
 </Project>
