@@ -11,21 +11,21 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Entities.DataClasses\Entities.DataClasses.csproj" />
-    <ProjectReference Include="..\Environment.DataClasses\Environment.DataClasses.csproj" />
-    <ProjectReference Include="..\Gear.DataClasses\Gear.DataClasses.csproj" />
-    <ProjectReference Include="..\Meta.DataClasses\Meta.DataClasses.csproj" />
-    <ProjectReference Include="..\WPF.Base\Base.csproj" />
+    <Folder Include="Interfaces\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\CrossCutting\Entities.DataClasses\Entities.DataClasses.csproj" />
+    <ProjectReference Include="..\..\..\CrossCutting\Environment.DataClasses\Environment.DataClasses.csproj" />
+    <ProjectReference Include="..\..\..\CrossCutting\Gear.DataClasses\Gear.DataClasses.csproj" />
+    <ProjectReference Include="..\..\..\CrossCutting\Meta.DataClasses\Meta.DataClasses.csproj" />
+    <ProjectReference Include="..\Base\Base.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="Components.CrossCutting.Base.Identifiable.DataClasses">
-      <HintPath>..\_ExternalLibraries\Components.CrossCutting.Base.Identifiable.DataClasses.dll</HintPath>
+      <HintPath>..\..\..\_ExternalLibraries\Components.CrossCutting.Base.Identifiable.DataClasses.dll</HintPath>
     </Reference>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Interfaces\" />
   </ItemGroup>
 
 </Project>

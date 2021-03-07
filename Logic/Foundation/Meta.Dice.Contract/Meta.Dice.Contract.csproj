@@ -6,12 +6,12 @@
     <AssemblyName>Alexandria.Logic.Foundation.Meta.Dice.Contract</AssemblyName>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Meta.DataClasses\Meta.DataClasses.csproj" />
-  </ItemGroup>
-
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
     <Exec Command="xcopy &quot;$(TargetDir)*.*&quot; &quot;D:\Github\testspace_dsa\_ExternalComponents&quot; /F /R /I /E /Y" />
   </Target>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\CrossCutting\Meta.DataClasses\Meta.DataClasses.csproj" />
+  </ItemGroup>
 
 </Project>

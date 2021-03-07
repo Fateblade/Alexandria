@@ -3,7 +3,7 @@ using System;
 using System.Linq;
 
 namespace Fateblade.Alexandria.Logic.Domain.MetaManagement.Contract
-{
+{ //Todo: add exception mapping and coco core for entire project
     public interface IAdventureManager
     {
         IQueryable<Adventure> GetAll();

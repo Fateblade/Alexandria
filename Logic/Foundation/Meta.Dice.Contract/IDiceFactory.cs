@@ -1,7 +1,7 @@
 ﻿using Fateblade.Alexandria.CrossCutting.Meta.DataClasses;
 
 namespace Fateblade.Alexandria.Logic.Foundation.Meta.Dice.Contract
-{
+{ //Todo: add exception mapping and coco core for entire project
     public interface IDiceFactory
     {
         IDice CreateDice(DiceType diceType);

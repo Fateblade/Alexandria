@@ -7,19 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Gear.DataClasses\Gear.DataClasses.csproj" />
+    <ProjectReference Include="..\..\..\..\CrossCutting\Gear.DataClasses\Gear.DataClasses.csproj" />
     <ProjectReference Include="..\GearManagement.Contract\GearManagement.Contract.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="CoCo.Core.Contract">
-      <HintPath>..\..\CoCo2.0\CoCo.Core.Contract\bin\Debug\netstandard2.0\CoCo.Core.Contract.dll</HintPath>
+      <HintPath>..\..\..\..\_ExternalLibraries\CoCo.Core.Contract.dll</HintPath>
     </Reference>
     <Reference Include="Components.CrossCutting.Base.Identifiable.DataClasses">
-      <HintPath>..\_ExternalLibraries\Components.CrossCutting.Base.Identifiable.DataClasses.dll</HintPath>
+      <HintPath>..\..\..\..\_ExternalLibraries\Components.CrossCutting.Base.Identifiable.DataClasses.dll</HintPath>
     </Reference>
     <Reference Include="Components.Data.GenericDataStoring.Contract">
-      <HintPath>..\_ExternalLibraries\Components.Data.GenericDataStoring.Contract.dll</HintPath>
+      <HintPath>..\..\..\..\_ExternalLibraries\Components.Data.GenericDataStoring.Contract.dll</HintPath>
     </Reference>
   </ItemGroup>
 

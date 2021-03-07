@@ -11,13 +11,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Meta.DataClasses\Meta.DataClasses.csproj" />
+    <ProjectReference Include="..\..\..\CrossCutting\Meta.DataClasses\Meta.DataClasses.csproj" />
     <ProjectReference Include="..\Meta.Dice.Contract\Meta.Dice.Contract.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="CoCo.Core.Contract">
-      <HintPath>..\..\CoCo2.0\CoCo.Core.Contract\bin\Debug\netstandard2.0\CoCo.Core.Contract.dll</HintPath>
+      <HintPath>..\..\..\_ExternalLibraries\CoCo.Core.Contract.dll</HintPath>
     </Reference>
   </ItemGroup>
 

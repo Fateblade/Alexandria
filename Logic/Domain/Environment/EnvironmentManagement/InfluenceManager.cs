@@ -31,7 +31,7 @@ namespace Fateblade.Alexandria.Logic.Domain.EnvironmentManagement
 
         public IQueryable<Influence> GetAllInfluencedByObject(Guid objectId)
         {
-            return _repository.Query.Where(t => t.InfluencingObjectIds.Contains(objectId));
+            return _repository.Query.Where(t => t.InfluencingObjectIds.Any(x=>x.Id == objectId));
         }
 
         public IQueryable<Influence> GetAllForObject(Guid objectId)
@@ -39,7 +39,7 @@ namespace Fateblade.Alexandria.Logic.Domain.EnvironmentManagement
             return _repository.Query.Where(
                 t =>
                 t.InfluencedObjectId == objectId 
-                || t.InfluencingObjectIds.Contains(objectId));
+                || t.InfluencingObjectIds.Any(x => x.Id == objectId));
         }
 
         public Influence Get(Guid influenceId)
