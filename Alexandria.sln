@@ -1,34 +1,7 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29025.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCutting", "{2B9AD400-FD6A-4280-815B-33D72D5D6BF8}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities.DataClasses", "Entities.DataClasses\Entities.DataClasses.csproj", "{DE731667-B436-45F6-A54B-D1B5437F0A23}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gear.DataClasses", "Gear.DataClasses\Gear.DataClasses.csproj", "{FEE63EAF-1758-46B7-ACA7-13974BA2C5F3}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Environment.DataClasses", "Environment.DataClasses\Environment.DataClasses.csproj", "{7C39E1A3-53A3-43C8-9053-0E404FA157A6}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Meta.DataClasses", "Meta.DataClasses\Meta.DataClasses.csproj", "{61D37C8B-9D30-4E56-998B-BBFCC3F5DD5F}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{0C68375A-1EE9-480D-AFC7-6491623F3334}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logic", "Logic", "{D2FE1D30-2164-49C7-80BD-07329DF753BE}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{60E6F5A3-7D32-4E90-AAEF-5AC51E1C1718}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Alexandria.WPF.Models\Models.csproj", "{91F5B21D-8172-4D35-9B7A-93C2D5C3F149}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "WPF\Client.csproj", "{57212585-1250-4B63-B256-D1228047CDEE}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Controls", "WPF.Controls\Controls.csproj", "{72288FB2-FD03-4080-9DBC-B0A5337DD2C1}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WPF", "WPF", "{A7C16453-A782-4204-B3F1-FB91C826B508}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Base", "WPF.Base\Base.csproj", "{7D8A500A-9691-49AF-B485-593BD8938922}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_ExternalLibraries", "_ExternalLibraries", "{86504E24-8C9F-4ABE-841C-C06FA95B1491}"
 	ProjectSection(SolutionItems) = preProject
 		_ExternalLibraries\CoCo.Core.Contract.dll = _ExternalLibraries\CoCo.Core.Contract.dll
@@ -43,45 +16,92 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_ExternalLibraries", "_Exte
 		_ExternalLibraries\Components.Logic.GenericManager.dll = _ExternalLibraries\Components.Logic.GenericManager.dll
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{8A515BF1-155C-435F-87E6-77823F48B086}"
+
+
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCutting", "{2B9AD400-FD6A-4280-815B-33D72D5D6BF8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Meta.Dice", "Meta.Dice\Meta.Dice.csproj", "{05430B27-CF22-4957-9DFD-94B2C7C7A570}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities.DataClasses", "CrossCutting\Entities.DataClasses\Entities.DataClasses.csproj", "{DE731667-B436-45F6-A54B-D1B5437F0A23}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Meta.Dice.Contract", "Meta.Dice.Contract\Meta.Dice.Contract.csproj", "{6411AD6E-3860-4E8D-97F6-20E023795367}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gear.DataClasses", "CrossCutting\Gear.DataClasses\Gear.DataClasses.csproj", "{FEE63EAF-1758-46B7-ACA7-13974BA2C5F3}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Environment.DataClasses", "CrossCutting\Environment.DataClasses\Environment.DataClasses.csproj", "{7C39E1A3-53A3-43C8-9053-0E404FA157A6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Meta.DataClasses", "CrossCutting\Meta.DataClasses\Meta.DataClasses.csproj", "{61D37C8B-9D30-4E56-998B-BBFCC3F5DD5F}"
+EndProject
+
+
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{0C68375A-1EE9-480D-AFC7-6491623F3334}"
+EndProject
+
+
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logic", "Logic", "{D2FE1D30-2164-49C7-80BD-07329DF753BE}"
+EndProject
+
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{85943551-4E2B-4F0D-97A3-B1E2591D88B9}"
+EndProject
+
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{15891C3F-DDE9-4ED6-9D5D-8DB4E93F3B53}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntitiesManagement.Contract", "EntitiesManagement.Contract\EntitiesManagement.Contract.csproj", "{285C2293-BA96-4478-8EF9-0D32AE6E5D78}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnvironmentManagement.Contract", "EnvironmentManagement.Contract\EnvironmentManagement.Contract.csproj", "{3CBE037A-D3B2-44D5-99F8-1799F1202C16}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GearManagement.Contract", "GearManagement.Contract\GearManagement.Contract.csproj", "{ACB90EF6-4B16-4701-A686-544D7AEE915C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaManagement.Contract", "MetaManagement.Contract\MetaManagement.Contract.csproj", "{A70F1EC7-AFBB-4BD1-BCB9-66005242C748}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntitiesManagement", "EntitiesManagement\EntitiesManagement.csproj", "{71995D78-67F2-4937-A5DA-3363B5A4B5E3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnvironmentManagement", "EnvironmentManagement\EnvironmentManagement.csproj", "{5C80D291-694E-46C0-917C-CCC510CDFAD8}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GearManagement", "GearManagement\GearManagement.csproj", "{735EE07B-959E-48BA-A076-E44350F3C575}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaManagement", "MetaManagement\MetaManagement.csproj", "{2A6B545F-0EB5-4CB9-9C22-D2DE2F0A9AF5}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Meta", "Meta", "{F706F084-B4E0-4B87-8768-6F1CF2D504A8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entities", "Entities", "{B43BF1CF-25BA-4512-93F8-F736F31F3418}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntitiesManagement.Contract", "Logic\Domain\Entities\EntitiesManagement.Contract\EntitiesManagement.Contract.csproj", "{285C2293-BA96-4478-8EF9-0D32AE6E5D78}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntitiesManagement", "Logic\Domain\Entities\EntitiesManagement\EntitiesManagement.csproj", "{71995D78-67F2-4937-A5DA-3363B5A4B5E3}"
+EndProject
+
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Environment", "Environment", "{903A1360-2CE7-4D2B-9668-8CA44E094487}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnvironmentManagement.Contract", "Logic\Domain\Environment\EnvironmentManagement.Contract\EnvironmentManagement.Contract.csproj", "{3CBE037A-D3B2-44D5-99F8-1799F1202C16}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnvironmentManagement", "Logic\Domain\Environment\EnvironmentManagement\EnvironmentManagement.csproj", "{5C80D291-694E-46C0-917C-CCC510CDFAD8}"
+EndProject
+
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gear", "Gear", "{3265CCCC-F607-4573-AAAC-BBD3948EC866}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GearManagement.Contract", "Logic\Domain\Gear\GearManagement.Contract\GearManagement.Contract.csproj", "{ACB90EF6-4B16-4701-A686-544D7AEE915C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GearManagement", "Logic\Domain\Gear\GearManagement\GearManagement.csproj", "{735EE07B-959E-48BA-A076-E44350F3C575}"
+EndProject
+
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Meta", "Meta", "{F706F084-B4E0-4B87-8768-6F1CF2D504A8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetaManagement.Contract", "Logic\Domain\Meta\MetaManagement.Contract\MetaManagement.Contract.csproj", "{A70F1EC7-AFBB-4BD1-BCB9-66005242C748}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetaManagement", "Logic\Domain\Meta\MetaManagement\MetaManagement.csproj", "{2A6B545F-0EB5-4CB9-9C22-D2DE2F0A9AF5}"
+EndProject
+
+
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{8A515BF1-155C-435F-87E6-77823F48B086}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Meta.Dice", "Logic\Foundation\Meta.Dice\Meta.Dice.csproj", "{05430B27-CF22-4957-9DFD-94B2C7C7A570}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Meta.Dice.Contract", "Logic\Foundation\Meta.Dice.Contract\Meta.Dice.Contract.csproj", "{6411AD6E-3860-4E8D-97F6-20E023795367}"
+EndProject
+
+
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{87B5E873-94E3-4698-9D94-3A215F4F99B3}"
 	ProjectSection(SolutionItems) = preProject
 		Notes.md = Notes.md
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{85943551-4E2B-4F0D-97A3-B1E2591D88B9}"
+
+
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{60E6F5A3-7D32-4E90-AAEF-5AC51E1C1718}"
 EndProject
+
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WPF", "WPF", "{A7C16453-A782-4204-B3F1-FB91C826B508}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "UI\WPF\Models\Models.csproj", "{91F5B21D-8172-4D35-9B7A-93C2D5C3F149}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "UI\WPF\Client\Client.csproj", "{57212585-1250-4B63-B256-D1228047CDEE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Controls", "UI\WPF\Controls\Controls.csproj", "{72288FB2-FD03-4080-9DBC-B0A5337DD2C1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Base", "UI\WPF\Base\Base.csproj", "{7D8A500A-9691-49AF-B485-593BD8938922}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Converters", "UI\WPF\Converters\Converters.csproj", "{F89D0563-A0B7-4389-89A3-148E8A8669C9}"
+EndProject
+
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -160,6 +180,10 @@ Global
 		{2A6B545F-0EB5-4CB9-9C22-D2DE2F0A9AF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A6B545F-0EB5-4CB9-9C22-D2DE2F0A9AF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A6B545F-0EB5-4CB9-9C22-D2DE2F0A9AF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F89D0563-A0B7-4389-89A3-148E8A8669C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F89D0563-A0B7-4389-89A3-148E8A8669C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F89D0563-A0B7-4389-89A3-148E8A8669C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F89D0563-A0B7-4389-89A3-148E8A8669C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -191,6 +215,7 @@ Global
 		{903A1360-2CE7-4D2B-9668-8CA44E094487} = {15891C3F-DDE9-4ED6-9D5D-8DB4E93F3B53}
 		{3265CCCC-F607-4573-AAAC-BBD3948EC866} = {15891C3F-DDE9-4ED6-9D5D-8DB4E93F3B53}
 		{85943551-4E2B-4F0D-97A3-B1E2591D88B9} = {D2FE1D30-2164-49C7-80BD-07329DF753BE}
+		{F89D0563-A0B7-4389-89A3-148E8A8669C9} = {A7C16453-A782-4204-B3F1-FB91C826B508}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DB427DFF-78EE-4F04-A938-5D6762870AAD}

@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>Alexandria.UI.WPF.Converters</AssemblyName>
+    <RootNamespace>Fateblade.Alexandria.UI.WPF.ConvertersConverters</RootNamespace>
+  </PropertyGroup>
+
+</Project>
