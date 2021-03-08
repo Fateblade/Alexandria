@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="CoCo.Core.Bootstrapping">
+      <HintPath>..\..\_ExternalLibraries\CoCo.Core.Bootstrapping.dll</HintPath>
+    </Reference>
+    <Reference Include="CoCo.Core.Configuration">
+      <HintPath>..\..\_ExternalLibraries\CoCo.Core.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="CoCo.Core.Contract">
+      <HintPath>..\..\_ExternalLibraries\CoCo.Core.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="CoCo.Core.EventBrokerage">
+      <HintPath>..\..\_ExternalLibraries\CoCo.Core.EventBrokerage.dll</HintPath>
+    </Reference>
+    <Reference Include="CoCo.Core.NinjectPrismAdapter">
+      <HintPath>..\..\_ExternalLibraries\CoCo.Core.NinjectPrismAdapter.dll</HintPath>
+    </Reference>
+    <Reference Include="Components.CrossCutting.CoCo.Core.Configuration.NewtonsoftJson">
+      <HintPath>..\..\_ExternalLibraries\Components.CrossCutting.CoCo.Core.Configuration.NewtonsoftJson.dll</HintPath>
+    </Reference>
+    <Reference Include="Components.CrossCutting.ExceptionFormatter.SimpleListFormat">
+      <HintPath>..\..\_ExternalLibraries\Components.CrossCutting.ExceptionFormatter.SimpleListFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="Components.CrossCutting.Logging.Contract">
+      <HintPath>..\..\_ExternalLibraries\Components.CrossCutting.Logging.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="Components.CrossCutting.Logging.Csv">
+      <HintPath>..\..\_ExternalLibraries\Components.CrossCutting.Logging.Csv.dll</HintPath>
+    </Reference>
+    <Reference Include="Components.Data.GenericDataStoring.Contract">
+      <HintPath>..\..\_ExternalLibraries\Components.Data.GenericDataStoring.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="Components.Data.GenericDataStoring.NewtonsoftJson">
+      <HintPath>..\..\_ExternalLibraries\Components.Data.GenericDataStoring.NewtonsoftJson.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

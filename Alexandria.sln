@@ -5,9 +5,15 @@ VisualStudioVersion = 16.0.29025.244
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_ExternalLibraries", "_ExternalLibraries", "{86504E24-8C9F-4ABE-841C-C06FA95B1491}"
 	ProjectSection(SolutionItems) = preProject
+		_ExternalLibraries\CoCo.Core.Bootstrapping.dll = _ExternalLibraries\CoCo.Core.Bootstrapping.dll
+		_ExternalLibraries\CoCo.Core.Configuration.dll = _ExternalLibraries\CoCo.Core.Configuration.dll
 		_ExternalLibraries\CoCo.Core.Contract.dll = _ExternalLibraries\CoCo.Core.Contract.dll
-		_ExternalLibraries\CommonMessages.Contract.dll = _ExternalLibraries\CommonMessages.Contract.dll
+		_ExternalLibraries\CoCo.Core.EventBrokerage.dll = _ExternalLibraries\CoCo.Core.EventBrokerage.dll
+		_ExternalLibraries\CoCo.Core.NinjectPrismAdapter.dll = _ExternalLibraries\CoCo.Core.NinjectPrismAdapter.dll
 		_ExternalLibraries\Components.CrossCutting.Base.Identifiable.DataClasses.dll = _ExternalLibraries\Components.CrossCutting.Base.Identifiable.DataClasses.dll
+		_ExternalLibraries\Components.CrossCutting.CommonMessages.Contract.dll = _ExternalLibraries\Components.CrossCutting.CommonMessages.Contract.dll
+		_ExternalLibraries\Components.CrossCutting.ExceptionFormatter.Contract.dll = _ExternalLibraries\Components.CrossCutting.ExceptionFormatter.Contract.dll
+		_ExternalLibraries\Components.CrossCutting.ExceptionFormatter.SimpleListFormat.dll = _ExternalLibraries\Components.CrossCutting.ExceptionFormatter.SimpleListFormat.dll
 		_ExternalLibraries\Components.CrossCutting.Logging.Contract.dll = _ExternalLibraries\Components.CrossCutting.Logging.Contract.dll
 		_ExternalLibraries\Components.CrossCutting.Logging.Csv.dll = _ExternalLibraries\Components.CrossCutting.Logging.Csv.dll
 		_ExternalLibraries\Components.CrossCutting.Logging.PrismWrapper.dll = _ExternalLibraries\Components.CrossCutting.Logging.PrismWrapper.dll
@@ -83,6 +89,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UI.WPF.Base", "UI\WPF\Base\UI.WPF.Base.csproj", "{7D8A500A-9691-49AF-B485-593BD8938922}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UI.WPF.Converters", "UI\WPF\Converters\UI.WPF.Converters.csproj", "{F89D0563-A0B7-4389-89A3-148E8A8669C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Registrations", "Registrations", "{FD3A264C-59DD-49DD-85C0-9B3414C702DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Registrations.Client.Mappings", "Registrations\Registrations.Client.Mappings\Registrations.Client.Mappings.csproj", "{2E0116CF-2827-4529-83C8-F2AF5C1F0318}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -166,6 +176,10 @@ Global
 		{F89D0563-A0B7-4389-89A3-148E8A8669C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F89D0563-A0B7-4389-89A3-148E8A8669C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F89D0563-A0B7-4389-89A3-148E8A8669C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E0116CF-2827-4529-83C8-F2AF5C1F0318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E0116CF-2827-4529-83C8-F2AF5C1F0318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E0116CF-2827-4529-83C8-F2AF5C1F0318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E0116CF-2827-4529-83C8-F2AF5C1F0318}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -198,6 +212,7 @@ Global
 		{72288FB2-FD03-4080-9DBC-B0A5337DD2C1} = {A7C16453-A782-4204-B3F1-FB91C826B508}
 		{7D8A500A-9691-49AF-B485-593BD8938922} = {A7C16453-A782-4204-B3F1-FB91C826B508}
 		{F89D0563-A0B7-4389-89A3-148E8A8669C9} = {A7C16453-A782-4204-B3F1-FB91C826B508}
+		{2E0116CF-2827-4529-83C8-F2AF5C1F0318} = {FD3A264C-59DD-49DD-85C0-9B3414C702DE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DB427DFF-78EE-4F04-A938-5D6762870AAD}
