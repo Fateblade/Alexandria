@@ -11,7 +11,6 @@
 
   <ItemGroup>
     <Folder Include="Views\" />
-    <Folder Include="Windows\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,10 +23,38 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Registrations\Registrations.Client.Mappings\Registrations.Client.Mappings.csproj" />
     <ProjectReference Include="..\Base\UI.WPF.Base.csproj" />
     <ProjectReference Include="..\Controls\UI.WPF.Controls.csproj" />
     <ProjectReference Include="..\Converters\UI.WPF.Converters.csproj" />
     <ProjectReference Include="..\Models\UI.WPF.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="CoCo.Core.Contract">
+      <HintPath>..\..\..\_ExternalLibraries\CoCo.Core.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="CoCo.Core.NinjectPrismAdapter">
+      <HintPath>..\..\..\_ExternalLibraries\CoCo.Core.NinjectPrismAdapter.dll</HintPath>
+    </Reference>
+    <Reference Include="Components.CrossCutting.Base.Identifiable.DataClasses">
+      <HintPath>..\..\..\_ExternalLibraries\Components.CrossCutting.Base.Identifiable.DataClasses.dll</HintPath>
+    </Reference>
+    <Reference Include="Components.CrossCutting.CommonMessages.Contract">
+      <HintPath>..\..\..\_ExternalLibraries\Components.CrossCutting.CommonMessages.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="Components.CrossCutting.ExceptionFormatter.Contract">
+      <HintPath>..\..\..\_ExternalLibraries\Components.CrossCutting.ExceptionFormatter.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="Components.CrossCutting.Logging.Contract">
+      <HintPath>..\..\..\_ExternalLibraries\Components.CrossCutting.Logging.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="Components.Data.GenericDataStoring.Contract">
+      <HintPath>..\..\..\_ExternalLibraries\Components.Data.GenericDataStoring.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="Components.Logic.Foundation.Translation.Contract">
+      <HintPath>..\..\..\_ExternalLibraries\Components.Logic.Foundation.Translation.Contract.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

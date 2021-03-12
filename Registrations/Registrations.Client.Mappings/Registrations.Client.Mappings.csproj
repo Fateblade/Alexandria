@@ -17,11 +17,14 @@
     <Reference Include="CoCo.Core.EventBrokerage">
       <HintPath>..\..\_ExternalLibraries\CoCo.Core.EventBrokerage.dll</HintPath>
     </Reference>
-    <Reference Include="CoCo.Core.NinjectPrismAdapter">
-      <HintPath>..\..\_ExternalLibraries\CoCo.Core.NinjectPrismAdapter.dll</HintPath>
-    </Reference>
     <Reference Include="Components.CrossCutting.CoCo.Core.Configuration.NewtonsoftJson">
       <HintPath>..\..\_ExternalLibraries\Components.CrossCutting.CoCo.Core.Configuration.NewtonsoftJson.dll</HintPath>
+    </Reference>
+    <Reference Include="Components.CrossCutting.CommonMessages.Contract">
+      <HintPath>..\..\_ExternalLibraries\Components.CrossCutting.CommonMessages.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="Components.CrossCutting.ExceptionFormatter.Contract">
+      <HintPath>..\..\_ExternalLibraries\Components.CrossCutting.ExceptionFormatter.Contract.dll</HintPath>
     </Reference>
     <Reference Include="Components.CrossCutting.ExceptionFormatter.SimpleListFormat">
       <HintPath>..\..\_ExternalLibraries\Components.CrossCutting.ExceptionFormatter.SimpleListFormat.dll</HintPath>
@@ -38,6 +41,18 @@
     <Reference Include="Components.Data.GenericDataStoring.NewtonsoftJson">
       <HintPath>..\..\_ExternalLibraries\Components.Data.GenericDataStoring.NewtonsoftJson.dll</HintPath>
     </Reference>
+    <Reference Include="Components.Logic.Foundation.Translation">
+      <HintPath>..\..\_ExternalLibraries\Components.Logic.Foundation.Translation.dll</HintPath>
+    </Reference>
+    <Reference Include="Components.Logic.Foundation.Translation.Contract">
+      <HintPath>..\..\_ExternalLibraries\Components.Logic.Foundation.Translation.Contract.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="MergedConfig.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
