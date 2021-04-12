@@ -10,6 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Dialogs\" />
     <Folder Include="Views\" />
   </ItemGroup>
 
@@ -23,11 +24,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Registrations\Registrations.Client.Mappings\Registrations.Client.Mappings.csproj" />
-    <ProjectReference Include="..\Base\UI.WPF.Base.csproj" />
-    <ProjectReference Include="..\Controls\UI.WPF.Controls.csproj" />
-    <ProjectReference Include="..\Converters\UI.WPF.Converters.csproj" />
-    <ProjectReference Include="..\Models\UI.WPF.Models.csproj" />
+    <ProjectReference Include="..\..\..\Registrations\Registrations.Client.Mappings\Alexandria.Registrations.Client.Mappings.csproj" />
+    <ProjectReference Include="..\Base\Alexandria.UI.WPF.Base.csproj" />
+    <ProjectReference Include="..\Controls\Alexandria.UI.WPF.Controls.csproj" />
+    <ProjectReference Include="..\Converters\Alexandria.UI.WPF.Converters.csproj" />
+    <ProjectReference Include="..\Models\Alexandria.UI.WPF.Models.csproj" />
+    <ProjectReference Include="..\Modules\Alexandria.UI.WPF.Modules.ErrorDialog\Alexandria.UI.WPF.Modules.CommonDialogs.csproj" />
   </ItemGroup>
 
   <ItemGroup>

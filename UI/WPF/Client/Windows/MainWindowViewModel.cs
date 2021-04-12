@@ -7,7 +7,6 @@ namespace Fateblade.Alexandria.UI.WPF.Client.Windows
     {
         public MainWindowViewModel()
         {
-            throw new Exception("Blub");
         }
     }
 }

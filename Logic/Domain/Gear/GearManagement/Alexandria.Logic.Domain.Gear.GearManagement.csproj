@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\CrossCutting\Gear.DataClasses\CrossCutting.Gear.DataClasses.csproj" />
-    <ProjectReference Include="..\GearManagement.Contract\Logic.Domain.Gear.GearManagement.Contract.csproj" />
+    <ProjectReference Include="..\..\..\..\CrossCutting\Gear.DataClasses\Alexandria.CrossCutting.Gear.DataClasses.csproj" />
+    <ProjectReference Include="..\GearManagement.Contract\Alexandria.Logic.Domain.Gear.GearManagement.Contract.csproj" />
   </ItemGroup>
 
   <ItemGroup>

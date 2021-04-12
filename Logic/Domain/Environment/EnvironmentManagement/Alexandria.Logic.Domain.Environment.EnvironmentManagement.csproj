@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\CrossCutting\Environment.DataClasses\CrossCutting.Environment.DataClasses.csproj" />
-    <ProjectReference Include="..\EnvironmentManagement.Contract\Logic.Domain.Environment.EnvironmentManagement.Contract.csproj" />
+    <ProjectReference Include="..\..\..\..\CrossCutting\Environment.DataClasses\Alexandria.CrossCutting.Environment.DataClasses.csproj" />
+    <ProjectReference Include="..\EnvironmentManagement.Contract\Alexandria.Logic.Domain.Environment.EnvironmentManagement.Contract.csproj" />
   </ItemGroup>
 
   <ItemGroup>

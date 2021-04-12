@@ -15,6 +15,7 @@ using Fateblade.Alexandria.UI.WPF.Client.Dialogs;
 using Fateblade.Alexandria.UI.WPF.Client.Windows;
 using Fateblade.Components.Logic.Foundation.Translation.Contract;
 using Fateblade.PersonManagementApp.CoCo.Core.NinjectPrismAdapter;
+using Prism.Modularity;
 using Prism.Services.Dialogs;
 using Registrations.Client.Mappings;
 
@@ -26,6 +27,7 @@ namespace Fateblade.Alexandria.UI.WPF.Client
     public partial class App : PrismApplication
     {
         private readonly KernelContainer _kernelContainer;
+        private bool _modulesInitialized;  //modules will be loaded after the shell is initialized
 
         public App()
         {
@@ -44,8 +46,8 @@ namespace Fateblade.Alexandria.UI.WPF.Client
 
             //ui specific mappings
             //dialogs
-            containerRegistry.RegisterDialog<ErrorMessageDialog, ErrorMessageDialogViewModel>();
             
+
             //misc
 
 
@@ -57,6 +59,20 @@ namespace Fateblade.Alexandria.UI.WPF.Client
 
             //translations
             configureTranslations();
+        }
+
+        protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
+        {
+            moduleCatalog.AddModule<CommonDialogsModule>();
+        }
+
+        protected override void InitializeModules()
+        {
+            IModuleManager manager = _kernelContainer.CastedKernel.Resolve<IModuleManager>();
+            
+            manager.Run();
+
+            _modulesInitialized = true;
         }
 
         protected void configureTranslations() //todo think about using modules if project gets too large
@@ -73,11 +89,14 @@ namespace Fateblade.Alexandria.UI.WPF.Client
             {
                 var viewType = view.GetType();
                 var viewName = viewType.FullName;
-                var viewAssemblyName = viewType.Assembly.FullName;
+                var viewModelName = string.Empty;
 
-                var viewModelName = viewName.EndsWith("View")
-                    ? viewName + "Model"
-                    : viewName + "ViewModel";
+                if (!string.IsNullOrWhiteSpace(viewName))
+                {
+                    viewModelName = viewName.EndsWith("View")
+                        ? viewName + "Model"
+                        : viewName + "ViewModel";
+                }
 
                 var viewModelType = Type.GetType(viewModelName);
 
@@ -114,6 +133,7 @@ namespace Fateblade.Alexandria.UI.WPF.Client
 
         private void OnDispatcherUnhandledException(object sender, DispatcherUnhandledExceptionEventArgs e)
         {
+            //Todo: modularize into error handling or at least capsulate in separate class
             try
             {
                 var prismLogger = Container.Resolve<ILoggerFacade>();
@@ -130,12 +150,19 @@ namespace Fateblade.Alexandria.UI.WPF.Client
                     errorMessage = $"{errorMessage.Substring(0, 300)}...{Environment.NewLine}Whole error was written to log";
                 }
 
-                var parameters = new DialogParameters
+                if (_modulesInitialized)
                 {
-                    {nameof(ErrorDialogCreationInformation), new ErrorDialogCreationInformation("Unbekannter Fehler!", errorMessage)}
-                };
+                    var parameters = new DialogParameters
+                    {
+                        {nameof(ErrorDialogCreationInformation), new ErrorDialogCreationInformation("Unbekannter Fehler!", errorMessage)}
+                    };
 
-                dialogService.Show(nameof(ErrorMessageDialog), parameters, result => {});
+                    dialogService.Show(nameof(ErrorMessageDialog), parameters, result => { });
+                }
+                else
+                {
+                    MessageBox.Show(errorMessage);
+                }
 
                 e.Handled = true;
             }
