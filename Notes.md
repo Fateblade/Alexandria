@@ -1,3 +1,9 @@
+# Todo Notes
+Initiative System? Or seperately?
+one basic
+one for dsa
+one for sr
+
 # Duplication&Reference Comment Format
 
 ## Duplication

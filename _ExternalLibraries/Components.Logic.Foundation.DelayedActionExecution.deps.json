@@ -1,0 +1,72 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Components.Logic.Foundation.DelayedActionExecution/1.0.0": {
+        "dependencies": {
+          "Components.CrossCutting.ExceptionFormatter.Contract": "1.0.0",
+          "Components.CrossCutting.Logging.Contract": "1.0.0",
+          "Components.Logic.Foundation.DelayedActionExecution.Contract": "1.0.0",
+          "CoCo.Core.Contract": "1.0.0.0"
+        },
+        "runtime": {
+          "Components.Logic.Foundation.DelayedActionExecution.dll": {}
+        }
+      },
+      "Components.CrossCutting.ExceptionFormatter.Contract/1.0.0": {
+        "runtime": {
+          "Components.CrossCutting.ExceptionFormatter.Contract.dll": {}
+        }
+      },
+      "Components.CrossCutting.Logging.Contract/1.0.0": {
+        "runtime": {
+          "Components.CrossCutting.Logging.Contract.dll": {}
+        }
+      },
+      "Components.Logic.Foundation.DelayedActionExecution.Contract/1.0.0": {
+        "runtime": {
+          "Components.Logic.Foundation.DelayedActionExecution.Contract.dll": {}
+        }
+      },
+      "CoCo.Core.Contract/1.0.0.0": {
+        "runtime": {
+          "CoCo.Core.Contract.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Components.Logic.Foundation.DelayedActionExecution/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Components.CrossCutting.ExceptionFormatter.Contract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Components.CrossCutting.Logging.Contract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Components.Logic.Foundation.DelayedActionExecution.Contract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CoCo.Core.Contract/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
