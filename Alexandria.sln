@@ -9,8 +9,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_ExternalLibraries", "_Exte
 		_ExternalLibraries\CoCo.Core.Configuration.dll = _ExternalLibraries\CoCo.Core.Configuration.dll
 		_ExternalLibraries\CoCo.Core.Contract.dll = _ExternalLibraries\CoCo.Core.Contract.dll
 		_ExternalLibraries\CoCo.Core.EventBrokerage.dll = _ExternalLibraries\CoCo.Core.EventBrokerage.dll
+		_ExternalLibraries\CoCo.Core.NinjectAdapter.dll = _ExternalLibraries\CoCo.Core.NinjectAdapter.dll
 		_ExternalLibraries\CoCo.Core.NinjectPrismAdapter.dll = _ExternalLibraries\CoCo.Core.NinjectPrismAdapter.dll
+		_ExternalLibraries\CoCo.Core.PrismAdapter.dll = _ExternalLibraries\CoCo.Core.PrismAdapter.dll
 		_ExternalLibraries\Components.CrossCutting.Base.Identifiable.DataClasses.dll = _ExternalLibraries\Components.CrossCutting.Base.Identifiable.DataClasses.dll
+		_ExternalLibraries\Components.CrossCutting.CoCo.Core.Configuration.NewtonsoftJson.dll = _ExternalLibraries\Components.CrossCutting.CoCo.Core.Configuration.NewtonsoftJson.dll
 		_ExternalLibraries\Components.CrossCutting.CommonMessages.Contract.dll = _ExternalLibraries\Components.CrossCutting.CommonMessages.Contract.dll
 		_ExternalLibraries\Components.CrossCutting.ExceptionFormatter.Contract.dll = _ExternalLibraries\Components.CrossCutting.ExceptionFormatter.Contract.dll
 		_ExternalLibraries\Components.CrossCutting.ExceptionFormatter.SimpleListFormat.dll = _ExternalLibraries\Components.CrossCutting.ExceptionFormatter.SimpleListFormat.dll
@@ -19,10 +22,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_ExternalLibraries", "_Exte
 		_ExternalLibraries\Components.CrossCutting.Logging.PrismWrapper.dll = _ExternalLibraries\Components.CrossCutting.Logging.PrismWrapper.dll
 		_ExternalLibraries\Components.Data.GenericDataStoring.Contract.dll = _ExternalLibraries\Components.Data.GenericDataStoring.Contract.dll
 		_ExternalLibraries\Components.Data.GenericDataStoring.NewtonsoftJson.dll = _ExternalLibraries\Components.Data.GenericDataStoring.NewtonsoftJson.dll
+		_ExternalLibraries\Components.Logic.Foundation.ConsentManager.Contract.dll = _ExternalLibraries\Components.Logic.Foundation.ConsentManager.Contract.dll
+		_ExternalLibraries\Components.Logic.Foundation.ConsentManager.dll = _ExternalLibraries\Components.Logic.Foundation.ConsentManager.dll
+		_ExternalLibraries\Components.Logic.Foundation.DelayedActionExecution.Contract.dll = _ExternalLibraries\Components.Logic.Foundation.DelayedActionExecution.Contract.dll
+		_ExternalLibraries\Components.Logic.Foundation.DelayedActionExecution.dll = _ExternalLibraries\Components.Logic.Foundation.DelayedActionExecution.dll
+		_ExternalLibraries\Components.Logic.Foundation.FeatureTrackingComponent.Contract.dll = _ExternalLibraries\Components.Logic.Foundation.FeatureTrackingComponent.Contract.dll
+		_ExternalLibraries\Components.Logic.Foundation.FeatureTrackingComponent.dll = _ExternalLibraries\Components.Logic.Foundation.FeatureTrackingComponent.dll
 		_ExternalLibraries\Components.Logic.Foundation.Translation.Contract.dll = _ExternalLibraries\Components.Logic.Foundation.Translation.Contract.dll
 		_ExternalLibraries\Components.Logic.Foundation.Translation.dll = _ExternalLibraries\Components.Logic.Foundation.Translation.dll
 		_ExternalLibraries\Components.Logic.GenericManager.Contract.dll = _ExternalLibraries\Components.Logic.GenericManager.Contract.dll
 		_ExternalLibraries\Components.Logic.GenericManager.dll = _ExternalLibraries\Components.Logic.GenericManager.dll
+		_ExternalLibraries\CrossCutting.Base.Identifiable.DataClasses.dll = _ExternalLibraries\CrossCutting.Base.Identifiable.DataClasses.dll
+		_ExternalLibraries\Logic.Foundation.DelayedActionExecution.Contract.dll = _ExternalLibraries\Logic.Foundation.DelayedActionExecution.Contract.dll
+		_ExternalLibraries\Logic.Foundation.DelayedActionExecution.dll = _ExternalLibraries\Logic.Foundation.DelayedActionExecution.dll
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCutting", "{2B9AD400-FD6A-4280-815B-33D72D5D6BF8}"
@@ -102,7 +114,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alexandria.UI.DefaultConfig
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{75F8165B-38D2-4BA2-BB1A-075AF141D008}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alexandria.UI.WPF.Modules.CommonDialogs", "UI\WPF\Modules\Alexandria.UI.WPF.Modules.ErrorDialog\Alexandria.UI.WPF.Modules.CommonDialogs.csproj", "{FE2200DC-F3C0-4C94-907C-30AD67BE1B46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alexandria.UI.WPF.Modules.CommonDialogs", "UI\WPF\Modules\Alexandria.UI.WPF.Modules.ErrorDialog\Alexandria.UI.WPF.Modules.CommonDialogs.csproj", "{FE2200DC-F3C0-4C94-907C-30AD67BE1B46}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
