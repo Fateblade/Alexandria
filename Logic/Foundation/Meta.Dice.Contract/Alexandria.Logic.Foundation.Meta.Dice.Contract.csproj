@@ -14,4 +14,10 @@
     <ProjectReference Include="..\..\..\CrossCutting\Meta.DataClasses\Alexandria.CrossCutting.Meta.DataClasses.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="CoCo.Core.Contract">
+      <HintPath>..\..\..\_ExternalLibraries\CoCo.Core.Contract.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

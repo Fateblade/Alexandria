@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Linq;
+using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.Aspects;
 using Fateblade.Alexandria.CrossCutting.Meta.DataClasses;
+using Fateblade.Alexandria.Logic.Domain.Meta.MetaManagement.Contract.Exceptions;
 
 namespace Fateblade.Alexandria.Logic.Domain.Meta.MetaManagement.Contract
 {
+    [MapException(typeof(MetaManagementException))]
     public interface INoteManager
     {
         IQueryable<Note> GetAll();

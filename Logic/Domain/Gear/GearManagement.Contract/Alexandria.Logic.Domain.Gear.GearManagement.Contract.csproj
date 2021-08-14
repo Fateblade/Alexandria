@@ -10,4 +10,10 @@
     <ProjectReference Include="..\..\..\..\CrossCutting\Gear.DataClasses\Alexandria.CrossCutting.Gear.DataClasses.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="CoCo.Core.Contract">
+      <HintPath>..\..\..\..\_ExternalLibraries\CoCo.Core.Contract.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
