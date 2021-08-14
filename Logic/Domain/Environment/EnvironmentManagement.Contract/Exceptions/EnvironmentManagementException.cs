@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Fateblade.Alexandria.Logic.Domain.EnvironmentManagement.Contract.Exceptions
+namespace Fateblade.Alexandria.Logic.Domain.Environment.EnvironmentManagement.Contract.Exceptions
 {
     [Serializable]
     public class EnvironmentManagementException : Exception

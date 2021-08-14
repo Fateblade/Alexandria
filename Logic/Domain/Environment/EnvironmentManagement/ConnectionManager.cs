@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using Fateblade.Alexandria.CrossCutting.Environment.DataClasses;
-using Fateblade.Alexandria.Logic.Domain.EnvironmentManagement.Contract;
+using Fateblade.Alexandria.Logic.Domain.Environment.EnvironmentManagement.Contract;
 using Fateblade.Components.Data.GenericDataStoring.Contract;
 
-namespace Fateblade.Alexandria.Logic.Domain.EnvironmentManagement
+namespace Fateblade.Alexandria.Logic.Domain.Environment.EnvironmentManagement
 {
     internal class ConnectionManager : IConnectionManager
     {

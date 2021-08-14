@@ -2,7 +2,7 @@
 using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.Configuration;
 using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.DependencyInjection;
 using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.EventBrokerage;
-using Fateblade.Alexandria.Logic.Domain.MetaManagement.Contract;
+using Fateblade.Alexandria.Logic.Domain.Meta.MetaManagement.Contract;
 
 namespace Fateblade.Alexandria.Logic.Domain.MetaManagement
 {

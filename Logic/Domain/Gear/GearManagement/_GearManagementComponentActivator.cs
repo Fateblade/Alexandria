@@ -2,7 +2,7 @@
 using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.Configuration;
 using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.DependencyInjection;
 using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.EventBrokerage;
-using Fateblade.Alexandria.Logic.Domain.GearManagement.Contract;
+using Fateblade.Alexandria.Logic.Domain.Gear.GearManagement.Contract;
 
 namespace Fateblade.Alexandria.Logic.Domain.GearManagement
 {

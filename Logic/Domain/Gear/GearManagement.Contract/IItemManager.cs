@@ -1,8 +1,8 @@
-﻿using Fateblade.Alexandria.CrossCutting.Gear.DataClasses;
-using System;
+﻿using System;
 using System.Linq;
+using Fateblade.Alexandria.CrossCutting.Gear.DataClasses;
 
-namespace Fateblade.Alexandria.Logic.Domain.GearManagement.Contract
+namespace Fateblade.Alexandria.Logic.Domain.Gear.GearManagement.Contract
 {
     public interface IItemManager
     {

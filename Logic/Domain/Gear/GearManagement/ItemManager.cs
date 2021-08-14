@@ -1,8 +1,8 @@
 ﻿using Fateblade.Alexandria.CrossCutting.Gear.DataClasses;
-using Fateblade.Alexandria.Logic.Domain.GearManagement.Contract;
 using Fateblade.Components.Data.GenericDataStoring.Contract;
 using System;
 using System.Linq;
+using Fateblade.Alexandria.Logic.Domain.Gear.GearManagement.Contract;
 
 namespace Fateblade.Alexandria.Logic.Domain.GearManagement
 {

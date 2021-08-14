@@ -1,4 +1,4 @@
-﻿namespace DefaultConfigGenerator
+﻿namespace Alexandria.UI.DefaultConfigGenerator
 {
     internal interface IConfigGenerator
     {

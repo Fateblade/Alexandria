@@ -1,9 +1,9 @@
-﻿using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.Configuration.DataClasses;
-using Fateblade.Components.CrossCutting.CoCo.Core.Configuration.NewtonsoftJson;
-using System;
+﻿using System;
 using System.IO;
+using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.Configuration.DataClasses;
+using Fateblade.Components.CrossCutting.CoCo.Core.Configuration.NewtonsoftJson;
 
-namespace DefaultConfigGenerator.Generators
+namespace Alexandria.UI.DefaultConfigGenerator.Generators
 {
     internal class GenericDataStoringConfigGenerator : IConfigGenerator
     {

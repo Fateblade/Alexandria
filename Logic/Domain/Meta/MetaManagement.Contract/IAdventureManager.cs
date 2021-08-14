@@ -1,8 +1,8 @@
-﻿using Fateblade.Alexandria.CrossCutting.Meta.DataClasses;
-using System;
+﻿using System;
 using System.Linq;
+using Fateblade.Alexandria.CrossCutting.Meta.DataClasses;
 
-namespace Fateblade.Alexandria.Logic.Domain.MetaManagement.Contract
+namespace Fateblade.Alexandria.Logic.Domain.Meta.MetaManagement.Contract
 { //Todo: add exception mapping and coco core for entire project
     public interface IAdventureManager
     {

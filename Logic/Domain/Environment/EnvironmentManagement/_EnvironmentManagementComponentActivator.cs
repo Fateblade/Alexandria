@@ -2,9 +2,9 @@
 using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.Configuration;
 using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.DependencyInjection;
 using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.EventBrokerage;
-using Fateblade.Alexandria.Logic.Domain.EnvironmentManagement.Contract;
+using Fateblade.Alexandria.Logic.Domain.Environment.EnvironmentManagement.Contract;
 
-namespace Fateblade.Alexandria.Logic.Domain.EnvironmentManagement
+namespace Fateblade.Alexandria.Logic.Domain.Environment.EnvironmentManagement
 {
     public class EnvironmentManagementComponentActivator : IComponentActivator
     {

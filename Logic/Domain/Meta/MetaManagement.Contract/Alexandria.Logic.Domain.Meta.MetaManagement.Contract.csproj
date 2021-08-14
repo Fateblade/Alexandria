@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>Alexandria.Logic.Domain.MetaManagement.Contract</AssemblyName>
-    <RootNamespace>Fateblade.Alexandria.Logic.Domain.MetaManagement.Contract</RootNamespace>
+    <AssemblyName>Alexandria.Logic.Domain.Meta.MetaManagement.Contract</AssemblyName>
+    <RootNamespace>Fateblade.Alexandria.Logic.Domain.Meta.MetaManagement.Contract</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

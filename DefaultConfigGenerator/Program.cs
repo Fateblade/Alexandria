@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using DefaultConfigGenerator.Generators;
+using Alexandria.UI.DefaultConfigGenerator.Generators;
 
-namespace DefaultConfigGenerator
+namespace Alexandria.UI.DefaultConfigGenerator
 {
     class Program
     {

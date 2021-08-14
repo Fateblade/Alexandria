@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Fateblade.Alexandria.Logic.Domain.GearManagement.Contract.Exceptions
+namespace Fateblade.Alexandria.Logic.Domain.Gear.GearManagement.Contract.Exceptions
 {
     [Serializable]
     public class GearManagementException : Exception

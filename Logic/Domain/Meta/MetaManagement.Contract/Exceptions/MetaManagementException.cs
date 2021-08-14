@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Fateblade.Alexandria.Logic.Domain.MetaManagement.Contract.Exceptions
+namespace Fateblade.Alexandria.Logic.Domain.Meta.MetaManagement.Contract.Exceptions
 {
     [Serializable]
     public class MetaManagementException : Exception

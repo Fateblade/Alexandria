@@ -1,8 +1,8 @@
 ﻿using Fateblade.Alexandria.CrossCutting.Meta.DataClasses;
-using Fateblade.Alexandria.Logic.Domain.MetaManagement.Contract;
 using Fateblade.Components.Data.GenericDataStoring.Contract;
 using System;
 using System.Linq;
+using Fateblade.Alexandria.Logic.Domain.Meta.MetaManagement.Contract;
 
 namespace Fateblade.Alexandria.Logic.Domain.MetaManagement
 {

@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>Alexandria.Logic.Domain.GearManagement</AssemblyName>
+    <AssemblyName>Alexandria.Logic.Domain.Gear.GearManagement</AssemblyName>
     <RootNamespace>Fateblade.Alexandria.Logic.Domain.GearManagement</RootNamespace>
   </PropertyGroup>
 

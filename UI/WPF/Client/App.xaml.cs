@@ -11,13 +11,13 @@ using System;
 using System.Windows;
 using System.Windows.Threading;
 using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.Bootstrapping;
+using Fateblade.Alexandria.Registrations.Client.Mappings;
 using Fateblade.Alexandria.UI.WPF.Client.Dialogs;
 using Fateblade.Alexandria.UI.WPF.Client.Windows;
 using Fateblade.Components.Logic.Foundation.Translation.Contract;
 using Fateblade.PersonManagementApp.CoCo.Core.NinjectPrismAdapter;
 using Prism.Modularity;
 using Prism.Services.Dialogs;
-using Registrations.Client.Mappings;
 
 namespace Fateblade.Alexandria.UI.WPF.Client
 {

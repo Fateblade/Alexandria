@@ -1,10 +1,10 @@
-﻿using Fateblade.Alexandria.CrossCutting.Environment.DataClasses;
-using Fateblade.Alexandria.Logic.Domain.EnvironmentManagement.Contract;
-using Fateblade.Components.Data.GenericDataStoring.Contract;
-using System;
+﻿using System;
 using System.Linq;
+using Fateblade.Alexandria.CrossCutting.Environment.DataClasses;
+using Fateblade.Alexandria.Logic.Domain.Environment.EnvironmentManagement.Contract;
+using Fateblade.Components.Data.GenericDataStoring.Contract;
 
-namespace Fateblade.Alexandria.Logic.Domain.EnvironmentManagement
+namespace Fateblade.Alexandria.Logic.Domain.Environment.EnvironmentManagement
 {
     internal class InfluenceManager : IInfluenceManager
     {
