@@ -5,6 +5,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Logic\Domain\Entities\EntitiesManagement.Contract\Alexandria.Logic.Domain.Entities.EntitiesManagement.Contract.csproj" />
+    <ProjectReference Include="..\..\Logic\Domain\Entities\EntitiesManagement\Alexandria.Logic.Domain.Entities.EntitiesManagement.csproj" />
+    <ProjectReference Include="..\..\Logic\Domain\Environment\EnvironmentManagement.Contract\Alexandria.Logic.Domain.Environment.EnvironmentManagement.Contract.csproj" />
+    <ProjectReference Include="..\..\Logic\Domain\Environment\EnvironmentManagement\Alexandria.Logic.Domain.Environment.EnvironmentManagement.csproj" />
+    <ProjectReference Include="..\..\Logic\Domain\Gear\GearManagement.Contract\Alexandria.Logic.Domain.Gear.GearManagement.Contract.csproj" />
+    <ProjectReference Include="..\..\Logic\Domain\Gear\GearManagement\Alexandria.Logic.Domain.Gear.GearManagement.csproj" />
+    <ProjectReference Include="..\..\Logic\Domain\Meta\MetaManagement.Contract\Alexandria.Logic.Domain.Meta.MetaManagement.Contract.csproj" />
+    <ProjectReference Include="..\..\Logic\Domain\Meta\MetaManagement\Alexandria.Logic.Domain.Meta.MetaManagement.csproj" />
+    <ProjectReference Include="..\..\Logic\Foundation\Meta.Dice.Contract\Alexandria.Logic.Foundation.Meta.Dice.Contract.csproj" />
+    <ProjectReference Include="..\..\Logic\Foundation\Meta.Dice\Alexandria.Logic.Foundation.Meta.Dice.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="CoCo.Core.Bootstrapping">
       <HintPath>..\..\_ExternalLibraries\CoCo.Core.Bootstrapping.dll</HintPath>
     </Reference>
@@ -46,6 +59,12 @@
     </Reference>
     <Reference Include="Components.Logic.Foundation.Translation.Contract">
       <HintPath>..\..\_ExternalLibraries\Components.Logic.Foundation.Translation.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="Components.Logic.GenericManager">
+      <HintPath>..\..\_ExternalLibraries\Components.Logic.GenericManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Components.Logic.GenericManager.Contract">
+      <HintPath>..\..\_ExternalLibraries\Components.Logic.GenericManager.Contract.dll</HintPath>
     </Reference>
   </ItemGroup>
 

@@ -9,9 +9,15 @@ using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.EventBrokerage;
 using Fateblade.Components.CrossCutting.CoCo.Core.Configuration.NewtonsoftJson;
 using Fateblade.Components.CrossCutting.ExceptionFormatter.SimpleListFormat;
 using System.IO;
+using Fateblade.Alexandria.Logic.Domain.Entities.EntitiesManagement;
+using Fateblade.Alexandria.Logic.Domain.EnvironmentManagement;
+using Fateblade.Alexandria.Logic.Domain.GearManagement;
+using Fateblade.Alexandria.Logic.Domain.MetaManagement;
+using Fateblade.Alexandria.Logic.Foundation.Meta.Dice;
 using Fateblade.Components.CrossCutting.Logging.Csv;
 using Fateblade.Components.Data.GenericDataStoring.NewtonsoftJson;
 using Fateblade.Components.Logic.Foundation.Translation;
+using Fateblade.Components.Logic.GenericManager;
 
 namespace Registrations.Client.Mappings
 {
@@ -33,8 +39,14 @@ namespace Registrations.Client.Mappings
             //generics
             kernel.RegisterComponent<GenericDataStoringActivator>();
             kernel.RegisterComponent<TranslationComponentActivator>();
+            kernel.RegisterComponent<GenericManagerComponentActivator>();
 
             //application specific components
+            kernel.RegisterComponent<DiceActivator>();
+            kernel.RegisterComponent<EntitiesManagementComponentActivator>();
+            kernel.RegisterComponent<EnvironmentManagementComponentActivator>();
+            kernel.RegisterComponent<GearManagementComponentActivator>();
+            kernel.RegisterComponent<MetaManagementComponentActivator>();
         }
     }
 }
