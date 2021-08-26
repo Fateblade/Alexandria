@@ -1,0 +1,9 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:actionBar="clr-namespace:Fateblade.Alexandria.UI.WPF.Controls.ActionBar">
+    
+    <!--<ControlTemplate x:Key="ActionMenuBarItemControlTemplate" 
+                     TargetType="actionBar:ActionMenuBarItemControl">
+        
+    </ControlTemplate>-->
+</ResourceDictionary>

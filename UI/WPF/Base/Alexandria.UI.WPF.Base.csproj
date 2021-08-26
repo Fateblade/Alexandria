@@ -7,13 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Prism.Core" Version="7.2.0.1367" />
+    <PackageReference Include="Prism.Core" Version="7.2.0.1422" />
     <PackageReference Include="Prism.Wpf" Version="7.2.0.1422" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="Components.CrossCutting.Base.Identifiable.DataClasses">
       <HintPath>..\..\..\_ExternalLibraries\Components.CrossCutting.Base.Identifiable.DataClasses.dll</HintPath>
+    </Reference>
+    <Reference Include="Components.Logic.Foundation.Orchestration.Contract">
+      <HintPath>..\..\..\_ExternalLibraries\Components.Logic.Foundation.Orchestration.Contract.dll</HintPath>
     </Reference>
   </ItemGroup>
 

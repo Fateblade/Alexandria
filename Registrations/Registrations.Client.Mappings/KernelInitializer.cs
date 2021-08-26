@@ -1,5 +1,4 @@
-﻿using System.IO;
-using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Bootstrapping;
+﻿using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Bootstrapping;
 using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Configuration;
 using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Configuration.ConfigObjects;
 using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.Bootstrapping;
@@ -16,8 +15,11 @@ using Fateblade.Components.CrossCutting.CoCo.Core.Configuration.NewtonsoftJson;
 using Fateblade.Components.CrossCutting.ExceptionFormatter.SimpleListFormat;
 using Fateblade.Components.CrossCutting.Logging.Csv;
 using Fateblade.Components.Data.GenericDataStoring.NewtonsoftJson;
+using Fateblade.Components.Logic.Foundation.Orchestration;
 using Fateblade.Components.Logic.Foundation.Translation;
 using Fateblade.Components.Logic.GenericManager;
+using Fateblade.Components.UI.WPF.ViewModelMapper;
+using System.IO;
 
 namespace Fateblade.Alexandria.Registrations.Client.Mappings
 {
@@ -47,6 +49,8 @@ namespace Fateblade.Alexandria.Registrations.Client.Mappings
             kernel.RegisterComponent<EnvironmentManagementComponentActivator>();
             kernel.RegisterComponent<GearManagementComponentActivator>();
             kernel.RegisterComponent<MetaManagementComponentActivator>();
+            kernel.RegisterComponent<OrchestrationComponentActivator>();
+            kernel.RegisterComponent<ViewModelMapperComponentActivator>();
         }
     }
 }

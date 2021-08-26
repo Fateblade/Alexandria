@@ -11,7 +11,6 @@
 
   <ItemGroup>
     <Folder Include="Dialogs\" />
-    <Folder Include="Views\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -54,8 +53,14 @@
     <Reference Include="Components.Data.GenericDataStoring.Contract">
       <HintPath>..\..\..\_ExternalLibraries\Components.Data.GenericDataStoring.Contract.dll</HintPath>
     </Reference>
+    <Reference Include="Components.Logic.Foundation.Orchestration.Contract">
+      <HintPath>..\..\..\_ExternalLibraries\Components.Logic.Foundation.Orchestration.Contract.dll</HintPath>
+    </Reference>
     <Reference Include="Components.Logic.Foundation.Translation.Contract">
       <HintPath>..\..\..\_ExternalLibraries\Components.Logic.Foundation.Translation.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="Components.UI.WPF.ViewModelMapper.Contract">
+      <HintPath>..\..\..\_ExternalLibraries\Components.UI.WPF.ViewModelMapper.Contract.dll</HintPath>
     </Reference>
   </ItemGroup>
 

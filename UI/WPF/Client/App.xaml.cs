@@ -12,6 +12,7 @@ using System.Windows;
 using System.Windows.Threading;
 using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.Bootstrapping;
 using Fateblade.Alexandria.Registrations.Client.Mappings;
+using Fateblade.Alexandria.UI.WPF.Base.ActionBar;
 using Fateblade.Alexandria.UI.WPF.Client.Dialogs;
 using Fateblade.Alexandria.UI.WPF.Client.Windows;
 using Fateblade.Components.Logic.Foundation.Translation.Contract;
@@ -45,6 +46,9 @@ namespace Fateblade.Alexandria.UI.WPF.Client
             new KernelInitializer().Initialize(_kernelContainer.Kernel);
 
             //ui specific mappings
+            _kernelContainer.CastedKernel.RegisterUnique<IActionMenuBarManager, ActionMenuBarManager>(new ActionMenuBarManager());
+
+
             //dialogs
             
 
@@ -52,7 +56,7 @@ namespace Fateblade.Alexandria.UI.WPF.Client
 
 
             //CoCo Bootstrapper
-            var bootstrapper = _kernelContainer.Kernel.Get<IBootstrapper>();
+            IBootstrapper bootstrapper = _kernelContainer.Kernel.Get<IBootstrapper>();
             bootstrapper.ActivatingAll();
             bootstrapper.ActivatedAll();
             bootstrapper.RegisterAllMappings(_kernelContainer.Kernel);
@@ -77,7 +81,7 @@ namespace Fateblade.Alexandria.UI.WPF.Client
 
         protected void configureTranslations() //todo think about using modules if project gets too large
         {
-            var translationProvider = _kernelContainer.Kernel.Get<ITranslationStringProvider>();
+            ITranslationStringProvider translationProvider = _kernelContainer.Kernel.Get<ITranslationStringProvider>();
 
             //translationProvider.LoadStringResourcesForDefaultLanguage("ResourceCategoryStrings_de");
             //translationProvider.LoadStringResourcesForDefaultLanguage("TradeUnitStrings_de");
@@ -87,7 +91,7 @@ namespace Fateblade.Alexandria.UI.WPF.Client
         {
             ViewModelLocationProvider.SetDefaultViewModelFactory((view, type) =>
             {
-                var viewType = view.GetType();
+                Type viewType = view.GetType();
                 var viewName = viewType.FullName;
                 var viewModelName = string.Empty;
 
@@ -136,10 +140,10 @@ namespace Fateblade.Alexandria.UI.WPF.Client
             //Todo: modularize into error handling or at least capsulate in separate class
             try
             {
-                var prismLogger = Container.Resolve<ILoggerFacade>();
-                var logger = Container.Resolve<ILogger>();
-                var dialogService = Container.Resolve<IDialogService>();
-                var messageFormatter = Container.Resolve<IExceptionMessageFormatter>();
+                ILoggerFacade prismLogger = Container.Resolve<ILoggerFacade>();
+                ILogger logger = Container.Resolve<ILogger>();
+                IDialogService dialogService = Container.Resolve<IDialogService>();
+                IExceptionMessageFormatter messageFormatter = Container.Resolve<IExceptionMessageFormatter>();
 
                 var errorMessage = messageFormatter.FormatAllMessagesToString(e.Exception);
                 prismLogger.Log(errorMessage, Category.Exception, Priority.High);

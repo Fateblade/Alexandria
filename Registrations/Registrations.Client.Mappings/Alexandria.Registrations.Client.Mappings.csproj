@@ -55,6 +55,12 @@
     <Reference Include="Components.Data.GenericDataStoring.NewtonsoftJson">
       <HintPath>..\..\_ExternalLibraries\Components.Data.GenericDataStoring.NewtonsoftJson.dll</HintPath>
     </Reference>
+    <Reference Include="Components.Logic.Foundation.Orchestration">
+      <HintPath>..\..\_ExternalLibraries\Components.Logic.Foundation.Orchestration.dll</HintPath>
+    </Reference>
+    <Reference Include="Components.Logic.Foundation.Orchestration.Contract">
+      <HintPath>..\..\_ExternalLibraries\Components.Logic.Foundation.Orchestration.Contract.dll</HintPath>
+    </Reference>
     <Reference Include="Components.Logic.Foundation.Translation">
       <HintPath>..\..\_ExternalLibraries\Components.Logic.Foundation.Translation.dll</HintPath>
     </Reference>
@@ -66,6 +72,12 @@
     </Reference>
     <Reference Include="Components.Logic.GenericManager.Contract">
       <HintPath>..\..\_ExternalLibraries\Components.Logic.GenericManager.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="Components.UI.WPF.ViewModelMapper">
+      <HintPath>..\..\_ExternalLibraries\Components.UI.WPF.ViewModelMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Components.UI.WPF.ViewModelMapper.Contract">
+      <HintPath>..\..\_ExternalLibraries\Components.UI.WPF.ViewModelMapper.Contract.dll</HintPath>
     </Reference>
   </ItemGroup>
 

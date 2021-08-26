@@ -11,8 +11,19 @@
                 <!-- Theme setting -->
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Themes/light.emerald.xaml" />
 
-                <!--include converters-->
+                <!--include custom converters-->
                 <ResourceDictionary Source="pack://application:,,,/Alexandria.UI.WPF.Converters;component/Converters.xaml" />
+
+                <!--include custom fonts-->
+                <ResourceDictionary Source="pack://application:,,,/Alexandria.UI.WPF.Controls;component/Fonts.xaml" />
+
+                <!--include custom control templates & styles-->
+                <ResourceDictionary Source="pack://application:,,,/Alexandria.UI.WPF.Controls;component/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/Alexandria.UI.WPF.Controls;component/Styles.xaml" />
+
+
+                <!--template selectors-->
+                <ResourceDictionary Source="Views/ViewModelTemplateSelector.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
