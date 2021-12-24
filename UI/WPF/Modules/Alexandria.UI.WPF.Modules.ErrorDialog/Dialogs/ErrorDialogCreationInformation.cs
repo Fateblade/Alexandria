@@ -2,7 +2,7 @@
 
 namespace Fateblade.Alexandria.UI.WPF.Client.Dialogs
 {
-    public class ErrorDialogCreationInformation : DialogCreationInformation
+    class ErrorDialogCreationInformation : DialogCreationInformation
     {
         public string Message { get; }
 

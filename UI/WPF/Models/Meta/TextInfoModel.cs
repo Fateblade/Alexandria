@@ -12,6 +12,8 @@ namespace Fateblade.Alexandria.UI.WPF.Models.Meta
 
         public TextInfoModel(TextInfo original) : base(original)
         {
+            ShortInfo = original.ShortInfo;
+            LongInfo = original.LongInfo;
         }
     }
 }

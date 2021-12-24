@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="Fateblade.Alexandria.UI.WPF.Client.Dialogs.UserConfirmationDialog"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:prism="http://prismlibrary.com/"
+             prism:ViewModelLocator.AutoWireViewModel="True"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="500">
+    <Grid>
+        <Grid Margin="4">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="{Binding Path=ConfirmationQuestion}"  
+                     TextWrapping="Wrap" />
+
+            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,8,0,0">
+                <Button Content="Confirm" 
+                        Command="{Binding Path=UserConfirmedCommand}" />
+
+                <Button Margin="8,0,0,0"
+                        Content="Abort" 
+                        Command="{Binding Path=UserAbortedCommand}" />
+            </StackPanel>
+        </Grid>
+    </Grid>
+</UserControl>

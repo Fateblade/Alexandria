@@ -5,7 +5,7 @@ using Prism.Commands;
 
 namespace Fateblade.Alexandria.UI.WPF.Client.Dialogs
 {
-    public class ErrorMessageDialogViewModel : BindableDialogBase<ErrorDialogCreationInformation, ErrorDialogResultInformation>
+    class ErrorMessageDialogViewModel : BindableDialogBase<ErrorDialogCreationInformation, ErrorDialogResultInformation>
     {
         private string _message;
         public string Message

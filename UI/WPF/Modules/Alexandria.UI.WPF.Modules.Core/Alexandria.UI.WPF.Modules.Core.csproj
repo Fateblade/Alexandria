@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>Fateblade.Alexandria.UI.WPF.Modules.Core</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Prism.Ninject" Version="7.2.0.1422" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Logic\Domain\Meta\MetaManagement.Contract\Alexandria.Logic.Domain.Meta.MetaManagement.Contract.csproj" />
+    <ProjectReference Include="..\..\Base\Alexandria.UI.WPF.Base.csproj" />
+    <ProjectReference Include="..\..\Models\Alexandria.UI.WPF.Models.csproj" />
+    <ProjectReference Include="..\Alexandria.UI.WPF.Modules.ErrorDialog\Alexandria.UI.WPF.Modules.CommonDialogs.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Dialogs\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Components.Logic.Foundation.Orchestration.Contract">
+      <HintPath>..\..\..\..\_ExternalLibraries\Components.Logic.Foundation.Orchestration.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="Components.UI.WPF.ViewModelMapper.Contract">
+      <HintPath>..\..\..\..\_ExternalLibraries\Components.UI.WPF.ViewModelMapper.Contract.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

@@ -142,7 +142,7 @@ namespace Fateblade.Alexandria.UI.WPF.Client
             {
                 ILoggerFacade prismLogger = Container.Resolve<ILoggerFacade>();
                 ILogger logger = Container.Resolve<ILogger>();
-                IDialogService dialogService = Container.Resolve<IDialogService>();
+                ICommonDialogOrchestrator commonDialogOrchestrator = Container.Resolve<ICommonDialogOrchestrator>();
                 IExceptionMessageFormatter messageFormatter = Container.Resolve<IExceptionMessageFormatter>();
 
                 var errorMessage = messageFormatter.FormatAllMessagesToString(e.Exception);
@@ -156,12 +156,7 @@ namespace Fateblade.Alexandria.UI.WPF.Client
 
                 if (_modulesInitialized)
                 {
-                    var parameters = new DialogParameters
-                    {
-                        {nameof(ErrorDialogCreationInformation), new ErrorDialogCreationInformation("Unbekannter Fehler!", errorMessage)}
-                    };
-
-                    dialogService.Show(nameof(ErrorMessageDialog), parameters, result => { });
+                    commonDialogOrchestrator.ShowErrorDialog(errorMessage, "Unbekannter Fehler!");
                 }
                 else
                 {
