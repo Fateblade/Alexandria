@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29025.244
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_ExternalLibraries", "_ExternalLibraries", "{86504E24-8C9F-4ABE-841C-C06FA95B1491}"
 	ProjectSection(SolutionItems) = preProject
@@ -85,9 +85,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alexandria.Logic.Domain.Met
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{8A515BF1-155C-435F-87E6-77823F48B086}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alexandria.Logic.Foundation.Meta.Dice", "Logic\Foundation\Meta.Dice\Alexandria.Logic.Foundation.Meta.Dice.csproj", "{05430B27-CF22-4957-9DFD-94B2C7C7A570}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alexandria.Logic.Foundation.Meta.DiceGeneration", "Logic\Foundation\Meta.Dice\Alexandria.Logic.Foundation.Meta.DiceGeneration.csproj", "{05430B27-CF22-4957-9DFD-94B2C7C7A570}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alexandria.Logic.Foundation.Meta.Dice.Contract", "Logic\Foundation\Meta.Dice.Contract\Alexandria.Logic.Foundation.Meta.Dice.Contract.csproj", "{6411AD6E-3860-4E8D-97F6-20E023795367}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alexandria.Logic.Foundation.Meta.DiceGeneration.Contract", "Logic\Foundation\Meta.Dice.Contract\Alexandria.Logic.Foundation.Meta.DiceGeneration.Contract.csproj", "{6411AD6E-3860-4E8D-97F6-20E023795367}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{87B5E873-94E3-4698-9D94-3A215F4F99B3}"
 	ProjectSection(SolutionItems) = preProject
@@ -120,7 +120,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{75F8
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alexandria.UI.WPF.Modules.CommonDialogs", "UI\WPF\Modules\Alexandria.UI.WPF.Modules.ErrorDialog\Alexandria.UI.WPF.Modules.CommonDialogs.csproj", "{FE2200DC-F3C0-4C94-907C-30AD67BE1B46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alexandria.UI.WPF.Modules.Core", "UI\WPF\Modules\Alexandria.UI.WPF.Modules.Core\Alexandria.UI.WPF.Modules.Core.csproj", "{105EBA6D-F11A-4001-9970-9C7CC899D2A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alexandria.UI.WPF.Modules.Core", "UI\WPF\Modules\Alexandria.UI.WPF.Modules.Core\Alexandria.UI.WPF.Modules.Core.csproj", "{105EBA6D-F11A-4001-9970-9C7CC899D2A0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alexandria.Logic.Foundation.Meta.DiceGeneration.Tests", "Logic\Foundation\Alexandria.Logic.Foundation.Meta.Dice.Tests\Alexandria.Logic.Foundation.Meta.DiceGeneration.Tests.csproj", "{FF5DDFF8-CEDF-4CD9-8E73-2FF2E49A00A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alexandria.Logic.Foundation.Meta.DiceGeneration.DiceRollerNuget", "Logic\Foundation\Alexandria.Logic.Foundation.Meta.Dice.DiceRoller\Alexandria.Logic.Foundation.Meta.DiceGeneration.DiceRollerNuget.csproj", "{48726106-8A10-4D9D-A673-A48A63FAE568}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -224,6 +228,14 @@ Global
 		{105EBA6D-F11A-4001-9970-9C7CC899D2A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{105EBA6D-F11A-4001-9970-9C7CC899D2A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{105EBA6D-F11A-4001-9970-9C7CC899D2A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF5DDFF8-CEDF-4CD9-8E73-2FF2E49A00A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF5DDFF8-CEDF-4CD9-8E73-2FF2E49A00A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF5DDFF8-CEDF-4CD9-8E73-2FF2E49A00A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF5DDFF8-CEDF-4CD9-8E73-2FF2E49A00A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48726106-8A10-4D9D-A673-A48A63FAE568}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48726106-8A10-4D9D-A673-A48A63FAE568}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48726106-8A10-4D9D-A673-A48A63FAE568}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48726106-8A10-4D9D-A673-A48A63FAE568}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -262,6 +274,8 @@ Global
 		{75F8165B-38D2-4BA2-BB1A-075AF141D008} = {A7C16453-A782-4204-B3F1-FB91C826B508}
 		{FE2200DC-F3C0-4C94-907C-30AD67BE1B46} = {75F8165B-38D2-4BA2-BB1A-075AF141D008}
 		{105EBA6D-F11A-4001-9970-9C7CC899D2A0} = {75F8165B-38D2-4BA2-BB1A-075AF141D008}
+		{FF5DDFF8-CEDF-4CD9-8E73-2FF2E49A00A4} = {8A515BF1-155C-435F-87E6-77823F48B086}
+		{48726106-8A10-4D9D-A673-A48A63FAE568} = {8A515BF1-155C-435F-87E6-77823F48B086}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DB427DFF-78EE-4F04-A938-5D6762870AAD}

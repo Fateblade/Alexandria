@@ -1,18 +1,18 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>Fateblade.Alexandria.Logic.Foundation.Meta.Dice</RootNamespace>
-    <AssemblyName>Alexandria.Logic.Foundation.Meta.Dice</AssemblyName>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Fateblade.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Troschuetz.Random" Version="5.0.1" />
+    <PackageReference Include="DiceRoller" Version="4.2.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\CrossCutting\Meta.DataClasses\Alexandria.CrossCutting.Meta.DataClasses.csproj" />
-    <ProjectReference Include="..\Meta.Dice.Contract\Alexandria.Logic.Foundation.Meta.Dice.Contract.csproj" />
+    <ProjectReference Include="..\Meta.Dice.Contract\Alexandria.Logic.Foundation.Meta.DiceGeneration.Contract.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -5,5 +5,6 @@
         DiceType DiceType { get; }
         int Roll();
         int LastRollResult { get; }
+        uint Sides { get; }
     }
 }

@@ -14,8 +14,8 @@
     <ProjectReference Include="..\..\Logic\Domain\Gear\GearManagement\Alexandria.Logic.Domain.Gear.GearManagement.csproj" />
     <ProjectReference Include="..\..\Logic\Domain\Meta\MetaManagement.Contract\Alexandria.Logic.Domain.Meta.MetaManagement.Contract.csproj" />
     <ProjectReference Include="..\..\Logic\Domain\Meta\MetaManagement\Alexandria.Logic.Domain.Meta.MetaManagement.csproj" />
-    <ProjectReference Include="..\..\Logic\Foundation\Meta.Dice.Contract\Alexandria.Logic.Foundation.Meta.Dice.Contract.csproj" />
-    <ProjectReference Include="..\..\Logic\Foundation\Meta.Dice\Alexandria.Logic.Foundation.Meta.Dice.csproj" />
+    <ProjectReference Include="..\..\Logic\Foundation\Meta.Dice.Contract\Alexandria.Logic.Foundation.Meta.DiceGeneration.Contract.csproj" />
+    <ProjectReference Include="..\..\Logic\Foundation\Meta.Dice\Alexandria.Logic.Foundation.Meta.DiceGeneration.csproj" />
   </ItemGroup>
 
   <ItemGroup>

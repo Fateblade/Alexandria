@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>Fateblade.Alexandria.Logic.Foundation.Meta.Dice.Contract</RootNamespace>
-    <AssemblyName>Alexandria.Logic.Foundation.Meta.Dice.Contract</AssemblyName>
+    <RootNamespace>Fateblade.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+    <AssemblyName>$(MSBuildProjectName)</AssemblyName>
   </PropertyGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">

@@ -4,7 +4,7 @@ using Fateblade.Alexandria.Logic.Foundation.Meta.Dice.Contract;
 
 namespace Fateblade.Alexandria.Logic.Foundation.Meta.Dice
 {
-    class DiceFormula : IDiceFormula
+    class SimpleDiceFormula : IDiceFormula
     {
         private readonly IDiceFactory _diceFactory;
         private readonly int _modifier;
@@ -12,7 +12,7 @@ namespace Fateblade.Alexandria.Logic.Foundation.Meta.Dice
         private readonly bool _isNegativeModifierResultPerDiceAllowed;
         private readonly IDiceCollection _diceCollection;
 
-        internal DiceFormula(IDiceFactory diceFactory, DiceType diceType, int diceAmount, int modifier, bool isModifierPerDice, bool isNegativeModifierResultPerDiceAllowed)
+        internal SimpleDiceFormula(IDiceFactory diceFactory, DiceType diceType, int diceAmount, int modifier, bool isModifierPerDice, bool isNegativeModifierResultPerDiceAllowed)
             : this(diceFactory, modifier, isModifierPerDice, isNegativeModifierResultPerDiceAllowed)
         {
             _diceCollection = new DiceCollection();
@@ -22,7 +22,7 @@ namespace Fateblade.Alexandria.Logic.Foundation.Meta.Dice
             }
         }
 
-        internal DiceFormula(IDiceFactory diceFactory, uint diceSides, int diceAmount, int modifier, bool isModifierPerDice, bool isNegativeModifierResultPerDiceAllowed)
+        internal SimpleDiceFormula(IDiceFactory diceFactory, uint diceSides, int diceAmount, int modifier, bool isModifierPerDice, bool isNegativeModifierResultPerDiceAllowed)
             : this(diceFactory, modifier, isModifierPerDice, isNegativeModifierResultPerDiceAllowed)
         {
             _diceCollection = new DiceCollection();
@@ -32,13 +32,13 @@ namespace Fateblade.Alexandria.Logic.Foundation.Meta.Dice
             }
         }
 
-        internal DiceFormula(IDiceFactory diceFactory, IDiceCollection diceCollection, int modifier, bool isModifierPerDice, bool isNegativeModifierResultPerDiceAllowed)
+        internal SimpleDiceFormula(IDiceFactory diceFactory, IDiceCollection diceCollection, int modifier, bool isModifierPerDice, bool isNegativeModifierResultPerDiceAllowed)
             : this(diceFactory, modifier, isModifierPerDice, isNegativeModifierResultPerDiceAllowed)
         {
             _diceCollection = diceCollection;
         }
 
-        private DiceFormula(IDiceFactory diceFactory, int modifier, bool isModifierPerDice, bool isNegativeModifierResultPerDiceAllowed)
+        private SimpleDiceFormula(IDiceFactory diceFactory, int modifier, bool isModifierPerDice, bool isNegativeModifierResultPerDiceAllowed)
         {
             _diceFactory = diceFactory;
             _modifier = modifier;

@@ -25,7 +25,10 @@ namespace Fateblade.Alexandria.UI.WPF.Client
                 parameters,
                 result =>
                 {
-                    confirmationCallback.Invoke(result is UserConfirmationDialogResultInformation {UserConfirmed: false});
+                    if (result is UserConfirmationDialogResultInformation dialogResult)
+                    {
+                        confirmationCallback.Invoke(dialogResult.UserConfirmed);
+                    }
                 });
         }
 
@@ -38,5 +41,25 @@ namespace Fateblade.Alexandria.UI.WPF.Client
 
             _dialogService.Show(nameof(ErrorMessageDialog), parameters, _ => { });
         }
+
+        public void GetStringUserInput(string question, string title, Action<string> userInputCallback)
+        {
+            var parameters = new DialogParameters
+            {
+                { nameof(UserStringInputDialogCreationInformation), new UserStringInputDialogCreationInformation(question, title) }
+            };
+
+            _dialogService.ShowDialog(
+                nameof(UserStringInputDialog),
+                parameters,
+                result =>
+                {
+                    if (result is UserStringInputDialogResultInformation dialogResult && dialogResult.Result == ButtonResult.Yes)
+                    {
+                        userInputCallback.Invoke(dialogResult.UserInput); 
+                    }
+                });
+        }
     }
+
 }

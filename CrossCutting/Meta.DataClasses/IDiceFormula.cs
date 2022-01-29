@@ -3,5 +3,6 @@
     public interface IDiceFormula
     {
         int Roll();
+        string ToString();
     }
 }

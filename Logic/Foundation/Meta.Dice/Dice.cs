@@ -7,6 +7,7 @@ namespace Fateblade.Alexandria.Logic.Foundation.Meta.Dice
     {
         private readonly TRandom _generatorInstance;
 
+        public uint Sides { get; }
         public DiceType DiceType { get; }
         public int LastRollResult { get; private set; }
 
@@ -14,6 +15,7 @@ namespace Fateblade.Alexandria.Logic.Foundation.Meta.Dice
         {
             DiceType = diceType;
             _generatorInstance = generatorInstanceToUse;
+            Sides = (uint)DiceType;
         }
 
 

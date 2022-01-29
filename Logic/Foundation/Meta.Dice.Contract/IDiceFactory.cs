@@ -14,5 +14,6 @@ namespace Fateblade.Alexandria.Logic.Foundation.Meta.Dice.Contract
         IDiceFormula CreateDiceFormula(DiceType diceType, int diceAmount, int modifier, bool isModifierPerDice, bool isNegativeModifierResultPerDiceAllowed);
         IDiceFormula CreateDiceFormula(uint diceSides, int diceAmount, int modifier, bool isModifierPerDice, bool isNegativeModifierResultPerDiceAllowed);
         IDiceFormula CreateDiceFormula(IDiceCollection dice, int modifier, bool isModifierPerDice, bool isNegativeModifierResultPerDiceAllowed);
+        IDiceFormula FromString(string diceFormula);
     }
 }

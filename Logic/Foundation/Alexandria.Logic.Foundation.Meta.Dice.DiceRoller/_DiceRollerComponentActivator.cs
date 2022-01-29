@@ -1,16 +1,15 @@
-﻿using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.Bootstrapping;
+﻿using System.Runtime.CompilerServices;
+using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.Bootstrapping;
 using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.Configuration;
 using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.DependencyInjection;
 using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.EventBrokerage;
 using Fateblade.Alexandria.Logic.Foundation.Meta.Dice.Contract;
-using System.Runtime.CompilerServices;
 
 [assembly: InternalsVisibleTo("Alexandria.Logic.Foundation.Meta.DiceGeneration.Tests")]
 
-
-namespace Fateblade.Alexandria.Logic.Foundation.Meta.Dice
+namespace Fateblade.Alexandria.Logic.Foundation.Meta.DiceGeneration.DiceRollerNuget
 {
-    public class DiceActivator : IComponentActivator
+    internal class DiceRollerComponentActivator : IComponentActivator
     {
         public void Activating()
         {
@@ -30,8 +29,9 @@ namespace Fateblade.Alexandria.Logic.Foundation.Meta.Dice
 
         public void RegisterMappings(ICoCoKernel kernel)
         {
-            kernel.Register<IDiceFactory, DiceFactory>();
-            kernel.Register<IComplexDiceFormulaBuilder, ComplexDiceFormulaBuilder>();
+            kernel.RegisterUnique<IDiceOptionsManager, DiceOptionsManager>(new DiceOptionsManager());
+            kernel.Register<IDiceFactory, DiceRollerDiceFactory>();
+            kernel.Register<IComplexDiceFormulaBuilder, DiceRollerComplexDiceFormulaBuilder>();
         }
 
         public void AddMessageSubscriptions(IEventBroker broker)
