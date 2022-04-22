@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:prism="http://prismlibrary.com/"
+             xmlns:uiBehaviour="clr-namespace:Fateblade.Alexandria.UI.WPF.Base.UiBehaviour;assembly=Alexandria.UI.WPF.Base"
              prism:ViewModelLocator.AutoWireViewModel="True"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
@@ -18,7 +19,9 @@
             <TextBlock Text="{Binding Path=Question}"  
                        TextWrapping="Wrap" />
 
-            <TextBox Grid.Row="1" Text="{Binding Path=UserInput, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBox Grid.Row="1" Text="{Binding Path=UserInput, UpdateSourceTrigger=PropertyChanged}"
+                     uiBehaviour:TextBoxEnterPressedCommand.EnterPressedCommand="{Binding Path=UserConfirmedCommand}"
+                     />
 
             <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,8,0,0">
                 <Button Content="Confirm" 

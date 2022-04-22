@@ -17,8 +17,15 @@ namespace Fateblade.Alexandria.UI.WPF.Models.Meta
         public string ConsequenceFailure { get; set; }
         public EncounterState State { get; set; }
 
+        public override Encounter ModifiedEntity => throw new System.NotImplementedException();
+
         public EncounterModel(Encounter original) : base(original)
         {
+        }
+
+        public override void ModifyOriginalEntity()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

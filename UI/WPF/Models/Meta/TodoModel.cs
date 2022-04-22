@@ -11,8 +11,15 @@ namespace Fateblade.Alexandria.UI.WPF.Models.Meta
         public string Description { get; set; }
         public string Summary { get; set; }
 
+        public override Todo ModifiedEntity => throw new System.NotImplementedException();
+
         public TodoModel(Todo original) : base(original)
         {
+        }
+
+        public override void ModifyOriginalEntity()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

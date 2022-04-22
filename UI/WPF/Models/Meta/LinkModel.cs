@@ -11,8 +11,15 @@ namespace Fateblade.Alexandria.UI.WPF.Models.Meta
         public string Path { get; set; }
         public string Description { get; set; }
 
+        public override Link ModifiedEntity => throw new System.NotImplementedException();
+
         public LinkModel(Link original) : base(original)
         {
+        }
+
+        public override void ModifyOriginalEntity()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

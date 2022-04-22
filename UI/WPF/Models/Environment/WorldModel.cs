@@ -21,8 +21,15 @@ namespace Fateblade.Alexandria.UI.WPF.Models.Environment
         public List<PlayerCharacterModel> Characters { get; set; } = new List<PlayerCharacterModel>();
         public List<DeityModel> NonPantheonDeities { get; set; } = new List<DeityModel>();
 
+        public override World ModifiedEntity => throw new NotImplementedException();
+
         public WorldModel(World original) : base(original)
         {
+        }
+
+        public override void ModifyOriginalEntity()
+        {
+            throw new NotImplementedException();
         }
     }
 }

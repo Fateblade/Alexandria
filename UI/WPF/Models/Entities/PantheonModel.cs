@@ -13,8 +13,15 @@ namespace Fateblade.Alexandria.UI.WPF.Models.Entities
         public ObservableCollection<Deity> Deities;
         public int RelationCategoryId => (int)RelationCategory.Pantheon;
 
+        public override Pantheon ModifiedEntity => throw new System.NotImplementedException();
+
         public PantheonModel(Pantheon original) : base(original)
         {
+        }
+
+        public override void ModifyOriginalEntity()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

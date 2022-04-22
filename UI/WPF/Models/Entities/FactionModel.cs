@@ -14,8 +14,15 @@ namespace Fateblade.Alexandria.UI.WPF.Models.Entities
         public string Backstory { get; set; }
         public string Description { get; set; }
 
+        public override Faction ModifiedEntity => throw new System.NotImplementedException();
+
         public FactionModel(Faction original) : base(original)
         {
+        }
+
+        public override void ModifyOriginalEntity()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

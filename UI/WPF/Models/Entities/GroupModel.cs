@@ -11,8 +11,15 @@ namespace Fateblade.Alexandria.UI.WPF.Models.Entities
         public string Description { get; set; }
         public int RelationCategoryId => (int)RelationCategory.Group;
 
+        public override Group ModifiedEntity => throw new System.NotImplementedException();
+
         public GroupModel(Group original) : base(original)
         {
+        }
+
+        public override void ModifyOriginalEntity()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

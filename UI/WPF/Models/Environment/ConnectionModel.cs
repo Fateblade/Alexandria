@@ -14,8 +14,15 @@ namespace Fateblade.Alexandria.UI.WPF.Models.Environment
         public IIdentifiableGuidEntity SourceObjectId { get; set; }
         public IIdentifiableGuidEntity TargetObjectId { get; set; }
 
+        public override Connection ModifiedEntity => throw new System.NotImplementedException();
+
         public ConnectionModel(Connection original) : base(original)
         {
+        }
+
+        public override void ModifyOriginalEntity()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

@@ -11,8 +11,15 @@ namespace Fateblade.Alexandria.UI.WPF.Models.Meta
         public string Name { get; set; }
         public Color Color { get; set; }
 
+        public override Tag ModifiedEntity => throw new System.NotImplementedException();
+
         public TagModel(Tag original) : base(original)
         {
+        }
+
+        public override void ModifyOriginalEntity()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

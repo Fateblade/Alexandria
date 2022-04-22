@@ -13,8 +13,15 @@ namespace Fateblade.Alexandria.UI.WPF.Models.Environment
         public string Description { get; set; }
         public LocationModel SubLocationOf { get; set; }
 
+        public override Location ModifiedEntity => throw new System.NotImplementedException();
+
         public LocationModel(Location original) : base(original)
         {
+        }
+
+        public override void ModifyOriginalEntity()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

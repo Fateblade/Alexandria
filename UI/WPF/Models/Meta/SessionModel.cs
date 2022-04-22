@@ -16,8 +16,15 @@ namespace Fateblade.Alexandria.UI.WPF.Models.Meta
         public List<StageModel> PlayedStages { get; set; } = new List<StageModel>();
         public List<EncounterModel> PlayedEncounters { get; set; } = new List<EncounterModel>();
 
+        public override Session ModifiedEntity => throw new NotImplementedException();
+
         public SessionModel(Session original) : base(original)
         {
+        }
+
+        public override void ModifyOriginalEntity()
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -12,8 +12,15 @@ namespace Fateblade.Alexandria.UI.WPF.Models.Meta
         public List<TextInfo> RewardSummary { get; set; } = new List<TextInfo>();
         public List<EncounterModel> Encounters { get; set; } = new List<EncounterModel>();
 
+        public override Stage ModifiedEntity => throw new System.NotImplementedException();
+
         public StageModel(Stage original) : base(original)
         {
+        }
+
+        public override void ModifyOriginalEntity()
+        {
+            throw new System.NotImplementedException();
         }
     }
 

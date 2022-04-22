@@ -13,8 +13,15 @@ namespace Fateblade.Alexandria.UI.WPF.Models.Gear
         public string Statistics { get; set; }
         public int RelationCategoryID { get; }
 
+        public override Item ModifiedEntity => throw new System.NotImplementedException();
+
         public ItemModel(Item original) : base(original)
         {
+        }
+
+        public override void ModifyOriginalEntity()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

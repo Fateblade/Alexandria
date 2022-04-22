@@ -11,8 +11,15 @@ namespace Fateblade.Alexandria.UI.WPF.Models.Entities
         public string Summary { get; set; }
         public string Description { get; set; }
 
+        public override Relation ModifiedEntity => throw new System.NotImplementedException();
+
         public RelationModel(Relation original) : base(original)
         {
+        }
+
+        public override void ModifyOriginalEntity()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

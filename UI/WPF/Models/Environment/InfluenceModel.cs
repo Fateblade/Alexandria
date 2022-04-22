@@ -13,8 +13,15 @@ namespace Fateblade.Alexandria.UI.WPF.Models.Environment
         public string Description { get; set; }
         public TrackableDateStamp TimeOfInfluence { get; set; }
 
+        public override Influence ModifiedEntity => throw new System.NotImplementedException();
+
         public InfluenceModel(Influence original) : base(original)
         {
+        }
+
+        public override void ModifyOriginalEntity()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

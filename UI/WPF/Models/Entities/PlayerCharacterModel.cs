@@ -23,8 +23,15 @@ namespace Fateblade.Alexandria.UI.WPF.Models.Entities
 
         public int RelationCategoryId => (int)RelationCategory.PC;
 
+        public override PlayerCharacter ModifiedEntity => throw new System.NotImplementedException();
+
         public PlayerCharacterModel(PlayerCharacter original) : base(original)
         {
+        }
+
+        public override void ModifyOriginalEntity()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

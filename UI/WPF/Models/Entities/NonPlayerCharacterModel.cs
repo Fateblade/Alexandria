@@ -30,8 +30,15 @@ namespace Fateblade.Alexandria.UI.WPF.Models.Entities
 
         public List<ItemModel> Items { get; set; }
 
+        public override NonPlayerCharacter ModifiedEntity => throw new NotImplementedException();
+
         public NonPlayerCharacterModel(NonPlayerCharacter original) : base(original)
         {
+        }
+
+        public override void ModifyOriginalEntity()
+        {
+            throw new NotImplementedException();
         }
     }
 }

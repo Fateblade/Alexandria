@@ -7,7 +7,8 @@ using Fateblade.Alexandria.UI.WPF.Base;
 
 namespace Fateblade.Alexandria.UI.WPF.Models.Entities
 {
-    public class DeityModel : ModifiableDataClassModel<Deity>
+    public class 
+        DeityModel : ModifiableDataClassModel<Deity>
     {
         public string Aspects { get; set; }
         public int RelationCategoryId => (int)RelationCategory.Deity;
@@ -29,8 +30,15 @@ namespace Fateblade.Alexandria.UI.WPF.Models.Entities
         public List<ItemModel> Items { get; set; }
         public PlaneModel Homeplanes { get; set; }
 
+        public override Deity ModifiedEntity => throw new NotImplementedException();
+
         public DeityModel(Deity original) : base(original)
         {
+        }
+
+        public override void ModifyOriginalEntity()
+        {
+            throw new NotImplementedException();
         }
     }
 }

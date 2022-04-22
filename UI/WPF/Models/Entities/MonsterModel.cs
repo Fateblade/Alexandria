@@ -17,8 +17,15 @@ namespace Fateblade.Alexandria.UI.WPF.Models.Entities
         public string Type { get; set; }
         public int RelationCategoryId => (int)RelationCategory.Monster;
 
+        public override Monster ModifiedEntity => throw new NotImplementedException();
+
         public MonsterModel(Monster original) : base(original)
         {
+        }
+
+        public override void ModifyOriginalEntity()
+        {
+            throw new NotImplementedException();
         }
     }
 }

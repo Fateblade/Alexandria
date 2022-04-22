@@ -15,8 +15,13 @@ namespace Fateblade.Alexandria.UI.WPF.Models.Meta
         public List<PlayerCharacterModel> ParticipatingCharacters { get; set; } = new List<PlayerCharacterModel>();
         public List<StageModel> Stages { get; set; } = new List<StageModel>();
 
-
+        public override Adventure ModifiedEntity => throw new System.NotImplementedException();
 
         public AdventureModel(Adventure original) : base(original) { }
+
+        public override void ModifyOriginalEntity()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

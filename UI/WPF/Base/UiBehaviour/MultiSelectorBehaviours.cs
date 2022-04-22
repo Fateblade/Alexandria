@@ -1,32 +1,32 @@
 ﻿using System.Collections;
 using System.Windows;
-using System.Windows.Controls.Primitives;
+using System.Windows.Controls;
 
 namespace Fateblade.Alexandria.UI.WPF.Base.UiBehaviour
 {
-    public static class MultiSelectorBehaviours
+    public static class ListBoxBehaviours
     {
-        public static IList GetReadOnlyBindableSelectedItems(DependencyObject target)
+        public static IList GetCopySelectedItemsInto(DependencyObject target)
         {
-            return (IList)target.GetValue(ReadOnlyBindableSelectedItemsProperty);
+            return (IList)target.GetValue(CopySelectedItemsIntoProperty);
         }
 
-        public static void SetReadOnlyBindableSelectedItems(DependencyObject target, IList value)
+        public static void SetCopySelectedItemsInto(DependencyObject target, IList value)
         {
-            target.SetValue(ReadOnlyBindableSelectedItemsProperty, value);
+            target.SetValue(CopySelectedItemsIntoProperty, value);
         }
 
-        public static readonly DependencyProperty ReadOnlyBindableSelectedItemsProperty =
+        public static readonly DependencyProperty CopySelectedItemsIntoProperty =
             DependencyProperty.RegisterAttached(
-                "ReadOnlyBindableSelectedItems",
+                "CopySelectedItemsInto",
                 typeof(IList),
-                typeof(MultiSelectorBehaviours),
-                new PropertyMetadata(default(IList), OnReadOnlyBindableSelectedItems));
+                typeof(ListBoxBehaviours),
+                new PropertyMetadata(default(IList), OnCopySelectedItemsIntoChanged));
 
 
-        private static void OnReadOnlyBindableSelectedItems(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        private static void OnCopySelectedItemsIntoChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            MultiSelector selector = (MultiSelector)d;
+            ListBox selector = (ListBox)d;
             IList listToUpdate = (IList)e.NewValue;
 
             listToUpdate.Clear();
@@ -47,8 +47,6 @@ namespace Fateblade.Alexandria.UI.WPF.Base.UiBehaviour
                     listToUpdate.Add(added);
                 }
             };
-
-
         }
     }
 }

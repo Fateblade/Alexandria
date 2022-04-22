@@ -10,10 +10,17 @@ namespace Fateblade.Alexandria.UI.WPF.Models.Meta
         public string ShortInfo { get; set; }
         public string LongInfo { get; set; }
 
+        public override TextInfo ModifiedEntity => throw new System.NotImplementedException();
+
         public TextInfoModel(TextInfo original) : base(original)
         {
             ShortInfo = original.ShortInfo;
             LongInfo = original.LongInfo;
+        }
+
+        public override void ModifyOriginalEntity()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

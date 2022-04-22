@@ -9,8 +9,15 @@ namespace Fateblade.Alexandria.UI.WPF.Models.Meta
         public IIdentifiableGuidEntity AssociatedObject { get; set; }
         public string Description { get; set; }
 
+        public override Note ModifiedEntity => throw new System.NotImplementedException();
+
         public NoteModel(Note original) : base(original)
         {
+        }
+
+        public override void ModifyOriginalEntity()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

@@ -16,4 +16,8 @@
     </Reference>
   </ItemGroup>
 
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="xcopy &quot;$(TargetDir)$(TargetName).*&quot; &quot;D:\Github\testspace_dsa\_ExternalComponents&quot; /F /R /I /E /Y&#xD;&#xA;xcopy &quot;$(TargetDir)$(TargetName).*&quot;  D:\Github\testspace_starfinder\_externalLibraries /F /R /I /E /Y" />
+  </Target>
+
 </Project>
