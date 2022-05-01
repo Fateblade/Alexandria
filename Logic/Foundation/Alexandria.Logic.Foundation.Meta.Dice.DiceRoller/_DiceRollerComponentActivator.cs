@@ -9,7 +9,7 @@ using Fateblade.Alexandria.Logic.Foundation.Meta.Dice.Contract;
 
 namespace Fateblade.Alexandria.Logic.Foundation.Meta.DiceGeneration.DiceRollerNuget
 {
-    internal class DiceRollerComponentActivator : IComponentActivator
+    public class DiceRollerComponentActivator : IComponentActivator
     {
         public void Activating()
         {
