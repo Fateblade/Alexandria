@@ -8,7 +8,7 @@ using Fateblade.Alexandria.UI.WPF.Models.Managers;
 
 namespace Fateblade.Alexandria.UI.WPF.Models.Meta
 {
-    public class PlayerModel : ModifiableDataClassModel<Player>
+    public class PlayerModel : ModifiableIdentifiableDataClassModel<Player>
     {
         private string _name;
         public string Name

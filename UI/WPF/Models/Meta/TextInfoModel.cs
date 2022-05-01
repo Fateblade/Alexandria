@@ -4,7 +4,7 @@ using Fateblade.Components.CrossCutting.Base.Identifiable.DataClasses;
 
 namespace Fateblade.Alexandria.UI.WPF.Models.Meta
 {
-    public class TextInfoModel : ModifiableDataClassModel<TextInfo>
+    public class TextInfoModel : ModifiableIdentifiableDataClassModel<TextInfo>
     {
         public IIdentifiableGuidEntity AssociatedObject { get; set; }
         public string ShortInfo { get; set; }
