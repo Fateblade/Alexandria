@@ -1,5 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
+	<Import Project="..\..\..\..\_Build\FatebladeProjectDefaultsImport.msb.xml" />
   <PropertyGroup>
     <TargetFramework>net5.0-windows</TargetFramework>
     <RootNamespace>Fateblade.Alexandria.UI.WPF.Models</RootNamespace>
@@ -24,7 +24,6 @@
 
   <ItemGroup>
     <Reference Include="Components.CrossCutting.Base.Identifiable.DataClasses">
-      <HintPath>..\..\..\_ExternalLibraries\Components.CrossCutting.Base.Identifiable.DataClasses.dll</HintPath>
     </Reference>
   </ItemGroup>
 

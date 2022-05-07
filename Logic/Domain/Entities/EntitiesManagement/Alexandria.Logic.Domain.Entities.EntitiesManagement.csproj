@@ -1,5 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
+	<Import Project="..\..\..\..\..\_Build\FatebladeProjectDefaultsImport.msb.xml" />
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>Fateblade.Alexandria.Logic.Domain.Entities.EntitiesManagement</RootNamespace>
@@ -13,18 +13,15 @@
 
   <ItemGroup>
     <Reference Include="CoCo.Core.Contract">
-      <HintPath>..\..\..\..\_ExternalLibraries\CoCo.Core.Contract.dll</HintPath>
     </Reference>
     <Reference Include="Components.CrossCutting.Base.Identifiable.DataClasses">
-      <HintPath>..\..\..\..\_ExternalLibraries\Components.CrossCutting.Base.Identifiable.DataClasses.dll</HintPath>
     </Reference>
     <Reference Include="Components.Data.GenericDataStoring.Contract">
-      <HintPath>..\..\..\..\_ExternalLibraries\Components.Data.GenericDataStoring.Contract.dll</HintPath>
     </Reference>
   </ItemGroup>
 
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="xcopy &quot;$(TargetDir)$(TargetName).*&quot; &quot;D:\Github\testspace_dsa\_ExternalComponents&quot; /F /R /I /E /Y&#xD;&#xA;xcopy &quot;$(TargetDir)$(TargetName).*&quot;  D:\Github\testspace_starfinder\_externalLibraries /F /R /I /E /Y" />
-  </Target>
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<CallTarget Targets="CopyProjectToDll" />
+	</Target>
 
 </Project>

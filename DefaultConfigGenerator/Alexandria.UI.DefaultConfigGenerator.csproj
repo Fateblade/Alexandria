@@ -1,5 +1,5 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="..\..\_Build\FatebladeProjectDefaultsImport.msb.xml" />
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
@@ -11,16 +11,12 @@
 
   <ItemGroup>
     <Reference Include="CoCo.Core.Contract">
-      <HintPath>..\_ExternalLibraries\CoCo.Core.Contract.dll</HintPath>
     </Reference>
     <Reference Include="Components.CrossCutting.CoCo.Core.Configuration.NewtonsoftJson">
-      <HintPath>..\_ExternalLibraries\Components.CrossCutting.CoCo.Core.Configuration.NewtonsoftJson.dll</HintPath>
     </Reference>
     <Reference Include="Components.CrossCutting.Logging.Csv">
-      <HintPath>..\_ExternalLibraries\Components.CrossCutting.Logging.Csv.dll</HintPath>
     </Reference>
     <Reference Include="Components.Data.GenericDataStoring.NewtonsoftJson">
-      <HintPath>..\_ExternalLibraries\Components.Data.GenericDataStoring.NewtonsoftJson.dll</HintPath>
     </Reference>
   </ItemGroup>
 

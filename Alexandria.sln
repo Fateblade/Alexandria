@@ -3,42 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_ExternalLibraries", "_ExternalLibraries", "{86504E24-8C9F-4ABE-841C-C06FA95B1491}"
-	ProjectSection(SolutionItems) = preProject
-		_ExternalLibraries\CoCo.Core.Bootstrapping.dll = _ExternalLibraries\CoCo.Core.Bootstrapping.dll
-		_ExternalLibraries\CoCo.Core.Configuration.dll = _ExternalLibraries\CoCo.Core.Configuration.dll
-		_ExternalLibraries\CoCo.Core.Contract.dll = _ExternalLibraries\CoCo.Core.Contract.dll
-		_ExternalLibraries\CoCo.Core.EventBrokerage.dll = _ExternalLibraries\CoCo.Core.EventBrokerage.dll
-		_ExternalLibraries\CoCo.Core.NinjectAdapter.dll = _ExternalLibraries\CoCo.Core.NinjectAdapter.dll
-		_ExternalLibraries\CoCo.Core.NinjectPrismAdapter.dll = _ExternalLibraries\CoCo.Core.NinjectPrismAdapter.dll
-		_ExternalLibraries\CoCo.Core.PrismAdapter.dll = _ExternalLibraries\CoCo.Core.PrismAdapter.dll
-		_ExternalLibraries\Components.CrossCutting.Base.Identifiable.DataClasses.dll = _ExternalLibraries\Components.CrossCutting.Base.Identifiable.DataClasses.dll
-		_ExternalLibraries\Components.CrossCutting.CoCo.Core.Configuration.NewtonsoftJson.dll = _ExternalLibraries\Components.CrossCutting.CoCo.Core.Configuration.NewtonsoftJson.dll
-		_ExternalLibraries\Components.CrossCutting.CommonMessages.Contract.dll = _ExternalLibraries\Components.CrossCutting.CommonMessages.Contract.dll
-		_ExternalLibraries\Components.CrossCutting.ExceptionFormatter.Contract.dll = _ExternalLibraries\Components.CrossCutting.ExceptionFormatter.Contract.dll
-		_ExternalLibraries\Components.CrossCutting.ExceptionFormatter.SimpleListFormat.dll = _ExternalLibraries\Components.CrossCutting.ExceptionFormatter.SimpleListFormat.dll
-		_ExternalLibraries\Components.CrossCutting.Logging.Contract.dll = _ExternalLibraries\Components.CrossCutting.Logging.Contract.dll
-		_ExternalLibraries\Components.CrossCutting.Logging.Csv.dll = _ExternalLibraries\Components.CrossCutting.Logging.Csv.dll
-		_ExternalLibraries\Components.CrossCutting.Logging.PrismWrapper.dll = _ExternalLibraries\Components.CrossCutting.Logging.PrismWrapper.dll
-		_ExternalLibraries\Components.Data.GenericDataStoring.Contract.dll = _ExternalLibraries\Components.Data.GenericDataStoring.Contract.dll
-		_ExternalLibraries\Components.Data.GenericDataStoring.NewtonsoftJson.dll = _ExternalLibraries\Components.Data.GenericDataStoring.NewtonsoftJson.dll
-		_ExternalLibraries\Components.Data.GenericDataStoring.SqLite.dll = _ExternalLibraries\Components.Data.GenericDataStoring.SqLite.dll
-		_ExternalLibraries\Components.Logic.Foundation.ConsentManager.Contract.dll = _ExternalLibraries\Components.Logic.Foundation.ConsentManager.Contract.dll
-		_ExternalLibraries\Components.Logic.Foundation.ConsentManager.dll = _ExternalLibraries\Components.Logic.Foundation.ConsentManager.dll
-		_ExternalLibraries\Components.Logic.Foundation.DelayedActionExecution.Contract.dll = _ExternalLibraries\Components.Logic.Foundation.DelayedActionExecution.Contract.dll
-		_ExternalLibraries\Components.Logic.Foundation.DelayedActionExecution.dll = _ExternalLibraries\Components.Logic.Foundation.DelayedActionExecution.dll
-		_ExternalLibraries\Components.Logic.Foundation.FeatureTrackingComponent.Contract.dll = _ExternalLibraries\Components.Logic.Foundation.FeatureTrackingComponent.Contract.dll
-		_ExternalLibraries\Components.Logic.Foundation.FeatureTrackingComponent.dll = _ExternalLibraries\Components.Logic.Foundation.FeatureTrackingComponent.dll
-		_ExternalLibraries\Components.Logic.Foundation.Orchestration.Contract.dll = _ExternalLibraries\Components.Logic.Foundation.Orchestration.Contract.dll
-		_ExternalLibraries\Components.Logic.Foundation.Orchestration.dll = _ExternalLibraries\Components.Logic.Foundation.Orchestration.dll
-		_ExternalLibraries\Components.Logic.Foundation.Translation.Contract.dll = _ExternalLibraries\Components.Logic.Foundation.Translation.Contract.dll
-		_ExternalLibraries\Components.Logic.Foundation.Translation.dll = _ExternalLibraries\Components.Logic.Foundation.Translation.dll
-		_ExternalLibraries\Components.Logic.GenericManager.Contract.dll = _ExternalLibraries\Components.Logic.GenericManager.Contract.dll
-		_ExternalLibraries\Components.Logic.GenericManager.dll = _ExternalLibraries\Components.Logic.GenericManager.dll
-		_ExternalLibraries\Components.UI.WPF.ViewModelMapper.Contract.dll = _ExternalLibraries\Components.UI.WPF.ViewModelMapper.Contract.dll
-		_ExternalLibraries\Components.UI.WPF.ViewModelMapper.dll = _ExternalLibraries\Components.UI.WPF.ViewModelMapper.dll
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCutting", "{2B9AD400-FD6A-4280-815B-33D72D5D6BF8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alexandria.CrossCutting.Entities.DataClasses", "CrossCutting\Entities.DataClasses\Alexandria.CrossCutting.Entities.DataClasses.csproj", "{DE731667-B436-45F6-A54B-D1B5437F0A23}"
@@ -124,9 +88,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alexandria.Logic.Foundation
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alexandria.Logic.Foundation.Meta.DiceGeneration.DiceRollerNuget", "Logic\Foundation\Alexandria.Logic.Foundation.Meta.Dice.DiceRoller\Alexandria.Logic.Foundation.Meta.DiceGeneration.DiceRollerNuget.csproj", "{48726106-8A10-4D9D-A673-A48A63FAE568}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alexandria.Logic.Foundation.TextMathParser.Contract", "Logic\Foundation\Alexandria.Logic.Foundation.TextMathParser.Contract\Alexandria.Logic.Foundation.TextMathParser.Contract.csproj", "{4A85EADD-486C-472C-96C0-E2E1F9C55CF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alexandria.Logic.Foundation.TextMathParser.Contract", "Logic\Foundation\Alexandria.Logic.Foundation.TextMathParser.Contract\Alexandria.Logic.Foundation.TextMathParser.Contract.csproj", "{4A85EADD-486C-472C-96C0-E2E1F9C55CF7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alexandria.Logic.Foundation.TextMathParser.mXparser", "Logic\Foundation\Alexandria.Logic.Foundation.TextMathParser.mXparser\Alexandria.Logic.Foundation.TextMathParser.mXparser.csproj", "{284D950A-7BC5-413F-8B82-CFA8532E4BBB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alexandria.Logic.Foundation.TextMathParser.mXparser", "Logic\Foundation\Alexandria.Logic.Foundation.TextMathParser.mXparser\Alexandria.Logic.Foundation.TextMathParser.mXparser.csproj", "{284D950A-7BC5-413F-8B82-CFA8532E4BBB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

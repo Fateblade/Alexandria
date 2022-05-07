@@ -1,19 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
+	<Import Project="..\..\..\_Build\FatebladeProjectDefaultsImport.msb.xml" />
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>Fateblade.Alexandria.CrossCutting.Entities.DataClasses</RootNamespace>
     <AssemblyName>Alexandria.CrossCutting.Entities.DataClasses</AssemblyName>
   </PropertyGroup>
 
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="xcopy &quot;$(TargetDir)$(TargetName).*&quot; &quot;D:\Github\testspace_dsa\_ExternalComponents&quot; /F /R /I /E /Y&#xD;&#xA;xcopy &quot;$(TargetDir)$(TargetName).*&quot;  D:\Github\testspace_starfinder\_externalLibraries /F /R /I /E /Y" />
-  </Target>
-
   <ItemGroup>
     <Reference Include="Components.CrossCutting.Base.Identifiable.DataClasses">
-      <HintPath>..\..\_ExternalLibraries\Components.CrossCutting.Base.Identifiable.DataClasses.dll</HintPath>
     </Reference>
   </ItemGroup>
-
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<CallTarget Targets="CopyProjectToDll" />
+	</Target>
 </Project>
