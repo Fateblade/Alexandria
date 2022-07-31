@@ -60,6 +60,36 @@ namespace Fateblade.Alexandria.UI.WPF.Client
                     }
                 });
         }
+
+        public void GetStringUserInput(string question, string defaultValue, string title,
+            Action<string> userInputCallback)
+        {
+            var parameters = new DialogParameters
+            {
+                { nameof(UserStringInputDialogCreationInformation), new UserStringInputDialogCreationInformation(question, defaultValue, title) }
+            };
+
+            _dialogService.ShowDialog(
+                nameof(UserStringInputDialog),
+                parameters,
+                result =>
+                {
+                    if (result is UserStringInputDialogResultInformation dialogResult && dialogResult.Result == ButtonResult.Yes)
+                    {
+                        userInputCallback.Invoke(dialogResult.UserInput);
+                    }
+                });
+        }
+
+        public void ShowInfoDialog(string infoText, string title)
+        {
+            var parameters = new DialogParameters
+            {
+                { nameof(InfoDialogCreationInformation), new InfoDialogCreationInformation(title, infoText) }
+            };
+
+            _dialogService.ShowDialog(nameof(InfoDialog), parameters, _ => { });
+        }
     }
 
 }

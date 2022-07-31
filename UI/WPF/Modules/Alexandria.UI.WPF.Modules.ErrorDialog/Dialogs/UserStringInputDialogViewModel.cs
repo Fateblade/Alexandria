@@ -33,6 +33,7 @@ namespace Fateblade.Alexandria.UI.WPF.Client.Dialogs
         protected override void InitializeDialog(UserStringInputDialogCreationInformation information)
         {
             Question = information.Question;
+            UserInput = information.DefaultValue;
         }
 
         private bool canConfirmDialog()
