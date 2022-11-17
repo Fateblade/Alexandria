@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="..\..\..\..\_Build\FatebladeProjectDefaultsImport.msb.xml" />
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+  </PropertyGroup>
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<CallTarget Targets="CopyProjectToDll" />
+	</Target>
+
+	<ItemGroup>
+	  <PackageReference Include="Prism.Ninject" Version="7.2.0.1422" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Reference Include="CoCo.Core.Contract">
+	    <HintPath>..\..\..\..\_dlls\CoCo.Core.Contract.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Components.Logic.Foundation.Translation.Contract">
+	    <HintPath>..\..\..\..\_dlls\Components.Logic.Foundation.Translation.Contract.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+
+</Project>
