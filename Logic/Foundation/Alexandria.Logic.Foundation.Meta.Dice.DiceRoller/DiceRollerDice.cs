@@ -25,6 +25,8 @@ namespace Fateblade.Alexandria.Logic.Foundation.Meta.DiceGeneration.DiceRollerNu
 
         public int Roll()
         {
+            if (Sides == 0) return 0;
+
             var result = global::Dice.Roller.Roll($"1d{Sides}");
             _lastResult = Convert.ToInt32(result.Value);
 
