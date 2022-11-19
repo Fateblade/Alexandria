@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -110,5 +111,30 @@ namespace Fateblade.Alexandria.UI.WPF.Controls.Selection
         }
         public static readonly DependencyProperty HeaderTextProperty =
             DependencyProperty.Register(nameof(HeaderText), typeof(string), typeof(ListBoxSelectionControl), new PropertyMetadata(default));
+
+        public DataTemplate ItemTemplate
+        {
+            get => (DataTemplate)GetValue(ItemTemplateProperty);
+            set => SetValue(ItemTemplateProperty, value);
+        }
+        public static readonly DependencyProperty ItemTemplateProperty =
+            DependencyProperty.Register(nameof(ItemTemplate), typeof(DataTemplate), typeof(ListBoxSelectionControl), new PropertyMetadata(default));
+
+        public override void OnApplyTemplate()
+        {
+            base.OnApplyTemplate();
+
+            if (!string.IsNullOrEmpty(DisplayMemberPath) && ItemTemplate != null) throw new Exception($"Cannot use both {nameof(ItemTemplate)} and {nameof(DisplayMemberPath)} at the same time");
+
+            if (ItemTemplate == null) return;
+
+            var foundControl = Template.FindName("ItemDisplayListBox", this);
+
+            if (foundControl is ListBox listBox)
+            {
+                listBox.ItemTemplate = ItemTemplate;
+            }
+
+        }
     }
 }

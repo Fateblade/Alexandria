@@ -7,5 +7,6 @@
         <Setter Property="CanDeleteSelectedItem" Value="False" />
         <Setter Property="CanCreateNewItem" Value="False" />
         <Setter Property="ShowHeader" Value="True" />
+        <Setter Property="BorderBrush" Value="Black" />
     </Style>
 </ResourceDictionary>

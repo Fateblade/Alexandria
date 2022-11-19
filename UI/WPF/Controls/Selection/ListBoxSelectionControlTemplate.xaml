@@ -5,60 +5,53 @@
     <ControlTemplate x:Key="ListBoxSelectionControlTemplate" 
                      TargetType="selection:ListBoxSelectionControl">
        <Grid>
-           <Grid.RowDefinitions>
-               <RowDefinition Height="Auto" />
-               <RowDefinition Height="Auto" />
-               <RowDefinition x:Name="ListBoxGridRow" />
-               <RowDefinition Height="Auto" />
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" x:Name="ListBoxGridRow" />
+                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
 
-            <Grid Grid.Column="0">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition x:Name="GridHeight" />
-                    <RowDefinition Height="Auto" />
-                </Grid.RowDefinitions>
+            <Border Grid.Row="0" 
+                    Visibility="{Binding Path=ShowHeader, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource Alexandria.Converters.BoolVisibleConverter}}"
+                    HorizontalAlignment="Center" 
+                    BorderThickness="0,0,0,1" BorderBrush="{TemplateBinding BorderBrush}">
+                <TextBlock Text="{Binding Path=HeaderText, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
+            </Border>
 
-                <Border Grid.Row="0" 
-                        Visibility="{Binding Path=ShowHeader, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource Alexandria.Converters.BoolVisibleConverter}}"
-                        HorizontalAlignment="Center" 
-                        BorderThickness="0,0,0,1" BorderBrush="{TemplateBinding BorderBrush}">
-                    <TextBlock Text="{Binding Path=HeaderText, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
-                </Border>
-                <TextBox Grid.Row="1" 
-                         Visibility="{Binding Path=IsSearchEnabled, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource Alexandria.Converters.BoolVisibleConverter}}"
-                         Text="{Binding Path=SearchText, RelativeSource={RelativeSource Mode=TemplatedParent}, Mode=TwoWay}">
-                    <watermark:WatermarkService.Watermark>
-                        <TextBlock Text="Suche" />
-                    </watermark:WatermarkService.Watermark>
-                </TextBox>
+            <TextBox Grid.Row="1" Margin="0,4,0,0"
+                     Visibility="{Binding Path=IsSearchEnabled, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource Alexandria.Converters.BoolVisibleConverter}}"
+                     Text="{Binding Path=SearchText, RelativeSource={RelativeSource Mode=TemplatedParent}, Mode=TwoWay}">
+                <watermark:WatermarkService.Watermark>
+                    <TextBlock Text="Suche" />
+                </watermark:WatermarkService.Watermark>
+            </TextBox>
 
-                <ListBox Grid.Row="2" Margin="0,4,0,0"
-                         Height="{Binding ElementName=GridHeight, Path=Height}" 
-                         ItemsSource="{Binding Path=FilteredItemsSource, RelativeSource={RelativeSource Mode=TemplatedParent}}"
-                         SelectedItem="{Binding Path=SelectedItem, RelativeSource={RelativeSource Mode=TemplatedParent}, Mode=TwoWay}"
-                         DisplayMemberPath="{Binding Path=DisplayMemberPath, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
+            <ListBox Grid.Row="2" Margin="0,4,0,0"
+                     x:Name="ItemDisplayListBox"
+                     Height="{Binding ElementName=ListBoxGridRow, Path=Height, UpdateSourceTrigger=PropertyChanged}" 
+                     ItemsSource="{Binding Path=FilteredItemsSource, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                     SelectedItem="{Binding Path=SelectedItem, RelativeSource={RelativeSource Mode=TemplatedParent}, Mode=TwoWay}"
+                     DisplayMemberPath="{Binding Path=DisplayMemberPath, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                     />
 
-                <StackPanel Grid.Row="3" Margin="0,4,0,0"
-                            HorizontalAlignment="Center"
-                            Orientation="Horizontal">
-                    <Button Content="Add"
-                            Visibility="{Binding Path=CanCreateNewItem, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource Alexandria.Converters.BoolVisibleConverter}}"
-                            Command="{Binding Path=CreateNewItemCommand, RelativeSource={RelativeSource Mode=TemplatedParent}}"/>
+            <StackPanel Grid.Row="3" Margin="0,4,0,0"
+                        HorizontalAlignment="Center"
+                        Orientation="Horizontal">
+                <Button Content="Add"
+                        Visibility="{Binding Path=CanCreateNewItem, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource Alexandria.Converters.BoolVisibleConverter}}"
+                        Command="{Binding Path=CreateNewItemCommand, RelativeSource={RelativeSource Mode=TemplatedParent}}"/>
 
-                    <Button Margin="8,0,0,0"
-                            Content="Edit"
-                            Visibility="{Binding Path=CanEditSelectedItem, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource Alexandria.Converters.BoolVisibleConverter}}"
-                            Command="{Binding Path=EditSelectedItemCommand, RelativeSource={RelativeSource Mode=TemplatedParent}}"/>
+                <Button Margin="8,0,0,0"
+                        Content="Edit"
+                        Visibility="{Binding Path=CanEditSelectedItem, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource Alexandria.Converters.BoolVisibleConverter}}"
+                        Command="{Binding Path=EditSelectedItemCommand, RelativeSource={RelativeSource Mode=TemplatedParent}}"/>
 
-                    <Button Margin="8,0,0,0"
-                            Content="Rem"
-                            Visibility="{Binding Path=CanDeleteSelectedItem, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource Alexandria.Converters.BoolVisibleConverter}}"
-                            Command="{Binding Path=DeleteSelectedItemCommand, RelativeSource={RelativeSource Mode=TemplatedParent}}"/>
-                </StackPanel>
-
-            </Grid>
+                <Button Margin="8,0,0,0"
+                        Content="Rem"
+                        Visibility="{Binding Path=CanDeleteSelectedItem, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource Alexandria.Converters.BoolVisibleConverter}}"
+                        Command="{Binding Path=DeleteSelectedItemCommand, RelativeSource={RelativeSource Mode=TemplatedParent}}"/>
+            </StackPanel>
         </Grid>
     </ControlTemplate>
 

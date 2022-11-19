@@ -1,8 +1,9 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:convertersConverters="clr-namespace:Fateblade.Alexandria.UI.WPF.ConvertersConverters">
-    <convertersConverters:BoolInvertConverter x:Key="Alexandria.Converters.BoolInvertConverter" />
-    <convertersConverters:BoolVisibleConverter x:Key="Alexandria.Converters.BoolVisibleConverter" />
-    <convertersConverters:InvertedBoolVisibleConverter x:Key="Alexandria.Converters.InvertedBoolVisibleConverter" />
-    <convertersConverters:ExistanceToVisibilityConverter x:Key="Alexandria.Converters.ExistanceToVisibilityConverter" />
+                    xmlns:converters="clr-namespace:Fateblade.Alexandria.UI.WPF.ConvertersConverters">
+    <converters:BoolInvertConverter x:Key="Alexandria.Converters.BoolInvertConverter" />
+    <converters:BoolVisibleConverter x:Key="Alexandria.Converters.BoolVisibleConverter" />
+    <converters:InvertedBoolVisibleConverter x:Key="Alexandria.Converters.InvertedBoolVisibleConverter" />
+    <converters:ExistanceToVisibilityConverter x:Key="Alexandria.Converters.ExistanceToVisibilityConverter" />
+    <converters:GridLengthToDoubleConverter x:Key="Alexandria.Converters.GridLengthToDoubleConverter" />
 </ResourceDictionary>
