@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Base\Alexandria.UI.WPF.Base.csproj" />
+    <ProjectReference Include="..\Converters\Alexandria.UI.WPF.Converters.csproj" />
   </ItemGroup>
 
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">

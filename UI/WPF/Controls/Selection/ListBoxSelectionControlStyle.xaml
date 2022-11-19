@@ -1,0 +1,10 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:selection="clr-namespace:Fateblade.Alexandria.UI.WPF.Controls.Selection">
+    <Style TargetType="selection:ListBoxSelectionControl">
+        <Setter Property="Template" Value="{DynamicResource ListBoxSelectionControlTemplate}" />
+        <Setter Property="IsSearchEnabled" Value="False" />
+        <Setter Property="CanEditSelectedItem" Value="False" />
+        <Setter Property="CanDeleteSelectedItem" Value="False" />
+        <Setter Property="CanCreateNewItem" Value="False" />
+    </Style>
+</ResourceDictionary>

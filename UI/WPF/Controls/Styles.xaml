@@ -4,5 +4,6 @@
         <!--Action Bar-->
         <ResourceDictionary Source="ActionBar/ActionMenuBarItemControlStyle.xaml" />
         <ResourceDictionary Source="ActionBar/ActionMenuBarControlStyle.xaml" />
+        <ResourceDictionary Source="Selection/ListBoxSelectionControlStyle.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
