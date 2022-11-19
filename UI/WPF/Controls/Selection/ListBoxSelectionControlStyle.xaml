@@ -6,5 +6,6 @@
         <Setter Property="CanEditSelectedItem" Value="False" />
         <Setter Property="CanDeleteSelectedItem" Value="False" />
         <Setter Property="CanCreateNewItem" Value="False" />
+        <Setter Property="ShowHeader" Value="True" />
     </Style>
 </ResourceDictionary>

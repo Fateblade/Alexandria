@@ -95,5 +95,20 @@ namespace Fateblade.Alexandria.UI.WPF.Controls.Selection
         public static readonly DependencyProperty DeleteSelectedItemCommandProperty =
             DependencyProperty.Register(nameof(DeleteSelectedItemCommand), typeof(ICommand), typeof(ListBoxSelectionControl), new PropertyMetadata(default));
 
+        public bool ShowHeader
+        {
+            get => (bool)GetValue(ShowHeaderProperty);
+            set => SetValue(ShowHeaderProperty, value);
+        }
+        public static readonly DependencyProperty ShowHeaderProperty =
+            DependencyProperty.Register(nameof(ShowHeader), typeof(bool), typeof(ListBoxSelectionControl), new PropertyMetadata(default));
+
+        public string HeaderText
+        {
+            get => (string)GetValue(HeaderTextProperty);
+            set => SetValue(HeaderTextProperty, value);
+        }
+        public static readonly DependencyProperty HeaderTextProperty =
+            DependencyProperty.Register(nameof(HeaderText), typeof(string), typeof(ListBoxSelectionControl), new PropertyMetadata(default));
     }
 }
