@@ -4,6 +4,11 @@
         <!--Action Bar-->
         <ResourceDictionary Source="ActionBar/ActionMenuBarItemControlStyle.xaml" />
         <ResourceDictionary Source="ActionBar/ActionMenuBarControlStyle.xaml" />
+
+        <!--Selection-->
         <ResourceDictionary Source="Selection/ListBoxSelectionControlStyle.xaml" />
+
+        <!--Buttons-->
+        <ResourceDictionary Source="Buttons/SearchTextBoxStyle.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

@@ -37,7 +37,7 @@ namespace Fateblade.Alexandria.UI.WPF.Controls.Adorner.Watermark
             this.contentPresenter = new ContentPresenter();
             this.contentPresenter.Content = watermark;
             this.contentPresenter.Opacity = 0.5;
-            this.contentPresenter.Margin = new Thickness(Control.Margin.Left + Control.Padding.Left, 0, 0, 0);
+            this.contentPresenter.Margin = new Thickness(Control.Margin.Left + Control.Padding.Left, Control.Margin.Top, 0, 0);
 
             if (this.Control is ItemsControl && !(this.Control is ComboBox))
             {
