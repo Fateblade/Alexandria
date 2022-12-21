@@ -20,6 +20,11 @@ namespace Alexandria.UI.WPF.Modules.CommonTranslations
         {
             return _stringProvider.GetString($"{typeof(TEnum).Name}.{toTranslate}");
         }
+
+        public string Translate(Enum enumValue)
+        {
+            return _stringProvider.GetString($"{enumValue.GetType().Name}.{enumValue}");
+        }
     }
 
 }

@@ -11,5 +11,6 @@ namespace Alexandria.UI.WPF.Modules.CommonTranslations
     public interface IEnumTranslator 
     {
         string Translate<TEnum>(TEnum toTranslate) where TEnum : Enum;
+        string Translate(Enum enumValue);
     }
 }
