@@ -1,17 +1,14 @@
 ﻿using Fateblade.Alexandria.UI.WPF.Client.Dialogs;
 using Prism.Services.Dialogs;
 using System;
+using Fateblade.Alexandria.UI.WPF.Base.Dialogs;
 
 namespace Fateblade.Alexandria.UI.WPF.Client
 {
-    class CommonDialogOrchestrator : ICommonDialogOrchestrator
+    class CommonDialogOrchestrator : DialogOrchestratorBase, ICommonDialogOrchestrator
     {
-        private readonly IDialogService _dialogService;
-
-        public CommonDialogOrchestrator(IDialogService dialogService)
-        {
-            _dialogService = dialogService;
-        }
+        public CommonDialogOrchestrator(IDialogService dialogService) 
+            : base(dialogService) { }
 
         public void GetUserConfirmation(string confirmationQuestion, Action<bool> confirmationCallback)
         {
@@ -20,7 +17,7 @@ namespace Fateblade.Alexandria.UI.WPF.Client
                 {nameof(UserConfirmationDialogCreationInformation), new UserConfirmationDialogCreationInformation(confirmationQuestion)}
             };
 
-            _dialogService.ShowDialog(
+            DialogService.ShowDialog(
                 nameof(UserConfirmationDialog),
                 parameters,
                 result =>
@@ -39,7 +36,7 @@ namespace Fateblade.Alexandria.UI.WPF.Client
                 {nameof(ErrorDialogCreationInformation), new ErrorDialogCreationInformation(errorTitle, errorMessage)}
             };
 
-            _dialogService.Show(nameof(ErrorMessageDialog), parameters, _ => { });
+            DialogService.Show(nameof(ErrorMessageDialog), parameters, _ => { });
         }
 
         public void GetStringUserInput(string question, string title, Action<string> userInputCallback)
@@ -49,7 +46,7 @@ namespace Fateblade.Alexandria.UI.WPF.Client
                 { nameof(UserStringInputDialogCreationInformation), new UserStringInputDialogCreationInformation(question, title) }
             };
 
-            _dialogService.ShowDialog(
+            DialogService.ShowDialog(
                 nameof(UserStringInputDialog),
                 parameters,
                 result =>
@@ -69,7 +66,7 @@ namespace Fateblade.Alexandria.UI.WPF.Client
                 { nameof(UserStringInputDialogCreationInformation), new UserStringInputDialogCreationInformation(question, defaultValue, title) }
             };
 
-            _dialogService.ShowDialog(
+            DialogService.ShowDialog(
                 nameof(UserStringInputDialog),
                 parameters,
                 result =>
@@ -88,7 +85,7 @@ namespace Fateblade.Alexandria.UI.WPF.Client
                 { nameof(InfoDialogCreationInformation), new InfoDialogCreationInformation(title, infoText) }
             };
 
-            _dialogService.ShowDialog(nameof(InfoDialog), parameters, _ => { });
+            DialogService.ShowDialog(nameof(InfoDialog), parameters, _ => { });
         }
     }
 

@@ -9,6 +9,6 @@
         <ResourceDictionary Source="Selection/ListBoxSelectionControlStyle.xaml" />
         <ResourceDictionary Source="Selection/SelectionRemovableComboBoxStyle.xaml" />
         <!--Buttons-->
-        <ResourceDictionary Source="Buttons/SearchTextBoxStyle.xaml" />
+        <ResourceDictionary Source="Text/SearchTextBoxStyle.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

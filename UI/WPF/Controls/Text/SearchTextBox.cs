@@ -1,9 +1,8 @@
-﻿using System.Windows.Controls;
-using System.Windows.Input;
+﻿using System.Windows.Input;
 
-namespace Fateblade.Alexandria.UI.WPF.Controls.Buttons
+namespace Fateblade.Alexandria.UI.WPF.Controls.Text
 {
-    public class SearchTextBox : TextBox
+    public class SearchTextBox : System.Windows.Controls.TextBox
     {
         protected override void OnKeyUp(KeyEventArgs e)
         {

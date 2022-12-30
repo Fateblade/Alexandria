@@ -2,7 +2,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:selection="clr-namespace:Fateblade.Alexandria.UI.WPF.Controls.Selection"
                     xmlns:watermark="clr-namespace:Fateblade.Alexandria.UI.WPF.Controls.Adorner.Watermark"
-                    xmlns:buttons="clr-namespace:Fateblade.Alexandria.UI.WPF.Controls.Buttons">
+                    xmlns:text="clr-namespace:Fateblade.Alexandria.UI.WPF.Controls.Text">
     <ControlTemplate x:Key="ListBoxSelectionControlTemplate" 
                      TargetType="selection:ListBoxSelectionControl">
        <Grid>
@@ -20,13 +20,13 @@
                 <TextBlock Text="{Binding Path=HeaderText, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
             </Border>
 
-            <buttons:SearchTextBox Grid.Row="1" Margin="0,4,0,0"
+            <text:SearchTextBox Grid.Row="1" Margin="0,4,0,0"
                            Visibility="{Binding Path=IsSearchEnabled, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource Alexandria.Converters.BoolVisibleConverter}}"
                            Text="{Binding Path=SearchText, RelativeSource={RelativeSource Mode=TemplatedParent}, Mode=TwoWay}">
                 <watermark:WatermarkService.Watermark>
                     <TextBlock Text="Suche" />
                 </watermark:WatermarkService.Watermark>
-            </buttons:SearchTextBox>
+            </text:SearchTextBox>
 
             <ListBox Grid.Row="2" Margin="0,4,0,0"
                      x:Name="ItemDisplayListBox"
