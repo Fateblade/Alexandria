@@ -12,6 +12,7 @@ namespace Fateblade.Alexandria.UI.WPF.Client
             containerRegistry.RegisterDialog<UserConfirmationDialog, UserConfirmationDialogViewModel>();
             containerRegistry.RegisterDialog<UserStringInputDialog, UserStringInputDialogViewModel>();
             containerRegistry.RegisterDialog<InfoDialog, InfoDialogViewModel>();
+            containerRegistry.RegisterDialog<UserNumberInputDialog, UserNumberInputDialogViewModel>();
 
             containerRegistry.RegisterSingleton<ICommonDialogOrchestrator, CommonDialogOrchestrator>();
             

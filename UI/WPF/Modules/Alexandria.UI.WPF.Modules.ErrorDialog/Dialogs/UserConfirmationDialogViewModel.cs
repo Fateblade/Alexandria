@@ -4,7 +4,28 @@ using System.Windows.Input;
 
 namespace Fateblade.Alexandria.UI.WPF.Client.Dialogs
 {
-    class UserConfirmationDialogViewModel : BindableDialogBase<UserConfirmationDialogCreationInformation, UserConfirmationDialogResultInformation>
+    class UserConfirmationDialogRequest : DialogCreationInformation
+    {
+        public string ConfirmationQuestion { get; }
+
+        public UserConfirmationDialogRequest(string confirmationQuestion)
+        {
+            ConfirmationQuestion = confirmationQuestion;
+            Title = "Confirmation";
+        }
+    }
+
+    class UserConfirmationDialogResultInformation : DialogResultInformation
+    {
+        public bool UserConfirmed { get; }
+
+        public UserConfirmationDialogResultInformation(bool userConfirmed)
+        {
+            UserConfirmed = userConfirmed;
+        }
+    }
+
+    class UserConfirmationDialogViewModel : BindableDialogBase<UserConfirmationDialogRequest, UserConfirmationDialogResultInformation>
     {
         private string _confirmationQuestion;
         public string ConfirmationQuestion
@@ -22,7 +43,7 @@ namespace Fateblade.Alexandria.UI.WPF.Client.Dialogs
             UserAbortedCommand = new DelegateCommand(abortDialog);
         }
 
-        protected override void InitializeDialog(UserConfirmationDialogCreationInformation information)
+        protected override void InitializeDialog(UserConfirmationDialogRequest information)
         {
             ConfirmationQuestion = information.ConfirmationQuestion;
         }

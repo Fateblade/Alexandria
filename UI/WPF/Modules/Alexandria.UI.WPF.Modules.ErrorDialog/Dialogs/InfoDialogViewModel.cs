@@ -3,11 +3,11 @@ using Prism.Commands;
 
 namespace Fateblade.Alexandria.UI.WPF.Client.Dialogs
 {
-    internal class InfoDialogCreationInformation : DialogCreationInformation
+    internal class InfoDialogRequest : DialogCreationInformation
     {
         public string InfoText { get; set; }
 
-        public InfoDialogCreationInformation(string title, string infoText)
+        public InfoDialogRequest(string title, string infoText)
         {
             Title = title;
             InfoText = infoText;
@@ -19,7 +19,7 @@ namespace Fateblade.Alexandria.UI.WPF.Client.Dialogs
 
     }
 
-    internal class InfoDialogViewModel : BindableDialogBase<InfoDialogCreationInformation, InfoDialogResultInformation>
+    internal class InfoDialogViewModel : BindableDialogBase<InfoDialogRequest, InfoDialogResultInformation>
     {
         private string _infoText;
         public string InfoText
@@ -35,7 +35,7 @@ namespace Fateblade.Alexandria.UI.WPF.Client.Dialogs
             CloseDialogCommand = new DelegateCommand(closeDialog);
         }
 
-        protected override void InitializeDialog(InfoDialogCreationInformation information)
+        protected override void InitializeDialog(InfoDialogRequest information)
         {
             InfoText = information.InfoText;
         }

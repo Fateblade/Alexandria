@@ -1,10 +1,41 @@
 ﻿using Fateblade.Alexandria.UI.WPF.Base;
 using Prism.Commands;
 using System.Windows.Input;
+using Prism.Services.Dialogs;
 
 namespace Fateblade.Alexandria.UI.WPF.Client.Dialogs
 {
-    internal class UserStringInputDialogViewModel : BindableDialogBase<UserStringInputDialogCreationInformation, UserStringInputDialogResultInformation>
+    internal class UserStringInputDialogRequest : DialogCreationInformation
+    {
+        public string Question { get; }
+        public string DefaultValue { get; set; }
+
+        public UserStringInputDialogRequest(string question, string title)
+        {
+            Question = question;
+            Title = title;
+        }
+
+        public UserStringInputDialogRequest(string question, string defaultValue, string title)
+        {
+            Question = question;
+            DefaultValue = defaultValue;
+            Title = title;
+        }
+    }
+
+    internal class UserStringInputDialogResultInformation : DialogResultInformation
+    {
+        public string UserInput { get; }
+
+        public UserStringInputDialogResultInformation(string userInput, bool userConfirmed)
+        {
+            UserInput = userInput;
+            Result = userConfirmed ? ButtonResult.Yes : ButtonResult.No;
+        }
+    }
+
+    internal class UserStringInputDialogViewModel : BindableDialogBase<UserStringInputDialogRequest, UserStringInputDialogResultInformation>
     {
         private string _question;
         public string Question
@@ -30,7 +61,7 @@ namespace Fateblade.Alexandria.UI.WPF.Client.Dialogs
             UserAbortedCommand = new DelegateCommand(abortDialog);
         }
 
-        protected override void InitializeDialog(UserStringInputDialogCreationInformation information)
+        protected override void InitializeDialog(UserStringInputDialogRequest information)
         {
             Question = information.Question;
             UserInput = information.DefaultValue;

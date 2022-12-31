@@ -14,7 +14,7 @@ namespace Fateblade.Alexandria.UI.WPF.Client
         {
             var parameters = new DialogParameters
             {
-                {nameof(UserConfirmationDialogCreationInformation), new UserConfirmationDialogCreationInformation(confirmationQuestion)}
+                {nameof(UserConfirmationDialogRequest), new UserConfirmationDialogRequest(confirmationQuestion)}
             };
 
             DialogService.ShowDialog(
@@ -33,7 +33,7 @@ namespace Fateblade.Alexandria.UI.WPF.Client
         {
             var parameters = new DialogParameters
             {
-                {nameof(ErrorDialogCreationInformation), new ErrorDialogCreationInformation(errorTitle, errorMessage)}
+                {nameof(ErrorDialogRequest), new ErrorDialogRequest(errorTitle, errorMessage)}
             };
 
             DialogService.Show(nameof(ErrorMessageDialog), parameters, _ => { });
@@ -43,7 +43,7 @@ namespace Fateblade.Alexandria.UI.WPF.Client
         {
             var parameters = new DialogParameters
             {
-                { nameof(UserStringInputDialogCreationInformation), new UserStringInputDialogCreationInformation(question, title) }
+                { nameof(UserStringInputDialogRequest), new UserStringInputDialogRequest(question, title) }
             };
 
             DialogService.ShowDialog(
@@ -63,7 +63,7 @@ namespace Fateblade.Alexandria.UI.WPF.Client
         {
             var parameters = new DialogParameters
             {
-                { nameof(UserStringInputDialogCreationInformation), new UserStringInputDialogCreationInformation(question, defaultValue, title) }
+                { nameof(UserStringInputDialogRequest), new UserStringInputDialogRequest(question, defaultValue, title) }
             };
 
             DialogService.ShowDialog(
@@ -82,10 +82,52 @@ namespace Fateblade.Alexandria.UI.WPF.Client
         {
             var parameters = new DialogParameters
             {
-                { nameof(InfoDialogCreationInformation), new InfoDialogCreationInformation(title, infoText) }
+                { nameof(InfoDialogRequest), new InfoDialogRequest(title, infoText) }
             };
 
             DialogService.ShowDialog(nameof(InfoDialog), parameters, _ => { });
+        }
+
+        public void GetIntUserInput(string question, string title, Action<int> userInputCallback)
+        {
+            var parameters = new DialogParameters
+            {
+                { nameof(UserNumberInputDialogRequest), new UserNumberInputDialogRequest(question, title) }
+            };
+
+            DialogService.ShowDialog(
+                nameof(UserNumberInputDialog),
+                parameters,
+                result =>
+                {
+                    if (result is UserNumberInputDialogResult dialogResult
+                        && dialogResult.Result == ButtonResult.Yes
+                        && dialogResult.UserInput.HasValue)
+                    {
+                        userInputCallback.Invoke(dialogResult.UserInput.Value);
+                    }
+                });
+        }
+
+        public void GetIntUserInput(string question, int defaultValue, string title, Action<int> userInputCallback)
+        {
+            var parameters = new DialogParameters
+            {
+                { nameof(UserNumberInputDialogRequest), new UserNumberInputDialogRequest(question, defaultValue, title) }
+            };
+
+            DialogService.ShowDialog(
+                nameof(UserNumberInputDialog),
+                parameters,
+                result =>
+                {
+                    if (result is UserNumberInputDialogResult dialogResult 
+                        && dialogResult.Result == ButtonResult.Yes
+                        && dialogResult.UserInput.HasValue)
+                    {
+                        userInputCallback.Invoke(dialogResult.UserInput.Value);
+                    }
+                });
         }
     }
 

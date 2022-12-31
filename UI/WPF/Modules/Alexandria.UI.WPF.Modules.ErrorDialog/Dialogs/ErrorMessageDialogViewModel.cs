@@ -2,10 +2,31 @@
 using System.Windows.Input;
 using Fateblade.Alexandria.UI.WPF.Base;
 using Prism.Commands;
+using Prism.Services.Dialogs;
 
 namespace Fateblade.Alexandria.UI.WPF.Client.Dialogs
 {
-    class ErrorMessageDialogViewModel : BindableDialogBase<ErrorDialogCreationInformation, ErrorDialogResultInformation>
+    class ErrorDialogRequest : DialogCreationInformation
+    {
+        public string Message { get; }
+
+        public ErrorDialogRequest(string title, string message)
+        {
+            Title = title;
+            Message = message;
+        }
+    }
+
+    class ErrorDialogResultInformation : DialogResultInformation
+    {
+        public ErrorDialogResultInformation()
+        {
+            Parameters = new DialogParameters();
+            Result = ButtonResult.OK;
+        }
+    }
+
+    class ErrorMessageDialogViewModel : BindableDialogBase<ErrorDialogRequest, ErrorDialogResultInformation>
     {
         private string _message;
         public string Message
@@ -23,7 +44,7 @@ namespace Fateblade.Alexandria.UI.WPF.Client.Dialogs
             CloseDialogCommand = new DelegateCommand(closeDialog);
         }
 
-        protected override void InitializeDialog(ErrorDialogCreationInformation information)
+        protected override void InitializeDialog(ErrorDialogRequest information)
         {
             Message = information.Message;
         }
