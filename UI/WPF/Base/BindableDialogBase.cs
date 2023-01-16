@@ -40,7 +40,6 @@ namespace Fateblade.Alexandria.UI.WPF.Base
             if (!parameters.ContainsKey(typeof(TCreationInformation).Name))
             {
                 throw new ArgumentException("Missing information to create dialog", nameof(TCreationInformation));
-
             }
 
             TCreationInformation creationInformation = parameters.GetValue<TCreationInformation>(typeof(TCreationInformation).Name);
