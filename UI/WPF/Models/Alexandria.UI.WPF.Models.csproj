@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 	<Import Project="..\..\..\..\_Build\FatebladeProjectDefaultsImport.msb.xml" />
   <PropertyGroup>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <RootNamespace>Fateblade.Alexandria.UI.WPF.Models</RootNamespace>
     <AssemblyName>Alexandria.UI.WPF.Models</AssemblyName>
   </PropertyGroup>
