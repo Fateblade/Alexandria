@@ -9,7 +9,7 @@ namespace Fateblade.Alexandria.UI.WPF.Controls.ActionBar
     public class ActionMenuBarControl : Control
     {
         public static readonly DependencyProperty MenuBarActionsProperty = DependencyProperty.Register(
-            "MenuBarActions", 
+            nameof(MenuBarActions), 
             typeof(ObservableCollection<ActionMenuBarCommand>), 
             typeof(ActionMenuBarControl), 
             new PropertyMetadata(

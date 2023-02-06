@@ -4,17 +4,18 @@ using Prism.Mvvm;
 using System;
 using System.Collections.ObjectModel;
 using Fateblade.Alexandria.UI.WPF.Base.ActionBar;
+using Prism.Commands;
 
 namespace Fateblade.Alexandria.UI.WPF.Client.Windows
 {
-    class MainWindowViewModel : BindableBase, IOrchestrationHandler<ShowDialogOrchestrationInfo>, IOrchestrationHandler<ShowPageOrchestrationInfo>, IActionMenuBarProvider
+    class MainWindowViewModel : BindableBase, IOrchestrationHandler<ShowDialogOrchestrationInfo>, IOrchestrationHandler<ShowPageOrchestrationInfo>, IGroupingActionMenuBarProvider
     {
         private Action<BindableBase> _handleCurrentPageClosed;
         private Action<BindableBase> _handleCurrentDialogClosed;
 
 
-        private ObservableCollection<ActionMenuBarCommand> _availableMenuActions;
-        public ObservableCollection<ActionMenuBarCommand> AvailableMenuActions
+        private ObservableCollection<GroupingIconActionMenuBarCommand> _availableMenuActions;
+        public ObservableCollection<GroupingIconActionMenuBarCommand> AvailableMenuActions
         {
             get => _availableMenuActions;
             set => SetProperty(ref _availableMenuActions, value);
@@ -40,8 +41,30 @@ namespace Fateblade.Alexandria.UI.WPF.Client.Windows
             orchestrator.RegisterHandler((IOrchestrationHandler<ShowDialogOrchestrationInfo>) this);
             orchestrator.RegisterHandler((IOrchestrationHandler<ShowPageOrchestrationInfo>)this);
             menuBarManager.RegisterActionMenuBarProvider(this);
+            
+            AvailableMenuActions = new ObservableCollection<GroupingIconActionMenuBarCommand>()
+            {
+                new() {Action = new DelegateCommand(addAdditionalMenuItem) , DisplayName = "Group 1 Menu Item", GroupName = "Group 1"},
+                new() {Action = new DelegateCommand(addAdditionalMenuItem) , DisplayName = "Group 1 Menu Item", GroupName = "Group 1"},
+                new() {Action = new DelegateCommand(addAdditionalMenuItem) , DisplayName = "Group 2 Menu Item", GroupName = "Group 2"},
+                new() {Action = new DelegateCommand(addAdditionalMenuItem) , DisplayName = "Group 2 Menu Item", GroupName = "Group 2"},
+                new() {Action = new DelegateCommand(addAdditionalMenuItem) , DisplayName = "Group 3 Menu Item", GroupName = "Group 3"},
+                new() {Action = new DelegateCommand(addAdditionalMenuItem) , DisplayName = "Group 3 Menu Item", GroupName = "Group 3"},
+                new() {Action = new DelegateCommand(addAdditionalMenuItem) , DisplayName = "Group 4 Menu Item", GroupName = "Group 4"},
+                new() {Action = new DelegateCommand(addAdditionalMenuItem) , DisplayName = "Group 4 Menu Item", GroupName = "Group 4"},
+                new() {Action = new DelegateCommand(addAdditionalMenuItem) , DisplayName = "Group 5 Menu Item", GroupName = "Group 5"},
+                new() {Action = new DelegateCommand(addAdditionalMenuItem) , DisplayName = "Group 5 Menu Item", GroupName = "Group 5"}
+            };
+
+            AvailableMenuActions.Add(new() { Action = new DelegateCommand(addAdditionalMenuItem), DisplayName = "Group 6 Menu Item", GroupName = "Group 6" });
+            AvailableMenuActions.Add(new() { Action = new DelegateCommand(addAdditionalMenuItem), DisplayName = "Group 6 Menu Item", GroupName = "Group 6" });
         }
 
+        private void addAdditionalMenuItem()
+        {
+            
+            AvailableMenuActions.Add(new() { Action = new DelegateCommand(addAdditionalMenuItem), DisplayName = "Addded from Commmand to Group 7", GroupName = "Group 7" });
+        }
 
         public void Handle(ShowDialogOrchestrationInfo dialogOrchestrationInfo)
         {
@@ -65,12 +88,12 @@ namespace Fateblade.Alexandria.UI.WPF.Client.Windows
             CurrentlyDisplayedPage = pageOrchestrationInfo.PageViewModelToDisplay;
         }
 
-        public void AddMenuBarCommand(ActionMenuBarCommand command)
+        public void AddMenuBarCommand(GroupingIconActionMenuBarCommand command)
         {
             AvailableMenuActions.Add(command);
         }
 
-        public void RemoveMenuBarCommand(ActionMenuBarCommand command)
+        public void RemoveMenuBarCommand(GroupingIconActionMenuBarCommand command)
         {
             AvailableMenuActions.Remove(command);
         }

@@ -1,9 +1,9 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
     <ResourceDictionary.MergedDictionaries>
         <!--Action Bar-->
         <ResourceDictionary Source="ActionBar/ActionMenuBarItemControlStyle.xaml" />
         <ResourceDictionary Source="ActionBar/ActionMenuBarControlStyle.xaml" />
+        <ResourceDictionary Source="ActionBar/GroupingIconMenuBarControlStyle.xaml" />
 
         <!--Selection-->
         <ResourceDictionary Source="Selection/ListBoxSelectionControlStyle.xaml" />

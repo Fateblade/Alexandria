@@ -7,6 +7,7 @@
         xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         xmlns:prism ="http://prismlibrary.com/"
         xmlns:actionBar="clr-namespace:Fateblade.Alexandria.UI.WPF.Controls.ActionBar;assembly=Alexandria.UI.WPF.Controls"
+        xmlns:avalonedit="http://icsharpcode.net/sharpdevelop/avalonedit"
         prism:ViewModelLocator.AutoWireViewModel="True"
         Title="Alexandria" Height="450" Width="800">
     <Grid>
@@ -16,13 +17,15 @@
             <ColumnDefinition Width="4*" />
         </Grid.ColumnDefinitions>
 
-        <actionBar:ActionMenuBarControl Grid.Column="0" 
-                                        MenuBarActions="{Binding Path=AvailableMenuActions}" />
+        <!--<actionBar:GroupingIconMenuBarControl MenuBarActions="{Binding Path=AvailableMenuActions}" />-->
 
         <GridSplitter Grid.Column="1" />
 
-        <ContentPresenter Grid.Column="2" 
+        <!--<ContentPresenter Grid.Column="2" 
                           ContentTemplateSelector="{StaticResource ViewModelTemplateSelector}" 
-                          Content="{Binding Path=CurrentlyDisplayedViewModel}" />
+                          Content="{Binding Path=CurrentlyDisplayedViewModel}" />-->
+
+        <avalonedit:TextEditor Grid.Column="2"  />
+
     </Grid>
 </mah:MetroWindow>

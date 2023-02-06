@@ -1,0 +1,17 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:actionBar="clr-namespace:Fateblade.Alexandria.UI.WPF.Controls.ActionBar">
+    <ControlTemplate x:Key="GroupingIconMenuBarControlTemplate" 
+                     TargetType="{x:Type actionBar:GroupingIconMenuBarControl}">
+        <!--<ItemsControl ItemsSource="{TemplateBinding MenuBarActions}">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <actionBar:ActionMenuBarItemControl Margin="0,0,0,4"
+                                                        Content="{Binding DisplayName}"
+                                                        Command="{Binding Action}"
+                                                        ContextMenu="{Binding ContextMenu}"/>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>-->
+    </ControlTemplate>
+</ResourceDictionary>
