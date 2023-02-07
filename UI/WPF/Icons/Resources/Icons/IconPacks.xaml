@@ -1,0 +1,18 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="AkarVol1/IconPack.xaml" />
+        <ResourceDictionary Source="BasicUI1/IconPack.xaml" />
+        <ResourceDictionary Source="BasicUI2/IconPack.xaml" />
+        <ResourceDictionary Source="EonSocialMediaContactInfo/IconPack.xaml" />
+        <ResourceDictionary Source="EvericonsVol2/IconPack.xaml" />
+        <ResourceDictionary Source="FontAwesomeSolidVol1/IconPack.xaml" />
+        <ResourceDictionary Source="GamingPack/IconPack.xaml" />
+        <ResourceDictionary Source="HarryPotterOutlineCollection/IconPack.xaml" />
+        <ResourceDictionary Source="KnowledgeManagementGlyph/IconPack.xaml" />
+        <ResourceDictionary Source="LineAwesomeVol5/IconPack.xaml" />
+        <ResourceDictionary Source="MaterialCore/IconPack.xaml" />
+        <ResourceDictionary Source="PhosphorLightVol4/IconPack.xaml" />
+        <ResourceDictionary Source="PinpointInterfaceI/IconPack.xaml" />
+        <ResourceDictionary Source="SocialMedia/IconPack.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

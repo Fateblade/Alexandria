@@ -74,7 +74,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Registrations", "Registrati
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alexandria.Registrations.Client.Mappings", "Registrations\Registrations.Client.Mappings\Alexandria.Registrations.Client.Mappings.csproj", "{2E0116CF-2827-4529-83C8-F2AF5C1F0318}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alexandria.UI.WPF.Modules.CommonTranslations", "UI\WPF\UI.WPF.Translations\Alexandria.UI.WPF.Modules.CommonTranslations.csproj", "{7151032E-9476-4346-961D-019C2D80275B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alexandria.UI.WPF.Modules.CommonTranslations", "UI\WPF\Translations\Alexandria.UI.WPF.Modules.CommonTranslations.csproj", "{7151032E-9476-4346-961D-019C2D80275B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alexandria.UI.DefaultConfigGenerator", "DefaultConfigGenerator\Alexandria.UI.DefaultConfigGenerator.csproj", "{57B6E107-625C-4DC2-BBD9-3CF30EA6CF92}"
 EndProject
@@ -91,6 +91,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alexandria.Logic.Foundation.TextMathParser.Contract", "Logic\Foundation\Alexandria.Logic.Foundation.TextMathParser.Contract\Alexandria.Logic.Foundation.TextMathParser.Contract.csproj", "{4A85EADD-486C-472C-96C0-E2E1F9C55CF7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alexandria.Logic.Foundation.TextMathParser.mXparser", "Logic\Foundation\Alexandria.Logic.Foundation.TextMathParser.mXparser\Alexandria.Logic.Foundation.TextMathParser.mXparser.csproj", "{284D950A-7BC5-413F-8B82-CFA8532E4BBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alexandria.UI.WPF.Icons", "UI\WPF\Icons\Alexandria.UI.WPF.Icons.csproj", "{98059541-9D17-43FF-8607-3DB594E420A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -210,6 +212,10 @@ Global
 		{284D950A-7BC5-413F-8B82-CFA8532E4BBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{284D950A-7BC5-413F-8B82-CFA8532E4BBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{284D950A-7BC5-413F-8B82-CFA8532E4BBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98059541-9D17-43FF-8607-3DB594E420A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98059541-9D17-43FF-8607-3DB594E420A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98059541-9D17-43FF-8607-3DB594E420A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98059541-9D17-43FF-8607-3DB594E420A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -252,6 +258,7 @@ Global
 		{48726106-8A10-4D9D-A673-A48A63FAE568} = {8A515BF1-155C-435F-87E6-77823F48B086}
 		{4A85EADD-486C-472C-96C0-E2E1F9C55CF7} = {8A515BF1-155C-435F-87E6-77823F48B086}
 		{284D950A-7BC5-413F-8B82-CFA8532E4BBB} = {8A515BF1-155C-435F-87E6-77823F48B086}
+		{98059541-9D17-43FF-8607-3DB594E420A2} = {A7C16453-A782-4204-B3F1-FB91C826B508}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DB427DFF-78EE-4F04-A938-5D6762870AAD}

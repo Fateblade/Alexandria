@@ -3,15 +3,43 @@
                     xmlns:actionBar="clr-namespace:Fateblade.Alexandria.UI.WPF.Controls.ActionBar">
     <ControlTemplate x:Key="GroupingIconMenuBarControlTemplate" 
                      TargetType="{x:Type actionBar:GroupingIconMenuBarControl}">
-        <!--<ItemsControl ItemsSource="{TemplateBinding MenuBarActions}">
-            <ItemsControl.ItemTemplate>
-                <DataTemplate>
-                    <actionBar:ActionMenuBarItemControl Margin="0,0,0,4"
-                                                        Content="{Binding DisplayName}"
-                                                        Command="{Binding Action}"
-                                                        ContextMenu="{Binding ContextMenu}"/>
-                </DataTemplate>
-            </ItemsControl.ItemTemplate>
-        </ItemsControl>-->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0">
+                <ItemsControl ItemsSource="{TemplateBinding MenuBarGroupActions}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <actionBar:GroupingIconMenuBarItemControl Margin="0,0,0,4"
+                                                                Content="{Binding DisplayName}"
+                                                                Command="{Binding Action}"
+                                                                ContextMenu="{Binding ContextMenu}"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </Border>
+
+
+            <Border Grid.Column="1">
+                <ItemsControl ItemsSource="{TemplateBinding MenuBarActionsOfSelectedGroup}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <actionBar:GroupingIconMenuBarItemControl Margin="0,0,0,4"
+                                                                      Content="{Binding DisplayName}"
+                                                                      Command="{Binding Action}"
+                                                                      ContextMenu="{Binding ContextMenu}"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </Border>
+        </Grid>
+        
+        
+
+        
+      
     </ControlTemplate>
 </ResourceDictionary>
