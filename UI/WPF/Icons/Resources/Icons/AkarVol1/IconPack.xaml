@@ -3,7 +3,6 @@
 
     <!--Png-->
     <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Flashlight" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117910_flashlight.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ArrowForwardThick" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117911_fill_forward_thick_arrow.png" />
     <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Backspace" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117912_backspace.png" />
     <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.BackspaceFill" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117913_fill_backspace.png" />
     <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ScreenNormal" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117914_screen_normal.png" />
@@ -114,11 +113,11 @@
     <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Chess" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118019_chess.png" />
     <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.GridDot" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118020_grid_dot.png" />
     <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.SwordDouble" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118021_sword_double.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118022_cursor.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118023_link_chain.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118024_on_link.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118025_network.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118026_draft.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Cursor" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118022_cursor.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.LinkChain" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118023_link_chain.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.OnLink" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118024_on_link.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Network" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118025_network.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Draft" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118026_draft.png" />
     <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118027_location.png" />
     <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118028_vertical_more.png" />
     <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118029_height.png" />
