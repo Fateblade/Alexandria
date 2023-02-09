@@ -17,7 +17,7 @@
             <ColumnDefinition Width="4*" />
         </Grid.ColumnDefinitions>
 
-        <!--<actionBar:GroupingIconMenuBarControl MenuBarActions="{Binding Path=AvailableMenuActions}" />-->
+        <actionBar:GroupingIconMenuBarControl MenuBarActions="{Binding Path=AvailableMenuActions}" />
 
         <GridSplitter Grid.Column="1" />
 

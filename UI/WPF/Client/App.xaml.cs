@@ -2,6 +2,7 @@
 using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.EventBrokerage;
 using Fateblade.Alexandria.Registrations.Client.Mappings;
 using Fateblade.Alexandria.UI.WPF.Base.ActionBar;
+using Fateblade.Alexandria.UI.WPF.Base.Interfaces;
 using Fateblade.Alexandria.UI.WPF.Client.Windows;
 using Fateblade.Components.CrossCutting.CommonMessages.Contract.Messages;
 using Fateblade.Components.CrossCutting.ExceptionFormatter.Contract;
@@ -23,7 +24,7 @@ namespace Fateblade.Alexandria.UI.WPF.Client
     /// <summary>
     /// Interaction logic for App.xaml
     /// </summary>
-    public partial class App : PrismApplication
+    public partial class App : PrismApplication, IContainerApp
     {
         private readonly KernelContainer _kernelContainer;
         private bool _modulesInitialized;  //modules will be loaded after the shell is initialized

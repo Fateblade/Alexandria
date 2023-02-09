@@ -11,4 +11,8 @@
 		<CallTarget Targets="CopyProjectToDll" />
 	</Target>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\Base\Alexandria.UI.WPF.Base.csproj" />
+	</ItemGroup>
+
 </Project>

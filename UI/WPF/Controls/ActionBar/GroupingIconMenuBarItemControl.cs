@@ -5,12 +5,12 @@ namespace Fateblade.Alexandria.UI.WPF.Controls.ActionBar
 {
     public class GroupingIconMenuBarItemControl : Button
     {
-        public string IconResourcePath
+        public string IconName
         {
-            get => (string)GetValue(IconResourcePathProperty);
-            set => SetValue(IconResourcePathProperty, value);
+            get => (string)GetValue(IconNameProperty);
+            set => SetValue(IconNameProperty, value);
         }
-        public static readonly DependencyProperty IconResourcePathProperty =
-            DependencyProperty.Register(nameof(IconResourcePath), typeof(string), typeof(GroupingIconMenuBarItemControl), new PropertyMetadata(default));
+        public static readonly DependencyProperty IconNameProperty =
+            DependencyProperty.Register(nameof(IconName), typeof(string), typeof(GroupingIconMenuBarItemControl), new PropertyMetadata(default));
     }
 }

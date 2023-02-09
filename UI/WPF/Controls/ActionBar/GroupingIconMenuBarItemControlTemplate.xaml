@@ -1,14 +1,15 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:actionBar="clr-namespace:Fateblade.Alexandria.UI.WPF.Controls.ActionBar"
-                    xmlns:svgc="http://sharpvectors.codeplex.com/svgc/">
+                    xmlns:actionBar="clr-namespace:Fateblade.Alexandria.UI.WPF.Controls.ActionBar">
 
     <ControlTemplate x:Key="GroupingIconMenuBarItemControlTemplate" 
                      TargetType="{x:Type actionBar:GroupingIconMenuBarItemControl}">
         <Button Height="{TemplateBinding Height}" Width="{TemplateBinding Width}" 
                 ToolTip="{TemplateBinding ToolTip}"
                 Command="{TemplateBinding Command}">
-            <svgc:SvgIcon Margin="2" UriSource="{Binding Converter=}" />
+            <ContentPresenter Margin="2" 
+                              Content="{TemplateBinding Property=IconName, 
+                                                        Converter={StaticResource Alexandria.Converters.IconNameToIconConverter}}" />
         </Button>
     </ControlTemplate>
 </ResourceDictionary>

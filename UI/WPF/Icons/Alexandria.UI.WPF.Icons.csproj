@@ -11,6 +11,13 @@
 		<CallTarget Targets="CopyProjectToDll" />
 	</Target>
 
+	<ItemGroup>
+	  <Compile Remove="Converters\**" />
+	  <EmbeddedResource Remove="Converters\**" />
+	  <None Remove="Converters\**" />
+	  <Page Remove="Converters\**" />
+	</ItemGroup>
+
   <ItemGroup>
     <None Remove="Resources\Icons\AkarVol1\png\9117910_flashlight.png" />
     <None Remove="Resources\Icons\AkarVol1\png\9117911_fill_forward_thick_arrow.png" />
@@ -2772,10 +2779,6 @@
 
   <ItemGroup>
     <PackageReference Include="SharpVectors.Wpf" Version="1.8.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Converters\" />
   </ItemGroup>
 
   <ItemGroup>

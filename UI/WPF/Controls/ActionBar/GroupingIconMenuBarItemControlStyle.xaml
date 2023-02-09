@@ -3,6 +3,6 @@
                     xmlns:actionBar="clr-namespace:Fateblade.Alexandria.UI.WPF.Controls.ActionBar">
     <Style TargetType="{x:Type actionBar:GroupingIconMenuBarItemControl}">
         <Setter Property="Template" Value="{DynamicResource GroupingIconMenuBarItemControlTemplate}" />
-        <Setter Property="IconResourcePath" Value="Alexandria.Resources.Icons.NotFound" />
+        <Setter Property="IconName" Value="NotFound" />
     </Style>
 </ResourceDictionary>

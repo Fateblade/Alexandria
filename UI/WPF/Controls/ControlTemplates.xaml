@@ -3,6 +3,7 @@
         <!--Action Bar-->
         <ResourceDictionary Source="ActionBar/ActionMenuBarControlTemplate.xaml" />
         <ResourceDictionary Source="ActionBar/GroupingIconMenuBarControlTemplate.xaml" />
+        <ResourceDictionary Source="ActionBar/GroupingIconMenuBarItemControlTemplate.xaml" />
 
         <!--Selection-->
         <ResourceDictionary Source="Selection/ListBoxSelectionControlTemplate.xaml" />

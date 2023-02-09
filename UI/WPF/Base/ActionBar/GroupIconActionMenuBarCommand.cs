@@ -2,5 +2,6 @@
 
 public class GroupIconActionMenuBarCommand : ActionMenuBarCommand
 {
-    public string IconResourcePath { get; set; }
+    public string IconName { get; set; }
 }
+

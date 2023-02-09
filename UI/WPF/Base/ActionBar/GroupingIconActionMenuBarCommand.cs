@@ -2,7 +2,6 @@
 
 public class GroupingIconActionMenuBarCommand : IconActionMenuBarCommand
 {
-        
     public string GroupName { get; set; }
-    public string GroupIconResourcePath { get; set; }
+    public string GroupIconName { get; set; }
 }

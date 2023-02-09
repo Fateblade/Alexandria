@@ -94,7 +94,7 @@ namespace Fateblade.Alexandria.UI.WPF.Controls.ActionBar
 
             var groupActionCommand = new GroupIconActionMenuBarCommand
             {
-                IconResourcePath = menuBarAction.IconResourcePath,
+                IconName = menuBarAction.IconName,
                 DisplayName = menuBarAction.GroupName,
                 Action = new DelegateCommand<string>(switchToGroup)
             };
@@ -145,7 +145,7 @@ namespace Fateblade.Alexandria.UI.WPF.Controls.ActionBar
             addNewGroupIfNotExists(newCmd);
 
             _groupedActionMenuBarCommands[newCmd.GroupName].actions.Add(newCmd);
-            if (newCmd.GroupName == SelectedGroup.DisplayName)
+            if (newCmd.GroupName == SelectedGroup?.DisplayName)
             {
                 MenuBarActionsOfSelectedGroup.Add(newCmd);
             }

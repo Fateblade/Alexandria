@@ -2,5 +2,5 @@
 
 public class IconActionMenuBarCommand : ActionMenuBarCommand
 {
-    public string IconResourcePath { get; set; }
+    public string IconName { get; set; }
 }

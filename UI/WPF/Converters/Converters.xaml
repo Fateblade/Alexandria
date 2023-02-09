@@ -7,4 +7,5 @@
     <converters:ExistanceToVisibilityConverter x:Key="Alexandria.Converters.ExistanceToVisibilityConverter" />
     <converters:GridLengthToDoubleConverter x:Key="Alexandria.Converters.GridLengthToDoubleConverter" />
     <converters:IntToStringConverter x:Key="Alexandria.Converters.IntToStringConverter" />
+    <converters:IconNameToIconConverter x:Key="Alexandria.Converters.IconNameToIconConverter" />
 </ResourceDictionary>

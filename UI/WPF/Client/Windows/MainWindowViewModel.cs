@@ -40,7 +40,7 @@ namespace Fateblade.Alexandria.UI.WPF.Client.Windows
         {
             orchestrator.RegisterHandler((IOrchestrationHandler<ShowDialogOrchestrationInfo>) this);
             orchestrator.RegisterHandler((IOrchestrationHandler<ShowPageOrchestrationInfo>)this);
-            menuBarManager.RegisterActionMenuBarProvider(this);
+            //menuBarManager.RegisterActionMenuBarProvider(this);
             
             AvailableMenuActions = new ObservableCollection<GroupingIconActionMenuBarCommand>()
             {
