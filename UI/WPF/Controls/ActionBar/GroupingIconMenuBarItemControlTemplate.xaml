@@ -6,7 +6,8 @@
                      TargetType="{x:Type actionBar:GroupingIconMenuBarItemControl}">
         <Button Height="{TemplateBinding Height}" Width="{TemplateBinding Width}" 
                 ToolTip="{TemplateBinding ToolTip}"
-                Command="{TemplateBinding Command}">
+                Command="{TemplateBinding Command}"
+                CommandParameter="{TemplateBinding CommandParameter}">
             <ContentPresenter Margin="2" 
                               Content="{TemplateBinding Property=IconName, 
                                                         Converter={StaticResource Alexandria.Converters.IconNameToIconConverter}}" />

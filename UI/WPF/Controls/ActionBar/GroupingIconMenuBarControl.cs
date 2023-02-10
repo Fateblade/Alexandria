@@ -80,11 +80,9 @@ namespace Fateblade.Alexandria.UI.WPF.Controls.ActionBar
             MenuBarActionsOfSelectedGroup = null;
             _groupedActionMenuBarCommands.Clear();
 
-
             foreach (var menuBarAction in MenuBarActions)
             {
                 AddToGroupedActionMenuBarItems(menuBarAction);
-                
             }
         }
 

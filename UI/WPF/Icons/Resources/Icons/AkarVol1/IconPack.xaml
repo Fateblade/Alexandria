@@ -1,494 +1,492 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:svgc="http://sharpvectors.codeplex.com/svgc/">
+                    xmlns:svgc="http://sharpvectors.codeplex.com/svgc/"
+                    xmlns:system="clr-namespace:System;assembly=System.Runtime">
     <!-- ReSharper disable InconsistentNaming -->
 
     <!--Png-->
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Flashlight" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117910_flashlight.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Backspace" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117912_backspace.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.BackspaceFill" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117913_fill_backspace.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ScreenNormal" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117914_screen_normal.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Air" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117915_air.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.AirplayAudio" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117916_airplay_audio.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.AirplayVideo" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117917_airplay_video.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Airpods" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117918_airpods.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Alarm" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117919_alarm.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.AlignBottom" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117920_bottom_align.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.AlignHorizonalCenter" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117921_align_horizontal_center.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.AlignLeft" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117922_left_align.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.AlignRight" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117923_align_right.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.AlignDown" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117924_bottom_to_align.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.AlignMiddle" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117925_middle_to_align.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.AlignTop" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117926_top_align.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.AlignUp" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117927_to_align_top.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.AlignVerticalCenter" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117928_vertical_align_center.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Angular" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117929_angular_fill.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ArrowBack" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117930_arrow_back.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Android" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117931_android_fill.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ArrowBackThickFilled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117932_back_arrow_fill_thick.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ArrowBackThick" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117933_thick_arrow_back.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ArrowClockwise" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117934_clockwise_arrow.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ArrowCounterClockwise" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117935_arrow_clockwise_counter.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ArrowCircle" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117936_cycle_arrow.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ArrowDown" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117937_down_arrow.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ArrowDownLeft" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117938_left_down_arrow.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ArrowDownRight" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117939_right_down_arrow.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ArrowDownThick" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117940_thick_down_arrow.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ArrowForward" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117941_forward_arrow.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ArrowForwardThick" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117942_thick_forward_arrow.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ArrowLeft" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117943_left_arrow.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ArrowRepeat" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117944_arrow_repeat.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ArrowShuffle" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117945_shuffle_arrow.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Attach" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117946_attach.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.BatteryEmpty" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117947_empty_battery.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.AlertFill" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117948_fill_alert_circle.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.CheckCircle" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117949_check_circle.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.PlayFilled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117950_fill_right_triangle_circle.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.CodePen" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117951_codepen_fill.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Folder" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117952_folder.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ChevronUpCircle" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117953_up_circle_chevron.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Play" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117954_right_triangle_circle.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.BatteryMedium" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117955_battery_medium.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.BootstrapFilled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117956_fill_bootstrap.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Camera" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117957_camera.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.CheckIn" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117958_check_in.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ChevronRight" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117959_chevron_right.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ChevronUpCircleFilled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117960_fill_circle_chevron_up.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.MinusFilled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117961_fill_minus_circle.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.XFilled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117962_fill_x_circle.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Devices" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117963_devices.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.CheckDouble" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117964_check_double.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.DragVertical" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117965_vertical_drag.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.SmileyVerySad" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117966_sad_very_face.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Filter" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117967_filter.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Lifesaver" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117968_lifesaver.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.LinkedIn" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117969_fill_v2_linkedin.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.MoreHorizontal" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117970_fill_horizontal_more.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ChatApprove" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117971_approve_chat.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ChatQuestion" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117972_question_chat.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Computing" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117973_computing.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Download" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117974_download.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.DragHorizontal" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117975_horizontal_drag.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.GraphQl" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117976_fill_graphql.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.DeviceLaptop" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117977_device_laptop.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ArrowRight" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117978_right_arrow.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ArrowUp" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117979_up_arrow.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.OrderDescending" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117980_descending.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ArrowRightUp" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117981_right_up_arrow.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ArrowUpThick" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117982_up_arrow_thick.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.BitcoinFilled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117983_fill_bitcoin.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.TriangleLeftCircle" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117984_triangle_left_circle.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Gear" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117985_gear.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Glasses" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117986_glasses.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Globe" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117987_globe.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.LinkOut" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117988_link_out.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Calendar" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117989_calendar.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Circle" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117990_circle.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.SmileyWink" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117991_face_wink.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.HeptagonFilled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117992_heptagon_fill.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Briefcase" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117993_briefcase.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Alert" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117994_circle_alert.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.PlusCircle" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117995_circle_plus.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Crown" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117996_crown.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.CSS" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117997_fill_css.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Diamond" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117998_diamond.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Door" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117999_door.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.DiscordFilled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118000_fill_discord.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Heart" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118001_heart.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.TriangleDownCircle" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118002_circle_down_triangle.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.CloudDownload" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118003_cloud_download.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.DragHorizontalFill" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118004_fill_horizontal_drag.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Dribble" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118005_dribbble_fill.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Dropbox" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118006_dropbox_fill.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Edit" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118007_edit.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.EyeSlashed" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118008_eye_slashed.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Fire" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118009_fire.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Gift" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118010_gift.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Map" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118011_map.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Medium" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118012_medium_fill.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Mention" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118013_mention.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Django" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118014_fill_django.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.EyeOpen" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118015_open_eye.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.SmileySad" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118016_face_sad.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Headphone" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118017_headphone.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Check" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118018_check.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Chess" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118019_chess.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.GridDot" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118020_grid_dot.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.SwordDouble" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118021_sword_double.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Cursor" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118022_cursor.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.LinkChain" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118023_link_chain.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.LinkOn" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118024_on_link.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Network" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118025_network.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Draft" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118026_draft.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Location" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118027_location.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.MoreVertical" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118028_vertical_more.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Height" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118029_height.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Inbox" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118030_inbox.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Info" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118031_info.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Flag" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118032_flag.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.FolderAd" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118033_add_folder.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Key" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118034_key.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Leaf" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118035_leaf.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.NextJs" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118036_nextjs_fill.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Hand" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118037_hand.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.LinkedInFilled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118038_linkedinv1_fill.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Microphone" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118039_microphone.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.InfoFilled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118040_fill_info.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.InstagramFilled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118041_instagram_fill.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Jar" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118042_jar.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.CapKey" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118043_cap_key.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.BatteryFull" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118044_full_battery.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.TriangleDownCircleFilled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118045_down_fill_triangle_circle.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Clock" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118046_clock.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.CloudUpload" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118047_upload_cloud.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Coffee" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118048_coffee.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Coin" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118049_coin.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Cross" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118050_cross.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.DeviceDesktop" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118051_desktop_device.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Bicycle" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118052_bicycle.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ChevronRightCircle" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118053_chevron_right_circle.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ControllerGame" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118054_controller_game.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Github" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118055_github_fill_outline.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Image" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118056_image.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Belance" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118057_fill_behance.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.CircleFilled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118058_fill_circle.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.SmileyVeryHappey" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118059_face_happy_very.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Grid" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118060_grid.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.LinkOff" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118061_off_link.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.LockOn" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118062_lock_on.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Moon" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118063_moon.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.MoonFilled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118064_fill_moon.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ChatEdit" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118065_edit_chat.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.CreditCard" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118066_card_credit.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.JavascriptFilled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118067_javascript_fill.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Node" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118068_fill_node.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ArrowLeftThick" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118069_left_thick_arrow.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ArrowRightLeft" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118070_right_left_arrow.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ArrowRightThick" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118071_right_thick_arrow.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ArrowUpDown" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118072_arrow_down_up.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Cloud" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118073_cloud.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Frame" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118074_frame.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Health" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118075_health.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.BatteryCharging" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118076_charging_battery.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ChevronVertical" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118077_vertical_chevron.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.DragVerticalFilled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118078_drag_fill_vertical.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.JQueryFill" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118079_jquery_fill.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.BulbLight" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118080_bulb_light.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Bell" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118081_bell.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Block" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118082_block.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ChevronUp" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118083_up_chevron.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ArrowLeftUp" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118084_left_up_arrow.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Ascending" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118085_ascending.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Basket" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118086_basket.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.BatteryLow" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118087_low_battery.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Boat" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118088_boat.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ChatAdd" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118089_add_chat.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ChatError" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118090_error_chat.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.BoxCheckedFilled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118091_fill_box_check.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.TriangleLeftCircleFilled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118092_fill_left_triangle_circle.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.TriangleUpCircle" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118093_up_triangle_circle.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.TriangleUpCircleFilled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118094_fill_up_triangle_circle.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ScreenFull" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118095_screen_full.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Google" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118096_google_fill.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Hexagon" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118097_hexagon.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Infinity" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118098_infinity.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Minus" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118099_minus.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ChevronDownCircle" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118100_down_chevron_circle.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.XCircle" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118101_x_circle.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.SmileyNeutral" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118102_neutral_face.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Calculator" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118103_calculator.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ChatRemove" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118104_remove_chat.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.CircleCheckFilled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118105_fill_check_circle.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ChevronLeftCircle" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118106_left_chevron_circle.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ChevronRightCircleFilled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118107_fill_right_chevron_circle.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.PlusCircleFilled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118108_fill_plus_circle.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Command" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118109_command.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Copy" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118110_copy.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Bluetooth" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118111_bluetooth.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Book" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118112_book.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Cart" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118113_cart.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ChatDots" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118114_chat_dots.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.BoxChecked" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118115_box_check.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ChevronDown" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118116_down_chevron.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ChevronHorizontal" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118117_horizontal_chevron.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Dental" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118118_dental.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Gatsby" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118119_fill_gatsby.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ChevronLeftCircleFilled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118120_fill_left_chevron_circle.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Enlarge" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118121_enlarge.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Figma" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118122_fill_figma.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Hashtag" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118123_hashtag.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.HexagonFilled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118124_fill_hexagon.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Box" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118125_box.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.MinusCircle" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118126_minus_circle.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Newspaper" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118128_newspaper.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Cake" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118129_cake.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ChatBubble" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118130_bubble_chat.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ChevronLeft" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118131_left_chevron.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Envelope" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118133_envelope.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.GoogleFilled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118134_fill_contained_google.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Miniplayer" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118135_miniplayer.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Money" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118136_money.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.DeviceMobile" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118137_device_mobile.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ChevronDownCircleFilled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118138_fill_down_chevron_circle.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Clipboard" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118139_clipboard.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.EyeClosed" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118140_closed_eye.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.FacebookFilled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118141_fill_facebook.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.SmileyHappy" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118142_happy_face.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.File" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118143_file.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.GithubFilled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118144_fill_github.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Bug" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118145_bug.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Cut" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118146_cut.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.LockOff" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118147_off_lock.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Heptagon" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118148_heptagon.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Home" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118149_home.png" />
-    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.HtmlFilled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118150_fill_html.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Flashlight" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117910_flashlight.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Backspace" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117912_backspace.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Backspace.Fill" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117913_fill_backspace.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Screen.Normal" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117914_screen_normal.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Air" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117915_air.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Airplay.Audio" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117916_airplay_audio.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Airplay.Video" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117917_airplay_video.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Airpods" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117918_airpods.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Alarm" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117919_alarm.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Align.Bottom" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117920_bottom_align.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Align.Horizonal.Center" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117921_align_horizontal_center.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Align.Left" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117922_left_align.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Align.Right" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117923_align_right.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Align.toToBottom" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117924_bottom_to_align.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Align.ToMiddle" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117925_middle_to_align.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Align.Top" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117926_top_align.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Align.Up" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117927_to_align_top.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Align.Vertical.Center" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117928_vertical_align_center.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Angular" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117929_angular_fill.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.ArrowBack" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117930_arrow_back.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Android" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117931_android_fill.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Arrow.Back.Thick.Filled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117932_back_arrow_fill_thick.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Arrow.Back.Thick" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117933_thick_arrow_back.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Arrow.Clockwise" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117934_clockwise_arrow.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Arrow.CounterClockwise" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117935_arrow_clockwise_counter.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Arrow.Cycle" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117936_cycle_arrow.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Arrow.Down" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117937_down_arrow.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Arrow.DownLeft" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117938_left_down_arrow.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Arrow.DownRight" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117939_right_down_arrow.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Arrow.Down.Thick" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117940_thick_down_arrow.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Arrow.Forward" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117941_forward_arrow.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Arrow.Forward.Thick" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117942_thick_forward_arrow.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Arrow.Left" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117943_left_arrow.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Arrow.Repeat" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117944_arrow_repeat.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Arrow.Shuffle" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117945_shuffle_arrow.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Attach" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117946_attach.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Battery.Empty" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117947_empty_battery.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Alert.Fill" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117948_fill_alert_circle.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Check.Circle" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117949_check_circle.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Play.Filled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117950_fill_right_triangle_circle.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.CodePen" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117951_codepen_fill.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Folder" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117952_folder.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Chevron.Up.Circle" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117953_up_circle_chevron.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Play" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117954_right_triangle_circle.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Battery.Medium" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117955_battery_medium.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Bootstrap.Filled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117956_fill_bootstrap.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Camera" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117957_camera.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Check.In" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117958_check_in.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Chevron.Right" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117959_chevron_right.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Chevron.Up.Circle.Filled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117960_fill_circle_chevron_up.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Minus.Filled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117961_fill_minus_circle.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.X.Circle.Filled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117962_fill_x_circle.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Devices" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117963_devices.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Check.Double" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117964_check_double.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Drag.Vertical" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117965_vertical_drag.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Smiley.VerySad" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117966_sad_very_face.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Filter" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117967_filter.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Lifesaver" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117968_lifesaver.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.LinkedIn" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117969_fill_v2_linkedin.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.More.Horizontal" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117970_fill_horizontal_more.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Chat.Approve" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117971_approve_chat.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Chat.Question" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117972_question_chat.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Computing" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117973_computing.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Download" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117974_download.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Drag.Horizontal" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117975_horizontal_drag.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.GraphQl" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117976_fill_graphql.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Device.Laptop" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117977_device_laptop.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Arrow.Right" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117978_right_arrow.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Arrow.Up" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117979_up_arrow.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Order.Descending" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117980_descending.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Arrow.RightUp" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117981_right_up_arrow.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Arrow.Up.Thick" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117982_up_arrow_thick.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Bitcoin.Filled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117983_fill_bitcoin.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Triangle.Left.Circle" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117984_triangle_left_circle.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Gear" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117985_gear.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Glasses" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117986_glasses.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Globe" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117987_globe.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.LinkOut" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117988_link_out.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Calendar" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117989_calendar.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Circle" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117990_circle.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Smiley.Wink" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117991_face_wink.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Heptagon.Filled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117992_heptagon_fill.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Briefcase" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117993_briefcase.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Alert" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117994_circle_alert.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Plus.Circle" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117995_circle_plus.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Crown" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117996_crown.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.CSS" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117997_fill_css.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Diamond" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117998_diamond.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Door" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9117999_door.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Discord.Filled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118000_fill_discord.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Heart" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118001_heart.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Triangle.Down.Circle" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118002_circle_down_triangle.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Cloud.Download" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118003_cloud_download.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Drag.Horizontal.Fill" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118004_fill_horizontal_drag.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Dribble" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118005_dribbble_fill.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Dropbox" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118006_dropbox_fill.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Edit" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118007_edit.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Eye.Slashed" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118008_eye_slashed.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Fire" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118009_fire.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Gift" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118010_gift.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Map" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118011_map.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Medium" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118012_medium_fill.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Mention" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118013_mention.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Django" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118014_fill_django.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Eye.Open" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118015_open_eye.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Smile.ySad" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118016_face_sad.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Headphone" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118017_headphone.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Check" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118018_check.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Chess" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118019_chess.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Grid.Dot" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118020_grid_dot.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Sword.Double" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118021_sword_double.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Cursor" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118022_cursor.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Link.Chain" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118023_link_chain.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Link.On" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118024_on_link.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Network" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118025_network.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Draft" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118026_draft.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Location" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118027_location.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.More.Vertical" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118028_vertical_more.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Height" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118029_height.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Inbox" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118030_inbox.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Info" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118031_info.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Flag" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118032_flag.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Folder.Ad" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118033_add_folder.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Key" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118034_key.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Leaf" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118035_leaf.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.NextJs" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118036_nextjs_fill.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Hand" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118037_hand.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.LinkedIn.Filled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118038_linkedinv1_fill.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Microphone" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118039_microphone.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Info.Filled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118040_fill_info.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Instagram.Fill" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118041_instagram_fill.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Jar" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118042_jar.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.CapKey" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118043_cap_key.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Battery.Full" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118044_full_battery.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.TriangleDownCircleFilled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118045_down_fill_triangle_circle.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Clock" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118046_clock.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Cloud.Upload" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118047_upload_cloud.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Coffee" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118048_coffee.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Coin" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118049_coin.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Cross" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118050_cross.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Device.Desktop" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118051_desktop_device.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Bicycle" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118052_bicycle.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Chevron.Right.Circle" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118053_chevron_right_circle.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Controller.Game" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118054_controller_game.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Github" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118055_github_fill_outline.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Image" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118056_image.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Belance" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118057_fill_behance.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Circle.Filled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118058_fill_circle.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Smiley.Very.Happey" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118059_face_happy_very.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Grid" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118060_grid.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Link.Off" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118061_off_link.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Lock.On" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118062_lock_on.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Moon" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118063_moon.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Moon.Filled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118064_fill_moon.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Chat.Edit" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118065_edit_chat.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.CreditCard" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118066_card_credit.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Javascript.Filled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118067_javascript_fill.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Node" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118068_fill_node.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Arrow.Left.Thick" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118069_left_thick_arrow.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Arrow.RightLeft" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118070_right_left_arrow.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Arrow.Right.Thick" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118071_right_thick_arrow.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Arrow.UpDown" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118072_arrow_down_up.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Cloud" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118073_cloud.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Frame" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118074_frame.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Health" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118075_health.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Battery.Charging" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118076_charging_battery.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Chevron.Vertical" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118077_vertical_chevron.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Drag.Vertical.Filled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118078_drag_fill_vertical.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.JQuery.Fill" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118079_jquery_fill.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.BulbLight" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118080_bulb_light.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Bell" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118081_bell.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Block" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118082_block.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Chevron.Up" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118083_up_chevron.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Arrow.LeftUp" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118084_left_up_arrow.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Ascending" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118085_ascending.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Basket" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118086_basket.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Battery.Low" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118087_low_battery.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Boat" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118088_boat.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Chat.Add" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118089_add_chat.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Chat.Error" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118090_error_chat.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Box.Checked.Filled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118091_fill_box_check.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Triangle.Left.Circle.Filled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118092_fill_left_triangle_circle.png" />      
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Triangle.Up.Circle" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118093_up_triangle_circle.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Triangle.Up.Circle.Filled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118094_fill_up_triangle_circle.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Screen.Full" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118095_screen_full.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Google" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118096_google_fill.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Hexagon" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118097_hexagon.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Infinity" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118098_infinity.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Minus" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118099_minus.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Chevron.Down.Circle" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118100_down_chevron_circle.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.X.Circle" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118101_x_circle.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Smiley.Neutral" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118102_neutral_face.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Calculator" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118103_calculator.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Chat.Remove" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118104_remove_chat.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Circle.Check.Filled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118105_fill_check_circle.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Chevron.Left.Circle" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118106_left_chevron_circle.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Chevron.Right.Circle.Filled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118107_fill_right_chevron_circle.png" />      
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Plus.Circle.Filled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118108_fill_plus_circle.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Command" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118109_command.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Copy" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118110_copy.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Bluetooth" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118111_bluetooth.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Book" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118112_book.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Cart" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118113_cart.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Chat.Dots" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118114_chat_dots.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Box.Checked" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118115_box_check.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Chevron.Down" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118116_down_chevron.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Chevron.Horizontal" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118117_horizontal_chevron.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Dental" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118118_dental.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Gatsby" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118119_fill_gatsby.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Chevron.Left.Circle.Filled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118120_fill_left_chevron_circle.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Enlarge" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118121_enlarge.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Figma" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118122_fill_figma.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Hashtag" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118123_hashtag.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Hexagon.Filled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118124_fill_hexagon.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Box" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118125_box.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Minus.Circle" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118126_minus_circle.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Newspaper" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118128_newspaper.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Cake" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118129_cake.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Chat.Bubble" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118130_bubble_chat.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Chevron.Left" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118131_left_chevron.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Envelope" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118133_envelope.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Google.Filled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118134_fill_contained_google.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Miniplayer" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118135_miniplayer.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Money" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118136_money.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Device.Mobile" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118137_device_mobile.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Chevron.Down.Circle.Filled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118138_fill_down_chevron_circle.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Clipboard" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118139_clipboard.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.EyeClosed" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118140_closed_eye.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Facebook.Filled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118141_fill_facebook.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Smiley.Happy" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118142_happy_face.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.File" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118143_file.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Github.Filled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118144_fill_github.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Bug" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118145_bug.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Cut" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118146_cut.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Lock.Off" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118147_off_lock.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Heptagon" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118148_heptagon.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Home" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118149_home.png" />
+    <BitmapImage x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.Html.Filled" UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/png/9118150_fill_html.png" />
     
-
-    <!--Svg-->
-    <!--
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117910_flashlight.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117911_fill_forward_thick_arrow.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117912_backspace.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117913_fill_backspace.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117914_screen_normal.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117915_air.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117916_airplay_audio.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117917_airplay_video.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117918_airpods.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117919_alarm.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117920_bottom_align.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117921_align_horizontal_center.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117922_left_align.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117923_align_right.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117924_bottom_to_align.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117925_middle_to_align.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117926_top_align.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117927_to_align_top.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117928_vertical_align_center.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117929_angular_fill.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117930_arrow_back.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117931_android_fill.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117932_back_arrow_fill_thick.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117933_thick_arrow_back.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117934_clockwise_arrow.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117935_arrow_clockwise_counter.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117936_cycle_arrow.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117937_down_arrow.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117938_left_down_arrow.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117939_right_down_arrow.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117940_thick_down_arrow.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117941_forward_arrow.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117942_thick_forward_arrow.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117943_left_arrow.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117944_arrow_repeat.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117945_shuffle_arrow.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117946_attach.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117947_empty_battery.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117948_fill_alert_circle.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117949_check_circle.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117950_fill_right_triangle_circle.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117951_codepen_fill.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117952_folder.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117953_up_circle_chevron.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117954_right_triangle_circle.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117955_battery_medium.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117956_fill_bootstrap.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117957_camera.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117958_check_in.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117959_chevron_right.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117960_fill_circle_chevron_up.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117961_fill_minus_circle.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117962_fill_x_circle.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117963_devices.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117964_check_double.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117965_vertical_drag.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117966_sad_very_face.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117967_filter.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117968_lifesaver.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117969_fill_v2_linkedin.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117970_fill_horizontal_more.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117971_approve_chat.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117972_question_chat.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117973_computing.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117974_download.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117975_horizontal_drag.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117976_fill_graphql.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117977_device_laptop.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117978_right_arrow.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117979_up_arrow.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117980_descending.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117981_right_up_arrow.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117982_up_arrow_thick.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117983_fill_bitcoin.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117984_triangle_left_circle.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117985_gear.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117986_glasses.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117987_globe.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117988_link_out.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117989_calendar.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117990_circle.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117991_face_wink.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117992_heptagon_fill.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117993_briefcase.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117994_circle_alert.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117995_circle_plus.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117996_crown.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117997_fill_css.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117998_diamond.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117999_door.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118000_fill_discord.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118001_heart.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118002_circle_down_triangle.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118003_cloud_download.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118004_fill_horizontal_drag.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118005_dribbble_fill.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118006_dropbox_fill.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118007_edit.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118008_eye_slashed.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118009_fire.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118010_gift.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118011_map.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118012_medium_fill.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118013_mention.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118014_fill_django.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118015_open_eye.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118016_face_sad.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118017_headphone.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118018_check.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118019_chess.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118020_grid_dot.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118021_sword_double.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118022_cursor.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118023_link_chain.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118024_on_link.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118025_network.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118026_draft.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118027_location.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118028_vertical_more.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118029_height.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118030_inbox.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118031_info.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118032_flag.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118033_add_folder.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118034_key.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118035_leaf.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118036_nextjs_fill.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118037_hand.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118038_linkedinv1_fill.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118039_microphone.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118040_fill_info.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118041_instagram_fill.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118042_jar.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118043_cap_key.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118044_full_battery.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118045_down_fill_triangle_circle.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118046_clock.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118047_upload_cloud.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118048_coffee.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118049_coin.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118050_cross.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118051_desktop_device.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118052_bicycle.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118053_chevron_right_circle.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118054_controller_game.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118055_github_fill_outline.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118056_image.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118057_fill_behance.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118058_fill_circle.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118059_face_happy_very.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118060_grid.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118061_off_link.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118062_lock_on.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118063_moon.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118064_fill_moon.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118065_edit_chat.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118066_card_credit.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118067_javascript_fill.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118068_fill_node.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118069_left_thick_arrow.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118070_right_left_arrow.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118071_right_thick_arrow.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118072_arrow_down_up.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118073_cloud.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118074_frame.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118075_health.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118076_charging_battery.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118077_vertical_chevron.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118078_drag_fill_vertical.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118079_jquery_fill.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118080_bulb_light.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118081_bell.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118082_block.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118083_up_chevron.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118084_left_up_arrow.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118085_ascending.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118086_basket.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118087_low_battery.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118088_boat.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118089_add_chat.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118090_error_chat.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118091_fill_box_check.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118092_fill_left_triangle_circle.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118093_up_triangle_circle.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118094_fill_up_triangle_circle.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118095_screen_full.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118096_google_fill.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118097_hexagon.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118098_infinity.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118099_minus.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118100_down_chevron_circle.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118101_x_circle.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118102_neutral_face.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118103_calculator.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118104_remove_chat.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118105_fill_check_circle.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118106_left_chevron_circle.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118107_fill_right_chevron_circle.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118108_fill_plus_circle.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118109_command.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118110_copy.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118111_bluetooth.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118112_book.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118113_cart.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118114_chat_dots.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118115_box_check.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118116_down_chevron.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118117_horizontal_chevron.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118118_dental.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118119_fill_gatsby.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118120_fill_left_chevron_circle.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118121_enlarge.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118122_fill_figma.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118123_hashtag.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118124_fill_hexagon.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118125_box.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118126_minus_circle.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118127_horizontal_more.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118128_newspaper.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118129_cake.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118130_bubble_chat.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118131_left_chevron.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118132_fill_grid_dot.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118133_envelope.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118134_fill_contained_google.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118135_miniplayer.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118136_money.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118137_device_mobile.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118138_fill_down_chevron_circle.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118139_clipboard.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118140_closed_eye.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118141_fill_facebook.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118142_happy_face.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118143_file.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118144_fill_github.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118145_bug.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118146_cut.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118147_off_lock.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118148_heptagon.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118149_home.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118150_fill_html.svg" />
-    <svgc:SvgIcon x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg." UriSource="/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118151_fill_vertical_more.svg" />
-    -->
+    <!--Svg Paths-->
+    <system:String x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Flashlight">/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117910_flashlight.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Arrow.Forward.Thick.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117911_fill_forward_thick_arrow.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Backspace" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117912_backspace.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Backspace.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117913_fill_backspace.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.ScreenNormal" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117914_screen_normal.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Air" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117915_air.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Airplay.Audio" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117916_airplay_audio.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Airplay.Video" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117917_airplay_video.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Airpods" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117918_airpods.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Alarm" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117919_alarm.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Align.Bottom" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117920_bottom_align.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Align.CenterHorizontal" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117921_align_horizontal_center.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Align.Left" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117922_left_align.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Align.Right" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117923_align_right.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Align.toToBottom" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117924_bottom_to_align.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Align.ToMiddle" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117925_middle_to_align.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Align.Top" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117926_top_align.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Align.ToTop" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117927_to_align_top.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Align.CenterVertical" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117928_vertical_align_center.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Angular.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117929_angular_fill.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Arrow.Back" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117930_arrow_back.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Android.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117931_android_fill.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Arrow.Back.Thick.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117932_back_arrow_fill_thick.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Arrow.Back.Thick" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117933_thick_arrow_back.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Arrow.Clockwise" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117934_clockwise_arrow.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Arrow.CounterClockwise" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117935_arrow_clockwise_counter.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Arrow.Cycle" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117936_cycle_arrow.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Arrow.Down" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117937_down_arrow.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Arrow.LeftDown" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117938_left_down_arrow.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Arrow.RightDown" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117939_right_down_arrow.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Arrow.Down.Thick" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117940_thick_down_arrow.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Arrow.Forward" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117941_forward_arrow.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Arrow.Forward.Thick" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117942_thick_forward_arrow.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Arrow.Left" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117943_left_arrow.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Arrow.Repeat" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117944_arrow_repeat.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Arrow.Shuffle" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117945_shuffle_arrow.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Attach" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117946_attach.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Battery.Empty" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117947_empty_battery.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Alert.Circle.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117948_fill_alert_circle.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Check.Circle" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117949_check_circle.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Triangle.Right.Circle.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117950_fill_right_triangle_circle.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Codepen.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117951_codepen_fill.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Folder" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117952_folder.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Chevron.Up.Circle" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117953_up_circle_chevron.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Triangle.Right.Circle" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117954_right_triangle_circle.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Battery.Medium" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117955_battery_medium.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Bootstrap.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117956_fill_bootstrap.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Camera" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117957_camera.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.CheckIn" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117958_check_in.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Chevron.Right" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117959_chevron_right.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Chevron.Up.Circle.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117960_fill_circle_chevron_up.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Minus.Circle.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117961_fill_minus_circle.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.X.Circle.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117962_fill_x_circle.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Devices" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117963_devices.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Check.Double" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117964_check_double.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Drag.Vertical" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117965_vertical_drag.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Smiley.VerySad" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117966_sad_very_face.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Filter" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117967_filter.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Lifesaver" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117968_lifesaver.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.LinkedIn.V2.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117969_fill_v2_linkedin.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.More.Horizontal.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117970_fill_horizontal_more.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Chat.Approve" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117971_approve_chat.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Chat.Question" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117972_question_chat.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Computing" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117973_computing.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Download" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117974_download.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Drag.Horizontal" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117975_horizontal_drag.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Graphql.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117976_fill_graphql.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Device.Laptop" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117977_device_laptop.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Arrow.Right" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117978_right_arrow.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Arrow.Up" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117979_up_arrow.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Order.Descending" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117980_descending.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Arrow.RightUp" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117981_right_up_arrow.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Arrow.Up.Thick" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117982_up_arrow_thick.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Bitcoin.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117983_fill_bitcoin.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Triangle.Left.Circle" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117984_triangle_left_circle.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Gear" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117985_gear.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Glasses" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117986_glasses.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Globe" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117987_globe.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.LinkOut" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117988_link_out.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Calendar" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117989_calendar.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Circle" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117990_circle.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Smiley.Wink" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117991_face_wink.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Heptagon.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117992_heptagon_fill.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Briefcase" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117993_briefcase.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Alert.Circle" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117994_circle_alert.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Plus.Circle" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117995_circle_plus.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Crown" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117996_crown.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Css.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117997_fill_css.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Diamond" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117998_diamond.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Door" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9117999_door.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Discord.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118000_fill_discord.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Heart" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118001_heart.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Triangle.Down.Circle" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118002_circle_down_triangle.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Cloud.Download" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118003_cloud_download.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Drag.Horizontal.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118004_fill_horizontal_drag.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Dribble.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118005_dribbble_fill.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Dropbox.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118006_dropbox_fill.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Edit" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118007_edit.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Eye.Slashed" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118008_eye_slashed.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Fire" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118009_fire.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Gift" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118010_gift.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Map" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118011_map.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Medium.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118012_medium_fill.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Mention" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118013_mention.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Django.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118014_fill_django.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Eye.Open" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118015_open_eye.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Smiley.Sad" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118016_face_sad.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Headphone" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118017_headphone.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Check" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118018_check.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Chess" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118019_chess.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Grid.Dot" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118020_grid_dot.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Sword.Double" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118021_sword_double.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Cursor" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118022_cursor.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Link.Chain" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118023_link_chain.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Link.On" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118024_on_link.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Network" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118025_network.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Draft" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118026_draft.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Location" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118027_location.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.More.Vertical" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118028_vertical_more.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Height" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118029_height.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Inbox" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118030_inbox.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Info" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118031_info.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Flag" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118032_flag.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Folder.Add" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118033_add_folder.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Key" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118034_key.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Leaf" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118035_leaf.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.NextJs.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118036_nextjs_fill.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Hand" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118037_hand.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.LinkedIn.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118038_linkedinv1_fill.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Microphone" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118039_microphone.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Info.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118040_fill_info.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Instagram.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118041_instagram_fill.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Jar" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118042_jar.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.CapKey" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118043_cap_key.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Battery.Full" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118044_full_battery.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Triangle.Down.Circle.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118045_down_fill_triangle_circle.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Clock" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118046_clock.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Cloud.Upload" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118047_upload_cloud.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Coffee" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118048_coffee.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Coin" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118049_coin.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Cross" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118050_cross.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Device.Desktop" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118051_desktop_device.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Bicycle" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118052_bicycle.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Chevron.Right.Circle" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118053_chevron_right_circle.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Controller.Game" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118054_controller_game.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.GithubOutline.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118055_github_fill_outline.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Image" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118056_image.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Behance.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118057_fill_behance.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Circle.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118058_fill_circle.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Smiley.VeryHappy" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118059_face_happy_very.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Grid" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118060_grid.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Link.Off" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118061_off_link.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.LockOn" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118062_lock_on.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Moon" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118063_moon.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Moon.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118064_fill_moon.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Chat.Edit" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118065_edit_chat.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.CreditCard" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118066_card_credit.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Javascript.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118067_javascript_fill.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.NodeJs.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118068_fill_node.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Arrow.Left.Thick" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118069_left_thick_arrow.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Arrow.Right.Left" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118070_right_left_arrow.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Arrow.Right.Thick" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118071_right_thick_arrow.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Arrow.DownUp" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118072_arrow_down_up.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Cloud" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118073_cloud.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Frame" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118074_frame.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Health" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118075_health.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Battery.Charging" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118076_charging_battery.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Chevron.Vertical" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118077_vertical_chevron.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Drag.Vertical.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118078_drag_fill_vertical.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.JQuery.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118079_jquery_fill.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.LightBulb" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118080_bulb_light.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Bell" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118081_bell.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Block" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118082_block.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Chevron.Up" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118083_up_chevron.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Arrow.LeftUp" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118084_left_up_arrow.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Ascending" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118085_ascending.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Basket" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118086_basket.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Batter.Low" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118087_low_battery.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Boat" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118088_boat.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Chat.Add" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118089_add_chat.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Chat.Error" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118090_error_chat.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Check.Box.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118091_fill_box_check.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Triangle.Left.Circle.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118092_fill_left_triangle_circle.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Triangle.Up.Circle" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118093_up_triangle_circle.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Triangle.Up.Circle.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118094_fill_up_triangle_circle.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Fullscreen" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118095_screen_full.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Google.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118096_google_fill.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Hexagon" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118097_hexagon.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Infinity" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118098_infinity.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Minus" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118099_minus.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Chevron.Down.Circle" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118100_down_chevron_circle.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.X.Circle" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118101_x_circle.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Smiley.Neutral" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118102_neutral_face.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Calculator" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118103_calculator.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Chat.Remove" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118104_remove_chat.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Check.Circle.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118105_fill_check_circle.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Chevron.Left.Circle" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118106_left_chevron_circle.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Chevron.Right.Circle.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118107_fill_right_chevron_circle.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Plus.Circle.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118108_fill_plus_circle.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Command" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118109_command.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Copy" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118110_copy.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Bluetooth" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118111_bluetooth.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Book" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118112_book.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Cart" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118113_cart.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Chat.Dots" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118114_chat_dots.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Check.Box" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118115_box_check.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Chevron.Down" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118116_down_chevron.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Chevron.Horizontal" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118117_horizontal_chevron.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Dental" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118118_dental.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Gatsby.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118119_fill_gatsby.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Chevron.Left.Circle.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118120_fill_left_chevron_circle.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Enlarge" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118121_enlarge.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Figma.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118122_fill_figma.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Hashtag" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118123_hashtag.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Hexagon.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118124_fill_hexagon.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Box" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118125_box.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Minus.Circle" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118126_minus_circle.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.More.Horizontal" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118127_horizontal_more.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Newspaper" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118128_newspaper.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Cake" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118129_cake.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Chat.Bubble" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118130_bubble_chat.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Chevron.Left" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118131_left_chevron.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Grid.Dot.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118132_fill_grid_dot.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Envelope" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118133_envelope.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.GoogleContained.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118134_fill_contained_google.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Miniplayer" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118135_miniplayer.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Money" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118136_money.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Device.Mobile" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118137_device_mobile.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Chevron.Down.Circle.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118138_fill_down_chevron_circle.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Clipboard" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118139_clipboard.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Eye.Closed" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118140_closed_eye.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Facebook.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118141_fill_facebook.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Smiley.Happy" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118142_happy_face.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.File" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118143_file.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Github.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118144_fill_github.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Bug" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118145_bug.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Cut" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118146_cut.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Lock.Off" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118147_off_lock.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Heptagon" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118148_heptagon.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Home" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118149_home.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.Html.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118150_fill_html.svg</system:String>
+    <system:String  x:Key="Alexandria.UI.Wpf.Icons.AkarVol1.Svg.More.Vertical.Fill" >/Alexandria.UI.WPF.Icons;component/Resources/Icons/AkarVol1/svg/9118151_fill_vertical_more.svg</system:String>
 
     <!-- ReSharper restore InconsistentNaming -->
 </ResourceDictionary>

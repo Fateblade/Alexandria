@@ -18,6 +18,7 @@ using Prism.Ninject;
 using System;
 using System.Windows;
 using System.Windows.Threading;
+using Fateblade.Alexandria.UI.WPF.Client.Resources.Icons;
 
 namespace Fateblade.Alexandria.UI.WPF.Client
 {
@@ -43,22 +44,24 @@ namespace Fateblade.Alexandria.UI.WPF.Client
         {
             //mappings
             new KernelInitializer().Initialize(_kernelContainer.Kernel);
+            
+            //icons
+            _kernelContainer.CastedKernel.RegisterUnique<IIconNameToIconResolver, IconNameToResourceResolver>(new IconNameToResourceResolver());
 
             //ui specific mappings
             _kernelContainer.CastedKernel.RegisterUnique<IActionMenuBarManager, ActionMenuBarManager>(new ActionMenuBarManager());
 
 
             //dialogs
-            
+
 
             //misc
 
-
             //CoCo Bootstrapper
             IBootstrapper bootstrapper = _kernelContainer.Kernel.Get<IBootstrapper>();
+            bootstrapper.RegisterAllMappings(_kernelContainer.Kernel);
             bootstrapper.ActivatingAll();
             bootstrapper.ActivatedAll();
-            bootstrapper.RegisterAllMappings(_kernelContainer.Kernel);
 
             //translations
             configureTranslations();

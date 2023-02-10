@@ -11,30 +11,35 @@
             </Grid.ColumnDefinitions>
 
             <Border Grid.Column="0">
-                <ItemsControl ItemsSource="{TemplateBinding MenuBarGroupActions}">
-                    <ItemsControl.ItemTemplate>
-                        <DataTemplate DataType="{x:Type actionBarTypes:IconActionMenuBarCommand}">
-                            <actionBar:GroupingIconMenuBarItemControl Margin="0,0,0,4"
-                                                                      ToolTip ="{Binding DisplayName}"
-                                                                      Command="{Binding Action}"
-                                                                      IconName="{Binding IconName}"/>
-                        </DataTemplate>
-                    </ItemsControl.ItemTemplate>
-                </ItemsControl>
+                <ScrollViewer>
+                    <ItemsControl ItemsSource="{TemplateBinding MenuBarGroupActions}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate DataType="{x:Type actionBarTypes:IconActionMenuBarCommand}">
+                                <actionBar:GroupingIconMenuBarItemControl Margin="0,0,0,4"
+                                                                          ToolTip ="{Binding DisplayName}"
+                                                                          Command="{Binding Action}"
+                                                                          CommandParameter="{Binding DisplayName}"
+                                                                          IconName="{Binding IconName}"/>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </ScrollViewer>
             </Border>
 
 
             <Border Grid.Column="1">
-                <ItemsControl ItemsSource="{TemplateBinding MenuBarActionsOfSelectedGroup}">
-                    <ItemsControl.ItemTemplate>
-                        <DataTemplate DataType="{x:Type actionBarTypes:IconActionMenuBarCommand}">
-                            <actionBar:GroupingIconMenuBarItemControl Margin="0,0,0,4"
-                                                                      ToolTip ="{Binding DisplayName}"
-                                                                      Command="{Binding Action}"
-                                                                      IconName="{Binding IconName}"/> 
-                        </DataTemplate>
-                    </ItemsControl.ItemTemplate>
-                </ItemsControl>
+                <ScrollViewer>
+                    <ItemsControl ItemsSource="{TemplateBinding MenuBarActionsOfSelectedGroup}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate DataType="{x:Type actionBarTypes:IconActionMenuBarCommand}">
+                                <actionBar:GroupingIconMenuBarItemControl Margin="0,0,0,4"
+                                                                          ToolTip ="{Binding DisplayName}"
+                                                                          Command="{Binding Action}"
+                                                                          IconName="{Binding IconName}"/>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </ScrollViewer>
             </Border>
         </Grid>
         
