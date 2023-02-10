@@ -4,22 +4,29 @@
                     xmlns:actionBarTypes="clr-namespace:Fateblade.Alexandria.UI.WPF.Base.ActionBar;assembly=Alexandria.UI.WPF.Base">
     <ControlTemplate x:Key="GroupingIconMenuBarControlTemplate" 
                      TargetType="{x:Type actionBar:GroupingIconMenuBarControl}">
-        <Grid>
+        <Grid Background="{TemplateBinding Background}">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
 
-            <Border Grid.Column="0">
-                <ScrollViewer>
+            <!--TODO: proper styling-->
+            <!--TODO: groups bottom and top-->
+
+            <Border Grid.Column="0" Margin="2"
+                    BorderThickness="0,0,1,0"
+                    BorderBrush="Black">
+                <ScrollViewer VerticalScrollBarVisibility="Hidden">
                     <ItemsControl ItemsSource="{TemplateBinding MenuBarGroupActions}">
                         <ItemsControl.ItemTemplate>
                             <DataTemplate DataType="{x:Type actionBarTypes:IconActionMenuBarCommand}">
                                 <actionBar:GroupingIconMenuBarItemControl Margin="0,0,0,4"
+                                                                          HorizontalAlignment="Center"
                                                                           ToolTip ="{Binding DisplayName}"
                                                                           Command="{Binding Action}"
                                                                           CommandParameter="{Binding DisplayName}"
-                                                                          IconName="{Binding IconName}"/>
+                                                                          IconName="{Binding IconName}"
+                                                                          />
                             </DataTemplate>
                         </ItemsControl.ItemTemplate>
                     </ItemsControl>
@@ -27,15 +34,20 @@
             </Border>
 
 
-            <Border Grid.Column="1">
-                <ScrollViewer>
+            <Border Grid.Column="1" Margin="2"
+                    Visibility="{TemplateBinding SelectedGroup, Converter={StaticResource Alexandria.Converters.ExistanceToVisibilityConverter}}"
+                    BorderThickness="0,0,1,0"
+                    BorderBrush="Black">
+                <ScrollViewer VerticalScrollBarVisibility="Hidden">
                     <ItemsControl ItemsSource="{TemplateBinding MenuBarActionsOfSelectedGroup}">
                         <ItemsControl.ItemTemplate>
                             <DataTemplate DataType="{x:Type actionBarTypes:IconActionMenuBarCommand}">
                                 <actionBar:GroupingIconMenuBarItemControl Margin="0,0,0,4"
+                                                                          HorizontalAlignment="Center"
                                                                           ToolTip ="{Binding DisplayName}"
                                                                           Command="{Binding Action}"
-                                                                          IconName="{Binding IconName}"/>
+                                                                          IconName="{Binding IconName}"
+                                                                           />
                             </DataTemplate>
                         </ItemsControl.ItemTemplate>
                     </ItemsControl>

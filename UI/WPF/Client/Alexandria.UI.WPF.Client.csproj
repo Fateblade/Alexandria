@@ -16,8 +16,8 @@
   <ItemGroup>
     <PackageReference Include="AvalonEdit" Version="6.2.0.78" />
     <PackageReference Include="Castle.Core" Version="4.4.1" />
-    <PackageReference Include="MahApps.Metro" Version="2.4.4" />
-    <PackageReference Include="MahApps.Metro.IconPacks.Material" Version="4.8.0" />
+    <PackageReference Include="MahApps.Metro" Version="2.4.9" />
+    <PackageReference Include="MahApps.Metro.IconPacks.Material" Version="4.11.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="Ninject.Web.Common.Selfhost" Version="3.3.2" />
     <PackageReference Include="Prism.Ninject" Version="7.2.0.1422" />

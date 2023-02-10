@@ -17,7 +17,8 @@
             <ColumnDefinition Width="4*" />
         </Grid.ColumnDefinitions>
 
-        <actionBar:GroupingIconMenuBarControl MenuBarActions="{Binding Path=AvailableMenuActions}" />
+        <actionBar:GroupingIconMenuBarControl MenuBarActions="{Binding Path=AvailableMenuActions}" 
+                                              Background="{StaticResource MahApps.Brushes.Menu.Background}" />
 
         <GridSplitter Grid.Column="1" />
 
