@@ -14,7 +14,7 @@
     /// </summary>
     public interface IGroupingActionMenuBarProvider
     {
-        void AddMenuBarCommand(GroupingIconActionMenuBarCommand command);
-        void RemoveMenuBarCommand(GroupingIconActionMenuBarCommand command);
+        void AddMenuBarCommand(GroupingActionMenuBarCommand command);
+        void RemoveMenuBarCommand(GroupingActionMenuBarCommand command);
     }
 }

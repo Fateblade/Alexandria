@@ -18,7 +18,7 @@ using Prism.Ninject;
 using System;
 using System.Windows;
 using System.Windows.Threading;
-using Fateblade.Alexandria.UI.WPF.Client.Resources.Icons;
+using System.Windows.Media.Imaging;
 
 namespace Fateblade.Alexandria.UI.WPF.Client
 {
@@ -46,7 +46,12 @@ namespace Fateblade.Alexandria.UI.WPF.Client
             new KernelInitializer().Initialize(_kernelContainer.Kernel);
             
             //icons
-            _kernelContainer.CastedKernel.RegisterUnique<IIconNameToIconResolver, IconNameToResourceResolver>(new IconNameToResourceResolver());
+            var x = new IconNameToResourceResolver();
+            x.AddOrOverrideMapping("Default", (BitmapImage)Current.FindResource("Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.X.Circle.Filled"));
+            x.AddOrOverrideMapping("Default", new SvgImageInfo((string)Current.FindResource("Alexandria.UI.Wpf.Icons.AkarVol1.Svg.X.Circle.Fill"), false, true));
+
+            _kernelContainer.CastedKernel.RegisterUnique<IIconNameToIconResolver, IconNameToResourceResolver>(x);
+
 
             //ui specific mappings
             _kernelContainer.CastedKernel.RegisterUnique<IActionMenuBarManager, ActionMenuBarManager>(new ActionMenuBarManager());

@@ -1,16 +1,15 @@
-﻿using System;
-using Fateblade.Alexandria.UI.WPF.Base.ActionBar;
+﻿using Fateblade.Alexandria.UI.WPF.Base.Exceptions;
+using SharpVectors.Converters;
+using System;
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using Fateblade.Alexandria.UI.WPF.Base.Exceptions;
-using SharpVectors.Converters;
 
-namespace Fateblade.Alexandria.UI.WPF.Client.Resources.Icons
+namespace Fateblade.Alexandria.UI.WPF.Base.ActionBar
 {
-    internal class IconNameToResourceResolver : IIconNameToIconResolver
+    public class IconNameToResourceResolver : IIconNameToIconResolver
     {
         private readonly Dictionary<string, BitmapImage> _bitmapImageSources;
         private readonly Dictionary<string, SvgImageInfo> _svgImagePaths;
@@ -21,15 +20,8 @@ namespace Fateblade.Alexandria.UI.WPF.Client.Resources.Icons
 
         public IconNameToResourceResolver()
         {
-            _bitmapImageSources = new Dictionary<string, BitmapImage>
-            {
-                { "Default", (BitmapImage)Application.Current.FindResource("Alexandria.UI.Wpf.Icons.AkarVol1.ImageSources.X.Circle.Filled") },
-            };
-
-            _svgImagePaths = new Dictionary<string, SvgImageInfo>
-            {
-                { "Default", new SvgImageInfo((string)Application.Current.FindResource("Alexandria.UI.Wpf.Icons.AkarVol1.Svg.X.Circle.Fill"), false, true) },
-            }; ;
+            _bitmapImageSources = new();
+            _svgImagePaths = new();
         }
 
         public object Resolve(string iconName)
@@ -46,7 +38,7 @@ namespace Fateblade.Alexandria.UI.WPF.Client.Resources.Icons
                 return ResolveFromBitmapMappings(iconName);
             }
 
-            var bitmapImage = ResolveFromBitmapMappings(iconName); 
+            var bitmapImage = ResolveFromBitmapMappings(iconName);
             if (bitmapImage != null) return bitmapImage;
 
             return ResolveFromSvgMappings(iconName);
@@ -109,10 +101,8 @@ namespace Fateblade.Alexandria.UI.WPF.Client.Resources.Icons
 
         public void AddOrOverrideMapping(string iconName, SvgImageInfo mappedIcon)
         {
-            throw new System.NotImplementedException();
+            _svgImagePaths[iconName] = mappedIcon;
         }
     }
-
-
 
 }

@@ -16,4 +16,17 @@ namespace Fateblade.Alexandria.UI.WPF.Base.ActionBar
             set;
         }
     }
+
+    public class IconActionMenuBarCommand : ActionMenuBarCommand
+    {
+        public string IconName { get; set; }
+    }
+
+    public class LombardActionMenuBarCommand : ActionMenuBarCommand
+    {
+        /// <summary>
+        /// Hexadezimal code that represents the lombard letter
+        /// </summary>
+        public string GlyphCode { get; set; }
+    }
 }

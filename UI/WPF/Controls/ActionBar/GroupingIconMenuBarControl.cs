@@ -11,55 +11,64 @@ namespace Fateblade.Alexandria.UI.WPF.Controls.ActionBar
 {
     public class GroupingIconMenuBarControl : Control
     {
-        private readonly Dictionary<string, (GroupIconActionMenuBarCommand groupActionCommand, List<GroupingIconActionMenuBarCommand> actions)> _groupedActionMenuBarCommands= new();
+        private readonly Dictionary<string, (GroupingActionMenuBarCommand groupActionCommand, List<GroupingActionMenuBarCommand> actions)> _groupedActionMenuBarCommands= new();
 
-        public ObservableCollection<GroupingIconActionMenuBarCommand> MenuBarActions
+        public ObservableCollection<GroupingActionMenuBarCommand> MenuBarActions
         {
-            get => (ObservableCollection<GroupingIconActionMenuBarCommand>)GetValue(MenuBarActionsProperty);
+            get => (ObservableCollection<GroupingActionMenuBarCommand>)GetValue(MenuBarActionsProperty);
             set => SetValue(MenuBarActionsProperty, value);
         }
         public static readonly DependencyProperty MenuBarActionsProperty =
             DependencyProperty.Register(
-                nameof(MenuBarActions), typeof(ObservableCollection<GroupingIconActionMenuBarCommand>),
-                typeof(GroupingIconMenuBarControl), new PropertyMetadata(default, new PropertyChangedCallback(onAllMenuBarActionsChanged)));
+                nameof(MenuBarActions), typeof(ObservableCollection<GroupingActionMenuBarCommand>),
+                typeof(GroupingIconMenuBarControl), new PropertyMetadata(default, onAllMenuBarActionsChanged));
 
-        public ObservableCollection<GroupIconActionMenuBarCommand> MenuBarGroupActions
+        public ObservableCollection<GroupingActionMenuBarCommand> MenuBarDefaultGroupActions
         {
-            get => (ObservableCollection<GroupIconActionMenuBarCommand>)GetValue(MenuBarGroupActionsProperty);
-            private set => SetValue(MenuBarGroupActionsProperty, value);
+            get => (ObservableCollection<GroupingActionMenuBarCommand>)GetValue(MenuBarDefaultGroupActionsProperty);
+            private set => SetValue(MenuBarDefaultGroupActionsProperty, value);
         }
-        public static readonly DependencyProperty MenuBarGroupActionsProperty =
-            DependencyProperty.Register(nameof(MenuBarGroupActions), typeof(ObservableCollection<GroupIconActionMenuBarCommand>), 
+        public static readonly DependencyProperty MenuBarDefaultGroupActionsProperty =
+            DependencyProperty.Register(nameof(MenuBarDefaultGroupActions), typeof(ObservableCollection<GroupingActionMenuBarCommand>), 
                 typeof(GroupingIconMenuBarControl), new PropertyMetadata(default));
 
-        public GroupIconActionMenuBarCommand SelectedGroup
+        public ObservableCollection<GroupingActionMenuBarCommand> MenuBarBottomGroupActions
         {
-            get => (GroupIconActionMenuBarCommand)GetValue(SelectedGroupProperty);
+            get => (ObservableCollection<GroupingActionMenuBarCommand>)GetValue(MenuBarBottomGroupActionsProperty);
+            private set => SetValue(MenuBarBottomGroupActionsProperty, value);
+        }
+        public static readonly DependencyProperty MenuBarBottomGroupActionsProperty =
+            DependencyProperty.Register(nameof(MenuBarBottomGroupActions), typeof(ObservableCollection<GroupingActionMenuBarCommand>),
+                typeof(GroupingIconMenuBarControl), new PropertyMetadata(default));
+
+        public GroupingActionMenuBarCommand SelectedGroup
+        {
+            get => (GroupingActionMenuBarCommand)GetValue(SelectedGroupProperty);
             set => SetValue(SelectedGroupProperty, value);
         }
         public static readonly DependencyProperty SelectedGroupProperty =
-            DependencyProperty.Register(nameof(SelectedGroup), typeof(GroupIconActionMenuBarCommand), typeof(GroupingIconMenuBarControl), new PropertyMetadata(default));
+            DependencyProperty.Register(nameof(SelectedGroup), typeof(GroupingActionMenuBarCommand), typeof(GroupingIconMenuBarControl), new PropertyMetadata(default));
 
-        public ObservableCollection<GroupingIconActionMenuBarCommand> MenuBarActionsOfSelectedGroup
+        public ObservableCollection<GroupingActionMenuBarCommand> MenuBarActionsOfSelectedGroup
         {
-            get => (ObservableCollection<GroupingIconActionMenuBarCommand>)GetValue(MenuBarActionsOfSelectedGroupProperty);
+            get => (ObservableCollection<GroupingActionMenuBarCommand>)GetValue(MenuBarActionsOfSelectedGroupProperty);
             private set => SetValue(MenuBarActionsOfSelectedGroupProperty, value);
         }
         public static readonly DependencyProperty MenuBarActionsOfSelectedGroupProperty =
-            DependencyProperty.Register(nameof(MenuBarActionsOfSelectedGroup), typeof(ObservableCollection<GroupingIconActionMenuBarCommand>),
+            DependencyProperty.Register(nameof(MenuBarActionsOfSelectedGroup), typeof(ObservableCollection<GroupingActionMenuBarCommand>),
                 typeof(GroupingIconMenuBarControl), new PropertyMetadata(default));
 
 
         private static void onAllMenuBarActionsChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
             GroupingIconMenuBarControl actionMenuBarControl = (GroupingIconMenuBarControl)d;
-            ObservableCollection<GroupingIconActionMenuBarCommand> oldValue = (ObservableCollection<GroupingIconActionMenuBarCommand>)e.OldValue;
-            ObservableCollection<GroupingIconActionMenuBarCommand> newValue = (ObservableCollection<GroupingIconActionMenuBarCommand>)e.NewValue;
+            ObservableCollection<GroupingActionMenuBarCommand> oldValue = (ObservableCollection<GroupingActionMenuBarCommand>)e.OldValue;
+            ObservableCollection<GroupingActionMenuBarCommand> newValue = (ObservableCollection<GroupingActionMenuBarCommand>)e.NewValue;
 
             actionMenuBarControl.OnMenuBarActionsChanged(oldValue, newValue);
         }
 
-        protected virtual void OnMenuBarActionsChanged(ObservableCollection<GroupingIconActionMenuBarCommand> oldValue, ObservableCollection<GroupingIconActionMenuBarCommand> newValue)
+        protected virtual void OnMenuBarActionsChanged(ObservableCollection<GroupingActionMenuBarCommand> oldValue, ObservableCollection<GroupingActionMenuBarCommand> newValue)
         {
             if (oldValue != null)
             {
@@ -76,7 +85,8 @@ namespace Fateblade.Alexandria.UI.WPF.Controls.ActionBar
         private void ResetAndGroupAllActionMenuBarItems()
         {
             SelectedGroup = null;
-            MenuBarGroupActions = new ObservableCollection<GroupIconActionMenuBarCommand>();
+            MenuBarBottomGroupActions = new ObservableCollection<GroupingActionMenuBarCommand>();
+            MenuBarDefaultGroupActions = new ObservableCollection<GroupingActionMenuBarCommand>();
             MenuBarActionsOfSelectedGroup = null;
             _groupedActionMenuBarCommands.Clear();
 
@@ -86,19 +96,57 @@ namespace Fateblade.Alexandria.UI.WPF.Controls.ActionBar
             }
         }
 
-        private void addNewGroupIfNotExists(GroupingIconActionMenuBarCommand menuBarAction)
+        private void addNewGroupIfNotExists(GroupingActionMenuBarCommand menuBarAction)
         {
-            if (_groupedActionMenuBarCommands.ContainsKey(menuBarAction.GroupName)) return;
+            if (_groupedActionMenuBarCommands.ContainsKey(menuBarAction.GroupInfo.GroupName)) return;
 
-            var groupActionCommand = new GroupIconActionMenuBarCommand
+            GroupingActionMenuBarCommand groupActionCommand;
+
+            if (menuBarAction.GroupInfo.DisplayType == GroupDisplayType.Text)
             {
-                IconName = menuBarAction.IconName,
-                DisplayName = menuBarAction.GroupName,
-                Action = new DelegateCommand<string>(switchToGroup)
-            };
+                groupActionCommand = new GroupingActionMenuBarCommand()
+                {
+                    DisplayName = menuBarAction.GroupInfo.GroupDisplayInfo,
+                    GroupInfo = menuBarAction.GroupInfo,
+                    Command = new DelegateCommand<string>(switchToGroup)
+                };
+            }
+            else if (menuBarAction.GroupInfo.DisplayType == GroupDisplayType.Lombard)
+            {
+                groupActionCommand = new GroupingLombardActionMenuBarCommand()
+                {
+                    GroupInfo = menuBarAction.GroupInfo,
+                    GlyphCode = menuBarAction.GroupInfo.GroupDisplayInfo,
+                    DisplayName = menuBarAction.GroupInfo.GroupName,
+                    Command = new DelegateCommand<string>(switchToGroup)
+                };
+            }
+            else if (menuBarAction.GroupInfo.DisplayType == GroupDisplayType.Icon)
+            {
+                groupActionCommand = new GroupingIconActionMenuBarCommand()
+                {
+                    GroupInfo = menuBarAction.GroupInfo,
+                    IconName = menuBarAction.GroupInfo.GroupDisplayInfo,
+                    DisplayName = menuBarAction.GroupInfo.GroupName,
+                    Command = new DelegateCommand<string>(switchToGroup)
+                };
+            }
+            else
+            {
+                throw new NotImplementedException($"Display Type '{menuBarAction.GroupInfo.DisplayType}' is not implemented");
+            }
+            
+            _groupedActionMenuBarCommands[menuBarAction.GroupInfo.GroupName] = (groupActionCommand, new List<GroupingActionMenuBarCommand>());
 
-            _groupedActionMenuBarCommands[menuBarAction.GroupName] = (groupActionCommand, new List<GroupingIconActionMenuBarCommand>());
-            MenuBarGroupActions.Add(groupActionCommand);
+            if (menuBarAction.GroupInfo.Placement == GroupingPlacement.Standard)
+            {
+                MenuBarDefaultGroupActions.Add(groupActionCommand);
+            }
+            else
+            {
+                MenuBarBottomGroupActions.Add(groupActionCommand);
+            }
+            
         }
 
         private void switchToGroup(string groupName)
@@ -106,7 +154,7 @@ namespace Fateblade.Alexandria.UI.WPF.Controls.ActionBar
             SelectedGroup = _groupedActionMenuBarCommands[groupName].groupActionCommand;
 
             MenuBarActionsOfSelectedGroup =
-                new ObservableCollection<GroupingIconActionMenuBarCommand>(_groupedActionMenuBarCommands[groupName]
+                new ObservableCollection<GroupingActionMenuBarCommand>(_groupedActionMenuBarCommands[groupName]
                     .actions);
         }
 
@@ -138,21 +186,21 @@ namespace Fateblade.Alexandria.UI.WPF.Controls.ActionBar
             }
         }
 
-        protected void AddToGroupedActionMenuBarItems(GroupingIconActionMenuBarCommand newCmd)
+        protected void AddToGroupedActionMenuBarItems(GroupingActionMenuBarCommand newCmd)
         {
             addNewGroupIfNotExists(newCmd);
 
-            _groupedActionMenuBarCommands[newCmd.GroupName].actions.Add(newCmd);
-            if (newCmd.GroupName == SelectedGroup?.DisplayName)
+            _groupedActionMenuBarCommands[newCmd.GroupInfo.GroupName].actions.Add(newCmd);
+            if (newCmd.GroupInfo.GroupName == SelectedGroup?.DisplayName)
             {
                 MenuBarActionsOfSelectedGroup.Add(newCmd);
             }
         }
 
-        protected void RemoveFromGroupedActionMenuBarItems(GroupingIconActionMenuBarCommand newCmd)
+        protected void RemoveFromGroupedActionMenuBarItems(GroupingActionMenuBarCommand newCmd)
         {
-            var groupInfo = _groupedActionMenuBarCommands[newCmd.GroupName];
-            var isOfSelectedGroup = SelectedGroup?.DisplayName == newCmd.GroupName;
+            var groupInfo = _groupedActionMenuBarCommands[newCmd.GroupInfo.GroupName];
+            var isOfSelectedGroup = SelectedGroup?.DisplayName == newCmd.GroupInfo.GroupName;
 
             groupInfo.actions.Remove(newCmd);
             if (isOfSelectedGroup)
@@ -162,7 +210,7 @@ namespace Fateblade.Alexandria.UI.WPF.Controls.ActionBar
 
             if (groupInfo.actions.Count == 0)
             {
-                _groupedActionMenuBarCommands.Remove(newCmd.GroupName);
+                _groupedActionMenuBarCommands.Remove(newCmd.GroupInfo.GroupName);
                 if (isOfSelectedGroup)
                 {
                     SelectedGroup = null;

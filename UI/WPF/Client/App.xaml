@@ -18,9 +18,8 @@
                 <ResourceDictionary Source="pack://application:,,,/Alexandria.UI.WPF.Controls;component/Fonts.xaml" />
 
                 <!--include custom control templates & styles-->
-                <ResourceDictionary Source="pack://application:,,,/Alexandria.UI.WPF.Controls;component/ControlTemplates.xaml" />
-                <ResourceDictionary Source="pack://application:,,,/Alexandria.UI.WPF.Controls;component/Styles.xaml" />
-
+                <ResourceDictionary Source="pack://application:,,,/Alexandria.UI.WPF.Controls;component/Controls.xaml" />
+                
                 <!--icons-->
                 <ResourceDictionary Source="pack://application:,,,/Alexandria.UI.WPF.Icons;component/Resources/Resources.xaml" />
 

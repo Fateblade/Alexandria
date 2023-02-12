@@ -1,0 +1,39 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:actionBarTypes="clr-namespace:Fateblade.Alexandria.UI.WPF.Base.ActionBar;assembly=Alexandria.UI.WPF.Base"
+                    xmlns:actionBar="clr-namespace:Fateblade.Alexandria.UI.WPF.Controls.ActionBar"
+                    xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls">
+
+    <DataTemplate x:Key="Alexandria.DataTemplates.GroupingIconActionMenuBarCommand" 
+                  DataType="{x:Type actionBarTypes:GroupingIconActionMenuBarCommand}">
+        <actionBar:GroupingIconMenuBarItemControl Margin="0,0,0,4"
+                                                  HorizontalAlignment="Center"
+                                                  ToolTip ="{Binding DisplayName}"
+                                                  Command="{Binding Command}"
+                                                  CommandParameter="{Binding GroupInfo.GroupName}"
+                                                  IconName="{Binding IconName}"
+        />
+    </DataTemplate>
+
+    <DataTemplate x:Key="Alexandria.DataTemplates.GroupingLombardActionMenuBarCommand" 
+                  DataType="{x:Type actionBarTypes:GroupingLombardActionMenuBarCommand}">
+        <Button ToolTip ="{Binding DisplayName}"
+                Command="{Binding Command}"
+                CommandParameter="{Binding GroupInfo.GroupName}"
+                Margin="2">
+            <mah:FontIcon FontFamily="Apple Chancery"
+                          FontWeight="Bold" 
+                          Glyph="{Binding Path=GlyphCode}" />
+        </Button>
+    </DataTemplate>
+
+    <DataTemplate x:Key="Alexandria.DataTemplates.GroupingActionMenuBarCommand" 
+                  DataType="{x:Type actionBarTypes:GroupingActionMenuBarCommand}">
+        <Button Margin="2"
+                ToolTip ="{Binding DisplayName}"
+                Command="{Binding Command}"
+                CommandParameter="{Binding GroupInfo.GroupName}"
+                Content="{Binding DisplayName}" />
+    </DataTemplate>
+
+</ResourceDictionary>

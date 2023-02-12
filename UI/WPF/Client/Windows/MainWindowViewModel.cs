@@ -14,8 +14,8 @@ namespace Fateblade.Alexandria.UI.WPF.Client.Windows
         private Action<BindableBase> _handleCurrentDialogClosed;
 
 
-        private ObservableCollection<GroupingIconActionMenuBarCommand> _availableMenuActions;
-        public ObservableCollection<GroupingIconActionMenuBarCommand> AvailableMenuActions
+        private ObservableCollection<GroupingActionMenuBarCommand> _availableMenuActions;
+        public ObservableCollection<GroupingActionMenuBarCommand> AvailableMenuActions
         {
             get => _availableMenuActions;
             set => SetProperty(ref _availableMenuActions, value);
@@ -25,7 +25,7 @@ namespace Fateblade.Alexandria.UI.WPF.Client.Windows
         public BindableBase CurrentlyDisplayedPage
         {
             get => _currentlyDisplayedPage;
-            set => SetProperty(ref _currentlyDisplayedPage, value);
+            set => SetProperty(ref _currentlyDisplayedPage, value);  
         }
 
         private BindableBase _currentlyDisplayedDialog;
@@ -41,28 +41,55 @@ namespace Fateblade.Alexandria.UI.WPF.Client.Windows
             orchestrator.RegisterHandler((IOrchestrationHandler<ShowDialogOrchestrationInfo>) this);
             orchestrator.RegisterHandler((IOrchestrationHandler<ShowPageOrchestrationInfo>)this);
             //menuBarManager.RegisterActionMenuBarProvider(this);
-            
-            AvailableMenuActions = new ObservableCollection<GroupingIconActionMenuBarCommand>()
-            {
-                new() {Action = new DelegateCommand(addAdditionalMenuItem) , GroupIconName= "Default", IconName = "Default", DisplayName = "Group 1 Menu Item", GroupName = "Group 1"},
-                new() {Action = new DelegateCommand(addAdditionalMenuItem) , GroupIconName= "Default", IconName = "Default", DisplayName = "Group 1 Menu Item", GroupName = "Group 1"},
-                new() {Action = new DelegateCommand(addAdditionalMenuItem) , GroupIconName= "Default", IconName = "Default", DisplayName = "Group 2 Menu Item", GroupName = "Group 2"},
-                new() {Action = new DelegateCommand(addAdditionalMenuItem) , GroupIconName= "Default", IconName = "Default", DisplayName = "Group 2 Menu Item", GroupName = "Group 2"},
-                new() {Action = new DelegateCommand(addAdditionalMenuItem) , GroupIconName= "Default", IconName = "Default", DisplayName = "Group 3 Menu Item", GroupName = "Group 3"},
-                new() {Action = new DelegateCommand(addAdditionalMenuItem) , GroupIconName= "Default", IconName = "Default", DisplayName = "Group 3 Menu Item", GroupName = "Group 3"},
-                new() {Action = new DelegateCommand(addAdditionalMenuItem) , GroupIconName= "Default", IconName = "Default", DisplayName = "Group 4 Menu Item", GroupName = "Group 4"},
-                new() {Action = new DelegateCommand(addAdditionalMenuItem) , GroupIconName= "Default", IconName = "Default", DisplayName = "Group 4 Menu Item", GroupName = "Group 4"},
-                new() {Action = new DelegateCommand(addAdditionalMenuItem) , GroupIconName= "Default", IconName = "Default", DisplayName = "Group 5 Menu Item", GroupName = "Group 5"},
-                new() {Action = new DelegateCommand(addAdditionalMenuItem) , GroupIconName= "Default", IconName = "Default", DisplayName = "Group 5 Menu Item", GroupName = "Group 5"}
-            };
 
-            AvailableMenuActions.Add(new() { Action = new DelegateCommand(addAdditionalMenuItem), GroupIconName= "Default", IconName = "Default", DisplayName = "Group 6 Menu Item", GroupName = "Group 6" });
-            AvailableMenuActions.Add(new() { Action = new DelegateCommand(addAdditionalMenuItem), GroupIconName = "Default", IconName = "Default", DisplayName = "Group 6 Menu Item", GroupName = "Group 6" });
+            var textGroup = new GroupInfo
+            {
+                DisplayType = GroupDisplayType.Text,
+                GroupDisplayInfo = "Text",
+                GroupName = "Group 1",
+                Placement = GroupingPlacement.Standard
+            };
+            var lombardGroup = new GroupInfo
+            {
+                DisplayType = GroupDisplayType.Lombard,
+                GroupDisplayInfo = "L",
+                GroupName = "Group 2",
+                Placement = GroupingPlacement.Standard
+            };
+            var iconGroup = new GroupInfo
+            {
+                DisplayType = GroupDisplayType.Icon,
+                GroupDisplayInfo = "Default",
+                GroupName = "Group 3",
+                Placement = GroupingPlacement.Standard
+            };
+            AvailableMenuActions = new ObservableCollection<GroupingActionMenuBarCommand>()
+            {
+                new GroupingIconActionMenuBarCommand() {Command = new DelegateCommand(addAdditionalMenuItem) ,GroupInfo=lombardGroup, IconName = "Default", DisplayName = "Group 1 Menu Item"},
+                new GroupingIconActionMenuBarCommand() {Command = new DelegateCommand(addAdditionalMenuItem) ,GroupInfo=lombardGroup, IconName = "Default", DisplayName = "Group 1 Menu Item"},
+
+                new GroupingLombardActionMenuBarCommand() {Command = new DelegateCommand(addAdditionalMenuItem) , GroupInfo=textGroup, GlyphCode = "A", DisplayName = "Group 3 Menu Item"},
+                new GroupingLombardActionMenuBarCommand() {Command = new DelegateCommand(addAdditionalMenuItem) , GroupInfo=textGroup, GlyphCode = "B", DisplayName = "Group 3 Menu Item"},
+
+                new () {Command = new DelegateCommand(addAdditionalMenuItem) ,GroupInfo=iconGroup, DisplayName = "Group 4 Menu Item"},
+                new () {Command = new DelegateCommand(addAdditionalMenuItem) ,GroupInfo=iconGroup, DisplayName = "Group 4 Menu Item"},
+            };
         }
 
         private void addAdditionalMenuItem()
         {
-            AvailableMenuActions.Add(new() { Action = new DelegateCommand(addAdditionalMenuItem), GroupIconName = "Default", IconName = "Default", DisplayName = "Addded from Commmand to Group 7", GroupName = "Group 7" });
+            AvailableMenuActions.Add(new GroupingIconActionMenuBarCommand() 
+            { 
+                Command = new DelegateCommand(addAdditionalMenuItem), 
+                GroupInfo = new GroupInfo
+            {
+                DisplayType = GroupDisplayType.Text,
+                GroupDisplayInfo = "Bottom",
+                GroupName = "Group 4",
+                Placement = GroupingPlacement.Bottom
+            },
+                IconName = "Default", 
+                DisplayName = "Addded from Commmand to Group 7" });
         }
 
         public void Handle(ShowDialogOrchestrationInfo dialogOrchestrationInfo)
@@ -87,12 +114,12 @@ namespace Fateblade.Alexandria.UI.WPF.Client.Windows
             CurrentlyDisplayedPage = pageOrchestrationInfo.PageViewModelToDisplay;
         }
 
-        public void AddMenuBarCommand(GroupingIconActionMenuBarCommand command)
+        public void AddMenuBarCommand(GroupingActionMenuBarCommand command)
         {
             AvailableMenuActions.Add(command);
         }
 
-        public void RemoveMenuBarCommand(GroupingIconActionMenuBarCommand command)
+        public void RemoveMenuBarCommand(GroupingActionMenuBarCommand command)
         {
             AvailableMenuActions.Remove(command);
         }
