@@ -20,7 +20,7 @@
                 CommandParameter="{Binding DisplayName}"
                 Margin="2">
             <mah:FontIcon FontFamily="Apple Chancery"
-                          FontWeight="Bold" 
+                          FontSize="26"
                           Glyph="{Binding Path=GlyphCode}" />
         </Button>
     </DataTemplate>

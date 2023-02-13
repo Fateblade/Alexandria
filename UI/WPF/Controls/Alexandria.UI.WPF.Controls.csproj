@@ -6,6 +6,10 @@
     <AssemblyName>Alexandria.UI.WPF.Controls</AssemblyName>
     <RootNamespace>Fateblade.Alexandria.UI.WPF.Controls</RootNamespace>
   </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Resources\Fonts\Apple-Chancery-Regular.ttf" />
+    <None Remove="Resources\Fonts\Baskervville-Regular.ttf" />
+  </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Themes\" />
@@ -18,6 +22,11 @@
   <ItemGroup>
     <ProjectReference Include="..\Base\Alexandria.UI.WPF.Base.csproj" />
     <ProjectReference Include="..\Converters\Alexandria.UI.WPF.Converters.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Fonts\Apple-Chancery-Regular.ttf" />
+    <Resource Include="Resources\Fonts\Baskervville-Regular.ttf" />
   </ItemGroup>
 
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">

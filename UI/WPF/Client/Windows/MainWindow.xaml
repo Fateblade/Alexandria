@@ -12,15 +12,14 @@
         Title="Alexandria" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="2" />
-            <ColumnDefinition Width="4*" />
         </Grid.ColumnDefinitions>
 
         <actionBar:GroupingIconMenuBarControl MenuBarActions="{Binding Path=AvailableMenuActions}" 
                                               Background="{StaticResource MahApps.Brushes.Menu.Background}" />
 
-        <GridSplitter Grid.Column="1" />
+        <!--<GridSplitter Grid.Column="1" />-->
 
         <!--<ContentPresenter Grid.Column="2" 
                           ContentTemplateSelector="{StaticResource ViewModelTemplateSelector}" 
