@@ -108,6 +108,7 @@ namespace Fateblade.Alexandria.UI.WPF.Controls.ActionBar
                 {
                     DisplayName = menuBarAction.GroupInfo.GroupDisplayInfo,
                     GroupInfo = menuBarAction.GroupInfo,
+                    CommandParameter = menuBarAction.GroupInfo.GroupName,
                     Command = new DelegateCommand<string>(switchToGroup)
                 };
             }
@@ -118,6 +119,7 @@ namespace Fateblade.Alexandria.UI.WPF.Controls.ActionBar
                     GroupInfo = menuBarAction.GroupInfo,
                     GlyphCode = menuBarAction.GroupInfo.GroupDisplayInfo,
                     DisplayName = menuBarAction.GroupInfo.GroupName,
+                    CommandParameter = menuBarAction.GroupInfo.GroupName,
                     Command = new DelegateCommand<string>(switchToGroup)
                 };
             }
@@ -128,6 +130,7 @@ namespace Fateblade.Alexandria.UI.WPF.Controls.ActionBar
                     GroupInfo = menuBarAction.GroupInfo,
                     IconName = menuBarAction.GroupInfo.GroupDisplayInfo,
                     DisplayName = menuBarAction.GroupInfo.GroupName,
+                    CommandParameter = menuBarAction.GroupInfo.GroupName,
                     Command = new DelegateCommand<string>(switchToGroup)
                 };
             }

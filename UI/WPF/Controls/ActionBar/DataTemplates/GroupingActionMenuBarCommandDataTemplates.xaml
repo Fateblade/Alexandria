@@ -10,7 +10,7 @@
                                                   HorizontalAlignment="Center"
                                                   ToolTip ="{Binding DisplayName}"
                                                   Command="{Binding Command}"
-                                                  CommandParameter="{Binding GroupInfo.GroupName}"
+                                                  CommandParameter="{Binding CommandParameter}"
                                                   IconName="{Binding IconName}"
         />
     </DataTemplate>
@@ -19,7 +19,7 @@
                   DataType="{x:Type actionBarTypes:GroupingLombardActionMenuBarCommand}">
         <Button ToolTip ="{Binding DisplayName}"
                 Command="{Binding Command}"
-                CommandParameter="{Binding GroupInfo.GroupName}"
+                CommandParameter="{Binding CommandParameter}"
                 Margin="2">
             <mah:FontIcon FontFamily="Apple Chancery"
                           FontSize="26"
@@ -32,7 +32,7 @@
         <Button Margin="2"
                 ToolTip ="{Binding DisplayName}"
                 Command="{Binding Command}"
-                CommandParameter="{Binding GroupInfo.GroupName}"
+                CommandParameter="{Binding CommandParameter}"
                 Content="{Binding DisplayName}" />
     </DataTemplate>
 

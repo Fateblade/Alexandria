@@ -25,7 +25,7 @@
                           ContentTemplateSelector="{StaticResource ViewModelTemplateSelector}" 
                           Content="{Binding Path=CurrentlyDisplayedViewModel}" />-->
 
-        <avalonedit:TextEditor Grid.Column="2"  />
+        <avalonedit:TextEditor Grid.Column="1"  />
 
     </Grid>
 </mah:MetroWindow>

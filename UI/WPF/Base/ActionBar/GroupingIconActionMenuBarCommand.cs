@@ -7,6 +7,7 @@ public class GroupingActionMenuBarCommand
     public string DisplayName { get; set; }
     public GroupInfo GroupInfo { get; set; }
     public ICommand Command { get; set; }
+    public object CommandParameter { get; set; }
 }
 
 public enum GroupingPlacement
