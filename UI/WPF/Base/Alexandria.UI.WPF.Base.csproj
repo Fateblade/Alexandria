@@ -15,6 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="CoCo.Core.Contract">
+      <HintPath>..\..\..\..\ComponentStore\_ExternalLibraries\CoCo.Core.Contract.dll</HintPath>
+    </Reference>
     <Reference Include="Components.CrossCutting.Base.Identifiable.DataClasses">
     </Reference>
     <Reference Include="Components.Logic.Foundation.Orchestration.Contract">
