@@ -1,6 +1,7 @@
 ﻿using Fateblade.Alexandria.UI.WPF.ConvertersConverters.Exceptions;
 using System;
 using System.Globalization;
+using System.Linq;
 using System.Windows.Data;
 
 namespace Fateblade.Alexandria.UI.WPF.ConvertersConverters
@@ -21,7 +22,9 @@ namespace Fateblade.Alexandria.UI.WPF.ConvertersConverters
         {
             if (value is string stringValue)
             {
-                return int.Parse(stringValue);
+                if (stringValue == string.Empty) return 0;
+
+                return int.Parse(new string(stringValue.Where(char.IsDigit).ToArray()));
             }
 
             throw new ValueArgumentOfUnexpectedTypeException(value, typeof(string));
