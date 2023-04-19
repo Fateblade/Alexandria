@@ -4,9 +4,15 @@ using Prism.Mvvm;
 
 namespace Fateblade.Alexandria.UI.WPF.Base.Messages
 {
-    public class ShowPageOrchestrationInfo : OrchestrationBaseInfo
+    public class ShowExistingPageOrchestrationInfo : OrchestrationBaseInfo
     {
         public BindableBase PageViewModelToDisplay { get; set; }
+        public Action<BindableBase> HandlePageClosed { get; set; }
+    }
+
+    public class ShowPageOrchestrationInfo : OrchestrationBaseInfo
+    {
+        public Type PageViewModelTypeToDisplay { get; set; }
         public Action<BindableBase> HandlePageClosed { get; set; }
     }
 }

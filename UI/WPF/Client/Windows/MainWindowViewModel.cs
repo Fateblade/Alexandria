@@ -1,127 +1,95 @@
-﻿using Fateblade.Alexandria.UI.WPF.Base.Messages;
+﻿using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.EventBrokerage;
+using Fateblade.Alexandria.UI.WPF.Base.ActionBar;
+using Fateblade.Alexandria.UI.WPF.Base.Messages;
+using Fateblade.Alexandria.UI.WPF.Base.Views;
 using Fateblade.Components.Logic.Foundation.Orchestration.Contract;
+using Prism.Ioc;
 using Prism.Mvvm;
 using System;
 using System.Collections.ObjectModel;
-using Fateblade.Alexandria.UI.WPF.Base.ActionBar;
-using Prism.Commands;
 
 namespace Fateblade.Alexandria.UI.WPF.Client.Windows
 {
-    class MainWindowViewModel : BindableBase, IOrchestrationHandler<ShowDialogOrchestrationInfo>, IOrchestrationHandler<ShowPageOrchestrationInfo>, IGroupingActionMenuBarProvider
+    class MainWindowViewModel : HostingViewModelBase, 
+        IOrchestrationHandler<ShowDialogOrchestrationInfo>, 
+        IOrchestrationHandler<ShowExistingPageOrchestrationInfo>, 
+        IOrchestrationHandler<ShowPageOrchestrationInfo>,
+        IGroupingActionMenuBarProvider
     {
-        private Action<BindableBase> _handleCurrentPageClosed;
-        private Action<BindableBase> _handleCurrentDialogClosed;
+        private Action<BindableBase> _handlePageClosed;
+        private Action<BindableBase> _handleDialogClosed;
 
 
-        private ObservableCollection<GroupingActionMenuBarCommand> _availableMenuActions;
-        public ObservableCollection<GroupingActionMenuBarCommand> AvailableMenuActions
+
+        private ObservableCollection<GroupingActionMenuBarCommand> _menuBarActions;
+        public ObservableCollection<GroupingActionMenuBarCommand> MenuBarActions
         {
-            get => _availableMenuActions;
-            set => SetProperty(ref _availableMenuActions, value);
+            get => _menuBarActions;
+            set => SetProperty(ref _menuBarActions, value);
         }
 
-        private BindableBase _currentlyDisplayedPage;
-        public BindableBase CurrentlyDisplayedPage
+        private BindableBase _displayedDialog;
+        public BindableBase DisplayedDialog
         {
-            get => _currentlyDisplayedPage;
-            set => SetProperty(ref _currentlyDisplayedPage, value);  
+            get => _displayedDialog;
+            set => SetProperty(ref _displayedDialog, value);
         }
-
-        private BindableBase _currentlyDisplayedDialog;
-        public BindableBase CurrentlyDisplayedDialog
-        {
-            get => _currentlyDisplayedDialog;
-            set => SetProperty(ref _currentlyDisplayedDialog, value);
-        }
+        
 
 
-        public MainWindowViewModel(IOrchestrator orchestrator, IActionMenuBarManager menuBarManager)
+        public MainWindowViewModel(IOrchestrator orchestrator, IGroupingActionMenuBarManager menuBarManager, 
+            IEventBroker eventBroker, IContainerProvider container) 
+            : base(eventBroker, container, nameof(MainWindowViewModel))
         {
             orchestrator.RegisterHandler((IOrchestrationHandler<ShowDialogOrchestrationInfo>) this);
-            orchestrator.RegisterHandler((IOrchestrationHandler<ShowPageOrchestrationInfo>)this);
-            //menuBarManager.RegisterActionMenuBarProvider(this);
-
-            var textGroup = new GroupInfo
-            {
-                DisplayType = GroupDisplayType.Text,
-                GroupDisplayInfo = "Text",
-                GroupName = "Group 1",
-                Placement = GroupingPlacement.Standard
-            };
-            var lombardGroup = new GroupInfo
-            {
-                DisplayType = GroupDisplayType.Lombard,
-                GroupDisplayInfo = "L",
-                GroupName = "Group 2",
-                Placement = GroupingPlacement.Standard
-            };
-            var iconGroup = new GroupInfo
-            {
-                DisplayType = GroupDisplayType.Icon,
-                GroupDisplayInfo = "Default",
-                GroupName = "Group 3",
-                Placement = GroupingPlacement.Standard
-            };
-            AvailableMenuActions = new ObservableCollection<GroupingActionMenuBarCommand>()
-            {
-                new GroupingIconActionMenuBarCommand() {Command = new DelegateCommand(addAdditionalMenuItem) ,GroupInfo=lombardGroup, IconName = "Default", DisplayName = "Group 1 Menu Item"},
-                new GroupingIconActionMenuBarCommand() {Command = new DelegateCommand(addAdditionalMenuItem) ,GroupInfo=lombardGroup, IconName = "Default", DisplayName = "Group 1 Menu Item"},
-
-                new GroupingLombardActionMenuBarCommand() {Command = new DelegateCommand(addAdditionalMenuItem) , GroupInfo=textGroup, GlyphCode = "A", DisplayName = "Group 3 Menu Item"},
-                new GroupingLombardActionMenuBarCommand() {Command = new DelegateCommand(addAdditionalMenuItem) , GroupInfo=textGroup, GlyphCode = "B", DisplayName = "Group 3 Menu Item"},
-
-                new () {Command = new DelegateCommand(addAdditionalMenuItem) ,GroupInfo=iconGroup, DisplayName = "Group 4 Menu Item"},
-                new () {Command = new DelegateCommand(addAdditionalMenuItem) ,GroupInfo=iconGroup, DisplayName = "Group 4 Menu Item"},
-            };
+            orchestrator.RegisterHandler((IOrchestrationHandler<ShowExistingPageOrchestrationInfo>)this);
+            menuBarManager.RegisterActionMenuBarProvider(this);
         }
+        
 
-        private void addAdditionalMenuItem()
-        {
-            AvailableMenuActions.Add(new GroupingIconActionMenuBarCommand() 
-            { 
-                Command = new DelegateCommand(addAdditionalMenuItem), 
-                GroupInfo = new GroupInfo
-            {
-                DisplayType = GroupDisplayType.Text,
-                GroupDisplayInfo = "Bottom",
-                GroupName = "Group 4",
-                Placement = GroupingPlacement.Bottom
-            },
-                IconName = "Default", 
-                DisplayName = "Addded from Commmand to Group 7" });
-        }
 
         public void Handle(ShowDialogOrchestrationInfo dialogOrchestrationInfo)
         {
-            if (CurrentlyDisplayedDialog != null && _handleCurrentDialogClosed != null)
+            if (DisplayedDialog != null && _handleDialogClosed != null)
             {
-                _handleCurrentDialogClosed.Invoke(CurrentlyDisplayedDialog);
+                _handleDialogClosed.Invoke(DisplayedDialog);
             }
 
-            _handleCurrentDialogClosed = dialogOrchestrationInfo.HandleDialogClosed;
-            CurrentlyDisplayedDialog = dialogOrchestrationInfo.DialogViewModelToDisplay;
+            _handleDialogClosed = dialogOrchestrationInfo.HandleDialogClosed;
+            DisplayedDialog = dialogOrchestrationInfo.DialogViewModelToDisplay;
+        }
+
+        public void Handle(ShowExistingPageOrchestrationInfo pageOrchestrationInfo)
+        {
+            if (DisplayedContent != null && _handlePageClosed != null)
+            {
+                _handlePageClosed.Invoke(DisplayedContent);
+            }
+
+            _handlePageClosed = pageOrchestrationInfo.HandlePageClosed;
+            hostDirectly(pageOrchestrationInfo.PageViewModelToDisplay);
         }
 
         public void Handle(ShowPageOrchestrationInfo pageOrchestrationInfo)
         {
-            if (CurrentlyDisplayedPage != null && _handleCurrentPageClosed != null)
+            if (DisplayedContent != null && _handlePageClosed != null)
             {
-                _handleCurrentPageClosed.Invoke(CurrentlyDisplayedPage);
+                _handlePageClosed.Invoke(DisplayedContent);
             }
 
-            _handleCurrentPageClosed = pageOrchestrationInfo.HandlePageClosed;
-            CurrentlyDisplayedPage = pageOrchestrationInfo.PageViewModelToDisplay;
+            _handlePageClosed = pageOrchestrationInfo.HandlePageClosed;
+            hostOrDelegateHosting(pageOrchestrationInfo.PageViewModelTypeToDisplay);
         }
 
         public void AddMenuBarCommand(GroupingActionMenuBarCommand command)
         {
-            AvailableMenuActions.Add(command);
+            MenuBarActions.Add(command);
         }
 
         public void RemoveMenuBarCommand(GroupingActionMenuBarCommand command)
         {
-            AvailableMenuActions.Remove(command);
+            MenuBarActions.Remove(command);
         }
+
     }
 }

@@ -21,11 +21,17 @@
 
         <!--<GridSplitter Grid.Column="1" />-->
 
-        <!--<ContentPresenter Grid.Column="2" 
-                          ContentTemplateSelector="{StaticResource ViewModelTemplateSelector}" 
-                          Content="{Binding Path=CurrentlyDisplayedViewModel}" />-->
+        <ContentPresenter Grid.Column="1" 
+                          ContentTemplateSelector="{StaticResource Alexandria.Views.ViewModelMapperDependantTemplateSelector}" 
+                          Content="{Binding Path=DisplayedContent}" />
 
-        <avalonedit:TextEditor Grid.Column="1"  />
+
+        <ContentPresenter Grid.Column="1" 
+                          HorizontalAlignment="Center"
+                          VerticalAlignment="Center"
+                          ContentTemplateSelector="{StaticResource Alexandria.Views.ViewModelMapperDependantTemplateSelector}" 
+                          Content="{Binding Path=CurrentlyDisplayedDialog}" />
+        <!--<avalonedit:TextEditor Grid.Column="1"  />-->
 
     </Grid>
 </mah:MetroWindow>

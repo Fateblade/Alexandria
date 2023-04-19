@@ -92,7 +92,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alexandria.Logic.Foundation
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alexandria.Logic.Foundation.TextMathParser.mXparser", "Logic\Foundation\Alexandria.Logic.Foundation.TextMathParser.mXparser\Alexandria.Logic.Foundation.TextMathParser.mXparser.csproj", "{284D950A-7BC5-413F-8B82-CFA8532E4BBB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alexandria.UI.WPF.Icons", "UI\WPF\Icons\Alexandria.UI.WPF.Icons.csproj", "{98059541-9D17-43FF-8607-3DB594E420A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alexandria.UI.WPF.Icons", "UI\WPF\Icons\Alexandria.UI.WPF.Icons.csproj", "{98059541-9D17-43FF-8607-3DB594E420A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alexandria.UI.WPF.Modules.LogBook", "UI\WPF\LogBook\Alexandria.UI.WPF.Modules.LogBook.csproj", "{82B5A8C7-98D1-4BCF-AC38-9974AF0CC22F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -216,6 +218,10 @@ Global
 		{98059541-9D17-43FF-8607-3DB594E420A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98059541-9D17-43FF-8607-3DB594E420A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98059541-9D17-43FF-8607-3DB594E420A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82B5A8C7-98D1-4BCF-AC38-9974AF0CC22F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82B5A8C7-98D1-4BCF-AC38-9974AF0CC22F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82B5A8C7-98D1-4BCF-AC38-9974AF0CC22F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82B5A8C7-98D1-4BCF-AC38-9974AF0CC22F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -259,6 +265,7 @@ Global
 		{4A85EADD-486C-472C-96C0-E2E1F9C55CF7} = {8A515BF1-155C-435F-87E6-77823F48B086}
 		{284D950A-7BC5-413F-8B82-CFA8532E4BBB} = {8A515BF1-155C-435F-87E6-77823F48B086}
 		{98059541-9D17-43FF-8607-3DB594E420A2} = {A7C16453-A782-4204-B3F1-FB91C826B508}
+		{82B5A8C7-98D1-4BCF-AC38-9974AF0CC22F} = {75F8165B-38D2-4BA2-BB1A-075AF141D008}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DB427DFF-78EE-4F04-A938-5D6762870AAD}

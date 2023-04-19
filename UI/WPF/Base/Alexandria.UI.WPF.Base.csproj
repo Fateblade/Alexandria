@@ -22,6 +22,9 @@
     </Reference>
     <Reference Include="Components.Logic.Foundation.Orchestration.Contract">
     </Reference>
+    <Reference Include="Components.UI.WPF.ViewModelMapper.Contract">
+      <HintPath>..\..\..\..\_dlls\Components.UI.WPF.ViewModelMapper.Contract.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">

@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Fateblade.Alexandria.UI.WPF.Base.Messages;
+﻿using Fateblade.Alexandria.UI.WPF.Base.Messages;
 using Fateblade.Components.Logic.Foundation.Orchestration.Contract;
+using System;
+using System.Collections.Generic;
 
 namespace Fateblade.Alexandria.UI.WPF.Base.Navigation
 {
@@ -40,7 +39,7 @@ namespace Fateblade.Alexandria.UI.WPF.Base.Navigation
 
             if (_navigationTrail.Last.Value.Id != trailStepId)
             {
-                _orchestrator.Orchestrate(new ShowPageOrchestrationInfo()
+                _orchestrator.Orchestrate(new ShowExistingPageOrchestrationInfo()
                 {
                     HandlePageClosed = (closedPage) => { TrailBack(trailStepId, forceClose); },
                     PageViewModelToDisplay = _navigationTrail.Last.Value.TrailableView.GetView()
@@ -57,7 +56,7 @@ namespace Fateblade.Alexandria.UI.WPF.Base.Navigation
             if (_navigationTrail.Count > 0)
             {
                 _navigationTrail.Last.Value.TrailableView.TrailReturned();
-                _orchestrator.Orchestrate(new ShowPageOrchestrationInfo()
+                _orchestrator.Orchestrate(new ShowExistingPageOrchestrationInfo()
                 {
                     HandlePageClosed = (closedPage)=>{ StartNewTrail(firstView, forceClose);},
                     PageViewModelToDisplay = _navigationTrail.Last.Value.TrailableView.GetView()
