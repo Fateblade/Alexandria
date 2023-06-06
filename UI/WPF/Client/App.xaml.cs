@@ -16,9 +16,11 @@ using Prism.Modularity;
 using Prism.Mvvm;
 using Prism.Ninject;
 using System;
+using System.IO;
 using System.Windows;
 using System.Windows.Threading;
 using System.Windows.Media.Imaging;
+using Fateblade.Alexandria.UI.WPF.Base.Modules;
 
 namespace Fateblade.Alexandria.UI.WPF.Client
 {
@@ -29,7 +31,7 @@ namespace Fateblade.Alexandria.UI.WPF.Client
     {
         private readonly KernelContainer _kernelContainer;
         private bool _modulesInitialized;  //modules will be loaded after the shell is initialized
-
+        
         public App()
         {
             _kernelContainer = new KernelContainer();
@@ -74,7 +76,18 @@ namespace Fateblade.Alexandria.UI.WPF.Client
 
         protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
         {
+            //permanently added core modules
             moduleCatalog.AddModule<CommonDialogsModule>();
+
+            //load additional modules from directory -- needs to be done in main view
+            var modulePath = Path.Combine(Environment.CurrentDirectory, "Modules");
+            if (!Directory.Exists(modulePath))
+            {
+                Directory.CreateDirectory(modulePath);
+            }
+
+            new AlexandriaModuleLoader(_kernelContainer.CastedKernel, _kernelContainer.CastedKernel)
+                .LoadFromDirectory(modulePath);
         }
 
         protected override void InitializeModules()

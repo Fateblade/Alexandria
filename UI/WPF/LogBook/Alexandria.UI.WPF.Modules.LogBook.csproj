@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0-windows</TargetFramework>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
     <UseWPF>true</UseWPF>
     <RootNamespace>Fateblade.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
   </PropertyGroup>
@@ -16,12 +16,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Reference Include="CoCo.Core.Contract">
       <HintPath>..\..\..\..\_dlls\CoCo.Core.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="Components.UI.WPF.ViewModelMapper.Contract">
+      <HintPath>..\..\..\..\_dlls\Components.UI.WPF.ViewModelMapper.Contract.dll</HintPath>
     </Reference>
   </ItemGroup>
 

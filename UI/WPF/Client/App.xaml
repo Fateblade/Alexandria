@@ -25,7 +25,7 @@
                 <ResourceDictionary Source="pack://application:,,,/Alexandria.UI.WPF.Icons;component/Resources/Resources.xaml" />
 
                 <!--template selectors-->
-                <ResourceDictionary Source="Views/ViewModelTemplateSelector.xaml" />
+                <!--<ResourceDictionary Source="Views/ViewModelTemplateSelector.xaml" />-->
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

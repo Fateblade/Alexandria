@@ -39,11 +39,10 @@ namespace Fateblade.Alexandria.UI.WPF.Base.Navigation
 
             if (_navigationTrail.Last.Value.Id != trailStepId)
             {
-                _orchestrator.Orchestrate(new ShowExistingPageOrchestrationInfo()
-                {
-                    HandlePageClosed = (closedPage) => { TrailBack(trailStepId, forceClose); },
-                    PageViewModelToDisplay = _navigationTrail.Last.Value.TrailableView.GetView()
-                });
+                _orchestrator.Orchestrate(new ShowExistingPageOrchestrationInfo(
+                    _navigationTrail.Last.Value.TrailableView.GetView(),
+                    (closedPage) => { TrailBack(trailStepId, forceClose); })
+                );
             }
 
             _navigationTrail.Last.Value.TrailableView.TrailReturned();
@@ -56,11 +55,10 @@ namespace Fateblade.Alexandria.UI.WPF.Base.Navigation
             if (_navigationTrail.Count > 0)
             {
                 _navigationTrail.Last.Value.TrailableView.TrailReturned();
-                _orchestrator.Orchestrate(new ShowExistingPageOrchestrationInfo()
-                {
-                    HandlePageClosed = (closedPage)=>{ StartNewTrail(firstView, forceClose);},
-                    PageViewModelToDisplay = _navigationTrail.Last.Value.TrailableView.GetView()
-                });
+                _orchestrator.Orchestrate(new ShowExistingPageOrchestrationInfo(
+                    _navigationTrail.Last.Value.TrailableView.GetView(),
+                    (closedPage) => { StartNewTrail(firstView, forceClose); }
+                ));
             }
             else
             {
