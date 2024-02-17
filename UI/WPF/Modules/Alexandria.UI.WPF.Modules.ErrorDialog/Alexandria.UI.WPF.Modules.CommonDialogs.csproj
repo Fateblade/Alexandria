@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 	<Import Project="..\..\..\..\..\_Build\FatebladeProjectDefaultsImport.msb.xml" />
   <PropertyGroup>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows7.0</TargetFramework>
     <UseWPF>true</UseWPF>
     <RootNamespace>Fateblade.Alexandria.UI.WPF.Client</RootNamespace>
   </PropertyGroup>
