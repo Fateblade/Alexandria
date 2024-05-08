@@ -5,8 +5,8 @@ namespace Alexandria.UI.WPF.Modules.CommonTranslations
 {
     /// <summary>
     /// Translates any Enum using EnumName.EnumValue as key
-    /// Flag combined enums cannot be translated using this translator
     /// </summary>
+    /// <remarks>Flag combined enums cannot be translated using this translator</remarks>
     internal class EnumTranslator : IEnumTranslator
     {
         private readonly ITranslationStringProvider _stringProvider;
