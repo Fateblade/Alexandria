@@ -34,7 +34,7 @@ namespace Fateblade.Alexandria.UI.WPF.Base.Views
         }
 
         /// <summary>
-        /// Resolves a instance of the type or tries to delegate instanciation down the line of generic nested views that inherit from <see cref="HostingViewModelBase" />
+        /// Resolves a instance of the type or tries to delegate instantiation down the line of generic nested views that inherit from <see cref="HostingViewModelBase" />
         /// </summary>
         /// <param name="vmType">type has to inherit from <see cref="BindableBase" /></param>
         protected void hostOrDelegateHosting(Type vmType)
@@ -55,9 +55,11 @@ namespace Fateblade.Alexandria.UI.WPF.Base.Views
                             vmType.BaseType.Name));
                 }
             }
-
-            _currentlyHostedVmType = vmType;
-            DisplayedContent = (BindableBase)_container.Resolve(vmType);
+            else
+            {
+                _currentlyHostedVmType = vmType;
+                DisplayedContent = (BindableBase)_container.Resolve(vmType);
+            }
         }
 
         protected void hostDirectly(BindableBase vmWithExistingData)
