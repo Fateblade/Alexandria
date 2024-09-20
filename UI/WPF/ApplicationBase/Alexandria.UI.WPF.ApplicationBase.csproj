@@ -18,11 +18,16 @@
     <Reference Include="Alexandria.UI.WPF.Base" />
     <Reference Include="Alexandria.UI.WPF.Modules.CommonDialogs" />
     <Reference Include="Alexandria.UI.WPF.Modules.CommonTranslations" />
-    <Reference Include="CoCo.Core.Contract">
-      <HintPath>..\..\_dlls\CoCo.Core.Contract.dll</HintPath>
-    </Reference>
-    <Reference Include="CoCo.Core.NinjectPrismAdapter">
-      <HintPath>..\..\_dlls\CoCo.Core.NinjectPrismAdapter.dll</HintPath>
-    </Reference>
+    <Reference Include="CoCo.Core.Contract" />
+    <Reference Include="CoCo.Core.NinjectPrismAdapter" />
+    <Reference Include="Components.CrossCutting.CommonMessages.Contract" />
+    <Reference Include="Components.CrossCutting.ExceptionFormatter.Contract" />
+    <Reference Include="Components.CrossCutting.Logging.Contract" />
+    <Reference Include="Components.Logic.Foundation.ApplicationBaseManager.Contract" />
   </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <CallTarget Targets="CopyProjectToDll" />
+  </Target>
+
 </Project>

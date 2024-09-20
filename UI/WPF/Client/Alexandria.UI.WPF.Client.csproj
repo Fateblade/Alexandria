@@ -31,7 +31,8 @@
     <ProjectReference Include="..\Converters\Alexandria.UI.WPF.Converters.csproj" />
     <ProjectReference Include="..\Icons\Alexandria.UI.WPF.Icons.csproj" />
     <ProjectReference Include="..\Models\Alexandria.UI.WPF.Models.csproj" />
-    <ProjectReference Include="..\Modules\Alexandria.UI.WPF.Modules.ErrorDialog\Alexandria.UI.WPF.Modules.CommonDialogs.csproj" />
+    <ProjectReference Include="..\Modules\CommonDialogs\Alexandria.UI.WPF.Modules.CommonDialogs.csproj" />
+    <ProjectReference Include="..\Modules\Translations\Alexandria.UI.WPF.Modules.CommonTranslations.csproj" />
   </ItemGroup>
 
   <ItemGroup>

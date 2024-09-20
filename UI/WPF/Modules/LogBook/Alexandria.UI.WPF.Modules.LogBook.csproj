@@ -12,6 +12,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="Alexandria.UI.WPF.Base">
+      <HintPath>..\..\..\..\..\_dlls\Alexandria.UI.WPF.Base.dll</HintPath>
+    </Reference>
     <Reference Include="CoCo.Core.Contract">
       <HintPath>..\..\..\..\_dlls\CoCo.Core.Contract.dll</HintPath>
     </Reference>

@@ -1,15 +1,22 @@
-﻿using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.DependencyInjection;
+﻿using System.Windows;
+using System.Windows.Threading;
+using Alexandria.UI.WPF.Modules.CommonTranslations;
+using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.DependencyInjection;
 using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.EventBrokerage;
+using Fateblade.Alexandria.UI.WPF.Client;
+using Fateblade.Components.CrossCutting.CommonMessages.Contract.Messages;
+using Fateblade.Components.CrossCutting.ExceptionFormatter.Contract;
+using Fateblade.Components.CrossCutting.Logging.Contract;
+using Fateblade.Components.CrossCutting.Logging.Contract.DataClasses;
+using Fateblade.Components.Logic.Foundation.ApplicationBaseManager.Contract;
 using Fateblade.PersonManagementApp.CoCo.Core.NinjectPrismAdapter;
 using Prism.Ioc;
 using Prism.Logging;
 using Prism.Modularity;
 using Prism.Mvvm;
 using Prism.Ninject;
-using System.Windows;
-using System.Windows.Threading;
 
-namespace Fateblade.Alexandria.UI.WPF.Base
+namespace Fateblade.Alexandria.UI.WPF.ApplicationBase
 {
     public abstract class AlexandriaApplication : PrismApplication
     {
