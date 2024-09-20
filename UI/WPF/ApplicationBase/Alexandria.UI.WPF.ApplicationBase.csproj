@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\..\..\_Build\FatebladeProjectDefaultsImport.msb.xml" />
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Fateblade.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Prism.Ninject" Version="7.2.0.1422" />    
+    <PackageReference Include="Prism.Core" Version="7.2.0.1422" />
+    <PackageReference Include="Prism.Wpf" Version="7.2.0.1422" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Alexandria.UI.WPF.Base" />
+    <Reference Include="Alexandria.UI.WPF.Modules.CommonDialogs" />
+    <Reference Include="Alexandria.UI.WPF.Modules.CommonTranslations" />
+    <Reference Include="CoCo.Core.Contract">
+      <HintPath>..\..\_dlls\CoCo.Core.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="CoCo.Core.NinjectPrismAdapter">
+      <HintPath>..\..\_dlls\CoCo.Core.NinjectPrismAdapter.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

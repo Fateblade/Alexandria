@@ -1,5 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
+  <Import Project="..\..\..\..\..\_Build\FatebladeProjectDefaultsImport.msb.xml" />
   <PropertyGroup>
     <TargetFramework>net8.0-windows7.0</TargetFramework>
     <Nullable>disable</Nullable>
@@ -12,15 +12,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Modules\Alexandria.UI.WPF.Modules.ErrorDialog\Alexandria.UI.WPF.Modules.CommonDialogs.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Reference Include="CoCo.Core.Contract">
       <HintPath>..\..\..\..\_dlls\CoCo.Core.Contract.dll</HintPath>
     </Reference>
     <Reference Include="Components.UI.WPF.ViewModelMapper.Contract">
-      <HintPath>..\..\..\..\_dlls\Components.UI.WPF.ViewModelMapper.Contract.dll</HintPath>
     </Reference>
   </ItemGroup>
 
