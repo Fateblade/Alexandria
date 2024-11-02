@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System.Reflection;
+using System.Windows;
 using System.Windows.Threading;
 using Alexandria.UI.WPF.Modules.CommonTranslations;
 using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.DependencyInjection;
@@ -72,7 +73,8 @@ namespace Fateblade.Alexandria.UI.WPF.ApplicationBase
                         : viewName + "ViewModel";
                 }
 
-                var viewModelType = Type.GetType(viewModelName);
+                
+                var viewModelType = Assembly.GetEntryAssembly()?.GetType(viewModelName);
 
 
                 return viewModelType;
@@ -95,7 +97,7 @@ namespace Fateblade.Alexandria.UI.WPF.ApplicationBase
                             : viewName + "ViewModel";
                     }
 
-                    viewModelType = Type.GetType(viewModelName);
+                    viewModelType = Assembly.GetEntryAssembly()?.GetType(viewModelName);
                 }
 
                 if (viewModelType == null)
