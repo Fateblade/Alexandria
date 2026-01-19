@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 	<Import Project="..\..\..\..\..\_Build\FatebladeProjectDefaultsImport.msb.xml" />
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <AssemblyName>Alexandria.Logic.Domain.Meta.MetaManagement.Contract</AssemblyName>
     <RootNamespace>Fateblade.Alexandria.Logic.Domain.Meta.MetaManagement.Contract</RootNamespace>
   </PropertyGroup>
