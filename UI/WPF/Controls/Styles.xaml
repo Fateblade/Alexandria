@@ -1,0 +1,16 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+    <ResourceDictionary.MergedDictionaries>
+        <!--Action Bar-->
+        <ResourceDictionary Source="ActionBar/ActionMenuBarItemControlStyle.xaml" />
+        <ResourceDictionary Source="ActionBar/ActionMenuBarControlStyle.xaml" />
+        <ResourceDictionary Source="ActionBar/GroupingIconMenuBarControlStyle.xaml" />
+        <ResourceDictionary Source="ActionBar/GroupingIconMenuBarItemControlStyle.xaml" />
+
+        <!--Selection-->
+        <ResourceDictionary Source="Selection/ListBoxSelectionControlStyle.xaml" />
+        <ResourceDictionary Source="Selection/SelectionRemovableComboBoxStyle.xaml" />
+        
+        <!--Buttons-->
+        <ResourceDictionary Source="Text/SearchTextBoxStyle.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

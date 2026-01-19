@@ -1,0 +1,30 @@
+﻿using System;
+using Fateblade.Components.Logic.Foundation.Translation.Contract;
+
+namespace Alexandria.UI.WPF.Modules.CommonTranslations
+{
+    /// <summary>
+    /// Translates any Enum using EnumName.EnumValue as key
+    /// </summary>
+    /// <remarks>Flag combined enums cannot be translated using this translator</remarks>
+    internal class EnumTranslator : IEnumTranslator
+    {
+        private readonly ITranslationStringProvider _stringProvider;
+
+        public EnumTranslator(ITranslationStringProvider stringProvider)
+        {
+            _stringProvider = stringProvider;
+        }
+
+        public string Translate<TEnum>(TEnum toTranslate) where TEnum : Enum
+        {
+            return _stringProvider.GetString($"{typeof(TEnum).Name}.{toTranslate}");
+        }
+
+        public string Translate(Enum enumValue)
+        {
+            return _stringProvider.GetString($"{enumValue.GetType().Name}.{enumValue}");
+        }
+    }
+
+}

@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="..\..\..\..\..\_Build\FatebladeProjectDefaultsImport.msb.xml" />
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Fateblade.Alexandria.Logic.Domain.MetaManagement</RootNamespace>
+    <AssemblyName>Alexandria.Logic.Domain.Meta.MetaManagement</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\CrossCutting\Meta.DataClasses\Alexandria.CrossCutting.Meta.DataClasses.csproj" />
+    <ProjectReference Include="..\MetaManagement.Contract\Alexandria.Logic.Domain.Meta.MetaManagement.Contract.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="CoCo.Core.Contract">
+    </Reference>
+    <Reference Include="Components.CrossCutting.Base.Identifiable.DataClasses">
+    </Reference>
+    <Reference Include="Components.Data.GenericDataStoring.Contract">
+    </Reference>
+  </ItemGroup>
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<CallTarget Targets="CopyProjectToDll" />
+	</Target>
+
+</Project>

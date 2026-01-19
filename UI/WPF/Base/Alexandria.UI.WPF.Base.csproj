@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="..\..\..\..\_Build\FatebladeProjectDefaultsImport.msb.xml" />
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows7.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>Fateblade.Alexandria.UI.WPF.Base</RootNamespace>
+    <AssemblyName>Alexandria.UI.WPF.Base</AssemblyName>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Prism.Core" Version="7.2.0.1422" />
+    <PackageReference Include="Prism.Wpf" Version="7.2.0.1422" />
+    <PackageReference Include="SharpVectors.Wpf" Version="1.8.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="CoCo.Core.Contract">
+    </Reference>
+    <Reference Include="Components.CrossCutting.Base.Identifiable.DataClasses">
+    </Reference>
+    <Reference Include="Components.Logic.Foundation.Orchestration.Contract">
+    </Reference>
+    <Reference Include="Components.UI.WPF.ViewModelMapper.Contract">
+    </Reference>
+  </ItemGroup>
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<CallTarget Targets="CopyProjectToDll" />
+	</Target>
+
+</Project>

@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="..\..\..\..\_Build\FatebladeProjectDefaultsImport.msb.xml" />
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows7.0</TargetFramework>
+    <RootNamespace>Fateblade.Alexandria.UI.WPF.Models</RootNamespace>
+    <AssemblyName>Alexandria.UI.WPF.Models</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Prism.Core" Version="7.2.0.1422" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\CrossCutting\Entities.DataClasses\Alexandria.CrossCutting.Entities.DataClasses.csproj" />
+    <ProjectReference Include="..\..\..\CrossCutting\Environment.DataClasses\Alexandria.CrossCutting.Environment.DataClasses.csproj" />
+    <ProjectReference Include="..\..\..\CrossCutting\Gear.DataClasses\Alexandria.CrossCutting.Gear.DataClasses.csproj" />
+    <ProjectReference Include="..\..\..\CrossCutting\Meta.DataClasses\Alexandria.CrossCutting.Meta.DataClasses.csproj" />
+    <ProjectReference Include="..\Base\Alexandria.UI.WPF.Base.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Components.CrossCutting.Base.Identifiable.DataClasses">
+    </Reference>
+  </ItemGroup>
+
+</Project>

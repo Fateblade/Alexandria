@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="..\..\..\..\..\_Build\FatebladeProjectDefaultsImport.msb.xml" />
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Alexandria.Logic.Domain.Gear.GearManagement</AssemblyName>
+    <RootNamespace>Fateblade.Alexandria.Logic.Domain.GearManagement</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\CrossCutting\Gear.DataClasses\Alexandria.CrossCutting.Gear.DataClasses.csproj" />
+    <ProjectReference Include="..\GearManagement.Contract\Alexandria.Logic.Domain.Gear.GearManagement.Contract.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="CoCo.Core.Contract">
+    </Reference>
+    <Reference Include="Components.CrossCutting.Base.Identifiable.DataClasses">
+    </Reference>
+    <Reference Include="Components.Data.GenericDataStoring.Contract">
+    </Reference>
+  </ItemGroup>
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<CallTarget Targets="CopyProjectToDll" />
+	</Target>
+
+</Project>

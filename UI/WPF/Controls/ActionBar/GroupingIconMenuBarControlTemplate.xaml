@@ -1,0 +1,54 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:actionBar="clr-namespace:Fateblade.Alexandria.UI.WPF.Controls.ActionBar">
+    <ControlTemplate x:Key="GroupingIconMenuBarControlTemplate" 
+                     TargetType="{x:Type actionBar:GroupingIconMenuBarControl}">
+        <Grid Background="{TemplateBinding Background}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <!--TODO: proper styling-->
+
+            <!--Group Buttons-->
+            <Border Grid.Column="0" Margin="2"
+                    BorderThickness="0,0,1,0"
+                    BorderBrush="Black">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <!--Default Groups-->
+                    <ScrollViewer Grid.Row="0"
+                                  VerticalScrollBarVisibility="Hidden" Margin="2,0,2,0">
+                        <ItemsControl ItemsSource="{TemplateBinding MenuBarDefaultGroupActions}"
+                                      ItemTemplateSelector="{DynamicResource Alexandria.DataTemplates.ActionMenuBarItemTemplateSelector}" />
+                    </ScrollViewer>
+
+
+                    <!--Bottom Groups-->
+                    <ScrollViewer Grid.Row="1"
+                                  VerticalScrollBarVisibility="Hidden" Margin="2,0,2,0">
+                        <ItemsControl ItemsSource="{TemplateBinding MenuBarBottomGroupActions}"
+                                      ItemTemplateSelector="{DynamicResource Alexandria.DataTemplates.ActionMenuBarItemTemplateSelector}" />
+                    </ScrollViewer>
+                </Grid>
+               
+            </Border>
+
+            <!--Actions of Selected Group-->
+            <Border Grid.Column="1" Margin="2"
+                    Visibility="{TemplateBinding SelectedGroup, Converter={StaticResource Alexandria.Converters.ExistanceToVisibilityConverter}}"
+                    BorderThickness="0,0,1,0"
+                    BorderBrush="Black">
+                <ScrollViewer VerticalScrollBarVisibility="Hidden" Margin="2,0,2,0">
+                    <ItemsControl ItemsSource="{TemplateBinding MenuBarActionsOfSelectedGroup}"
+                                  ItemTemplateSelector="{DynamicResource Alexandria.DataTemplates.ActionMenuBarItemTemplateSelector}" />
+                </ScrollViewer>
+            </Border>
+        </Grid>
+    </ControlTemplate>
+</ResourceDictionary>

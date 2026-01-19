@@ -1,0 +1,19 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:actionBar="clr-namespace:Fateblade.Alexandria.UI.WPF.Controls.ActionBar">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="ActionBar/DataTemplates/ActionMenuBarCommandDataTemplates.xaml" />
+        <ResourceDictionary Source="ActionBar/DataTemplates/GroupingActionMenuBarCommandDataTemplates.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <actionBar:ActionMenuBarItemTemplateSelector x:Key="Alexandria.DataTemplates.ActionMenuBarItemTemplateSelector"
+                                                 ActionMenuBarCommandTemplate="{StaticResource Alexandria.DataTemplates.ActionMenuBarCommand}"
+                                                 IconActionMenuBarCommandTemplate="{StaticResource Alexandria.DataTemplates.IconActionMenuBarCommand}"
+                                                 LombardActionMenuBarCommandTemplate="{StaticResource Alexandria.DataTemplates.LombardActionMenuBarCommand}"
+                                                 
+                                                 GroupingActionMenuBarCommand="{StaticResource Alexandria.DataTemplates.GroupingActionMenuBarCommand}"
+                                                 GroupingIconActionMenuBarCommand="{StaticResource Alexandria.DataTemplates.GroupingIconActionMenuBarCommand}"
+                                                 GroupingLombardActionMenuBarCommand="{StaticResource Alexandria.DataTemplates.GroupingLombardActionMenuBarCommand}"
+                                                 />
+</ResourceDictionary>

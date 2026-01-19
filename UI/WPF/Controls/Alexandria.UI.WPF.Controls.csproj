@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+	<Import Project="..\..\..\..\_Build\FatebladeProjectDefaultsImport.msb.xml" />
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows7.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>Alexandria.UI.WPF.Controls</AssemblyName>
+    <RootNamespace>Fateblade.Alexandria.UI.WPF.Controls</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Resources\Fonts\Apple-Chancery-Regular.ttf" />
+    <None Remove="Resources\Fonts\Baskervville-Regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Themes\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MahApps.Metro" Version="2.4.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Base\Alexandria.UI.WPF.Base.csproj" />
+    <ProjectReference Include="..\Converters\Alexandria.UI.WPF.Converters.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Fonts\Apple-Chancery-Regular.ttf" />
+    <Resource Include="Resources\Fonts\Baskervville-Regular.ttf" />
+  </ItemGroup>
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<CallTarget Targets="CopyProjectToDll" />
+	</Target>
+</Project>

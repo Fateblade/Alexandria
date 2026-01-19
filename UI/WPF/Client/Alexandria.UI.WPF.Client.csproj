@@ -1,0 +1,65 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+	<Import Project="..\..\..\..\_Build\FatebladeProjectDefaultsImport.msb.xml" />
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows7.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>Fateblade.Alexandria.UI.WPF.Client</RootNamespace>
+    <AssemblyName>Alexandria.UI.WPF.Client</AssemblyName>
+    <ApplicationIcon>Fateblade.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Dialogs\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AvalonEdit" Version="6.2.0.78" />
+    <PackageReference Include="Castle.Core" Version="4.4.1" />
+    <PackageReference Include="MahApps.Metro" Version="2.4.9" />
+    <PackageReference Include="MahApps.Metro.IconPacks.Material" Version="4.11.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Ninject.Web.Common.Selfhost" Version="3.3.2" />
+    <PackageReference Include="Prism.Ninject" Version="7.2.0.1422" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Registrations\Registrations.Client.Mappings\Alexandria.Registrations.Client.Mappings.csproj" />
+    <ProjectReference Include="..\Base\Alexandria.UI.WPF.Base.csproj" />
+    <ProjectReference Include="..\Controls\Alexandria.UI.WPF.Controls.csproj" />
+    <ProjectReference Include="..\Converters\Alexandria.UI.WPF.Converters.csproj" />
+    <ProjectReference Include="..\Icons\Alexandria.UI.WPF.Icons.csproj" />
+    <ProjectReference Include="..\Models\Alexandria.UI.WPF.Models.csproj" />
+    <ProjectReference Include="..\Modules\CommonDialogs\Alexandria.UI.WPF.Modules.CommonDialogs.csproj" />
+    <ProjectReference Include="..\Modules\Translations\Alexandria.UI.WPF.Modules.CommonTranslations.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="CoCo.Core.Contract">
+    </Reference>
+    <Reference Include="CoCo.Core.NinjectPrismAdapter">
+    </Reference>
+    <Reference Include="Components.CrossCutting.Base.Identifiable.DataClasses">
+    </Reference>
+    <Reference Include="Components.CrossCutting.CommonMessages.Contract">
+    </Reference>
+    <Reference Include="Components.CrossCutting.ExceptionFormatter.Contract">
+    </Reference>
+    <Reference Include="Components.CrossCutting.Logging.Contract">
+    </Reference>
+    <Reference Include="Components.Data.GenericDataStoring.Contract">
+    </Reference>
+    <Reference Include="Components.Logic.Foundation.Orchestration.Contract">
+    </Reference>
+    <Reference Include="Components.Logic.Foundation.Translation.Contract">
+    </Reference>
+    <Reference Include="Components.UI.WPF.ViewModelMapper.Contract">
+    </Reference>
+  </ItemGroup>
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<CallTarget Targets="CopyProjectToDll" />
+	</Target>
+
+</Project>

@@ -1,0 +1,70 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="..\..\..\_Build\FatebladeProjectDefaultsImport.msb.xml" />
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>Fateblade.Alexandria.Registrations.Client.Mappings</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Logic\Domain\Entities\EntitiesManagement.Contract\Alexandria.Logic.Domain.Entities.EntitiesManagement.Contract.csproj" />
+    <ProjectReference Include="..\..\Logic\Domain\Entities\EntitiesManagement\Alexandria.Logic.Domain.Entities.EntitiesManagement.csproj" />
+    <ProjectReference Include="..\..\Logic\Domain\Environment\EnvironmentManagement.Contract\Alexandria.Logic.Domain.Environment.EnvironmentManagement.Contract.csproj" />
+    <ProjectReference Include="..\..\Logic\Domain\Environment\EnvironmentManagement\Alexandria.Logic.Domain.Environment.EnvironmentManagement.csproj" />
+    <ProjectReference Include="..\..\Logic\Domain\Gear\GearManagement.Contract\Alexandria.Logic.Domain.Gear.GearManagement.Contract.csproj" />
+    <ProjectReference Include="..\..\Logic\Domain\Gear\GearManagement\Alexandria.Logic.Domain.Gear.GearManagement.csproj" />
+    <ProjectReference Include="..\..\Logic\Domain\Meta\MetaManagement.Contract\Alexandria.Logic.Domain.Meta.MetaManagement.Contract.csproj" />
+    <ProjectReference Include="..\..\Logic\Domain\Meta\MetaManagement\Alexandria.Logic.Domain.Meta.MetaManagement.csproj" />
+    <ProjectReference Include="..\..\Logic\Foundation\Meta.Dice.Contract\Alexandria.Logic.Foundation.Meta.DiceGeneration.Contract.csproj" />
+    <ProjectReference Include="..\..\Logic\Foundation\Meta.Dice\Alexandria.Logic.Foundation.Meta.DiceGeneration.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="CoCo.Core.Bootstrapping">
+    </Reference>
+    <Reference Include="CoCo.Core.Configuration">
+    </Reference>
+    <Reference Include="CoCo.Core.Contract">
+    </Reference>
+    <Reference Include="CoCo.Core.EventBrokerage">
+    </Reference>
+    <Reference Include="Components.CrossCutting.CoCo.Core.Configuration.NewtonsoftJson">
+    </Reference>
+    <Reference Include="Components.CrossCutting.CommonMessages.Contract">
+    </Reference>
+    <Reference Include="Components.CrossCutting.ExceptionFormatter.Contract">
+    </Reference>
+    <Reference Include="Components.CrossCutting.ExceptionFormatter.SimpleListFormat">
+    </Reference>
+    <Reference Include="Components.CrossCutting.Logging.Contract">
+    </Reference>
+    <Reference Include="Components.CrossCutting.Logging.Csv">
+    </Reference>
+    <Reference Include="Components.Data.GenericDataStoring.Contract">
+    </Reference>
+    <Reference Include="Components.Data.GenericDataStoring.NewtonsoftJson">
+    </Reference>
+    <Reference Include="Components.Logic.Foundation.Orchestration">
+    </Reference>
+    <Reference Include="Components.Logic.Foundation.Orchestration.Contract">
+    </Reference>
+    <Reference Include="Components.Logic.Foundation.Translation">
+    </Reference>
+    <Reference Include="Components.Logic.Foundation.Translation.Contract">
+    </Reference>
+    <Reference Include="Components.Logic.GenericManager">
+    </Reference>
+    <Reference Include="Components.Logic.GenericManager.Contract">
+    </Reference>
+    <Reference Include="Components.UI.WPF.ViewModelMapper">
+    </Reference>
+    <Reference Include="Components.UI.WPF.ViewModelMapper.Contract">
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="MergedConfig.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
