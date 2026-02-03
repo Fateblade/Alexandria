@@ -2,7 +2,7 @@
 	<Import Project="..\..\..\..\_Build\FatebladeProjectDefaultsImport.msb.xml" />
 	
   <PropertyGroup>
-    <TargetFramework>net8.0-windows7.0</TargetFramework>
+    <TargetFramework>net10.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
 	  <RootNamespace>Fateblade.Alexandria.UI.WPF.Icons</RootNamespace>
   </PropertyGroup>

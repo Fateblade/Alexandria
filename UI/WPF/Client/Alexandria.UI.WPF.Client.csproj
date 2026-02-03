@@ -2,7 +2,7 @@
 	<Import Project="..\..\..\..\_Build\FatebladeProjectDefaultsImport.msb.xml" />
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows7.0</TargetFramework>
+    <TargetFramework>net10.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
     <RootNamespace>Fateblade.Alexandria.UI.WPF.Client</RootNamespace>
     <AssemblyName>Alexandria.UI.WPF.Client</AssemblyName>
