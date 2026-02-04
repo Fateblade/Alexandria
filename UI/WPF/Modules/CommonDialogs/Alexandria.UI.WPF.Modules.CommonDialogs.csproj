@@ -1,9 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-	<Import Project="..\..\..\..\..\_Build\FatebladeProjectDefaultsImport.msb.xml" />
+
   <PropertyGroup>
     <TargetFramework>net10.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
-    <RootNamespace>Fateblade.Alexandria.UI.WPF.Client</RootNamespace>
+    <RootNamespace>Fateblade.Alexandria.UI.WPF.Modules.CommonDialogs</RootNamespace>
+    <AssemblyName>Alexandria.UI.WPF.Modules.CommonDialogs</AssemblyName>
+
+    <!-- NuGet Package Metadata -->
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>Fateblade.Alexandria.UI.WPF.Modules.CommonDialogs</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Fateblade</Authors>
+    <Company>Fateblade</Company>
+    <Product>Alexandria</Product>
+    <Description>Common dialog module for Alexandria UI</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,9 +33,5 @@
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
-
-	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
-		<CallTarget Targets="CopyProjectToDll" />
-	</Target>
 
 </Project>

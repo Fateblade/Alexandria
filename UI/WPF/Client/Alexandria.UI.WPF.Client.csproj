@@ -1,5 +1,6 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
-	<Import Project="..\..\..\..\_Build\FatebladeProjectDefaultsImport.msb.xml" />
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net10.0-windows</TargetFramework>
@@ -17,6 +18,16 @@
   <ItemGroup>
     <PackageReference Include="AvalonEdit" Version="6.2.0.78" />
     <PackageReference Include="Castle.Core" Version="4.4.1" />
+    <PackageReference Include="Fateblade.CoCo.Core.Contract" Version="1.0.0" />
+    <PackageReference Include="Fateblade.CoCo.Core.NinjectPrismAdapter" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.CrossCutting.Base.Identifiable.DataClasses" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.CrossCutting.CommonMessages.Contract" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.CrossCutting.ExceptionFormatter.Contract" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.CrossCutting.Logging.Contract" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.Data.GenericDataStoring.Contract" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.Logic.Foundation.Orchestration.Contract" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.Logic.Foundation.Translation.Contract" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.UI.WPF.ViewModelMapper.Contract" Version="1.0.0" />
     <PackageReference Include="MahApps.Metro" Version="2.4.9" />
     <PackageReference Include="MahApps.Metro.IconPacks.Material" Version="4.11.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
@@ -34,32 +45,5 @@
     <ProjectReference Include="..\Modules\CommonDialogs\Alexandria.UI.WPF.Modules.CommonDialogs.csproj" />
     <ProjectReference Include="..\Modules\Translations\Alexandria.UI.WPF.Modules.CommonTranslations.csproj" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="CoCo.Core.Contract">
-    </Reference>
-    <Reference Include="CoCo.Core.NinjectPrismAdapter">
-    </Reference>
-    <Reference Include="Components.CrossCutting.Base.Identifiable.DataClasses">
-    </Reference>
-    <Reference Include="Components.CrossCutting.CommonMessages.Contract">
-    </Reference>
-    <Reference Include="Components.CrossCutting.ExceptionFormatter.Contract">
-    </Reference>
-    <Reference Include="Components.CrossCutting.Logging.Contract">
-    </Reference>
-    <Reference Include="Components.Data.GenericDataStoring.Contract">
-    </Reference>
-    <Reference Include="Components.Logic.Foundation.Orchestration.Contract">
-    </Reference>
-    <Reference Include="Components.Logic.Foundation.Translation.Contract">
-    </Reference>
-    <Reference Include="Components.UI.WPF.ViewModelMapper.Contract">
-    </Reference>
-  </ItemGroup>
-
-	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
-		<CallTarget Targets="CopyProjectToDll" />
-	</Target>
 
 </Project>

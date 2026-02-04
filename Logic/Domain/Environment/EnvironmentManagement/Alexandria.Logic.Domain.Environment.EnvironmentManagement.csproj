@@ -1,9 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-	<Import Project="..\..\..\..\..\_Build\FatebladeProjectDefaultsImport.msb.xml" />
+
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFrameworks>netstandard2.0;net10.0</TargetFrameworks>
     <AssemblyName>Alexandria.Logic.Domain.Environment.EnvironmentManagement</AssemblyName>
     <RootNamespace>Fateblade.Alexandria.Logic.Domain.Environment.EnvironmentManagement</RootNamespace>
+
+    <!-- NuGet Package Metadata -->
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>Fateblade.Alexandria.Logic.Domain.Environment.EnvironmentManagement</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Fateblade</Authors>
+    <Company>Fateblade</Company>
+    <Product>Alexandria</Product>
+    <Description>Environment management implementation for Alexandria</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,16 +24,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="CoCo.Core.Contract">
-    </Reference>
-    <Reference Include="Components.CrossCutting.Base.Identifiable.DataClasses">
-    </Reference>
-    <Reference Include="Components.Data.GenericDataStoring.Contract">
-    </Reference>
+    <PackageReference Include="Fateblade.CoCo.Core.Contract" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.CrossCutting.Base.Identifiable.DataClasses" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.Data.GenericDataStoring.Contract" Version="1.0.0" />
   </ItemGroup>
-
-	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
-		<CallTarget Targets="CopyProjectToDll" />
-	</Target>
 
 </Project>

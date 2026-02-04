@@ -110,11 +110,9 @@ namespace Fateblade.Alexandria.UI.WPF.Modules.Core.Views.Meta
 
         private void editPlayer(PlayerModel playerToEdit)
         {
-            var orchestrationRequestInfo = new ShowPageOrchestrationInfo
-            {
-                PageViewModelToDisplay = new PlayerEditViewModel(),
-                HandlePageClosed = editPlayer_EditFinished
-            };
+            var orchestrationRequestInfo = new ShowExistingPageOrchestrationInfo(
+                new PlayerEditViewModel(),
+                editPlayer_EditFinished);
 
             _orchestrator.Orchestrate(orchestrationRequestInfo);
         }

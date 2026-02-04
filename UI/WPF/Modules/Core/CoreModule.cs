@@ -15,7 +15,7 @@ namespace Fateblade.Alexandria.UI.WPF.Modules.Core
         public void OnInitialized(IContainerProvider containerProvider)
         {
             IActionMenuBarManager actionMenuBar = containerProvider.Resolve<IActionMenuBarManager>();
-            IViewModelMapper viewModelMapper = containerProvider.Resolve<IViewModelMapper>();
+            IViewModelResourceKeyMapper viewModelMapper = containerProvider.Resolve<IViewModelResourceKeyMapper>();
 
         }
     }

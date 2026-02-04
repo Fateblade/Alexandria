@@ -1,24 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-	<Import Project="..\..\..\..\..\_Build\FatebladeProjectDefaultsImport.msb.xml" />
+
   <PropertyGroup>
     <TargetFramework>net10.0-windows</TargetFramework>
+    <RootNamespace>Fateblade.Alexandria.UI.WPF.Modules.CommonTranslations</RootNamespace>
+    <AssemblyName>Alexandria.UI.WPF.Modules.CommonTranslations</AssemblyName>
+
+    <!-- NuGet Package Metadata -->
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>Fateblade.Alexandria.UI.WPF.Modules.CommonTranslations</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Fateblade</Authors>
+    <Company>Fateblade</Company>
+    <Product>Alexandria</Product>
+    <Description>Common translations module for Alexandria UI</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
-	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
-		<CallTarget Targets="CopyProjectToDll" />
-	</Target>
-
-	<ItemGroup>
-	  <PackageReference Include="Prism.Ninject" Version="7.2.0.1422" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Reference Include="CoCo.Core.Contract">
-	    <HintPath>..\..\..\..\_dlls\CoCo.Core.Contract.dll</HintPath>
-	  </Reference>
-	  <Reference Include="Components.Logic.Foundation.Translation.Contract">
-	    <HintPath>..\..\..\..\_dlls\Components.Logic.Foundation.Translation.Contract.dll</HintPath>
-	  </Reference>
-	</ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Fateblade.CoCo.Core.Contract" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.Logic.Foundation.Translation.Contract" Version="1.0.0" />
+    <PackageReference Include="Prism.Ninject" Version="7.2.0.1422" />
+  </ItemGroup>
 
 </Project>

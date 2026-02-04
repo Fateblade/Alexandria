@@ -1,33 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-  <Import Project="..\..\..\..\_Build\FatebladeProjectDefaultsImport.msb.xml" />
+
   <PropertyGroup>
     <TargetFramework>net10.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>Fateblade.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+    <RootNamespace>Fateblade.Alexandria.UI.WPF.ApplicationBase</RootNamespace>
+    <AssemblyName>Alexandria.UI.WPF.ApplicationBase</AssemblyName>
+
+    <!-- NuGet Package Metadata -->
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>Fateblade.Alexandria.UI.WPF.ApplicationBase</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Fateblade</Authors>
+    <Company>Fateblade</Company>
+    <Product>Alexandria</Product>
+    <Description>Application base infrastructure for Alexandria UI</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Prism.Ninject" Version="7.2.0.1422" />    
+    <PackageReference Include="Fateblade.CoCo.Core.Contract" Version="1.0.0" />
+    <PackageReference Include="Fateblade.CoCo.Core.NinjectPrismAdapter" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.CrossCutting.CommonMessages.Contract" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.CrossCutting.ExceptionFormatter.Contract" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.CrossCutting.Logging.Contract" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.Logic.Foundation.ApplicationBaseManager.Contract" Version="1.0.0" />
+    <PackageReference Include="Prism.Ninject" Version="7.2.0.1422" />
     <PackageReference Include="Prism.Core" Version="7.2.0.1422" />
     <PackageReference Include="Prism.Wpf" Version="7.2.0.1422" />
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="Alexandria.UI.WPF.Base" />
-    <Reference Include="Alexandria.UI.WPF.Modules.CommonDialogs" />
-    <Reference Include="Alexandria.UI.WPF.Modules.CommonTranslations" />
-    <Reference Include="CoCo.Core.Contract" />
-    <Reference Include="CoCo.Core.NinjectPrismAdapter" />
-    <Reference Include="Components.CrossCutting.CommonMessages.Contract" />
-    <Reference Include="Components.CrossCutting.ExceptionFormatter.Contract" />
-    <Reference Include="Components.CrossCutting.Logging.Contract" />
-    <Reference Include="Components.Logic.Foundation.ApplicationBaseManager.Contract" />
+    <ProjectReference Include="..\Base\Alexandria.UI.WPF.Base.csproj" />
+    <ProjectReference Include="..\Modules\CommonDialogs\Alexandria.UI.WPF.Modules.CommonDialogs.csproj" />
+    <ProjectReference Include="..\Modules\Translations\Alexandria.UI.WPF.Modules.CommonTranslations.csproj" />
   </ItemGroup>
-
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <CallTarget Targets="CopyProjectToDll" />
-  </Target>
 
 </Project>

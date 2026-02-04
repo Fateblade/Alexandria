@@ -1,12 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-  <Import Project="..\..\..\..\..\_Build\FatebladeProjectDefaultsImport.msb.xml" />
+
   <PropertyGroup>
     <TargetFramework>net10.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
     <RootNamespace>Fateblade.Alexandria.UI.WPF.Modules.Core</RootNamespace>
+    <AssemblyName>Alexandria.UI.WPF.Modules.Core</AssemblyName>
+
+    <!-- NuGet Package Metadata -->
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>Fateblade.Alexandria.UI.WPF.Modules.Core</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Fateblade</Authors>
+    <Company>Fateblade</Company>
+    <Product>Alexandria</Product>
+    <Description>Core module for Alexandria UI</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Fateblade.Components.Logic.Foundation.Orchestration.Contract" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.UI.WPF.ViewModelMapper.Contract" Version="1.0.0" />
     <PackageReference Include="Prism.Ninject" Version="7.2.0.1422" />
   </ItemGroup>
 
@@ -14,20 +29,11 @@
     <ProjectReference Include="..\..\..\..\Logic\Domain\Meta\MetaManagement.Contract\Alexandria.Logic.Domain.Meta.MetaManagement.Contract.csproj" />
     <ProjectReference Include="..\..\Base\Alexandria.UI.WPF.Base.csproj" />
     <ProjectReference Include="..\..\Models\Alexandria.UI.WPF.Models.csproj" />
-    <ProjectReference Include="..\Alexandria.UI.WPF.Modules.ErrorDialog\Alexandria.UI.WPF.Modules.CommonDialogs.csproj" />
+    <ProjectReference Include="..\CommonDialogs\Alexandria.UI.WPF.Modules.CommonDialogs.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Dialogs\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="Components.Logic.Foundation.Orchestration.Contract">
-      <HintPath>..\..\..\..\_ExternalLibraries\Components.Logic.Foundation.Orchestration.Contract.dll</HintPath>
-    </Reference>
-    <Reference Include="Components.UI.WPF.ViewModelMapper.Contract">
-      <HintPath>..\..\..\..\_ExternalLibraries\Components.UI.WPF.ViewModelMapper.Contract.dll</HintPath>
-    </Reference>
   </ItemGroup>
 
 </Project>
