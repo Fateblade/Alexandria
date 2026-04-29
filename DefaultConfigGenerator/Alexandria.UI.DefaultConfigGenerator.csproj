@@ -1,23 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-	<Import Project="..\..\_Build\FatebladeProjectDefaultsImport.msb.xml" />
+
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="CoCo.Core.Contract">
-    </Reference>
-    <Reference Include="Components.CrossCutting.CoCo.Core.Configuration.NewtonsoftJson">
-    </Reference>
-    <Reference Include="Components.CrossCutting.Logging.Csv">
-    </Reference>
-    <Reference Include="Components.Data.GenericDataStoring.NewtonsoftJson">
-    </Reference>
+    <PackageReference Include="Fateblade.CoCo.Core.Contract" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.CrossCutting.CoCo.Core.Configuration.NewtonsoftJson" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.CrossCutting.Logging.Csv" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.Data.GenericDataStoring.NewtonsoftJson" Version="1.0.0" />
   </ItemGroup>
 
 </Project>

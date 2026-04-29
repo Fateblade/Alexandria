@@ -1,9 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-	<Import Project="..\..\..\..\..\_Build\FatebladeProjectDefaultsImport.msb.xml" />
+
   <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
+    <TargetFrameworks>netstandard2.0;net10.0</TargetFrameworks>
     <AssemblyName>Alexandria.Logic.Domain.Environment.EnvironmentManagement.Contract</AssemblyName>
     <RootNamespace>Fateblade.Alexandria.Logic.Domain.Environment.EnvironmentManagement.Contract</RootNamespace>
+
+    <!-- NuGet Package Metadata -->
+    <GeneratePackageOnBuild Condition="'$(Configuration)' == 'Release'">true</GeneratePackageOnBuild>
+    <PackageId>Fateblade.Alexandria.Logic.Domain.Environment.EnvironmentManagement.Contract</PackageId>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <Authors>Fateblade</Authors>
+    <Company>Fateblade</Company>
+    <Product>Alexandria</Product>
+    <Description>Environment management contract interfaces for Alexandria</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,12 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="CoCo.Core.Contract">
-    </Reference>
+    <PackageReference Include="Fateblade.CoCo.Core.Contract" Version="1.0.0" />
   </ItemGroup>
-
-	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
-		<CallTarget Targets="CopyProjectToDll" />
-	</Target>
 
 </Project>

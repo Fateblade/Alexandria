@@ -1,18 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-	<Import Project="..\..\..\..\_Build\FatebladeProjectDefaultsImport.msb.xml" />
+
   <PropertyGroup>
     <TargetFramework>net10.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
     <AssemblyName>Alexandria.UI.WPF.Converters</AssemblyName>
-    <RootNamespace>Fateblade.Alexandria.UI.WPF.ConvertersConverters</RootNamespace>
+    <RootNamespace>Fateblade.Alexandria.UI.WPF.Converters</RootNamespace>
+
+    <!-- NuGet Package Metadata -->
+    <GeneratePackageOnBuild Condition="'$(Configuration)' == 'Release'">true</GeneratePackageOnBuild>
+    <PackageId>Fateblade.Alexandria.UI.WPF.Converters</PackageId>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <Authors>Fateblade</Authors>
+    <Company>Fateblade</Company>
+    <Product>Alexandria</Product>
+    <Description>WPF value converters for Alexandria UI</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
-	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
-		<CallTarget Targets="CopyProjectToDll" />
-	</Target>
-
-	<ItemGroup>
-	  <ProjectReference Include="..\Base\Alexandria.UI.WPF.Base.csproj" />
-	</ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Base\Alexandria.UI.WPF.Base.csproj" />
+  </ItemGroup>
 
 </Project>

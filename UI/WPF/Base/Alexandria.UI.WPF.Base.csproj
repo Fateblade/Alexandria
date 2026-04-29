@@ -1,32 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-	<Import Project="..\..\..\..\_Build\FatebladeProjectDefaultsImport.msb.xml" />
+
   <PropertyGroup>
     <TargetFramework>net10.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
     <RootNamespace>Fateblade.Alexandria.UI.WPF.Base</RootNamespace>
     <AssemblyName>Alexandria.UI.WPF.Base</AssemblyName>
     <OutputType>Library</OutputType>
+
+    <!-- NuGet Package Metadata -->
+    <GeneratePackageOnBuild Condition="'$(Configuration)' == 'Release'">true</GeneratePackageOnBuild>
+    <PackageId>Fateblade.Alexandria.UI.WPF.Base</PackageId>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <Authors>Fateblade</Authors>
+    <Company>Fateblade</Company>
+    <Product>Alexandria</Product>
+    <Description>WPF base library for Alexandria UI</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Fateblade.CoCo.Core.Contract" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.CrossCutting.Base.Identifiable.DataClasses" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.Logic.Foundation.Orchestration.Contract" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.UI.WPF.ViewModelMapper.Contract" Version="1.0.0" />
     <PackageReference Include="Prism.Core" Version="7.2.0.1422" />
     <PackageReference Include="Prism.Wpf" Version="7.2.0.1422" />
     <PackageReference Include="SharpVectors.Wpf" Version="1.8.1" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="CoCo.Core.Contract">
-    </Reference>
-    <Reference Include="Components.CrossCutting.Base.Identifiable.DataClasses">
-    </Reference>
-    <Reference Include="Components.Logic.Foundation.Orchestration.Contract">
-    </Reference>
-    <Reference Include="Components.UI.WPF.ViewModelMapper.Contract">
-    </Reference>
-  </ItemGroup>
-
-	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
-		<CallTarget Targets="CopyProjectToDll" />
-	</Target>
 
 </Project>

@@ -1,11 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-	<Import Project="..\..\..\..\_Build\FatebladeProjectDefaultsImport.msb.xml" />
+
   <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
-    <RootNamespace>Fateblade.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+    <TargetFrameworks>netstandard2.0;net10.0</TargetFrameworks>
+    <RootNamespace>Fateblade.Alexandria.Logic.Foundation.TextMathParser.mXparser</RootNamespace>
+    <AssemblyName>Alexandria.Logic.Foundation.TextMathParser.mXparser</AssemblyName>
+
+    <!-- NuGet Package Metadata -->
+    <GeneratePackageOnBuild Condition="'$(Configuration)' == 'Release'">true</GeneratePackageOnBuild>
+    <PackageId>Fateblade.Alexandria.Logic.Foundation.TextMathParser.mXparser</PackageId>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <Authors>Fateblade</Authors>
+    <Company>Fateblade</Company>
+    <Product>Alexandria</Product>
+    <Description>mXparser text math parser implementation for Alexandria</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Fateblade.CoCo.Core.Contract" Version="1.0.0" />
     <PackageReference Include="MathParser.org-mXparser" Version="5.2.1" />
   </ItemGroup>
 
@@ -13,12 +27,4 @@
     <ProjectReference Include="..\Alexandria.Logic.Foundation.TextMathParser.Contract\Alexandria.Logic.Foundation.TextMathParser.Contract.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Reference Include="CoCo.Core.Contract">
-    </Reference>
-  </ItemGroup>
-
-	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
-		<CallTarget Targets="CopyProjectToDll" />
-	</Target>
 </Project>

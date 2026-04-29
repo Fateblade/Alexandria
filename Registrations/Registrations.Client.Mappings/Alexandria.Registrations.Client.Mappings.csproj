@@ -1,9 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-	<Import Project="..\..\..\_Build\FatebladeProjectDefaultsImport.msb.xml" />
+
   <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
+    <TargetFramework>net10.0-windows</TargetFramework>
     <RootNamespace>Fateblade.Alexandria.Registrations.Client.Mappings</RootNamespace>
+    <AssemblyName>Alexandria.Registrations.Client.Mappings</AssemblyName>
+
+    <!-- NuGet Package Metadata -->
+    <GeneratePackageOnBuild Condition="'$(Configuration)' == 'Release'">true</GeneratePackageOnBuild>
+    <PackageId>Fateblade.Alexandria.Registrations.Client.Mappings</PackageId>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <Authors>Fateblade</Authors>
+    <Company>Fateblade</Company>
+    <Product>Alexandria</Product>
+    <Description>Client dependency injection mappings for Alexandria</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Fateblade.CoCo.Core.Bootstrapping" Version="1.0.0" />
+    <PackageReference Include="Fateblade.CoCo.Core.Configuration" Version="1.0.0" />
+    <PackageReference Include="Fateblade.CoCo.Core.Contract" Version="1.0.0" />
+    <PackageReference Include="Fateblade.CoCo.Core.EventBrokerage" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.CrossCutting.CoCo.Core.Configuration.NewtonsoftJson" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.CrossCutting.CommonMessages.Contract" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.CrossCutting.ExceptionFormatter.Contract" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.CrossCutting.ExceptionFormatter.SimpleListFormat" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.CrossCutting.Logging.Contract" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.CrossCutting.Logging.Csv" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.Data.GenericDataStoring.Contract" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.Data.GenericDataStoring.NewtonsoftJson" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.Logic.Foundation.Orchestration" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.Logic.Foundation.Orchestration.Contract" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.Logic.Foundation.Translation.ResourceFile" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.Logic.Foundation.Translation.Contract" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.Logic.GenericManager" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.Logic.GenericManager.Contract" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.UI.WPF.ViewModelMapper" Version="1.0.0" />
+    <PackageReference Include="Fateblade.Components.UI.WPF.ViewModelMapper.Contract" Version="1.0.0" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\Logic\Domain\Entities\EntitiesManagement.Contract\Alexandria.Logic.Domain.Entities.EntitiesManagement.Contract.csproj" />
@@ -16,49 +52,6 @@
     <ProjectReference Include="..\..\Logic\Domain\Meta\MetaManagement\Alexandria.Logic.Domain.Meta.MetaManagement.csproj" />
     <ProjectReference Include="..\..\Logic\Foundation\Meta.Dice.Contract\Alexandria.Logic.Foundation.Meta.DiceGeneration.Contract.csproj" />
     <ProjectReference Include="..\..\Logic\Foundation\Meta.Dice\Alexandria.Logic.Foundation.Meta.DiceGeneration.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="CoCo.Core.Bootstrapping">
-    </Reference>
-    <Reference Include="CoCo.Core.Configuration">
-    </Reference>
-    <Reference Include="CoCo.Core.Contract">
-    </Reference>
-    <Reference Include="CoCo.Core.EventBrokerage">
-    </Reference>
-    <Reference Include="Components.CrossCutting.CoCo.Core.Configuration.NewtonsoftJson">
-    </Reference>
-    <Reference Include="Components.CrossCutting.CommonMessages.Contract">
-    </Reference>
-    <Reference Include="Components.CrossCutting.ExceptionFormatter.Contract">
-    </Reference>
-    <Reference Include="Components.CrossCutting.ExceptionFormatter.SimpleListFormat">
-    </Reference>
-    <Reference Include="Components.CrossCutting.Logging.Contract">
-    </Reference>
-    <Reference Include="Components.CrossCutting.Logging.Csv">
-    </Reference>
-    <Reference Include="Components.Data.GenericDataStoring.Contract">
-    </Reference>
-    <Reference Include="Components.Data.GenericDataStoring.NewtonsoftJson">
-    </Reference>
-    <Reference Include="Components.Logic.Foundation.Orchestration">
-    </Reference>
-    <Reference Include="Components.Logic.Foundation.Orchestration.Contract">
-    </Reference>
-    <Reference Include="Components.Logic.Foundation.Translation">
-    </Reference>
-    <Reference Include="Components.Logic.Foundation.Translation.Contract">
-    </Reference>
-    <Reference Include="Components.Logic.GenericManager">
-    </Reference>
-    <Reference Include="Components.Logic.GenericManager.Contract">
-    </Reference>
-    <Reference Include="Components.UI.WPF.ViewModelMapper">
-    </Reference>
-    <Reference Include="Components.UI.WPF.ViewModelMapper.Contract">
-    </Reference>
   </ItemGroup>
 
   <ItemGroup>
